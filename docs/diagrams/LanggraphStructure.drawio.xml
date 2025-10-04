@@ -1,0 +1,235 @@
+<mxfile host="app.diagrams.net" agent="Mermaid-to-drawio" version="28.2.5">
+  <diagram id="langgraph_design" name="LangGraph Design (Orthogonal)">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1920" pageHeight="1080" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Container -->
+        <mxCell id="container" value="Professor Classification – LangGraph"
+          style="swimlane;fontStyle=1;align=left;verticalAlign=top;rounded=1;shadow=0;html=1;strokeColor=#111827;fillColor=#f8fafc;gradientColor=none;startSize=44;"
+          vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="1460" height="980" as="geometry"/>
+        </mxCell>
+
+        <!-- Main spine (top to bottom) -->
+        <mxCell id="start" value="ProfessorRequest"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="640" y="80" width="320" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cleaner" value="DescriptionCleaner"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="640" y="170" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="retriever" value="CandidateRetriever"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="640" y="270" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Side processing blocks -->
+        <mxCell id="generator" value="ClassificationGenerator"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FECACA;strokeColor=#B91C1C;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="300" y="270" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="validator" value="ClassificationValidator"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FECACA;strokeColor=#B91C1C;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="300" y="360" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="valid_decision" value="Valid?"
+          style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="640" y="370" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="conf_decision" value="Sufficient Confidence?"
+          style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="620" y="520" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="finalizer" value="ClassificationFinalizer"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="300" y="660" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="end" value="End"
+          style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="640" y="760" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Right-side branch -->
+        <mxCell id="expanded" value="ExpandedRetriever"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#1D4ED8;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="1020" y="520" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="proposer" value="SubfieldProposer"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FECACA;strokeColor=#B91C1C;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="940" y="660" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="curator" value="TaxonomyCurator"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FECACA;strokeColor=#B91C1C;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="940" y="750" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="approve_decision" value="Approved?"
+          style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1;"
+          vertex="1" parent="container">
+          <mxGeometry x="1080" y="850" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- EDGES: orthogonal with clean routing + labels -->
+
+        <!-- Main path: start -> cleaner -> retriever -->
+        <mxCell id="e1" edge="1" parent="container" source="start" target="cleaner"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="container" source="cleaner" target="retriever"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- retriever -> generator (left) -->
+        <mxCell id="e3" edge="1" parent="container" source="retriever" target="generator"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="305"/>
+              <mxPoint x="620" y="305"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- generator -> validator (down) -->
+        <mxCell id="e4" edge="1" parent="container" source="generator" target="validator"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- validator -> valid_decision (right) -->
+        <mxCell id="e5" edge="1" parent="container" source="validator" target="valid_decision"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="395"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- valid YES -> conf -->
+        <mxCell id="e6_yes" value="YES" edge="1" parent="container" source="valid_decision" target="conf_decision"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="470" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- valid NO -> expanded (to right) -->
+        <mxCell id="e6_no" value="NO" edge="1" parent="container" source="valid_decision" target="expanded"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="410"/>
+              <mxPoint x="980" y="555"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- expanded -> generator (loop back left) -->
+        <mxCell id="e7" edge="1" parent="container" source="expanded" target="generator"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="555"/>
+              <mxPoint x="880" y="305"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- conf YES -> finalizer (left) -->
+        <mxCell id="e8_conf_yes" value="YES" edge="1" parent="container" source="conf_decision" target="finalizer"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="610"/>
+              <mxPoint x="520" y="695"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- conf NO -> proposer (right) -->
+        <mxCell id="e9_conf_no" value="NO" edge="1" parent="container" source="conf_decision" target="proposer"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="610"/>
+              <mxPoint x="880" y="695"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- proposer -> curator -->
+        <mxCell id="e10" edge="1" parent="container" source="proposer" target="curator"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- curator -> approve -->
+        <mxCell id="e11" edge="1" parent="container" source="curator" target="approve_decision"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- approve YES -> retriever (route up-right then left) -->
+        <mxCell id="e12_app_yes" value="YES" edge="1" parent="container" source="approve_decision" target="retriever"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="320"/>
+              <mxPoint x="820" y="320"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- approve NO -> end (down-left) -->
+        <mxCell id="e13_app_no" value="NO" edge="1" parent="container" source="approve_decision" target="end"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="890"/>
+              <mxPoint x="700" y="790"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- finalizer -> end -->
+        <mxCell id="e14" edge="1" parent="container" source="finalizer" target="end"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;html=1;strokeColor=#111827;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="730"/>
+              <mxPoint x="640" y="790"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

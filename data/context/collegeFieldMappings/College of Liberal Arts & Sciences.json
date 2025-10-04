@@ -1,0 +1,78 @@
+{
+  "Mathematics": [
+    "Algebra",
+    "Analysis",
+    "Applied & Computational Mathematics",
+    "Geometry & Topology",
+    "Logic & Foundations",
+    "Number Theory",
+    "Probability"
+  ],
+  "Statistics": [
+    "Applied Statistics",
+    "Computational Statistics & Data Science",
+    "Statistical Theory & Methods"
+  ],
+  "Physics": [
+    "Astrophysics & Cosmology",
+    "Atomic, Molecular & Optical Physics",
+    "Biophysics & Quantitative Biology",
+    "Condensed Matter Physics",
+    "High Energy & Particle Physics",
+    "Nuclear Physics",
+    "Quantum Information"
+  ],
+  "Chemistry": [
+    "Analytical Chemistry",
+    "Chemical Biology",
+    "Inorganic Chemistry",
+    "Materials Chemistry",
+    "Organic Chemistry",
+    "Physical Chemistry",
+    "Theoretical & Computational Chemistry"
+  ],
+  "Economics": [
+    "Applied Microeconomics",
+    "Econometrics",
+    "Economic Theory (Micro & Macro)",
+    "International & Development Economics",
+    "Public & Labor Economics"
+  ],
+  "Psychology": [
+    "Behavioral Neuroscience",
+    "Clinical & Community Psychology",
+    "Cognitive Neuroscience",
+    "Cognitive Psychology",
+    "Developmental Psychology",
+    "Industrial-Organizational Psychology",
+    "Social-Personality Psychology"
+  ],
+  "Political Science": [
+    "American Politics",
+    "Comparative Politics",
+    "International Relations",
+    "Political Methodology",
+    "Political Theory"
+  ],
+  "History": [
+    "American History",
+    "European History",
+    "Global & Transnational History",
+    "History of Science, Technology & Medicine",
+    "Pre-Modern History (Ancient/Medieval)"
+  ],
+  "Communication": [
+    "Health Communication",
+    "Interpersonal Communication",
+    "Media & Cinema Studies",
+    "Organizational Communication",
+    "Rhetoric & Public Discourse"
+  ],
+  "Linguistics": [
+    "Computational Linguistics",
+    "Phonetics & Phonology",
+    "Psycholinguistics",
+    "Semantics & Pragmatics",
+    "Syntax"
+  ]
+}

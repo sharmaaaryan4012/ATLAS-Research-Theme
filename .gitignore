@@ -1,0 +1,29 @@
+@'
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.egg-info/
+.build/
+dist/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Env / secrets / logs
+.env
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Data / artifacts (adjust as needed)
+*.parquet
+*.zip
+'@ | Out-File -Encoding utf8 .gitignore

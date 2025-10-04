@@ -1,0 +1,1178 @@
+{
+  "The Grainger College of Engineering": {
+    "Computer Science": {
+      "Algorithms & Theory of Computation": [
+        "Analysis of Algorithms",
+        "Complexity Theory",
+        "Cryptography",
+        "Algorithmic Game Theory",
+        "Randomized Algorithms"
+      ],
+      "Artificial Intelligence & Machine Learning": [
+        "Learning Theory",
+        "Deep Learning & Neural Networks",
+        "Reinforcement Learning",
+        "Probabilistic Graphical Models",
+        "Knowledge Representation & Reasoning",
+        "Trustworthy & Ethical AI"
+      ],
+      "Computer Architecture & Parallel Computing": [
+        "High-Performance Computing (HPC)",
+        "Processor & System-on-Chip (SoC) Design",
+        "Memory & Storage Systems",
+        "Parallel Programming Models",
+        "Domain-Specific Architectures"
+      ],
+      "Computer Vision & Graphics": [
+        "Image & Video Analysis",
+        "3D Reconstruction & Scene Understanding",
+        "Computational Photography",
+        "Rendering & Animation",
+        "Visual Recognition & Detection"
+      ],
+      "Databases & Information Systems": [
+        "Data Mining & Knowledge Discovery",
+        "Database System Internals",
+        "Information Retrieval",
+        "Large-Scale Data Analytics",
+        "Data Curation & Provenance"
+      ],
+      "Human-Computer Interaction (HCI)": [
+        "User Interface (UI) & User Experience (UX) Design",
+        "Ubiquitous & Mobile Computing",
+        "Social Computing",
+        "Accessibility & Assistive Technology",
+        "Visualization & Visual Analytics"
+      ],
+      "Natural Language Processing (NLP)": [
+        "Machine Translation",
+        "Information Extraction & Text Mining",
+        "Dialogue & Interactive Systems",
+        "Computational Social Science",
+        "Language Grounding & Multimodality"
+      ],
+      "Programming Languages & Software Engineering": [
+        "Compilers & Runtimes",
+        "Formal Methods & Verification",
+        "Software Testing & Analysis",
+        "Programming Language Design",
+        "Empirical Software Engineering"
+      ],
+      "Scientific Computing & Numerical Methods": [
+        "Numerical Linear Algebra",
+        "Differential Equation Solvers",
+        "High-Performance Scientific Libraries",
+        "Computational Science & Engineering",
+        "Data-Driven Scientific Discovery"
+      ],
+      "Security & Privacy": [
+        "Network & Distributed System Security",
+        "Cryptography & Cryptanalysis",
+        "Software & Systems Security",
+        "Privacy-Enhancing Technologies",
+        "Hardware Security"
+      ],
+      "Systems & Networking": [
+        "Operating Systems",
+        "Distributed Systems & Cloud Computing",
+        "Computer Networks",
+        "Wireless & Mobile Systems",
+        "Systems for Machine Learning"
+      ]
+    },
+    "Electrical & Computer Engineering": {
+      "Circuits & VLSI Design": [
+        "Analog & Mixed-Signal Circuits",
+        "Digital & Memory Circuits",
+        "RF & Millimeter-Wave Circuits",
+        "Power Management Circuits",
+        "CAD & Design Automation"
+      ],
+      "Communications": [
+        "Wireless Communication & Networks",
+        "Information Theory & Coding",
+        "Optical Communication",
+        "Network Science & Theory"
+      ],
+      "Control Systems": [
+        "Linear & Nonlinear Control",
+        "Optimal & Stochastic Control",
+        "Networked Control Systems",
+        "Control of Autonomous Systems"
+      ],
+      "Electromagnetics & Photonics": [
+        "Antennas & Propagation",
+        "Computational Electromagnetics",
+        "Integrated Photonics & Optoelectronics",
+        "Optical Imaging & Spectroscopy",
+        "Plasmonics & Metamaterials"
+      ],
+      "Microelectronics & Nanotechnology": [
+        "Semiconductor Devices & Physics",
+        "Micro-Electro-Mechanical Systems (MEMS)",
+        "Nanofabrication & Nanomaterials",
+        "Quantum Devices"
+      ],
+      "Power & Energy Systems": [
+        "Power Electronics & Motor Drives",
+        "Smart Grids & Grid Integration",
+        "Renewable Energy Systems",
+        "Power System Dynamics & Control"
+      ],
+      "Quantum Information Science": [
+        "Quantum Computing",
+        "Quantum Communication & Cryptography",
+        "Quantum Sensing & Metrology",
+        "Quantum Simulation"
+      ],
+      "Robotics & Autonomous Systems": [
+        "Control Theory for Robotics",
+        "Motion Planning & Kinematics",
+        "Perception & Sensor Fusion",
+        "Human-Robot Interaction",
+        "Multi-Agent & Swarm Robotics"
+      ],
+      "Signal & Image Processing": [
+        "Biomedical Imaging & Image Analysis",
+        "Machine Learning for Signal Processing",
+        "Audio & Speech Processing",
+        "Statistical Signal Processing"
+      ]
+    },
+    "Mechanical Science & Engineering": {
+      "Biomechanics & Mechanobiology": [
+        "Cellular & Tissue Mechanics",
+        "Musculoskeletal Biomechanics",
+        "Bio-inspired Design",
+        "Cardiovascular Biomechanics"
+      ],
+      "Controls & Dynamics": [
+        "Vibrations & Acoustics",
+        "Nonlinear Dynamics & Chaos",
+        "Mechatronics & Embedded Systems",
+        "Vehicle Dynamics & Control"
+      ],
+      "Design & Manufacturing": [
+        "Additive Manufacturing (3D Printing)",
+        "Product Design & Optimization",
+        "Advanced Manufacturing Processes",
+        "Digital Manufacturing & Automation"
+      ],
+      "Fluid Mechanics & Thermal Sciences": [
+        "Turbulence & Complex Flows",
+        "Heat & Mass Transfer",
+        "Combustion & Propulsion",
+        "Multiphase Flow",
+        "Energy Conversion & Storage"
+      ],
+      "Solid Mechanics & Materials": [
+        "Continuum Mechanics",
+        "Fracture & Fatigue",
+        "Computational Mechanics",
+        "Mechanics of Materials",
+        "Geomechanics"
+      ]
+    },
+    "Civil & Environmental Engineering": {
+      "Construction Engineering & Management": [
+        "Project Management & Control",
+        "Construction Informatics",
+        "Automation in Construction",
+        "Construction Safety"
+      ],
+      "Environmental Engineering & Science": [
+        "Water Quality & Treatment",
+        "Air Quality & Pollution Control",
+        "Environmental Biotechnology",
+        "Sustainable Engineering"
+      ],
+      "Geotechnical Engineering": [
+        "Soil Mechanics & Foundations",
+        "Rock Mechanics",
+        "Earthquake Engineering",
+        "Geoenvironmental Engineering"
+      ],
+      "Structural Engineering & Materials": [
+        "Structural Dynamics & Earthquake Engineering",
+        "Computational Mechanics & Simulation",
+        "Concrete & Steel Structures",
+        "Structural Health Monitoring"
+      ],
+      "Sustainable & Resilient Infrastructure": [
+        "Infrastructure Systems Analysis",
+        "Climate Change Adaptation",
+        "Risk & Reliability Analysis",
+        "Smart Cities"
+      ],
+      "Transportation Engineering": [
+        "Traffic Flow Theory & Operations",
+        "Transportation Systems & Planning",
+        "Pavement & Materials Engineering",
+        "Railroad & Public Transit Engineering"
+      ],
+      "Water Resources Engineering": [
+        "Hydrology & Hydraulic Engineering",
+        "Groundwater & Subsurface Flow",
+        "Water Resources Management & Policy",
+        "Ecohydrology"
+      ]
+    },
+    "Materials Science & Engineering": {
+      "Biomaterials & Biomedical Devices": [
+        "Tissue Engineering Scaffolds",
+        "Drug Delivery Systems",
+        "Medical Implants & Devices",
+        "Regenerative Medicine"
+      ],
+      "Ceramics & Glasses": [
+        "Structural Ceramics",
+        "Electroceramics",
+        "Glass Science",
+        "High-Temperature Materials"
+      ],
+      "Computational Materials Science": [
+        "Molecular Dynamics Simulation",
+        "Density Functional Theory (DFT)",
+        "Phase-Field Modeling",
+        "Materials Informatics & Data Science"
+      ],
+      "Electronic Materials & Photonics": [
+        "Semiconductors",
+        "Photovoltaics & Solar Cells",
+        "Thermoelectrics",
+        "Dielectrics & Ferroelectrics"
+      ],
+      "Metals & Alloys": [
+        "Physical Metallurgy",
+        "Mechanical Behavior of Metals",
+        "Corrosion & Degradation",
+        "Advanced Steels & High-Entropy Alloys"
+      ],
+      "Polymers & Soft Materials": [
+        "Polymer Physics & Chemistry",
+        "Self-Assembling Materials",
+        "Soft Robotics",
+        "Composites & Blends"
+      ]
+    },
+    "Bioengineering": {
+      "Biomedical Imaging & Sensing": [
+        "Magnetic Resonance Imaging (MRI)",
+        "Optical Imaging & Microscopy",
+        "Ultrasound & Photoacoustics",
+        "Biosensors & Diagnostics"
+      ],
+      "Cell & Tissue Engineering": [
+        "Stem Cell Engineering",
+        "Regenerative Biomaterials",
+        "Mechanobiology",
+        "Drug & Gene Delivery"
+      ],
+      "Computational & Systems Biology": [
+        "Bioinformatics & Genomics",
+        "Systems Biology Modeling",
+        "Synthetic Biology",
+        "Computational Neuroscience"
+      ],
+      "Neural Engineering & Neurotechnology": [
+        "Brain-Computer Interfaces",
+        "Neuroimaging",
+        "Neural Tissue Engineering",
+        "Computational Modeling of Neural Systems"
+      ]
+    },
+    "Aerospace Engineering": {
+      "Aerodynamics & Fluid Dynamics": [
+        "Computational Fluid Dynamics (CFD)",
+        "Experimental Aerodynamics",
+        "Hypersonics & High-Temperature Flows",
+        "Aeroacoustics"
+      ],
+      "Astrodynamics & Orbital Mechanics": [
+        "Space Mission Design & Optimization",
+        "Satellite & Spacecraft Dynamics",
+        "Celestial Mechanics"
+      ],
+      "Control & Estimation": [
+        "Guidance, Navigation & Control (GNC)",
+        "Autonomous Aerospace Systems",
+        "State Estimation & Filtering"
+      ],
+      "Propulsion & Combustion": [
+        "Air-Breathing Propulsion",
+        "Rocket & Electric Propulsion",
+        "Combustion Science",
+        "Sustainable Aviation Fuels"
+      ],
+      "Structures & Materials": [
+        "Aerospace Structures & Solid Mechanics",
+        "Composite Materials",
+        "Aeroelasticity & Structural Dynamics",
+        "Fatigue & Fracture"
+      ]
+    },
+    "Industrial & Enterprise Systems Engineering": {
+      "Data Analytics & Decision Sciences": [
+        "Statistical Learning",
+        "Predictive Modeling",
+        "Prescriptive Analytics",
+        "Simulation"
+      ],
+      "Financial Engineering": [
+        "Quantitative Finance",
+        "Risk Management",
+        "Algorithmic Trading",
+        "Stochastic Modeling"
+      ],
+      "Human Factors & Ergonomics": [
+        "Cognitive Engineering",
+        "Human-Automation Interaction",
+        "Biomechanical & Physiological Ergonomics",
+        "Safety Engineering"
+      ],
+      "Operations Research & Optimization": [
+        "Linear & Nonlinear Programming",
+        "Integer & Combinatorial Optimization",
+        "Stochastic Optimization",
+        "Network Optimization"
+      ],
+      "Systems Engineering & Design": [
+        "System Architecture & Modeling",
+        "Design Theory & Methodology",
+        "Complex Systems Analysis",
+        "Risk & Reliability Engineering"
+      ]
+    },
+    "Nuclear, Plasma & Radiological Engineering": {
+      "Fusion & Plasma Science": [
+        "Plasma Physics",
+        "Fusion Technology & Engineering",
+        "Plasma-Material Interactions",
+        "Low-Temperature Plasmas"
+      ],
+      "Nuclear Materials & Waste Management": [
+        "Radiation Effects on Materials",
+        "Nuclear Fuel Cycle",
+        "Radioactive Waste Disposal",
+        "Nuclear Safeguards & Security"
+      ],
+      "Radiation, Instrumentation & Imaging": [
+        "Radiation Detection & Measurement",
+        "Medical Imaging Physics",
+        "Radiation Shielding & Dosimetry",
+        "Homeland Security Applications"
+      ],
+      "Reactor Physics & Thermal Hydraulics": [
+        "Neutronics & Reactor Analysis",
+        "Advanced Reactor Design",
+        "Nuclear Power Plant Safety",
+        "Multiphase Flow & Heat Transfer"
+      ]
+    }
+  },
+  "College of Liberal Arts & Sciences": {
+    "Mathematics": {
+      "Algebra": [
+        "Group Theory",
+        "Representation Theory",
+        "Commutative Algebra",
+        "Algebraic Geometry"
+      ],
+      "Analysis": [
+        "Real & Complex Analysis",
+        "Functional Analysis",
+        "Partial Differential Equations (PDEs)",
+        "Harmonic Analysis"
+      ],
+      "Applied & Computational Mathematics": [
+        "Numerical Analysis",
+        "Mathematical Modeling",
+        "Scientific Computation",
+        "Mathematical Biology"
+      ],
+      "Geometry & Topology": [
+        "Differential Geometry",
+        "Algebraic Topology",
+        "Geometric Topology"
+      ],
+      "Logic & Foundations": [
+        "Set Theory",
+        "Model Theory",
+        "Computability Theory"
+      ],
+      "Number Theory": [
+        "Analytic Number Theory",
+        "Algebraic Number Theory",
+        "Elliptic Curves & Modular Forms"
+      ],
+      "Probability": [
+        "Stochastic Processes",
+        "Random Matrix Theory",
+        "Measure Theory",
+        "Interacting Particle Systems"
+      ]
+    },
+    "Statistics": {
+      "Applied Statistics": [
+        "Biostatistics",
+        "Environmental Statistics",
+        "Statistical Consulting",
+        "Experimental Design"
+      ],
+      "Computational Statistics & Data Science": [
+        "Machine Learning Methods",
+        "Statistical Computing & Algorithms",
+        "Bayesian Computation",
+        "High-Dimensional Data Analysis"
+      ],
+      "Statistical Theory & Methods": [
+        "Asymptotic Theory",
+        "Causal Inference",
+        "Nonparametric Statistics",
+        "Time Series Analysis"
+      ]
+    },
+    "Physics": {
+      "Astrophysics & Cosmology": [
+        "Theoretical Astrophysics",
+        "Observational Astronomy",
+        "Cosmology & General Relativity",
+        "Gravitational Waves"
+      ],
+      "Atomic, Molecular & Optical Physics": [
+        "Quantum Optics",
+        "Cold Atoms & Molecules",
+        "Ultrafast & Precision Spectroscopy"
+      ],
+      "Biophysics & Quantitative Biology": [
+        "Molecular Biophysics",
+        "Cellular Biophysics",
+        "Systems Biology",
+        "Neurophysics"
+      ],
+      "Condensed Matter Physics": [
+        "Hard Condensed Matter (Crystals, Metals)",
+        "Soft Condensed Matter (Polymers, Colloids)",
+        "Superconductivity & Magnetism",
+        "Topological Materials"
+      ],
+      "High Energy & Particle Physics": [
+        "Experimental Particle Physics",
+        "Theoretical Particle Physics (Phenomenology)",
+        "String Theory & Quantum Gravity",
+        "Neutrino Physics"
+      ],
+      "Nuclear Physics": [
+        "Experimental Nuclear Physics",
+        "Theoretical Nuclear Physics",
+        "Quark-Gluon Plasma",
+        "Nuclear Astrophysics"
+      ],
+      "Quantum Information": [
+        "Quantum Algorithms & Computation",
+        "Quantum Error Correction",
+        "Experimental Quantum Systems"
+      ]
+    },
+    "Chemistry": {
+      "Analytical Chemistry": [
+        "Separations & Chromatography",
+        "Mass Spectrometry",
+        "Spectroscopy & Sensing",
+        "Bioanalytical Chemistry"
+      ],
+      "Chemical Biology": [
+        "Chemical Genetics",
+        "Enzymology",
+        "Nucleic Acid & Protein Chemistry",
+        "Metabolomics"
+      ],
+      "Inorganic Chemistry": [
+        "Organometallic Chemistry",
+        "Bioinorganic Chemistry",
+        "Solid-State Chemistry",
+        "Coordination Chemistry"
+      ],
+      "Materials Chemistry": [
+        "Polymer Chemistry",
+        "Nanomaterials Synthesis",
+        "Energy Materials",
+        "Supramolecular Chemistry"
+      ],
+      "Organic Chemistry": [
+        "Synthetic Organic Chemistry",
+        "Physical Organic Chemistry",
+        "Organocatalysis",
+        "Medicinal Chemistry"
+      ],
+      "Physical Chemistry": [
+        "Spectroscopy & Molecular Dynamics",
+        "Quantum Chemistry",
+        "Statistical Mechanics",
+        "Surface Science & Catalysis"
+      ],
+      "Theoretical & Computational Chemistry": [
+        "Electronic Structure Theory",
+        "Molecular Dynamics Simulations",
+        "Quantum Dynamics",
+        "Computational Materials Science"
+      ]
+    },
+    "Economics": {
+      "Applied Microeconomics": [
+        "Labor Economics",
+        "Health Economics",
+        "Public Economics",
+        "Industrial Organization"
+      ],
+      "Econometrics": [
+        "Microeconometrics",
+        "Macroeconometrics",
+        "Time Series Analysis",
+        "Financial Econometrics"
+      ],
+      "Economic Theory (Micro & Macro)": [
+        "Game Theory & Strategic Behavior",
+        "Mechanism Design & Auction Theory",
+        "Macroeconomic Dynamics",
+        "Behavioral Economics"
+      ],
+      "International & Development Economics": [
+        "International Trade",
+        "International Finance",
+        "Development Economics",
+        "Political Economy"
+      ],
+      "Public & Labor Economics": [
+        "Taxation & Public Finance",
+        "Labor Market Analysis",
+        "Economics of Education",
+        "Law & Economics"
+      ]
+    },
+    "Psychology": {
+      "Behavioral Neuroscience": [
+        "Neurobiology of Learning & Memory",
+        "Psychopharmacology",
+        "Hormones & Behavior",
+        "Animal Models of Disease"
+      ],
+      "Clinical & Community Psychology": [
+        "Psychopathology",
+        "Psychotherapy & Intervention Science",
+        "Community & Prevention Science",
+        "Health Psychology"
+      ],
+      "Cognitive Neuroscience": [
+        "Human Brain Mapping (fMRI, EEG)",
+        "Neuropsychology",
+        "Computational Neuroscience",
+        "Neurobiology of Decision Making"
+      ],
+      "Cognitive Psychology": [
+        "Memory & Attention",
+        "Language & Cognition",
+        "Judgment & Decision Making",
+        "Reasoning & Problem Solving"
+      ],
+      "Developmental Psychology": [
+        "Infant & Child Development",
+        "Adolescent Development",
+        "Cognitive Development",
+        "Social & Emotional Development"
+      ],
+      "Industrial-Organizational Psychology": [
+        "Personnel Selection & Training",
+        "Leadership & Motivation",
+        "Organizational Behavior",
+        "Occupational Health Psychology"
+      ],
+      "Social-Personality Psychology": [
+        "Attitudes & Social Influence",
+        "Intergroup Relations",
+        "Self & Identity",
+        "Emotion & Affective Science"
+      ]
+    },
+    "Political Science": {
+      "American Politics": [
+        "Political Behavior & Public Opinion",
+        "Political Institutions (Congress, Presidency)",
+        "State & Local Politics",
+        "Race, Ethnicity & Politics"
+      ],
+      "Comparative Politics": [
+        "Democratization & Authoritarianism",
+        "Political Economy of Development",
+        "Contentious Politics & Social Movements",
+        "Area Studies"
+      ],
+      "International Relations": [
+        "International Security & Conflict",
+        "International Political Economy",
+        "Foreign Policy Analysis",
+        "International Organizations & Law"
+      ],
+      "Political Methodology": [
+        "Quantitative & Statistical Methods",
+        "Formal Theory & Modeling",
+        "Qualitative & Mixed Methods",
+        "Computational Social Science"
+      ],
+      "Political Theory": [
+        "History of Political Thought",
+        "Contemporary Political Philosophy",
+        "Democratic Theory",
+        "Critical Theory"
+      ]
+    },
+    "History": {
+      "American History": [
+        "Colonial & Revolutionary America",
+        "19th Century US History",
+        "20th Century US History",
+        "African American History"
+      ],
+      "European History": [
+        "Medieval Europe",
+        "Early Modern Europe",
+        "Modern Europe",
+        "Russian & Eastern European History"
+      ],
+      "Global & Transnational History": [
+        "History of Empires & Colonialism",
+        "Migration & Diaspora Studies",
+        "Global Environmental History",
+        "Maritime History"
+      ],
+      "History of Science, Technology & Medicine": [
+        "History of Biology & Medicine",
+        "History of Physical Sciences",
+        "History of Technology",
+        "Science & Empire"
+      ],
+      "Pre-Modern History (Ancient/Medieval)": [
+        "Ancient Greece & Rome",
+        "Medieval Studies",
+        "Byzantine History",
+        "Ancient Near East"
+      ]
+    },
+    "Communication": {
+      "Health Communication": [
+        "Doctor-Patient Communication",
+        "Health Campaigns & Persuasion",
+        "Health Information Technology"
+      ],
+      "Interpersonal Communication": [
+        "Relational Dynamics",
+        "Nonverbal Communication",
+        "Family Communication"
+      ],
+      "Media & Cinema Studies": [
+        "Media Effects & Psychology",
+        "Film History & Theory",
+        "Digital & New Media",
+        "Global Media"
+      ],
+      "Organizational Communication": [
+        "Corporate Communication",
+        "Communication Networks",
+        "Technology in Organizations"
+      ],
+      "Rhetoric & Public Discourse": [
+        "Rhetorical Theory & Criticism",
+        "Political Communication",
+        "Public Address & Social Movements"
+      ]
+    },
+    "Linguistics": {
+      "Computational Linguistics": [
+        "Natural Language Processing (NLP)",
+        "Corpus Linguistics",
+        "Machine Learning for Language"
+      ],
+      "Phonetics & Phonology": [
+        "Articulatory & Acoustic Phonetics",
+        "Phonological Theory",
+        "Laboratory Phonology"
+      ],
+      "Psycholinguistics": [
+        "Language Acquisition",
+        "Sentence Processing",
+        "Bilingualism"
+      ],
+      "Semantics & Pragmatics": [
+        "Formal Semantics",
+        "Lexical Semantics",
+        "Discourse & Pragmatics"
+      ],
+      "Syntax": [
+        "Syntactic Theory",
+        "Comparative Syntax",
+        "Language Variation & Change"
+      ]
+    }
+  },
+  "College of Agricultural, Consumer & Environmental Sciences (ACES)": {
+    "Agricultural & Consumer Economics": {
+      "Agribusiness Management": [
+        "Farm Management",
+        "Food & Agribusiness Marketing",
+        "Supply Chain Management"
+      ],
+      "Development Economics": [
+        "Agricultural Development",
+        "Poverty & Food Security",
+        "International Trade & Policy"
+      ],
+      "Environmental & Resource Economics": [
+        "Natural Resource Management",
+        "Climate Change Economics",
+        "Energy Economics & Policy"
+      ],
+      "Public Policy & Law": [
+        "Agricultural Policy",
+        "Food Law & Policy",
+        "Environmental Law"
+      ],
+      "Finance & Risk Management": [
+        "Agricultural Finance",
+        "Commodity Markets & Futures",
+        "Risk Analysis"
+      ]
+    },
+    "Crop Sciences": {
+      "Agronomy & Agroecology": [
+        "Soil & Water Management",
+        "Sustainable Agriculture",
+        "Crop Physiology"
+      ],
+      "Bioinformatics & Statistics": [
+        "Genomic Prediction",
+        "Statistical Genetics",
+        "Computational Biology"
+      ],
+      "Horticulture": [
+        "Specialty Crop Production",
+        "Urban Agriculture",
+        "Plant Propagation"
+      ],
+      "Plant Breeding & Genetics": [
+        "Molecular Breeding",
+        "Quantitative Genetics",
+        "Plant Genomics"
+      ],
+      "Plant Pathology & Weed Science": [
+        "Molecular Plant-Microbe Interactions",
+        "Integrated Pest Management (IPM)",
+        "Herbicide Resistance"
+      ]
+    },
+    "Animal Sciences": {
+      "Animal Behavior & Welfare": [
+        "Applied Ethology",
+        "Stress Physiology",
+        "Animal Housing & Management"
+      ],
+      "Genetics, Genomics & Bioinformatics": [
+        "Quantitative & Population Genetics",
+        "Livestock Genomics",
+        "Computational Biology"
+      ],
+      "Microbiology": [
+        "Rumen Microbiology",
+        "Gut Health & Microbiome",
+        "Probiotics & Prebiotics"
+      ],
+      "Nutrition & Metabolism": [
+        "Ruminant Nutrition",
+        "Monogastric Nutrition",
+        "Nutritional Biochemistry"
+      ],
+      "Physiology": [
+        "Reproductive Physiology",
+        "Lactation Biology",
+        "Growth & Developmental Physiology"
+      ]
+    },
+    "Food Science & Human Nutrition": {
+      "Food Chemistry & Processing": [
+        "Food Engineering",
+        "Flavor Chemistry",
+        "Food Ingredient Functionality"
+      ],
+      "Food Microbiology & Safety": [
+        "Foodborne Pathogens",
+        "Food Fermentation",
+        "Food Preservation"
+      ],
+      "Human Nutrition & Metabolism": [
+        "Clinical Nutrition",
+        "Community Nutrition",
+        "Molecular Nutrition & Nutrigenomics"
+      ],
+      "Sensory Science": [
+        "Sensory Evaluation Methods",
+        "Consumer Product Testing",
+        "Psychophysics"
+      ]
+    },
+    "Natural Resources & Environmental Sciences": {
+      "Conservation Biology & Ecology": [
+        "Population & Community Ecology",
+        "Conservation Genetics",
+        "Invasion Biology"
+      ],
+      "Environmental Science & Management": [
+        "Soil Science & Biogeochemistry",
+        "Water Quality & Watershed Management",
+        "Restoration Ecology"
+      ],
+      "Fisheries & Wildlife Science": [
+        "Wildlife Ecology & Management",
+        "Fisheries Biology",
+        "Human-Wildlife Interactions"
+      ]
+    }
+  },
+  "Gies College of Business": {
+    "Accountancy": {
+      "Auditing & Assurance": [
+        "Audit Quality & Regulation",
+        "Internal Control",
+        "Data Analytics in Auditing"
+      ],
+      "Financial Accounting": [
+        "Capital Markets Research",
+        "Financial Reporting & Disclosure",
+        "Valuation"
+      ],
+      "Managerial Accounting": [
+        "Performance Measurement & Incentives",
+        "Cost Management",
+        "Corporate Governance"
+      ],
+      "Taxation": [
+        "Corporate Taxation",
+        "Tax Policy",
+        "Individual & Behavioral Taxation"
+      ]
+    },
+    "Finance": {
+      "Asset Pricing": [
+        "Equity & Fixed Income Markets",
+        "Derivatives & Risk Management",
+        "Behavioral Finance"
+      ],
+      "Corporate Finance": [
+        "Mergers & Acquisitions",
+        "Capital Structure",
+        "Corporate Governance"
+      ],
+      "Financial Intermediation": [
+        "Banking & Financial Institutions",
+        "FinTech & Financial Innovation",
+        "Household Finance"
+      ],
+      "Real Estate": [
+        "Real Estate Finance & Investment",
+        "Urban Economics",
+        "Housing Markets"
+      ]
+    },
+    "Business Administration": {
+      "Marketing": [
+        "Consumer Behavior",
+        "Marketing Analytics & Quantitative Modeling",
+        "Digital Marketing & Social Media",
+        "Marketing Strategy & Branding"
+      ],
+      "Operations Management": [
+        "Inventory & Logistics Management",
+        "Service Operations",
+        "Revenue Management",
+        "Healthcare Operations"
+      ],
+      "Organizational Behavior & Strategy": [
+        "Strategic Management",
+        "Organizational Theory",
+        "Leadership & Teams",
+        "Entrepreneurship"
+      ],
+      "Supply Chain Management": [
+        "Global Supply Chain Strategy",
+        "Procurement & Sourcing",
+        "Logistics & Transportation",
+        "Supply Chain Analytics"
+      ],
+      "Information Systems & Business Analytics": [
+        "Economics of Information Systems",
+        "Business Data Analytics",
+        "IT Strategy & Management",
+        "Social Media & Digital Platforms"
+      ]
+    }
+  },
+  "School of Information Sciences (iSchool)": {
+    "Information Sciences": {
+      "Archives & Special Collections": [
+        "Digital Preservation",
+        "Curation & Stewardship",
+        "Archival Theory & Practice"
+      ],
+      "Data Science & Analytics": [
+        "Data Curation & Management",
+        "Applied Data Mining & Machine Learning",
+        "Information Visualization",
+        "FAIR & Open Data"
+      ],
+      "Human-Centered Design & Systems": [
+        "Human-Computer Interaction (HCI)",
+        "User Experience (UX) Research & Design",
+        "Computer-Supported Cooperative Work (CSCW)",
+        "Social Computing"
+      ],
+      "Information Organization & Access": [
+        "Knowledge Organization Systems",
+        "Metadata & Semantics",
+        "Information Retrieval",
+        "Digital Libraries"
+      ],
+      "Knowledge Management & Information Policy": [
+        "Information Ethics & Policy",
+        "Intellectual Property",
+        "Scholarly Communication",
+        "Information & Society"
+      ],
+      "Youth Services & Librarianship": [
+        "Children's & Young Adult Literature",
+        "Information Literacy",
+        "Public & Academic Librarianship"
+      ]
+    }
+  },
+  "College of Education": {
+    "Curriculum & Instruction": {
+      "Bilingual & ESL Education": [
+        "Bilingualism & Biliteracy",
+        "Second Language Acquisition",
+        "Culturally Sustaining Pedagogy"
+      ],
+      "Digital Learning": [
+        "Learning Technologies",
+        "Online & Blended Learning",
+        "Computational Thinking in K-12"
+      ],
+      "Literacy Studies": [
+        "Early & Adolescent Literacy",
+        "Digital & Media Literacy",
+        "Reading & Writing Pedagogy"
+      ],
+      "STEM Education": [
+        "Mathematics Education",
+        "Science Education",
+        "Engineering & Technology Education"
+      ]
+    },
+    "Educational Psychology": {
+      "Cognitive Science of Teaching & Learning": [
+        "Learning Sciences",
+        "Motivation & Engagement",
+        "Educational Neuroscience"
+      ],
+      "Counseling Psychology": [
+        "Mental Health & Well-being",
+        "Vocational Psychology",
+        "Multicultural Counseling"
+      ],
+      "Developmental Sciences": [
+        "Cognitive & Social Development",
+        "Atypical Development",
+        "Lifespan Development"
+      ],
+      "Quantitative & Evaluative Methods": [
+        "Psychometrics & Measurement",
+        "Educational Statistics",
+        "Program Evaluation"
+      ]
+    },
+    "Education Policy, Organization & Leadership": {
+      "Educational Policy Studies": [
+        "Politics of Education",
+        "Economics of Education",
+        "History & Philosophy of Education"
+      ],
+      "Higher Education": [
+        "College Student Development",
+        "Higher Education Administration",
+        "Diversity & Equity in Higher Ed"
+      ],
+      "Human Resource Development": [
+        "Workplace Learning & Training",
+        "Organizational Development",
+        "Global Human Resources"
+      ]
+    },
+    "Special Education": {
+      "Autism & Developmental Disabilities": [
+        "Intervention & Support Strategies",
+        "Communication & Social Skills",
+        "Transition to Adulthood"
+      ],
+      "Learning Disabilities": [
+        "Reading & Math Disabilities",
+        "Assistive Technology",
+        "Cognitive & Neuropsychological Bases"
+      ],
+      "Inclusive Education": [
+        "Differentiated Instruction",
+        "Positive Behavior Support",
+        "Teacher Preparation for Inclusion"
+      ]
+    }
+  },
+  "College of Law": {
+    "Legal Studies": {
+      "Business & Commercial Law": [
+        "Corporate Law",
+        "Bankruptcy",
+        "Securities Regulation",
+        "Commercial Transactions"
+      ],
+      "Constitutional & Public Law": [
+        "Constitutional Law",
+        "Administrative Law",
+        "Election Law",
+        "Legislation & Statutory Interpretation"
+      ],
+      "Criminal Law & Procedure": [
+        "Substantive Criminal Law",
+        "Criminal Procedure",
+        "Sentencing & Corrections"
+      ],
+      "Intellectual Property & Technology Law": [
+        "Patent Law",
+        "Copyright Law",
+        "Trademark Law",
+        "Cyberlaw & Information Policy"
+      ],
+      "International & Comparative Law": [
+        "Public International Law",
+        "International Human Rights",
+        "Comparative Constitutional Law",
+        "International Business Transactions"
+      ],
+      "Taxation & Employee Benefits": [
+        "Federal Income Taxation",
+        "Corporate & Partnership Taxation",
+        "Employee Benefits (ERISA)",
+        "Estate & Gift Taxation"
+      ]
+    }
+  },
+  "College of Applied Health Sciences": {
+    "Kinesiology & Community Health": {
+      "Biomechanics": [
+        "Locomotion & Gait Analysis",
+        "Injury Biomechanics",
+        "Rehabilitation Engineering"
+      ],
+      "Community Health": [
+        "Epidemiology",
+        "Health Behavior & Promotion",
+        "Public Health Policy"
+      ],
+      "Exercise Physiology": [
+        "Cardiovascular Physiology",
+        "Metabolism & Obesity",
+        "Physical Activity & Aging"
+      ],
+      "Kinesiology": [
+        "Motor Control & Learning",
+        "Exercise Psychology",
+        "Adapted Physical Activity"
+      ]
+    },
+    "Speech & Hearing Science": {
+      "Audiology": [
+        "Hearing Science",
+        "Auditory Processing Disorders",
+        "Hearing Aids & Cochlear Implants"
+      ],
+      "Language Science": [
+        "Language Development & Disorders",
+        "Psycholinguistics",
+        "Bilingualism & Second Language Acquisition"
+      ],
+      "Neuroscience of Communication": [
+        "Neural Bases of Speech & Language",
+        "Neurogenic Communication Disorders (e.g., Aphasia)",
+        "Cognitive Hearing Science"
+      ],
+      "Speech-Language Pathology": [
+        "Speech Sound Disorders",
+        "Voice & Fluency Disorders",
+        "Swallowing Disorders (Dysphagia)"
+      ]
+    }
+  },
+  "College of Fine & Applied Arts": {
+    "Architecture": {
+      "Architectural History & Theory": [
+        "Modern & Contemporary Architecture",
+        "Vernacular Architecture",
+        "Preservation & Heritage"
+      ],
+      "Building Performance": [
+        "Energy Efficiency & Sustainability",
+        "Structural Technology",
+        "Building Materials & Envelopes"
+      ],
+      "Design & Urbanism": [
+        "Urban Design",
+        "Digital Fabrication",
+        "Social Impact Design"
+      ],
+      "Health & Well-being": [
+        "Healthcare Design",
+        "Environments for Aging",
+        "Lighting & Daylighting"
+      ]
+    },
+    "Landscape Architecture": {
+      "Cultural Heritage": [
+        "Cultural Landscape Preservation",
+        "Landscape History & Theory",
+        "Urban Heritage"
+      ],
+      "Ecological Design": [
+        "Stormwater Management & Green Infrastructure",
+        "Ecological Restoration",
+        "Sustainable Site Design"
+      ],
+      "Social & Environmental Justice": [
+        "Community-Engaged Design",
+        "Public Space & Equity",
+        "Environmental Justice"
+      ]
+    },
+    "Urban & Regional Planning": {
+      "Community Development": [
+        "Housing & Real Estate",
+        "Economic Development",
+        "Social Planning & Policy"
+      ],
+      "Environmental Planning": [
+        "Land Use & Environmental Quality",
+        "Sustainable Development",
+        "Climate Action Planning"
+      ],
+      "Transportation Planning": [
+        "Transportation Systems Analysis",
+        "Public Transportation",
+        "Active Transportation (Walking/Biking)"
+      ]
+    }
+  }
+}

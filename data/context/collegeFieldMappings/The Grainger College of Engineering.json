@@ -1,0 +1,76 @@
+{
+  "Computer Science": [
+    "Algorithms & Theory of Computation",
+    "Artificial Intelligence & Machine Learning",
+    "Computer Architecture & Parallel Computing",
+    "Computer Vision & Graphics",
+    "Databases & Information Systems",
+    "Human-Computer Interaction (HCI)",
+    "Natural Language Processing (NLP)",
+    "Programming Languages & Software Engineering",
+    "Scientific Computing & Numerical Methods",
+    "Security & Privacy",
+    "Systems & Networking"
+  ],
+  "Electrical & Computer Engineering": [
+    "Circuits & VLSI Design",
+    "Communications",
+    "Control Systems",
+    "Electromagnetics & Photonics",
+    "Microelectronics & Nanotechnology",
+    "Power & Energy Systems",
+    "Quantum Information Science",
+    "Robotics & Autonomous Systems",
+    "Signal & Image Processing"
+  ],
+  "Mechanical Science & Engineering": [
+    "Biomechanics & Mechanobiology",
+    "Controls & Dynamics",
+    "Design & Manufacturing",
+    "Fluid Mechanics & Thermal Sciences",
+    "Solid Mechanics & Materials"
+  ],
+  "Civil & Environmental Engineering": [
+    "Construction Engineering & Management",
+    "Environmental Engineering & Science",
+    "Geotechnical Engineering",
+    "Structural Engineering & Materials",
+    "Sustainable & Resilient Infrastructure",
+    "Transportation Engineering",
+    "Water Resources Engineering"
+  ],
+  "Materials Science & Engineering": [
+    "Biomaterials & Biomedical Devices",
+    "Ceramics & Glasses",
+    "Computational Materials Science",
+    "Electronic Materials & Photonics",
+    "Metals & Alloys",
+    "Polymers & Soft Materials"
+  ],
+  "Bioengineering": [
+    "Biomedical Imaging & Sensing",
+    "Cell & Tissue Engineering",
+    "Computational & Systems Biology",
+    "Neural Engineering & Neurotechnology"
+  ],
+  "Aerospace Engineering": [
+    "Aerodynamics & Fluid Dynamics",
+    "Astrodynamics & Orbital Mechanics",
+    "Control & Estimation",
+    "Propulsion & Combustion",
+    "Structures & Materials"
+  ],
+  "Industrial & Enterprise Systems Engineering": [
+    "Data Analytics & Decision Sciences",
+    "Financial Engineering",
+    "Human Factors & Ergonomics",
+    "Operations Research & Optimization",
+    "Systems Engineering & Design"
+  ],
+  "Nuclear, Plasma & Radiological Engineering": [
+    "Fusion & Plasma Science",
+    "Nuclear Materials & Waste Management",
+    "Radiation, Instrumentation & Imaging",
+    "Reactor Physics & Thermal Hydraulics"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "Agricultural & Consumer Economics": [
+    "Agribusiness Management",
+    "Development Economics",
+    "Environmental & Resource Economics",
+    "Public Policy & Law",
+    "Finance & Risk Management"
+  ],
+  "Crop Sciences": [
+    "Agronomy & Agroecology",
+    "Bioinformatics & Statistics",
+    "Horticulture",
+    "Plant Breeding & Genetics",
+    "Plant Pathology & Weed Science"
+  ],
+  "Animal Sciences": [
+    "Animal Behavior & Welfare",
+    "Genetics, Genomics & Bioinformatics",
+    "Microbiology",
+    "Nutrition & Metabolism",
+    "Physiology"
+  ],
+  "Food Science & Human Nutrition": [
+    "Food Chemistry & Processing",
+    "Food Microbiology & Safety",
+    "Human Nutrition & Metabolism",
+    "Sensory Science"
+  ],
+  "Natural Resources & Environmental Sciences": [
+    "Conservation Biology & Ecology",
+    "Environmental Science & Management",
+    "Fisheries & Wildlife Science"
+  ]
+}

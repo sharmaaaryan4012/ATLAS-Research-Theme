@@ -1,0 +1,21 @@
+{
+  "Accountancy": [
+    "Auditing & Assurance",
+    "Financial Accounting",
+    "Managerial Accounting",
+    "Taxation"
+  ],
+  "Finance": [
+    "Asset Pricing",
+    "Corporate Finance",
+    "Financial Intermediation",
+    "Real Estate"
+  ],
+  "Business Administration": [
+    "Marketing",
+    "Operations Management",
+    "Organizational Behavior & Strategy",
+    "Supply Chain Management",
+    "Information Systems & Business Analytics"
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "The Grainger College of Engineering": {
+    "Computer Science": [
+      "Algorithms & Theory of Computation",
+      "Artificial Intelligence & Machine Learning",
+      "Computer Architecture & Parallel Computing",
+      "Computer Vision & Graphics",
+      "Databases & Information Systems",
+      "Human-Computer Interaction (HCI)",
+      "Natural Language Processing (NLP)",
+      "Programming Languages & Software Engineering",
+      "Scientific Computing & Numerical Methods",
+      "Security & Privacy",
+      "Systems & Networking"
+    ],
+    "Electrical & Computer Engineering": [
+      "Circuits & VLSI Design",
+      "Communications",
+      "Control Systems",
+      "Electromagnetics & Photonics",
+      "Microelectronics & Nanotechnology",
+      "Power & Energy Systems",
+      "Quantum Information Science",
+      "Robotics & Autonomous Systems",
+      "Signal & Image Processing"
+    ],
+    "Mechanical Science & Engineering": [
+      "Biomechanics & Mechanobiology",
+      "Controls & Dynamics",
+      "Design & Manufacturing",
+      "Fluid Mechanics & Thermal Sciences",
+      "Solid Mechanics & Materials"
+    ],
+    "Civil & Environmental Engineering": [
+      "Construction Engineering & Management",
+      "Environmental Engineering & Science",
+      "Geotechnical Engineering",
+      "Structural Engineering & Materials",
+      "Sustainable & Resilient Infrastructure",
+      "Transportation Engineering",
+      "Water Resources Engineering"
+    ],
+    "Materials Science & Engineering": [
+      "Biomaterials & Biomedical Devices",
+      "Ceramics & Glasses",
+      "Computational Materials Science",
+      "Electronic Materials & Photonics",
+      "Metals & Alloys",
+      "Polymers & Soft Materials"
+    ],
+    "Bioengineering": [
+      "Biomedical Imaging & Sensing",
+      "Cell & Tissue Engineering",
+      "Computational & Systems Biology",
+      "Neural Engineering & Neurotechnology"
+    ],
+    "Aerospace Engineering": [
+      "Aerodynamics & Fluid Dynamics",
+      "Astrodynamics & Orbital Mechanics",
+      "Control & Estimation",
+      "Propulsion & Combustion",
+      "Structures & Materials"
+    ],
+    "Industrial & Enterprise Systems Engineering": [
+      "Data Analytics & Decision Sciences",
+      "Financial Engineering",
+      "Human Factors & Ergonomics",
+      "Operations Research & Optimization",
+      "Systems Engineering & Design"
+    ],
+    "Nuclear, Plasma & Radiological Engineering": [
+      "Fusion & Plasma Science",
+      "Nuclear Materials & Waste Management",
+      "Radiation, Instrumentation & Imaging",
+      "Reactor Physics & Thermal Hydraulics"
+    ]
+  },
+  "College of Liberal Arts & Sciences": {
+    "Mathematics": [
+      "Algebra",
+      "Analysis",
+      "Applied & Computational Mathematics",
+      "Geometry & Topology",
+      "Logic & Foundations",
+      "Number Theory",
+      "Probability"
+    ],
+    "Statistics": [
+      "Applied Statistics",
+      "Computational Statistics & Data Science",
+      "Statistical Theory & Methods"
+    ],
+    "Physics": [
+      "Astrophysics & Cosmology",
+      "Atomic, Molecular & Optical Physics",
+      "Biophysics & Quantitative Biology",
+      "Condensed Matter Physics",
+      "High Energy & Particle Physics",
+      "Nuclear Physics",
+      "Quantum Information"
+    ],
+    "Chemistry": [
+      "Analytical Chemistry",
+      "Chemical Biology",
+      "Inorganic Chemistry",
+      "Materials Chemistry",
+      "Organic Chemistry",
+      "Physical Chemistry",
+      "Theoretical & Computational Chemistry"
+    ],
+    "Economics": [
+      "Applied Microeconomics",
+      "Econometrics",
+      "Economic Theory (Micro & Macro)",
+      "International & Development Economics",
+      "Public & Labor Economics"
+    ],
+    "Psychology": [
+      "Behavioral Neuroscience",
+      "Clinical & Community Psychology",
+      "Cognitive Neuroscience",
+      "Cognitive Psychology",
+      "Developmental Psychology",
+      "Industrial-Organizational Psychology",
+      "Social-Personality Psychology"
+    ],
+    "Political Science": [
+      "American Politics",
+      "Comparative Politics",
+      "International Relations",
+      "Political Methodology",
+      "Political Theory"
+    ],
+    "History": [
+      "American History",
+      "European History",
+      "Global & Transnational History",
+      "History of Science, Technology & Medicine",
+      "Pre-Modern History (Ancient/Medieval)"
+    ],
+    "Communication": [
+      "Health Communication",
+      "Interpersonal Communication",
+      "Media & Cinema Studies",
+      "Organizational Communication",
+      "Rhetoric & Public Discourse"
+    ],
+    "Linguistics": [
+        "Computational Linguistics",
+        "Phonetics & Phonology",
+        "Psycholinguistics",
+        "Semantics & Pragmatics",
+        "Syntax"
+    ]
+  },
+  "College of Agricultural, Consumer & Environmental Sciences (ACES)": {
+    "Agricultural & Consumer Economics": [
+      "Agribusiness Management",
+      "Development Economics",
+      "Environmental & Resource Economics",
+      "Public Policy & Law",
+      "Finance & Risk Management"
+    ],
+    "Crop Sciences": [
+      "Agronomy & Agroecology",
+      "Bioinformatics & Statistics",
+      "Horticulture",
+      "Plant Breeding & Genetics",
+      "Plant Pathology & Weed Science"
+    ],
+    "Animal Sciences": [
+      "Animal Behavior & Welfare",
+      "Genetics, Genomics & Bioinformatics",
+      "Microbiology",
+      "Nutrition & Metabolism",
+      "Physiology"
+    ],
+    "Food Science & Human Nutrition": [
+      "Food Chemistry & Processing",
+      "Food Microbiology & Safety",
+      "Human Nutrition & Metabolism",
+      "Sensory Science"
+    ],
+    "Natural Resources & Environmental Sciences": [
+      "Conservation Biology & Ecology",
+      "Environmental Science & Management",
+      "Fisheries & Wildlife Science"
+    ]
+  },
+  "Gies College of Business": {
+    "Accountancy": [
+      "Auditing & Assurance",
+      "Financial Accounting",
+      "Managerial Accounting",
+      "Taxation"
+    ],
+    "Finance": [
+      "Asset Pricing",
+      "Corporate Finance",
+      "Financial Intermediation",
+      "Real Estate"
+    ],
+    "Business Administration": [
+      "Marketing",
+      "Operations Management",
+      "Organizational Behavior & Strategy",
+      "Supply Chain Management",
+      "Information Systems & Business Analytics"
+    ]
+  },
+  "School of Information Sciences (iSchool)": {
+    "Information Sciences": [
+      "Archives & Special Collections",
+      "Data Science & Analytics",
+      "Human-Centered Design & Systems",
+      "Information Organization & Access",
+      "Knowledge Management & Information Policy",
+      "Youth Services & Librarianship"
+    ]
+  },
+  "College of Education": {
+    "Curriculum & Instruction": [
+      "Bilingual & ESL Education",
+      "Digital Learning",
+      "Literacy Studies",
+      "STEM Education"
+    ],
+    "Educational Psychology": [
+      "Cognitive Science of Teaching & Learning",
+      "Counseling Psychology",
+      "Developmental Sciences",
+      "Quantitative & Evaluative Methods"
+    ],
+    "Education Policy, Organization & Leadership": [
+      "Educational Policy Studies",
+      "Higher Education",
+      "Human Resource Development"
+    ],
+    "Special Education": [
+      "Autism & Developmental Disabilities",
+      "Learning Disabilities",
+      "Inclusive Education"
+    ]
+  },
+  "College of Law": {
+    "Legal Studies": [
+      "Business & Commercial Law",
+      "Constitutional & Public Law",
+      "Criminal Law & Procedure",
+      "Intellectual Property & Technology Law",
+      "International & Comparative Law",
+      "Taxation & Employee Benefits"
+    ]
+  },
+  "College of Applied Health Sciences": {
+    "Kinesiology & Community Health": [
+      "Biomechanics",
+      "Community Health",
+      "Exercise Physiology",
+      "Kinesiology"
+    ],
+    "Speech & Hearing Science": [
+      "Audiology",
+      "Language Science",
+      "Neuroscience of Communication",
+      "Speech-Language Pathology"
+    ]
+  },
+  "College of Fine & Applied Arts": {
+    "Architecture": [
+      "Architectural History & Theory",
+      "Building Performance",
+      "Design & Urbanism",
+      "Health & Well-being"
+    ],
+    "Landscape Architecture": [
+      "Cultural Heritage",
+      "Ecological Design",
+      "Social & Environmental Justice"
+    ],
+    "Urban & Regional Planning": [
+      "Community Development",
+      "Environmental Planning",
+      "Transportation Planning"
+    ]
+  }
+}
