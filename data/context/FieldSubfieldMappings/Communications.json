@@ -1,6 +1,6 @@
-[
-  "Wireless Communication & Networks",
-  "Information Theory & Coding",
-  "Optical Communication",
-  "Network Science & Theory"
-]
+{
+  "Wireless Communication & Networks": "The study of technologies like Wi-Fi, 5G/6G, and satellite communications for untethered information transfer.",
+  "Information Theory & Coding": "The mathematical study of the fundamental limits of data compression and reliable communication.",
+  "Optical Communication": "The use of light, typically through fiber optics, to transmit information over long distances at high data rates.",
+  "Network Science & Theory": "The study of complex networks, such as the internet and social networks, using tools from graph theory and statistical physics."
+}

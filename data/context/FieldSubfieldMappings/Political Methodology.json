@@ -1,6 +1,6 @@
-[
-  "Quantitative & Statistical Methods",
-  "Formal Theory & Modeling",
-  "Qualitative & Mixed Methods",
-  "Computational Social Science"
-]
+{
+  "Quantitative & Statistical Methods": "The application of statistical methods to analyze political data.",
+  "Formal Theory & Modeling": "The use of mathematical models, such as game theory, to study political phenomena.",
+  "Qualitative & Mixed Methods": "The use of case studies, interviews, and other qualitative methods to study politics.",
+  "Computational Social Science": "The use of computational methods to analyze large-scale political data, such as from social media."
+}

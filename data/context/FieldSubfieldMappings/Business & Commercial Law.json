@@ -1,6 +1,6 @@
-[
-  "Corporate Law",
-  "Bankruptcy",
-  "Securities Regulation",
-  "Commercial Transactions"
-]
+{
+  "Corporate Law": "The law governing corporations and other business entities.",
+  "Bankruptcy": "The law governing the process of resolving the debts of individuals and businesses that cannot pay their creditors.",
+  "Securities Regulation": "The law governing the issuance and trading of securities.",
+  "Commercial Transactions": "The law governing commercial transactions, such as sales and leases."
+}

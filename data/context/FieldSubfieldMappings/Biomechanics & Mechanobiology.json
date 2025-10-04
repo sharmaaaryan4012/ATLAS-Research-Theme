@@ -1,6 +1,6 @@
-[
-  "Cellular & Tissue Mechanics",
-  "Musculoskeletal Biomechanics",
-  "Bio-inspired Design",
-  "Cardiovascular Biomechanics"
-]
+{
+  "Cellular & Tissue Mechanics": "The study of how mechanical forces affect the behavior and function of cells and biological tissues.",
+  "Musculoskeletal Biomechanics": "The analysis of the mechanics of bones, muscles, ligaments, and joints during human movement.",
+  "Bio-inspired Design": "The development of engineering solutions inspired by the designs and processes found in nature.",
+  "Cardiovascular Biomechanics": "The study of the mechanics of the heart, blood vessels, and blood flow."
+}

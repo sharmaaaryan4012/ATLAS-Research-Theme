@@ -33,8 +33,12 @@ SERIALIZATION_DIR = os.path.join(JSONS_DIR, "serialization")
 KNOWLEDGEBASE_DIR = os.path.join(DATA_DIR, "knowledgebase")
 
 # === MASTER JSON FILES ===
-MASTER_COLLEGE_FIELD_MAPPING_JSON = os.path.join(DATA_CONTEXT_DIR, "MasterCollegeFieldMapping.json")
-MASTER_FIELD_SUBFIELD_MAPPING_JSON = os.path.join(DATA_CONTEXT_DIR, "MasterFieldSubfieldMapping.json")
+MASTER_COLLEGE_FIELD_MAPPING_JSON = os.path.join(
+    DATA_CONTEXT_DIR, "MasterCollegeFieldMapping.json"
+)
+MASTER_FIELD_SUBFIELD_MAPPING_JSON = os.path.join(
+    DATA_CONTEXT_DIR, "MasterFieldSubfieldMapping.json"
+)
 
 # === DOCS SUBDIRS ===
 DIAGRAMS_DIR = os.path.join(DOCS_DIR, "diagrams")
@@ -45,6 +49,10 @@ SRC_CONFIG_DIR = os.path.join(SRC_DIR, "config")
 SRC_CONTEXT_DIR = os.path.join(SRC_DIR, "context")
 
 # === MISC SCRIPTS ===
-CREATE_COLLEGE_FIELD_MAPPINGS_SCRIPT = os.path.join(MISC_DIR, "createCollegeFieldMappings.py")
-CREATE_FIELD_SUBFIELD_MAPPINGS_SCRIPT = os.path.join(MISC_DIR, "createFieldSubfieldMappings.py")
+CREATE_COLLEGE_FIELD_MAPPINGS_SCRIPT = os.path.join(
+    MISC_DIR, "createCollegeFieldMappings.py"
+)
+CREATE_FIELD_SUBFIELD_MAPPINGS_SCRIPT = os.path.join(
+    MISC_DIR, "createFieldSubfieldMappings.py"
+)
 CHECK_MAPPING_DISCREPANCY_SCRIPT = os.path.join(MISC_DIR, "checkMappingDiscrepency.py")

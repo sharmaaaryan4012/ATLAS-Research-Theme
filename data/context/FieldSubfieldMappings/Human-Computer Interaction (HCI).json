@@ -1,7 +1,7 @@
-[
-  "User Interface (UI) & User Experience (UX) Design",
-  "Ubiquitous & Mobile Computing",
-  "Social Computing",
-  "Accessibility & Assistive Technology",
-  "Visualization & Visual Analytics"
-]
+{
+  "User Interface (UI) & User Experience (UX) Design": "The design of the visual and interactive elements of a system and the overall experience a person has when using it.",
+  "Ubiquitous & Mobile Computing": "The paradigm of embedding computational capabilities into everyday objects and environments, accessible via mobile devices.",
+  "Social Computing": "The study of how people interact with computational systems in social contexts, including social media and collaborative tools.",
+  "Accessibility & Assistive Technology": "The design of technology and systems to be usable by people with a wide range of disabilities.",
+  "Visualization & Visual Analytics": "The creation of interactive visual representations of data to amplify human cognition and facilitate discovery."
+}

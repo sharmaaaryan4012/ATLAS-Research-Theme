@@ -1,6 +1,6 @@
-[
-  "Quantitative Finance",
-  "Risk Management",
-  "Algorithmic Trading",
-  "Stochastic Modeling"
-]
+{
+  "Quantitative Finance": "The use of mathematical models and large datasets to analyze financial markets and securities.",
+  "Risk Management": "The identification, evaluation, and prioritization of financial risks followed by coordinated application of resources to minimize them.",
+  "Algorithmic Trading": "The use of computer programs to execute trading strategies at high speeds.",
+  "Stochastic Modeling": "The use of probability and stochastic processes to model the random behavior of financial markets."
+}

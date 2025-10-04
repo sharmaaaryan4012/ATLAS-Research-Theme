@@ -1,7 +1,7 @@
-[
-  "Image & Video Analysis",
-  "3D Reconstruction & Scene Understanding",
-  "Computational Photography",
-  "Rendering & Animation",
-  "Visual Recognition & Detection"
-]
+{
+  "Image & Video Analysis": "The techniques for processing and extracting meaningful information from digital images and video streams.",
+  "3D Reconstruction & Scene Understanding": "The process of creating 3D models from images or sensor data and interpreting the geometry and semantics of a scene.",
+  "Computational Photography": "The convergence of computer graphics, computer vision, and optics to overcome the limitations of traditional photography.",
+  "Rendering & Animation": "The process of generating photorealistic or stylized images from 2D or 3D models and creating the illusion of motion.",
+  "Visual Recognition & Detection": "The task of identifying and locating objects, faces, and activities within images and videos."
+}

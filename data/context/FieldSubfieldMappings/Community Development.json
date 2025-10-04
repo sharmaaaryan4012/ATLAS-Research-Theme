@@ -1,5 +1,5 @@
-[
-  "Housing & Real Estate",
-  "Economic Development",
-  "Social Planning & Policy"
-]
+{
+  "Housing & Real Estate": "The planning and development of housing and real estate.",
+  "Economic Development": "The creation of wealth from which community benefits are realized.",
+  "Social Planning & Policy": "The planning of social services and policies."
+}

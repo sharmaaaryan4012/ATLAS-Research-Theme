@@ -1,7 +1,7 @@
-[
-  "Network & Distributed System Security",
-  "Cryptography & Cryptanalysis",
-  "Software & Systems Security",
-  "Privacy-Enhancing Technologies",
-  "Hardware Security"
-]
+{
+  "Network & Distributed System Security": "The protection of data and services in networked environments, including defending against attacks like denial-of-service.",
+  "Cryptography & Cryptanalysis": "The design of cryptographic protocols and the analysis of their strength against adversarial attacks.",
+  "Software & Systems Security": "The identification and mitigation of vulnerabilities in software code and operating systems.",
+  "Privacy-Enhancing Technologies": "The development of technologies that enable online activities without compromising user privacy, such as anonymity systems and differential privacy.",
+  "Hardware Security": "The protection of the physical hardware components of a computing system from malicious attacks."
+}

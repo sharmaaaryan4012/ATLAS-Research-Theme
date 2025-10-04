@@ -1,6 +1,6 @@
-[
-  "Neutronics & Reactor Analysis",
-  "Advanced Reactor Design",
-  "Nuclear Power Plant Safety",
-  "Multiphase Flow & Heat Transfer"
-]
+{
+  "Neutronics & Reactor Analysis": "The study of the behavior of neutrons in a nuclear reactor, which governs the chain reaction.",
+  "Advanced Reactor Design": "The development of new, safer, and more efficient nuclear reactor designs.",
+  "Nuclear Power Plant Safety": "The analysis and engineering of systems to ensure the safe operation of nuclear power plants.",
+  "Multiphase Flow & Heat Transfer": "The study of fluid flow and heat transfer in the complex conditions inside a nuclear reactor core."
+}

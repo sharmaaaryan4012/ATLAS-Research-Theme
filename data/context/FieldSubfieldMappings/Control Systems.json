@@ -1,6 +1,6 @@
-[
-  "Linear & Nonlinear Control",
-  "Optimal & Stochastic Control",
-  "Networked Control Systems",
-  "Control of Autonomous Systems"
-]
+{
+  "Linear & Nonlinear Control": "The design of controllers for systems described by linear and nonlinear mathematical models.",
+  "Optimal & Stochastic Control": "The design of controllers that optimize a specific performance criterion, often in the presence of randomness.",
+  "Networked Control Systems": "The study of control systems where sensors, actuators, and controllers are interconnected over a communication network.",
+  "Control of Autonomous Systems": "The application of control theory to enable autonomous operation of systems like self-driving cars and drones."
+}

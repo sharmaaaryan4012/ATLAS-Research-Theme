@@ -1,6 +1,6 @@
-[
-  "Human-Computer Interaction (HCI)",
-  "User Experience (UX) Research & Design",
-  "Computer-Supported Cooperative Work (CSCW)",
-  "Social Computing"
-]
+{
+  "Human-Computer Interaction (HCI)": "The design and evaluation of computer systems with a focus on human users.",
+  "User Experience (UX) Research & Design": "The process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.",
+  "Computer-Supported Cooperative Work (CSCW)": "The study of how people work together with the help of computer systems.",
+  "Social Computing": "The study of the intersection of social behavior and computational systems."
+}

@@ -1,6 +1,6 @@
-[
-  "Statistical Learning",
-  "Predictive Modeling",
-  "Prescriptive Analytics",
-  "Simulation"
-]
+{
+  "Statistical Learning": "The use of statistical methods as a foundation for machine learning and predictive modeling.",
+  "Predictive Modeling": "The process of using data and statistical models to predict future outcomes.",
+  "Prescriptive Analytics": "The area of business analytics dedicated to finding the best course of action for a given situation.",
+  "Simulation": "The imitation of the operation of a real-world process or system over time, often using computer models."
+}

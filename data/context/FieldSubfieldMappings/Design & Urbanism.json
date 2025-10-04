@@ -1,5 +1,5 @@
-[
-  "Urban Design",
-  "Digital Fabrication",
-  "Social Impact Design"
-]
+{
+  "Urban Design": "The design of the physical features of cities.",
+  "Digital Fabrication": "The use of computer-controlled machines to build objects.",
+  "Social Impact Design": "The practice of using design to address social problems."
+}

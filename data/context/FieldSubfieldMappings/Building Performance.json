@@ -1,5 +1,5 @@
-[
-  "Energy Efficiency & Sustainability",
-  "Structural Technology",
-  "Building Materials & Envelopes"
-]
+{
+  "Energy Efficiency & Sustainability": "The design of buildings that use less energy and have a smaller environmental impact.",
+  "Structural Technology": "The study of the materials and methods used to build structures.",
+  "Building Materials & Envelopes": "The study of the materials used to construct the exterior of buildings."
+}

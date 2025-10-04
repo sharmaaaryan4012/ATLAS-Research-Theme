@@ -1,5 +1,5 @@
-[
-  "Formal Semantics",
-  "Lexical Semantics",
-  "Discourse & Pragmatics"
-]
+{
+  "Formal Semantics": "The use of logic and mathematics to study the literal meaning of sentences.",
+  "Lexical Semantics": "The study of word meaning.",
+  "Discourse & Pragmatics": "The study of how context contributes to meaning in language."
+}

@@ -1,6 +1,6 @@
-[
-  "Vibrations & Acoustics",
-  "Nonlinear Dynamics & Chaos",
-  "Mechatronics & Embedded Systems",
-  "Vehicle Dynamics & Control"
-]
+{
+  "Vibrations & Acoustics": "The study of mechanical oscillations and the science of sound and its control.",
+  "Nonlinear Dynamics & Chaos": "The study of systems whose behavior is not proportional to their inputs, often leading to complex and unpredictable dynamics.",
+  "Mechatronics & Embedded Systems": "The integration of mechanical engineering with electronics and computer control in the design of products and systems.",
+  "Vehicle Dynamics & Control": "The study of the motion of vehicles (ground, air, and sea) and the design of systems to control their movement."
+}

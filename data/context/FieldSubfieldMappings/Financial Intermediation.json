@@ -1,5 +1,5 @@
-[
-  "Banking & Financial Institutions",
-  "FinTech & Financial Innovation",
-  "Household Finance"
-]
+{
+  "Banking & Financial Institutions": "The study of banks and other financial institutions.",
+  "FinTech & Financial Innovation": "The study of the use of technology in finance.",
+  "Household Finance": "The study of the financial decisions of households."
+}

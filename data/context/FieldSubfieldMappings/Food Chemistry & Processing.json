@@ -1,5 +1,5 @@
-[
-  "Food Engineering",
-  "Flavor Chemistry",
-  "Food Ingredient Functionality"
-]
+{
+  "Food Engineering": "The application of engineering principles to the design of food processing equipment.",
+  "Flavor Chemistry": "The study of the chemical compounds that create the flavor of food.",
+  "Food Ingredient Functionality": "The study of how different ingredients affect the properties of food."
+}

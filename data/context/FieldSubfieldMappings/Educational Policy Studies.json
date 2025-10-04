@@ -1,5 +1,5 @@
-[
-  "Politics of Education",
-  "Economics of Education",
-  "History & Philosophy of Education"
-]
+{
+  "Politics of Education": "The study of the political processes that shape education policy.",
+  "Economics of Education": "The study of the economic issues related to education.",
+  "History & Philosophy of Education": "The study of the historical and philosophical foundations of education."
+}

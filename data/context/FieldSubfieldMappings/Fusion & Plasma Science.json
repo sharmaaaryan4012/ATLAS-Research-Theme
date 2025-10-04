@@ -1,6 +1,6 @@
-[
-  "Plasma Physics",
-  "Fusion Technology & Engineering",
-  "Plasma-Material Interactions",
-  "Low-Temperature Plasmas"
-]
+{
+  "Plasma Physics": "The fundamental study of the behavior of ionized gases (plasmas), the fourth state of matter.",
+  "Fusion Technology & Engineering": "The development of the technologies and materials needed to build a fusion power plant.",
+  "Plasma-Material Interactions": "The study of how hot plasmas interact with the materials that contain them, a key challenge in fusion energy.",
+  "Low-Temperature Plasmas": "The study and application of plasmas at near-room temperature, used in semiconductor manufacturing and lighting."
+}

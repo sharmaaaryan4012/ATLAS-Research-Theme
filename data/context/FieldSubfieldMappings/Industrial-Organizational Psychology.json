@@ -1,6 +1,6 @@
-[
-  "Personnel Selection & Training",
-  "Leadership & Motivation",
-  "Organizational Behavior",
-  "Occupational Health Psychology"
-]
+{
+  "Personnel Selection & Training": "The development and validation of methods for selecting, training, and evaluating employees.",
+  "Leadership & Motivation": "The study of what makes an effective leader and how to motivate employees.",
+  "Organizational Behavior": "The study of how individuals and groups behave within organizations.",
+  "Occupational Health Psychology": "The study of how to promote the health, safety, and well-being of workers."
+}

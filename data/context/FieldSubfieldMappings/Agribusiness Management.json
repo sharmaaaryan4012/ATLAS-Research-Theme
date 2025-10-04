@@ -1,5 +1,5 @@
-[
-  "Farm Management",
-  "Food & Agribusiness Marketing",
-  "Supply Chain Management"
-]
+{
+  "Farm Management": "The application of business principles to the operation of a farm.",
+  "Food & Agribusiness Marketing": "The marketing of agricultural products and food.",
+  "Supply Chain Management": "The management of the flow of goods and services in the food and agricultural sector."
+}

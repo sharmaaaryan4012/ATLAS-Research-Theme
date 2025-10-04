@@ -1,5 +1,5 @@
-[
-  "Applied Ethology",
-  "Stress Physiology",
-  "Animal Housing & Management"
-]
+{
+  "Applied Ethology": "The study of the behavior of animals in their natural or semi-natural habitats.",
+  "Stress Physiology": "The study of the physiological responses of animals to stress.",
+  "Animal Housing & Management": "The design of housing and management systems that promote animal welfare."
+}

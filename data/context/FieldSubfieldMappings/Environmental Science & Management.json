@@ -1,5 +1,5 @@
-[
-  "Soil Science & Biogeochemistry",
-  "Water Quality & Watershed Management",
-  "Restoration Ecology"
-]
+{
+  "Soil Science & Biogeochemistry": "The study of the chemical, physical, biological, and mineralogical composition of soils.",
+  "Water Quality & Watershed Management": "The management of water resources at the watershed scale to protect water quality.",
+  "Restoration Ecology": "The practice of renewing and restoring degraded, damaged, or destroyed ecosystems."
+}

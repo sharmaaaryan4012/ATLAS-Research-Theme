@@ -1,6 +1,6 @@
-[
-  "Organometallic Chemistry",
-  "Bioinorganic Chemistry",
-  "Solid-State Chemistry",
-  "Coordination Chemistry"
-]
+{
+  "Organometallic Chemistry": "The study of chemical compounds containing at least one chemical bond between a carbon atom of an organic compound and a metal.",
+  "Bioinorganic Chemistry": "The study of the role of metals in biology.",
+  "Solid-State Chemistry": "The study of the synthesis, structure, and properties of solid materials.",
+  "Coordination Chemistry": "The study of compounds consisting of a central metal atom or ion bonded to a surrounding group of molecules or ions."
+}

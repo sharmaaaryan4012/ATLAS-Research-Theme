@@ -1,6 +1,6 @@
-[
-  "Power Electronics & Motor Drives",
-  "Smart Grids & Grid Integration",
-  "Renewable Energy Systems",
-  "Power System Dynamics & Control"
-]
+{
+  "Power Electronics & Motor Drives": "The use of solid-state electronics to control and convert electric power, essential for electric vehicles and renewable energy.",
+  "Smart Grids & Grid Integration": "The modernization of the electrical grid using information technology to improve reliability, efficiency, and integrate renewable sources.",
+  "Renewable Energy Systems": "The engineering of systems for harnessing energy from sources like solar, wind, and geothermal.",
+  "Power System Dynamics & Control": "The analysis and control of the stability of large-scale electrical power grids."
+}

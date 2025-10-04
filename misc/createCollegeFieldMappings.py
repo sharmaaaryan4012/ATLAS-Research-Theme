@@ -4,7 +4,16 @@ Project: ATLAS - Research Theme
 File: createCollegeFieldMappings.py
 Description: Splits MasterCollegeFieldMapping.json into per-college files under:
              data/context/collegeFieldMappings/<CollegeName>.json
-             Each file maps { Department: [Fields...] } for that college.
+
+Master format:
+  college -> department -> (EITHER)
+      - dict[field_name -> field_description (str)]
+      - department_description (str)    # when there are no fields listed
+
+Output format (per-college file):
+  department -> (EITHER)
+      - dict[field_name -> field_description (str)]
+      - department_description (str)
 """
 
 from pathlib import Path
@@ -51,7 +60,7 @@ def write_json(path, obj, overwrite=False):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Create per-college JSON mappings from master college-field mapping."
+        description="Create per-college JSON files (with field descriptions) from master college-field mapping."
     )
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files.")
     parser.add_argument("--dry-run", action="store_true", help="Show actions without writing files.")
@@ -70,7 +79,7 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
     results = {"written": 0, "skipped": 0}
 
-    # master: college -> { department: [fields] }
+    # master: college -> department -> (dict[field -> desc] OR department_desc str)
     for college, dept_map in master.items():
         if not isinstance(dept_map, dict):
             print(f"WARNING: Skipping college with invalid structure: {college}")
@@ -79,6 +88,8 @@ def main():
         college_filename = f"{sanitize_filename(college)}.json"
         out_path = os.path.join(out_dir, college_filename)
 
+        # For per-college file, we simply write that college's department map as-is
+        # (so field descriptions or department-only descriptions are preserved).
         if args.dry_run:
             print(f"DRY RUN: Would write {out_path}")
             continue

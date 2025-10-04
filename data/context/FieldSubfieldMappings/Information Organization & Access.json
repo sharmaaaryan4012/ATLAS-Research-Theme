@@ -1,6 +1,6 @@
-[
-  "Knowledge Organization Systems",
-  "Metadata & Semantics",
-  "Information Retrieval",
-  "Digital Libraries"
-]
+{
+  "Knowledge Organization Systems": "The design of systems, such as classifications and thesauri, for organizing information.",
+  "Metadata & Semantics": "The study of data that provides information about other data, and the study of meaning.",
+  "Information Retrieval": "The science of searching for information within documents.",
+  "Digital Libraries": "The design and management of digital collections of information."
+}

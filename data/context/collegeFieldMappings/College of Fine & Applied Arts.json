@@ -1,18 +1,18 @@
 {
-  "Architecture": [
-    "Architectural History & Theory",
-    "Building Performance",
-    "Design & Urbanism",
-    "Health & Well-being"
-  ],
-  "Landscape Architecture": [
-    "Cultural Heritage",
-    "Ecological Design",
-    "Social & Environmental Justice"
-  ],
-  "Urban & Regional Planning": [
-    "Community Development",
-    "Environmental Planning",
-    "Transportation Planning"
-  ]
+  "Architecture": {
+    "Architectural History & Theory": "The study of the historical evolution and theoretical principles of architectural design.",
+    "Building Performance": "The science of designing buildings for energy efficiency, structural integrity, and sustainability.",
+    "Design & Urbanism": "The study of architectural design at the scale of buildings and their relationship to the urban environment.",
+    "Health & Well-being": "The design of built environments that promote human health, wellness, and quality of life."
+  },
+  "Landscape Architecture": {
+    "Cultural Heritage": "The study and preservation of landscapes with significant cultural and historical value.",
+    "Ecological Design": "The design of landscapes that are integrated with ecological processes, such as stormwater management and restoration.",
+    "Social & Environmental Justice": "The practice of landscape architecture to address issues of equity, community engagement, and environmental justice."
+  },
+  "Urban & Regional Planning": {
+    "Community Development": "The planning of housing, economic opportunities, and social policies to improve community well-being.",
+    "Environmental Planning": "The process of planning land use and development to protect environmental quality and promote sustainability.",
+    "Transportation Planning": "The design and analysis of transportation systems to ensure efficient and equitable mobility."
+  }
 }

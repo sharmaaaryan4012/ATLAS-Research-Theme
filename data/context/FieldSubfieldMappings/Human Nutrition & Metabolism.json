@@ -1,5 +1,5 @@
-[
-  "Clinical Nutrition",
-  "Community Nutrition",
-  "Molecular Nutrition & Nutrigenomics"
-]
+{
+  "Clinical Nutrition": "The study of the relationship between diet and disease.",
+  "Community Nutrition": "The promotion of good nutrition in communities.",
+  "Molecular Nutrition & Nutrigenomics": "The study of how nutrients affect gene expression and how genetic variation affects the response to nutrients."
+}

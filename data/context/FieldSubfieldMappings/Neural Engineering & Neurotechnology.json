@@ -1,6 +1,6 @@
-[
-  "Brain-Computer Interfaces",
-  "Neuroimaging",
-  "Neural Tissue Engineering",
-  "Computational Modeling of Neural Systems"
-]
+{
+  "Brain-Computer Interfaces": "The development of direct communication pathways between the brain and an external device.",
+  "Neuroimaging": "The use of various techniques to either directly or indirectly image the structure, function, or pharmacology of the nervous system.",
+  "Neural Tissue Engineering": "The application of engineering methods to promote the repair and regeneration of nervous tissue.",
+  "Computational Modeling of Neural Systems": "The use of computer simulations to model the behavior of neurons and neural networks."
+}

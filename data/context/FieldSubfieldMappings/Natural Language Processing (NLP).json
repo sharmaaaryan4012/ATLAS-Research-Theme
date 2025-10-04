@@ -1,7 +1,7 @@
-[
-  "Machine Translation",
-  "Information Extraction & Text Mining",
-  "Dialogue & Interactive Systems",
-  "Computational Social Science",
-  "Language Grounding & Multimodality"
-]
+{
+  "Machine Translation": "The task of automatically translating text or speech from one language to another.",
+  "Information Extraction & Text Mining": "The process of automatically extracting structured information from unstructured text documents.",
+  "Dialogue & Interactive Systems": "The design of conversational agents (chatbots, voice assistants) that can interact with humans in natural language.",
+  "Computational Social Science": "The use of computational methods, especially NLP, to analyze large-scale social data and understand social phenomena.",
+  "Language Grounding & Multimodality": "The study of connecting language to other modalities, such as vision and action, to create a deeper understanding of meaning."
+}

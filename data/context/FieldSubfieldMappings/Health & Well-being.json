@@ -1,5 +1,5 @@
-[
-  "Healthcare Design",
-  "Environments for Aging",
-  "Lighting & Daylighting"
-]
+{
+  "Healthcare Design": "The design of healthcare facilities, such as hospitals and clinics.",
+  "Environments for Aging": "The design of environments that are safe and comfortable for older adults.",
+  "Lighting & Daylighting": "The design of lighting systems that use both artificial and natural light."
+}

@@ -1,6 +1,6 @@
-[
-  "Hydrology & Hydraulic Engineering",
-  "Groundwater & Subsurface Flow",
-  "Water Resources Management & Policy",
-  "Ecohydrology"
-]
+{
+  "Hydrology & Hydraulic Engineering": "The study of the movement, distribution, and quality of water on Earth, and the engineering of water flow in pipes and channels.",
+  "Groundwater & Subsurface Flow": "The study of the flow of water beneath the Earth's surface in aquifers.",
+  "Water Resources Management & Policy": "The planning and management of water resources to balance competing demands from society and the environment.",
+  "Ecohydrology": "The study of the interactions between water and ecosystems."
+}

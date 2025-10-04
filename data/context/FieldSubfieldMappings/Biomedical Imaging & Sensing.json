@@ -1,6 +1,6 @@
-[
-  "Magnetic Resonance Imaging (MRI)",
-  "Optical Imaging & Microscopy",
-  "Ultrasound & Photoacoustics",
-  "Biosensors & Diagnostics"
-]
+{
+  "Magnetic Resonance Imaging (MRI)": "An imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body.",
+  "Optical Imaging & Microscopy": "The use of light and advanced microscopes to visualize biological structures and processes at high resolution.",
+  "Ultrasound & Photoacoustics": "The use of sound waves and laser-generated sound to create images of tissues inside the body.",
+  "Biosensors & Diagnostics": "The development of analytical devices to detect biological molecules and diagnose diseases."
+}

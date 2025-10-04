@@ -1,5 +1,5 @@
-[
-  "Psychometrics & Measurement",
-  "Educational Statistics",
-  "Program Evaluation"
-]
+{
+  "Psychometrics & Measurement": "The theory and technique of psychological measurement.",
+  "Educational Statistics": "The application of statistical methods to educational research.",
+  "Program Evaluation": "The systematic assessment of the merit, worth, and significance of a program."
+}

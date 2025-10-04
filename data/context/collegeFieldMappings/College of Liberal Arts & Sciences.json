@@ -1,78 +1,78 @@
 {
-  "Mathematics": [
-    "Algebra",
-    "Analysis",
-    "Applied & Computational Mathematics",
-    "Geometry & Topology",
-    "Logic & Foundations",
-    "Number Theory",
-    "Probability"
-  ],
-  "Statistics": [
-    "Applied Statistics",
-    "Computational Statistics & Data Science",
-    "Statistical Theory & Methods"
-  ],
-  "Physics": [
-    "Astrophysics & Cosmology",
-    "Atomic, Molecular & Optical Physics",
-    "Biophysics & Quantitative Biology",
-    "Condensed Matter Physics",
-    "High Energy & Particle Physics",
-    "Nuclear Physics",
-    "Quantum Information"
-  ],
-  "Chemistry": [
-    "Analytical Chemistry",
-    "Chemical Biology",
-    "Inorganic Chemistry",
-    "Materials Chemistry",
-    "Organic Chemistry",
-    "Physical Chemistry",
-    "Theoretical & Computational Chemistry"
-  ],
-  "Economics": [
-    "Applied Microeconomics",
-    "Econometrics",
-    "Economic Theory (Micro & Macro)",
-    "International & Development Economics",
-    "Public & Labor Economics"
-  ],
-  "Psychology": [
-    "Behavioral Neuroscience",
-    "Clinical & Community Psychology",
-    "Cognitive Neuroscience",
-    "Cognitive Psychology",
-    "Developmental Psychology",
-    "Industrial-Organizational Psychology",
-    "Social-Personality Psychology"
-  ],
-  "Political Science": [
-    "American Politics",
-    "Comparative Politics",
-    "International Relations",
-    "Political Methodology",
-    "Political Theory"
-  ],
-  "History": [
-    "American History",
-    "European History",
-    "Global & Transnational History",
-    "History of Science, Technology & Medicine",
-    "Pre-Modern History (Ancient/Medieval)"
-  ],
-  "Communication": [
-    "Health Communication",
-    "Interpersonal Communication",
-    "Media & Cinema Studies",
-    "Organizational Communication",
-    "Rhetoric & Public Discourse"
-  ],
-  "Linguistics": [
-    "Computational Linguistics",
-    "Phonetics & Phonology",
-    "Psycholinguistics",
-    "Semantics & Pragmatics",
-    "Syntax"
-  ]
+  "Mathematics": {
+    "Algebra": "The study of mathematical symbols and the rules for manipulating those symbols, including structures like groups, rings, and fields.",
+    "Analysis": "The branch of mathematics dealing with limits, continuity, derivatives, and integrals, providing the rigorous foundation for calculus.",
+    "Applied & Computational Mathematics": "The development and application of mathematical and computational methods to solve problems in science, engineering, and other fields.",
+    "Geometry & Topology": "The study of the properties of space, shape, and dimension, and the properties of objects that are preserved under continuous deformations.",
+    "Logic & Foundations": "The study of the principles of valid reasoning and the foundational axioms upon which all of mathematics is built.",
+    "Number Theory": "The study of integers and integer-valued functions, often called the 'Queen of Mathematics' for its deep and elegant properties.",
+    "Probability": "The branch of mathematics concerning the analysis of random phenomena and the likelihood of events occurring."
+  },
+  "Statistics": {
+    "Applied Statistics": "The application of statistical methods to solve real-world problems and make data-driven decisions in various domains.",
+    "Computational Statistics & Data Science": "The intersection of computer science and statistics, focusing on algorithms for analyzing and modeling large, complex datasets.",
+    "Statistical Theory & Methods": "The development of the fundamental principles and mathematical foundations of statistical inference and modeling."
+  },
+  "Physics": {
+    "Astrophysics & Cosmology": "The study of the physical properties and evolution of celestial objects and the universe as a whole.",
+    "Atomic, Molecular & Optical Physics": "The study of matter-matter and light-matter interactions at the scale of single atoms or molecules.",
+    "Biophysics & Quantitative Biology": "The application of the principles and methods of physics to understand biological systems and phenomena.",
+    "Condensed Matter Physics": "The study of the macroscopic and microscopic physical properties of matter, especially in the solid and liquid phases.",
+    "High Energy & Particle Physics": "The study of the fundamental constituents of matter and energy and their interactions at the highest energies.",
+    "Nuclear Physics": "The study of the constituents, structure, and behavior of atomic nuclei.",
+    "Quantum Information": "The study of information processing tasks that can be accomplished using the principles of quantum mechanics."
+  },
+  "Chemistry": {
+    "Analytical Chemistry": "The science of obtaining, processing, and communicating information about the composition and structure of matter.",
+    "Chemical Biology": "The application of chemical techniques and tools to study and manipulate biological systems.",
+    "Inorganic Chemistry": "The study of the synthesis, structure, and properties of inorganic and organometallic compounds.",
+    "Materials Chemistry": "The design, synthesis, and characterization of new materials with useful physical and chemical properties.",
+    "Organic Chemistry": "The study of the structure, properties, composition, reactions, and synthesis of carbon-containing compounds.",
+    "Physical Chemistry": "The study of macroscopic and particulate phenomena in chemical systems in terms of the principles and concepts of physics.",
+    "Theoretical & Computational Chemistry": "The use of computer simulation and mathematical models to understand and predict chemical behavior."
+  },
+  "Economics": {
+    "Applied Microeconomics": "The application of microeconomic principles to study specific markets and behaviors, such as labor, health, and industrial organization.",
+    "Econometrics": "The application of statistical methods to economic data to give empirical content to economic relationships.",
+    "Economic Theory (Micro & Macro)": "The development of fundamental models of economic behavior at the individual (micro) and aggregate (macro) levels.",
+    "International & Development Economics": "The study of economic interactions between countries and the economic challenges facing developing nations.",
+    "Public & Labor Economics": "The study of government policy's role in the economy and the dynamics of labor markets and employment."
+  },
+  "Psychology": {
+    "Behavioral Neuroscience": "The study of the biological bases of psychological processes and behavior.",
+    "Clinical & Community Psychology": "The assessment and treatment of mental illness and the promotion of psychological well-being at individual and community levels.",
+    "Cognitive Neuroscience": "The study of the neural mechanisms underlying cognition, often using brain imaging techniques.",
+    "Cognitive Psychology": "The study of mental processes such as attention, language use, memory, perception, and problem-solving.",
+    "Developmental Psychology": "The scientific study of how and why human beings change over the course of their life.",
+    "Industrial-Organizational Psychology": "The application of psychological principles to the workplace to improve productivity, health, and quality of work life.",
+    "Social-Personality Psychology": "The study of how individuals' thoughts, feelings, and behaviors are influenced by others, and the study of individual differences in personality."
+  },
+  "Political Science": {
+    "American Politics": "The study of political institutions, behavior, and policy in the United States.",
+    "Comparative Politics": "The comparative study of different countries' political systems in order to understand their similarities and differences.",
+    "International Relations": "The study of the interactions between nation-states, international organizations, and non-state actors in the global arena.",
+    "Political Methodology": "The development and application of quantitative and qualitative methods for the scientific study of politics.",
+    "Political Theory": "The study of fundamental questions about justice, power, rights, and the nature of the state, from ancient to contemporary thought."
+  },
+  "History": {
+    "American History": "The study of the political, social, economic, and cultural development of the United States.",
+    "European History": "The study of the past in the European continent, from antiquity to the present.",
+    "Global & Transnational History": "The study of historical connections and interactions that transcend national borders.",
+    "History of Science, Technology & Medicine": "The study of how scientific knowledge, technological systems, and medical practices have developed and changed over time.",
+    "Pre-Modern History (Ancient/Medieval)": "The study of human history from the beginning of recorded history until the early modern period."
+  },
+  "Communication": {
+    "Health Communication": "The study and use of communication strategies to inform and influence individual and community decisions that enhance health.",
+    "Interpersonal Communication": "The study of how people communicate in relationships, including verbal and nonverbal messages.",
+    "Media & Cinema Studies": "The critical analysis of film, television, and digital media, and their effects on society and culture.",
+    "Organizational Communication": "The study of communication processes and dynamics within and between organizations.",
+    "Rhetoric & Public Discourse": "The study of the art of persuasion and argumentation in public life, from political speeches to social movements."
+  },
+  "Linguistics": {
+    "Computational Linguistics": "The interdisciplinary field dealing with the statistical or rule-based modeling of natural language from a computational perspective.",
+    "Phonetics & Phonology": "The study of the sounds of human speech and the systematic organization of sounds in languages.",
+    "Psycholinguistics": "The study of the psychological and neurobiological factors that enable humans to acquire, use, and understand language.",
+    "Semantics & Pragmatics": "The study of meaning in language, both in its literal sense (semantics) and its contextual, inferred sense (pragmatics).",
+    "Syntax": "The study of the rules and principles that govern the sentence structure of languages."
+  }
 }

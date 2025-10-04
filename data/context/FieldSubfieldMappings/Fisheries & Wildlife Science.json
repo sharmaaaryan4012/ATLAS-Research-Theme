@@ -1,5 +1,5 @@
-[
-  "Wildlife Ecology & Management",
-  "Fisheries Biology",
-  "Human-Wildlife Interactions"
-]
+{
+  "Wildlife Ecology & Management": "The study of the ecology of wild animals and the management of their populations.",
+  "Fisheries Biology": "The study of the biology of fish and the management of fisheries.",
+  "Human-Wildlife Interactions": "The study of the interactions between humans and wildlife, including conflict and conservation."
+}

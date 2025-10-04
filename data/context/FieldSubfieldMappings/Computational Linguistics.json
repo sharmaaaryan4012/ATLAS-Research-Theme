@@ -1,5 +1,5 @@
-[
-  "Natural Language Processing (NLP)",
-  "Corpus Linguistics",
-  "Machine Learning for Language"
-]
+{
+  "Natural Language Processing (NLP)": "The application of computational techniques to the analysis and synthesis of natural language and speech.",
+  "Corpus Linguistics": "The study of language as expressed in samples (corpora) of 'real world' text.",
+  "Machine Learning for Language": "The use of machine learning algorithms to solve problems in natural language processing."
+}

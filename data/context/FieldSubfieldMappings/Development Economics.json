@@ -1,5 +1,5 @@
-[
-  "Agricultural Development",
-  "Poverty & Food Security",
-  "International Trade & Policy"
-]
+{
+  "Agricultural Development": "The study of economic development in the agricultural sector of developing countries.",
+  "Poverty & Food Security": "The study of the causes of poverty and food insecurity and the design of policies to address them.",
+  "International Trade & Policy": "The study of international trade in agricultural products and related government policies."
+}

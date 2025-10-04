@@ -1,5 +1,5 @@
-[
-  "Neural Bases of Speech & Language",
-  "Neurogenic Communication Disorders (e.g., Aphasia)",
-  "Cognitive Hearing Science"
-]
+{
+  "Neural Bases of Speech & Language": "The study of the brain mechanisms that underlie speech and language.",
+  "Neurogenic Communication Disorders (e.g., Aphasia)": "The study of communication disorders that result from damage to the nervous system.",
+  "Cognitive Hearing Science": "The study of the cognitive processes involved in hearing."
+}

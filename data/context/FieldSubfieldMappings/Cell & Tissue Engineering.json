@@ -1,6 +1,6 @@
-[
-  "Stem Cell Engineering",
-  "Regenerative Biomaterials",
-  "Mechanobiology",
-  "Drug & Gene Delivery"
-]
+{
+  "Stem Cell Engineering": "The use of engineering principles to control the growth and differentiation of stem cells into specific cell types.",
+  "Regenerative Biomaterials": "The design of materials that can stimulate the body's own repair mechanisms to regenerate tissues.",
+  "Mechanobiology": "The study of how physical forces and changes in cell or tissue mechanics contribute to development, physiology, and disease.",
+  "Drug & Gene Delivery": "The engineering of vehicles, such as nanoparticles, to deliver drugs or genetic material to specific cells or tissues."
+}

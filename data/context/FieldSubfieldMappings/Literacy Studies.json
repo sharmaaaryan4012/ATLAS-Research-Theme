@@ -1,5 +1,5 @@
-[
-  "Early & Adolescent Literacy",
-  "Digital & Media Literacy",
-  "Reading & Writing Pedagogy"
-]
+{
+  "Early & Adolescent Literacy": "The study of literacy development in children and adolescents.",
+  "Digital & Media Literacy": "The ability to access, analyze, evaluate, and create media in a variety of forms.",
+  "Reading & Writing Pedagogy": "The study of the methods of teaching reading and writing."
+}

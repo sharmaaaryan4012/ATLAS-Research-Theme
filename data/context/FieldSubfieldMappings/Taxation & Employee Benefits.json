@@ -1,6 +1,6 @@
-[
-  "Federal Income Taxation",
-  "Corporate & Partnership Taxation",
-  "Employee Benefits (ERISA)",
-  "Estate & Gift Taxation"
-]
+{
+  "Federal Income Taxation": "The law that governs the federal income tax.",
+  "Corporate & Partnership Taxation": "The law that governs the taxation of corporations and partnerships.",
+  "Employee Benefits (ERISA)": "The law that governs employee benefit plans, such as pensions and health insurance.",
+  "Estate & Gift Taxation": "The law that governs the taxation of transfers of wealth."
+}

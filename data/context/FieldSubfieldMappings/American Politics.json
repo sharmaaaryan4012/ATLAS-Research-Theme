@@ -1,6 +1,6 @@
-[
-  "Political Behavior & Public Opinion",
-  "Political Institutions (Congress, Presidency)",
-  "State & Local Politics",
-  "Race, Ethnicity & Politics"
-]
+{
+  "Political Behavior & Public Opinion": "The study of how and why citizens think and act in politics, including voting and political participation.",
+  "Political Institutions (Congress, Presidency)": "The study of the formal and informal rules that structure American political institutions.",
+  "State & Local Politics": "The study of politics and policy at the sub-national level.",
+  "Race, Ethnicity & Politics": "The study of the role of race and ethnicity in shaping American politics."
+}

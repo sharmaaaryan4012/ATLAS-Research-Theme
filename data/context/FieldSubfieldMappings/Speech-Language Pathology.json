@@ -1,5 +1,5 @@
-[
-  "Speech Sound Disorders",
-  "Voice & Fluency Disorders",
-  "Swallowing Disorders (Dysphagia)"
-]
+{
+  "Speech Sound Disorders": "The study of disorders that affect the production of speech sounds.",
+  "Voice & Fluency Disorders": "The study of disorders that affect the voice and the fluency of speech.",
+  "Swallowing Disorders (Dysphagia)": "The study of disorders that affect the ability to swallow."
+}

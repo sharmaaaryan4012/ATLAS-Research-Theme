@@ -1,34 +1,34 @@
 {
-  "Agricultural & Consumer Economics": [
-    "Agribusiness Management",
-    "Development Economics",
-    "Environmental & Resource Economics",
-    "Public Policy & Law",
-    "Finance & Risk Management"
-  ],
-  "Crop Sciences": [
-    "Agronomy & Agroecology",
-    "Bioinformatics & Statistics",
-    "Horticulture",
-    "Plant Breeding & Genetics",
-    "Plant Pathology & Weed Science"
-  ],
-  "Animal Sciences": [
-    "Animal Behavior & Welfare",
-    "Genetics, Genomics & Bioinformatics",
-    "Microbiology",
-    "Nutrition & Metabolism",
-    "Physiology"
-  ],
-  "Food Science & Human Nutrition": [
-    "Food Chemistry & Processing",
-    "Food Microbiology & Safety",
-    "Human Nutrition & Metabolism",
-    "Sensory Science"
-  ],
-  "Natural Resources & Environmental Sciences": [
-    "Conservation Biology & Ecology",
-    "Environmental Science & Management",
-    "Fisheries & Wildlife Science"
-  ]
+  "Agricultural & Consumer Economics": {
+    "Agribusiness Management": "The application of business principles to the operation and management of farms and agribusinesses.",
+    "Development Economics": "The study of economic challenges in developing countries, with a focus on agriculture, poverty, and food security.",
+    "Environmental & Resource Economics": "The economic study of natural resource management and environmental policies, including climate and energy issues.",
+    "Finance & Risk Management": "The study of financial markets and risk management strategies within the agricultural and food sectors.",
+    "Public Policy & Law": "The analysis of government policies, laws, and regulations affecting agriculture, food, and the environment."
+  },
+  "Animal Sciences": {
+    "Animal Behavior & Welfare": "The study of animal behavior and the promotion of animal health and well-being through proper management and housing.",
+    "Genetics, Genomics & Bioinformatics": "The application of genetic and computational tools to improve livestock health, productivity, and sustainability.",
+    "Microbiology": "The study of microorganisms in animal systems, particularly gut health and its impact on nutrition and disease.",
+    "Nutrition & Metabolism": "The study of the nutritional requirements of animals and the biochemical processes of nutrient utilization.",
+    "Physiology": "The study of the biological functions of animals, including reproduction, lactation, and growth."
+  },
+  "Crop Sciences": {
+    "Agronomy & Agroecology": "The study of crop production, soil management, and the ecological principles of sustainable agricultural systems.",
+    "Bioinformatics & Statistics": "The use of computational and statistical methods to analyze genomic data for crop improvement.",
+    "Horticulture": "The science and art of cultivating specialty crops such as fruits, vegetables, and ornamental plants.",
+    "Plant Breeding & Genetics": "The science of improving the genetic makeup of plants for desirable traits like yield, quality, and disease resistance.",
+    "Plant Pathology & Weed Science": "The study of plant diseases and weeds, and the development of integrated management strategies."
+  },
+  "Food Science & Human Nutrition": {
+    "Food Chemistry & Processing": "The study of the chemical composition of foods and the engineering principles behind food processing and preservation.",
+    "Food Microbiology & Safety": "The study of microorganisms in food, focusing on foodborne pathogens, fermentation, and food safety practices.",
+    "Human Nutrition & Metabolism": "The study of how nutrients and diet affect human health, metabolism, and the prevention of chronic diseases.",
+    "Sensory Science": "The scientific discipline used to evoke, measure, analyze, and interpret human reactions to products as perceived through the senses."
+  },
+  "Natural Resources & Environmental Sciences": {
+    "Conservation Biology & Ecology": "The study of biodiversity, population dynamics, and the principles for conserving species and ecosystems.",
+    "Environmental Science & Management": "The interdisciplinary study of soil, water, and ecosystems, and their management for environmental quality.",
+    "Fisheries & Wildlife Science": "The study of the ecology, management, and conservation of fish and wildlife populations and their habitats."
+  }
 }

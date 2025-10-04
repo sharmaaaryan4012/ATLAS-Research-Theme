@@ -1,6 +1,6 @@
-[
-  "Linear & Nonlinear Programming",
-  "Integer & Combinatorial Optimization",
-  "Stochastic Optimization",
-  "Network Optimization"
-]
+{
+  "Linear & Nonlinear Programming": "Mathematical methods for finding the best outcome in a mathematical model whose requirements are represented by linear or nonlinear relationships.",
+  "Integer & Combinatorial Optimization": "The optimization of problems where some of the variables are restricted to be integers, often used in scheduling and logistics.",
+  "Stochastic Optimization": "Optimization methods that incorporate randomness and uncertainty in the problem formulation.",
+  "Network Optimization": "The study of optimization problems on networks, such as finding the shortest path or maximum flow."
+}

@@ -1,5 +1,5 @@
-[
-  "Quantum Algorithms & Computation",
-  "Quantum Error Correction",
-  "Experimental Quantum Systems"
-]
+{
+  "Quantum Algorithms & Computation": "The design of algorithms that run on a quantum computer and can solve certain problems much faster than classical computers.",
+  "Quantum Error Correction": "The development of techniques to protect quantum information from errors due to noise and decoherence.",
+  "Experimental Quantum Systems": "The physical implementation of quantum bits (qubits) and quantum computers using systems like trapped ions, superconducting circuits, and photons."
+}

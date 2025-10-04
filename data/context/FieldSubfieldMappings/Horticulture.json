@@ -1,5 +1,5 @@
-[
-  "Specialty Crop Production",
-  "Urban Agriculture",
-  "Plant Propagation"
-]
+{
+  "Specialty Crop Production": "The cultivation of fruits, vegetables, nuts, and ornamental plants.",
+  "Urban Agriculture": "The practice of cultivating, processing, and distributing food in or around urban areas.",
+  "Plant Propagation": "The process of creating new plants from a variety of sources: seeds, cuttings, and other plant parts."
+}

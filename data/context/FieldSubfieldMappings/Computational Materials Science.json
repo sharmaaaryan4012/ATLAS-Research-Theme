@@ -1,6 +1,6 @@
-[
-  "Molecular Dynamics Simulation",
-  "Density Functional Theory (DFT)",
-  "Phase-Field Modeling",
-  "Materials Informatics & Data Science"
-]
+{
+  "Molecular Dynamics Simulation": "A computer simulation method for analyzing the physical movements of atoms and molecules.",
+  "Density Functional Theory (DFT)": "A quantum mechanical modeling method used to investigate the electronic structure of many-body systems.",
+  "Phase-Field Modeling": "A computational method for simulating the evolution of microstructures in materials, such as crystal growth.",
+  "Materials Informatics & Data Science": "The use of data-driven approaches and machine learning to accelerate the discovery and design of new materials."
+}

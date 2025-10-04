@@ -1,5 +1,5 @@
-[
-  "Stormwater Management & Green Infrastructure",
-  "Ecological Restoration",
-  "Sustainable Site Design"
-]
+{
+  "Stormwater Management & Green Infrastructure": "The design of systems to manage stormwater runoff and use natural systems to provide environmental benefits.",
+  "Ecological Restoration": "The practice of restoring damaged ecosystems.",
+  "Sustainable Site Design": "The design of sites that have a minimal environmental impact."
+}

@@ -1,5 +1,5 @@
-[
-  "Quantitative & Population Genetics",
-  "Livestock Genomics",
-  "Computational Biology"
-]
+{
+  "Quantitative & Population Genetics": "The study of the genetic basis of continuously varying traits in populations.",
+  "Livestock Genomics": "The application of genomics to improve the productivity and health of livestock.",
+  "Computational Biology": "The use of computational methods to analyze biological data."
+}

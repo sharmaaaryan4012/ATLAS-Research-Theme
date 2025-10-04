@@ -1,5 +1,5 @@
-[
-  "Modern & Contemporary Architecture",
-  "Vernacular Architecture",
-  "Preservation & Heritage"
-]
+{
+  "Modern & Contemporary Architecture": "The study of architecture from the late 19th century to the present.",
+  "Vernacular Architecture": "The study of traditional, local building styles.",
+  "Preservation & Heritage": "The practice of preserving and protecting historic buildings and sites."
+}

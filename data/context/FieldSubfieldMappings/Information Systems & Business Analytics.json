@@ -1,6 +1,6 @@
-[
-  "Economics of Information Systems",
-  "Business Data Analytics",
-  "IT Strategy & Management",
-  "Social Media & Digital Platforms"
-]
+{
+  "Economics of Information Systems": "The study of the economic aspects of information systems.",
+  "Business Data Analytics": "The use of data and analytics to solve business problems.",
+  "IT Strategy & Management": "The alignment of information technology strategy with business strategy.",
+  "Social Media & Digital Platforms": "The study of the business implications of social media and digital platforms."
+}

@@ -1,5 +1,5 @@
-[
-  "Ruminant Nutrition",
-  "Monogastric Nutrition",
-  "Nutritional Biochemistry"
-]
+{
+  "Ruminant Nutrition": "The study of the nutritional requirements of ruminant animals like cattle and sheep.",
+  "Monogastric Nutrition": "The study of the nutritional requirements of animals with a single-chambered stomach, like pigs and poultry.",
+  "Nutritional Biochemistry": "The study of the biochemical processes involved in nutrition."
+}

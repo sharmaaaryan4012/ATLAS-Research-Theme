@@ -1,24 +1,24 @@
 {
-  "Curriculum & Instruction": [
-    "Bilingual & ESL Education",
-    "Digital Learning",
-    "Literacy Studies",
-    "STEM Education"
-  ],
-  "Educational Psychology": [
-    "Cognitive Science of Teaching & Learning",
-    "Counseling Psychology",
-    "Developmental Sciences",
-    "Quantitative & Evaluative Methods"
-  ],
-  "Education Policy, Organization & Leadership": [
-    "Educational Policy Studies",
-    "Higher Education",
-    "Human Resource Development"
-  ],
-  "Special Education": [
-    "Autism & Developmental Disabilities",
-    "Learning Disabilities",
-    "Inclusive Education"
-  ]
+  "Curriculum & Instruction": {
+    "Bilingual & ESL Education": "The study of teaching and learning for students who are bilingual or learning English as a second language.",
+    "Digital Learning": "The study and design of learning experiences that are enhanced by digital technologies.",
+    "Literacy Studies": "The study of reading, writing, and literacy practices across different contexts and media.",
+    "STEM Education": "The study of teaching and learning in Science, Technology, Engineering, and Mathematics."
+  },
+  "Education Policy, Organization & Leadership": {
+    "Educational Policy Studies": "The analysis of educational policies and their political, economic, and historical contexts.",
+    "Higher Education": "The study of the administration, policies, and student development within colleges and universities.",
+    "Human Resource Development": "The study of workplace learning, training, and organizational development to improve performance."
+  },
+  "Educational Psychology": {
+    "Cognitive Science of Teaching & Learning": "The interdisciplinary study of the mind and its processes as they relate to learning and instruction.",
+    "Counseling Psychology": "The study and practice of promoting mental health and well-being across the lifespan.",
+    "Developmental Sciences": "The study of human cognitive, social, and emotional development across the lifespan.",
+    "Quantitative & Evaluative Methods": "The application of statistical methods, measurement theory, and evaluation design to educational research."
+  },
+  "Special Education": {
+    "Autism & Developmental Disabilities": "The study of and development of interventions for individuals with autism spectrum disorder and other developmental disabilities.",
+    "Inclusive Education": "The study and practice of educating students with disabilities in general education settings.",
+    "Learning Disabilities": "The study of the causes and characteristics of learning disabilities and evidence-based instructional practices."
+  }
 }

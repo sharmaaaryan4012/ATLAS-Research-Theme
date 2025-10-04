@@ -1,5 +1,5 @@
-[
-  "Molecular Plant-Microbe Interactions",
-  "Integrated Pest Management (IPM)",
-  "Herbicide Resistance"
-]
+{
+  "Molecular Plant-Microbe Interactions": "The study of the molecular basis of interactions between plants and microbes.",
+  "Integrated Pest Management (IPM)": "An ecosystem-based strategy that focuses on long-term prevention of pests.",
+  "Herbicide Resistance": "The study of how weeds evolve resistance to herbicides."
+}

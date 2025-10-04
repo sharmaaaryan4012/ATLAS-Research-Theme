@@ -1,6 +1,6 @@
-[
-  "Game Theory & Strategic Behavior",
-  "Mechanism Design & Auction Theory",
-  "Macroeconomic Dynamics",
-  "Behavioral Economics"
-]
+{
+  "Game Theory & Strategic Behavior": "The study of mathematical models of strategic interaction among rational decision-makers.",
+  "Mechanism Design & Auction Theory": "The design of rules for games or markets to achieve specific outcomes.",
+  "Macroeconomic Dynamics": "The study of the evolution of the economy over time, including economic growth and business cycles.",
+  "Behavioral Economics": "The incorporation of insights from psychology into economics to explain why people make seemingly irrational decisions."
+}

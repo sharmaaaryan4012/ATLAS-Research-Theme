@@ -1,76 +1,76 @@
 {
-  "Computer Science": [
-    "Algorithms & Theory of Computation",
-    "Artificial Intelligence & Machine Learning",
-    "Computer Architecture & Parallel Computing",
-    "Computer Vision & Graphics",
-    "Databases & Information Systems",
-    "Human-Computer Interaction (HCI)",
-    "Natural Language Processing (NLP)",
-    "Programming Languages & Software Engineering",
-    "Scientific Computing & Numerical Methods",
-    "Security & Privacy",
-    "Systems & Networking"
-  ],
-  "Electrical & Computer Engineering": [
-    "Circuits & VLSI Design",
-    "Communications",
-    "Control Systems",
-    "Electromagnetics & Photonics",
-    "Microelectronics & Nanotechnology",
-    "Power & Energy Systems",
-    "Quantum Information Science",
-    "Robotics & Autonomous Systems",
-    "Signal & Image Processing"
-  ],
-  "Mechanical Science & Engineering": [
-    "Biomechanics & Mechanobiology",
-    "Controls & Dynamics",
-    "Design & Manufacturing",
-    "Fluid Mechanics & Thermal Sciences",
-    "Solid Mechanics & Materials"
-  ],
-  "Civil & Environmental Engineering": [
-    "Construction Engineering & Management",
-    "Environmental Engineering & Science",
-    "Geotechnical Engineering",
-    "Structural Engineering & Materials",
-    "Sustainable & Resilient Infrastructure",
-    "Transportation Engineering",
-    "Water Resources Engineering"
-  ],
-  "Materials Science & Engineering": [
-    "Biomaterials & Biomedical Devices",
-    "Ceramics & Glasses",
-    "Computational Materials Science",
-    "Electronic Materials & Photonics",
-    "Metals & Alloys",
-    "Polymers & Soft Materials"
-  ],
-  "Bioengineering": [
-    "Biomedical Imaging & Sensing",
-    "Cell & Tissue Engineering",
-    "Computational & Systems Biology",
-    "Neural Engineering & Neurotechnology"
-  ],
-  "Aerospace Engineering": [
-    "Aerodynamics & Fluid Dynamics",
-    "Astrodynamics & Orbital Mechanics",
-    "Control & Estimation",
-    "Propulsion & Combustion",
-    "Structures & Materials"
-  ],
-  "Industrial & Enterprise Systems Engineering": [
-    "Data Analytics & Decision Sciences",
-    "Financial Engineering",
-    "Human Factors & Ergonomics",
-    "Operations Research & Optimization",
-    "Systems Engineering & Design"
-  ],
-  "Nuclear, Plasma & Radiological Engineering": [
-    "Fusion & Plasma Science",
-    "Nuclear Materials & Waste Management",
-    "Radiation, Instrumentation & Imaging",
-    "Reactor Physics & Thermal Hydraulics"
-  ]
+  "Computer Science": {
+    "Algorithms & Theory of Computation": "The fundamental study of efficient computation, formal languages, and complexity, forming the mathematical foundation of computer science.",
+    "Artificial Intelligence & Machine Learning": "The development of systems that can perceive, reason, learn, and act intelligently, mimicking human cognitive functions.",
+    "Computer Architecture & Parallel Computing": "The design and organization of computer hardware systems, with a focus on multi-core processors and high-performance parallel processing.",
+    "Computer Vision & Graphics": "The science of enabling computers to see and interpret the visual world, and the generation of synthetic images and animations.",
+    "Databases & Information Systems": "The study of managing, querying, and extracting insights from large-scale structured and unstructured data.",
+    "Human-Computer Interaction (HCI)": "The design and study of the interfaces between people (users) and computers, focusing on usability, accessibility, and user experience.",
+    "Natural Language Processing (NLP)": "A field of AI focused on enabling computers to understand, interpret, and generate human language.",
+    "Programming Languages & Software Engineering": "The principles of designing and implementing programming languages and the systematic engineering of reliable, efficient software.",
+    "Scientific Computing & Numerical Methods": "The application of computational and numerical techniques to solve complex problems in science and engineering.",
+    "Security & Privacy": "The theory and practice of protecting computer systems, networks, and data from attack, damage, or unauthorized access.",
+    "Systems & Networking": "The study of the principles and design of operating systems, distributed systems, and computer networks."
+  },
+  "Electrical & Computer Engineering": {
+    "Circuits & VLSI Design": "The design and fabrication of integrated circuits (ICs) and very-large-scale integration (VLSI) systems, from transistors to microprocessors.",
+    "Communications": "The study of transmitting information over various channels, including wireless, optical, and wired systems.",
+    "Control Systems": "The theory and application of controlling dynamic systems, ensuring stability and performance in areas like robotics and automation.",
+    "Electromagnetics & Photonics": "The study of electromagnetic waves and light (photons), and their application in devices like antennas, lasers, and optical fibers.",
+    "Microelectronics & Nanotechnology": "The design and fabrication of electronic devices at the micro and nano scales, including semiconductors and MEMS.",
+    "Power & Energy Systems": "The generation, transmission, distribution, and control of electric power, with a focus on smart grids and renewable energy.",
+    "Quantum Information Science": "An interdisciplinary field that applies the principles of quantum mechanics to computing and communication.",
+    "Robotics & Autonomous Systems": "The design, construction, operation, and application of robots and autonomous intelligent systems.",
+    "Signal & Image Processing": "The analysis, modification, and synthesis of signals, such as sound, images, and sensor data."
+  },
+  "Mechanical Science & Engineering": {
+    "Biomechanics & Mechanobiology": "The study of the mechanical laws relating to the movement and structure of living organisms, from cells to whole bodies.",
+    "Controls & Dynamics": "The study of the motion of systems and the application of feedback to control their behavior, including vibrations and acoustics.",
+    "Design & Manufacturing": "The principles and processes of creating products and systems, from initial concept to industrial production and automation.",
+    "Fluid Mechanics & Thermal Sciences": "The study of fluids in motion (gases and liquids) and the principles of heat and energy transfer.",
+    "Solid Mechanics & Materials": "The study of the behavior of solid materials under external forces and stresses, including deformation and fracture."
+  },
+  "Civil & Environmental Engineering": {
+    "Construction Engineering & Management": "The application of engineering and management principles to the planning, design, and construction of infrastructure projects.",
+    "Environmental Engineering & Science": "The development of solutions to environmental problems, such as pollution control, water purification, and waste management.",
+    "Geotechnical Engineering": "The branch of civil engineering concerned with the engineering behavior of earth materials like soil and rock.",
+    "Structural Engineering & Materials": "The design and analysis of structures that support or resist loads, such as buildings, bridges, and dams.",
+    "Sustainable & Resilient Infrastructure": "The design of infrastructure systems that are environmentally friendly, socially equitable, and robust against hazards and changing conditions.",
+    "Transportation Engineering": "The application of engineering principles to the planning, design, operation, and management of transportation systems.",
+    "Water Resources Engineering": "The management and engineering of systems to control and utilize water resources, such as rivers, groundwater, and reservoirs."
+  },
+  "Materials Science & Engineering": {
+    "Biomaterials & Biomedical Devices": "The design and application of materials for use in the human body, such as implants, tissue scaffolds, and drug delivery systems.",
+    "Ceramics & Glasses": "The study of the synthesis, structure, and properties of inorganic, non-metallic materials, including their use in electronics and structures.",
+    "Computational Materials Science": "The use of computer simulations and data modeling to understand, predict, and design new materials.",
+    "Electronic Materials & Photonics": "The study of materials used in electronic and optical devices, including semiconductors, photovoltaics, and dielectrics.",
+    "Metals & Alloys": "The study of the physical and chemical properties of metallic materials and the design of new alloys for structural and functional applications.",
+    "Polymers & Soft Materials": "The science of long-chain molecules (polymers) and other deformable materials like gels and colloids."
+  },
+  "Bioengineering": {
+    "Biomedical Imaging & Sensing": "The development of technologies and techniques to visualize biological processes and structures, from the molecular to the organismal level.",
+    "Cell & Tissue Engineering": "The creation of functional biological tissues in the lab for regenerative medicine, drug testing, and disease modeling.",
+    "Computational & Systems Biology": "The use of computational models and data analysis to understand complex biological systems and networks.",
+    "Neural Engineering & Neurotechnology": "The application of engineering principles to understand, repair, or enhance the function of the nervous system."
+  },
+  "Aerospace Engineering": {
+    "Aerodynamics & Fluid Dynamics": "The study of the motion of air and other gases, and their interaction with moving bodies like aircraft and spacecraft.",
+    "Astrodynamics & Orbital Mechanics": "The study of the motion of rockets and spacecraft under the influence of gravity and other forces.",
+    "Control & Estimation": "The design of systems for guiding and controlling the motion and state of aerospace vehicles.",
+    "Propulsion & Combustion": "The science and technology of generating thrust to power aircraft and spacecraft, including jet engines and rockets.",
+    "Structures & Materials": "The study of the design and analysis of lightweight yet strong structures and materials for aerospace applications."
+  },
+  "Industrial & Enterprise Systems Engineering": {
+    "Data Analytics & Decision Sciences": "The use of statistical and computational methods to analyze data and inform complex decision-making processes.",
+    "Financial Engineering": "The application of mathematical and computational methods to solve problems in finance and manage financial risk.",
+    "Human Factors & Ergonomics": "The science of designing systems, products, and environments to be safe, efficient, and comfortable for human use.",
+    "Operations Research & Optimization": "The use of advanced analytical methods to help make better decisions in complex systems, such as supply chains and logistics.",
+    "Systems Engineering & Design": "The interdisciplinary approach to designing and managing complex engineering systems over their life cycles."
+  },
+  "Nuclear, Plasma & Radiological Engineering": {
+    "Fusion & Plasma Science": "The study of ionized gases (plasmas) and the quest to harness nuclear fusion as a source of clean energy.",
+    "Nuclear Materials & Waste Management": "The study of materials for use in nuclear environments and the safe management and disposal of radioactive waste.",
+    "Radiation, Instrumentation & Imaging": "The science of detecting and measuring radiation and its application in medical imaging, security, and industry.",
+    "Reactor Physics & Thermal Hydraulics": "The study of the nuclear physics and fluid heat transfer that govern the operation of nuclear reactors."
+  }
 }

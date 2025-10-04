@@ -1,5 +1,5 @@
-[
-  "Population & Community Ecology",
-  "Conservation Genetics",
-  "Invasion Biology"
-]
+{
+  "Population & Community Ecology": "The study of the dynamics of populations and communities of organisms.",
+  "Conservation Genetics": "The use of genetic methods to conserve biodiversity.",
+  "Invasion Biology": "The study of the ecology and management of invasive species."
+}

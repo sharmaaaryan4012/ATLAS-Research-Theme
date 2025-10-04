@@ -1,6 +1,6 @@
-[
-  "Traffic Flow Theory & Operations",
-  "Transportation Systems & Planning",
-  "Pavement & Materials Engineering",
-  "Railroad & Public Transit Engineering"
-]
+{
+  "Traffic Flow Theory & Operations": "The mathematical study of traffic and the development of strategies to manage and optimize traffic flow.",
+  "Transportation Systems & Planning": "The planning and design of transportation networks to meet societal needs for mobility.",
+  "Pavement & Materials Engineering": "The design and analysis of roadway pavements and the materials used in their construction.",
+  "Railroad & Public Transit Engineering": "The engineering and planning of railway systems and public transportation networks."
+}

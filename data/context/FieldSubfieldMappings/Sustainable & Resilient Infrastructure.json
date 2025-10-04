@@ -1,6 +1,6 @@
-[
-  "Infrastructure Systems Analysis",
-  "Climate Change Adaptation",
-  "Risk & Reliability Analysis",
-  "Smart Cities"
-]
+{
+  "Infrastructure Systems Analysis": "The modeling and analysis of large-scale, interconnected infrastructure networks like power grids and transportation systems.",
+  "Climate Change Adaptation": "The design of infrastructure to be resilient to the impacts of climate change, such as sea-level rise and extreme weather.",
+  "Risk & Reliability Analysis": "The quantification of the risk of failure and the reliability of infrastructure systems under uncertainty.",
+  "Smart Cities": "The integration of information and communication technology (ICT) to manage a city's assets and improve urban services."
+}

@@ -1,6 +1,6 @@
-[
-  "Public International Law",
-  "International Human Rights",
-  "Comparative Constitutional Law",
-  "International Business Transactions"
-]
+{
+  "Public International Law": "The law that governs relations between states.",
+  "International Human Rights": "The body of law that protects the fundamental rights of all human beings.",
+  "Comparative Constitutional Law": "The study of the constitutional law of different countries.",
+  "International Business Transactions": "The law that governs business transactions that cross national borders."
+}

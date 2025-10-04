@@ -3,16 +3,22 @@ Name: Aaryan Sharma, Kirthi Shankar
 Project: ATLAS - Research Theme
 File: checkMappingDiscrepency.py
 Description: Compares MasterCollegeFieldMapping.json and MasterFieldSubfieldMapping.json
-             to find any mismatches (missing/extra colleges, departments, fields),
-             and basic validation of subfield lists.
+             to find mismatches (missing/extra colleges, departments, fields),
+             and validate subfield structure (new style).
+
+New style notes:
+- MasterCollegeFieldMapping.json:
+    college -> department -> dict(field -> description) OR str(dept description)
+- MasterFieldSubfieldMapping.json:
+    college -> department -> field -> dict(subfield -> description)
 """
 
-from pathlib import Path
+import argparse
 import json
 import os
 import sys
-import argparse
 from collections import defaultdict
+from pathlib import Path
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(_PROJECT_ROOT) not in sys.path:
@@ -20,14 +26,15 @@ if str(_PROJECT_ROOT) not in sys.path:
 
 try:
     from config.paths import (
-        DATA_CONTEXT_DIR,
         MASTER_COLLEGE_FIELD_MAPPING_JSON,
         MASTER_FIELD_SUBFIELD_MAPPING_JSON,
     )
 except Exception as e:
-    print("ERROR: Could not import from config.paths. "
-          "Ensure you run from project root or use `python -m misc.checkMappingDiscrepency`.\n"
-          f"Details: {e}")
+    print(
+        "ERROR: Could not import from config.paths. "
+        "Run from project root or use `python -m misc.checkMappingDiscrepency`.\n"
+        f"Details: {e}"
+    )
     sys.exit(1)
 
 MASTER_CF = MASTER_COLLEGE_FIELD_MAPPING_JSON
@@ -39,12 +46,60 @@ def load_json(path):
         return json.load(f)
 
 
+def extract_cf_fields(cf):
+    """
+    From MasterCollegeFieldMapping (new style) produce:
+    { college: { dept: set(fields) } }
+    Departments with only descriptions (no fields) map to empty sets.
+    """
+    out = {}
+    for college, dept_obj in cf.items():
+        out[college] = {}
+        if isinstance(dept_obj, dict):
+            for dept, maybe_fields in dept_obj.items():
+                if isinstance(maybe_fields, dict):
+                    out[college][dept] = set(maybe_fields.keys())
+                else:
+                    out[college][dept] = set()
+        else:
+            out[college] = {}
+    return out
+
+
+def extract_fs_fields(fs):
+    """
+    From MasterFieldSubfieldMapping (new style) produce:
+    { college: { dept: set(fields) } }
+    """
+    out = {}
+    for college, dept_obj in fs.items():
+        out[college] = {}
+        if isinstance(dept_obj, dict):
+            for dept, field_obj in dept_obj.items():
+                if isinstance(field_obj, dict):
+                    out[college][dept] = set(field_obj.keys())
+                else:
+                    out[college][dept] = set()
+        else:
+            out[college] = {}
+    return out
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Check discrepancies between master college-field and field-subfield mappings.")
-    parser.add_argument("--fail-on-issues", action="store_true",
-                        help="Exit with non-zero status code if any issues are found.")
-    parser.add_argument("--report-json", type=str, default=None,
-                        help="Optional path to write a JSON report.")
+    parser = argparse.ArgumentParser(
+        description="Check discrepancies between master mappings (new style)."
+    )
+    parser.add_argument(
+        "--fail-on-issues",
+        action="store_true",
+        help="Exit with non-zero status code if any issues are found.",
+    )
+    parser.add_argument(
+        "--report-json",
+        type=str,
+        default=None,
+        help="Optional path to write a JSON report.",
+    )
     args = parser.parse_args()
 
     issues = defaultdict(list)
@@ -56,10 +111,10 @@ def main():
         print(f"ERROR: Master field-subfield mapping not found at: {MASTER_FS}")
         sys.exit(1)
 
-    cf = load_json(MASTER_CF)  # college -> dept -> [fields]
-    fs = load_json(MASTER_FS)  # college -> dept -> field -> [subfields]
+    cf = load_json(MASTER_CF)  # college -> dept -> (fields dict | description)
+    fs = load_json(MASTER_FS)  # college -> dept -> field -> subfield dict
 
-    # 1) Colleges present
+    # Colleges present
     cf_colleges = set(cf.keys())
     fs_colleges = set(fs.keys())
 
@@ -71,65 +126,103 @@ def main():
     if extra_in_fs:
         issues["extra_colleges_in_field_subfield"].extend(extra_in_fs)
 
-    # 2) Departments & Fields
+    # Normalize to {college: {dept: set(fields)}}
+    cf_norm = extract_cf_fields(cf)
+    fs_norm = extract_fs_fields(fs)
+
+    # Departments & Fields
     for college in sorted(cf_colleges | fs_colleges):
-        cf_depts = set(cf.get(college, {}).keys()) if isinstance(cf.get(college), dict) else set()
-        fs_depts = set(fs.get(college, {}).keys()) if isinstance(fs.get(college), dict) else set()
+        cf_depts = set(cf_norm.get(college, {}).keys())
+        fs_depts = set(fs_norm.get(college, {}).keys())
 
         missing_depts_in_fs = sorted(cf_depts - fs_depts)
         extra_depts_in_fs = sorted(fs_depts - cf_depts)
 
         if missing_depts_in_fs:
-            issues["missing_departments_in_field_subfield"].append({
-                "college": college,
-                "departments": missing_depts_in_fs
-            })
+            issues["missing_departments_in_field_subfield"].append(
+                {"college": college, "departments": missing_depts_in_fs}
+            )
         if extra_depts_in_fs:
-            issues["extra_departments_in_field_subfield"].append({
-                "college": college,
-                "departments": extra_depts_in_fs
-            })
+            issues["extra_departments_in_field_subfield"].append(
+                {"college": college, "departments": extra_depts_in_fs}
+            )
 
         for dept in sorted(cf_depts | fs_depts):
-            cf_fields = set(cf.get(college, {}).get(dept, [])) if isinstance(cf.get(college, {}).get(dept), list) else set()
-            fs_fields = set(fs.get(college, {}).get(dept, {}).keys()) if isinstance(fs.get(college, {}).get(dept), dict) else set()
+            cf_fields = cf_norm.get(college, {}).get(dept, set())
+            fs_fields = fs_norm.get(college, {}).get(dept, set())
 
             missing_fields_in_fs = sorted(cf_fields - fs_fields)
             extra_fields_in_fs = sorted(fs_fields - cf_fields)
 
             if missing_fields_in_fs:
-                issues["missing_fields_in_field_subfield"].append({
-                    "college": college,
-                    "department": dept,
-                    "fields": missing_fields_in_fs
-                })
+                issues["missing_fields_in_field_subfield"].append(
+                    {
+                        "college": college,
+                        "department": dept,
+                        "fields": missing_fields_in_fs,
+                    }
+                )
             if extra_fields_in_fs:
-                issues["extra_fields_in_field_subfield"].append({
-                    "college": college,
-                    "department": dept,
-                    "fields": extra_fields_in_fs
-                })
+                issues["extra_fields_in_field_subfield"].append(
+                    {
+                        "college": college,
+                        "department": dept,
+                        "fields": extra_fields_in_fs,
+                    }
+                )
 
-            for field in fs_fields:
-                subfields = fs.get(college, {}).get(dept, {}).get(field)
-                if not isinstance(subfields, list):
-                    issues["invalid_subfield_type"].append({
-                        "college": college, "department": dept, "field": field,
-                        "detail": f"Expected list, got {type(subfields).__name__}"
-                    })
-                elif len(subfields) == 0:
-                    issues["empty_subfields"].append({
-                        "college": college, "department": dept, "field": field
-                    })
-                else:
-                    seen = set()
-                    dups = sorted([s for s in subfields if s in seen or seen.add(s)])
-                    if dups:
-                        issues["duplicate_subfields"].append({
-                            "college": college, "department": dept, "field": field,
-                            "duplicates": dups
-                        })
+            # Validate FS subfield structure & duplicates
+            if dept in fs.get(college, {}):
+                field_obj = fs.get(college, {}).get(dept, {})
+                if isinstance(field_obj, dict):
+                    for field, subfield_obj in field_obj.items():
+                        if not isinstance(subfield_obj, dict):
+                            issues["invalid_subfield_type"].append(
+                                {
+                                    "college": college,
+                                    "department": dept,
+                                    "field": field,
+                                    "detail": f"Expected dict(subfield->desc), got {type(subfield_obj).__name__}",
+                                }
+                            )
+                        else:
+                            # Check keys (names) and values (descriptions)
+                            subfields = list(subfield_obj.keys())
+                            # duplicate names?
+                            if len(subfields) != len(set(subfields)):
+                                issues["duplicate_subfields"].append(
+                                    {
+                                        "college": college,
+                                        "department": dept,
+                                        "field": field,
+                                    }
+                                )
+                            # empty?
+                            if len(subfields) == 0:
+                                issues["empty_subfields"].append(
+                                    {
+                                        "college": college,
+                                        "department": dept,
+                                        "field": field,
+                                    }
+                                )
+                            # description type
+                            bad_desc = [
+                                k
+                                for k, v in subfield_obj.items()
+                                if not isinstance(v, str)
+                            ]
+                            if bad_desc:
+                                issues["invalid_subfield_description_type"].append(
+                                    {
+                                        "college": college,
+                                        "department": dept,
+                                        "field": field,
+                                        "subfields": bad_desc,
+                                    }
+                                )
 
+    # Print summary
     has_issues = any(len(v) > 0 for v in issues.values())
     if has_issues:
         print("\n=== DISCREPANCY REPORT ===")
@@ -140,6 +233,7 @@ def main():
     else:
         print("No discrepancies found. ✅")
 
+    # Optional JSON report
     if args.report_json:
         os.makedirs(os.path.dirname(args.report_json), exist_ok=True)
         with open(args.report_json, "w", encoding="utf-8") as f:

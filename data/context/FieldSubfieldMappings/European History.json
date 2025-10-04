@@ -1,6 +1,6 @@
-[
-  "Medieval Europe",
-  "Early Modern Europe",
-  "Modern Europe",
-  "Russian & Eastern European History"
-]
+{
+  "Medieval Europe": "The study of European history from the fall of the Roman Empire to the Renaissance.",
+  "Early Modern Europe": "The study of the period from the Renaissance to the French Revolution.",
+  "Modern Europe": "The study of European history from the French Revolution to the present.",
+  "Russian & Eastern European History": "The specialized study of the history of Russia and the nations of Eastern Europe."
+}

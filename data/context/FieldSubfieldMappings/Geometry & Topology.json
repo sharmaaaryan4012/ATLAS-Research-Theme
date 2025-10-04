@@ -1,5 +1,5 @@
-[
-  "Differential Geometry",
-  "Algebraic Topology",
-  "Geometric Topology"
-]
+{
+  "Differential Geometry": "The study of smooth manifolds (a generalization of surfaces) using the tools of calculus.",
+  "Algebraic Topology": "The use of tools from abstract algebra to study topological spaces.",
+  "Geometric Topology": "The study of manifolds and their embeddings, primarily focusing on low-dimensional spaces."
+}

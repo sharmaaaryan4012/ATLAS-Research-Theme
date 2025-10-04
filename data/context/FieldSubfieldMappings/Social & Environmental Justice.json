@@ -1,5 +1,5 @@
-[
-  "Community-Engaged Design",
-  "Public Space & Equity",
-  "Environmental Justice"
-]
+{
+  "Community-Engaged Design": "The practice of working with communities to design projects that meet their needs.",
+  "Public Space & Equity": "The design of public spaces that are accessible and equitable for all people.",
+  "Environmental Justice": "The fair treatment and meaningful involvement of all people regardless of race, color, national origin, or income with respect to the development, implementation, and enforcement of environmental laws, regulations, and policies."
+}

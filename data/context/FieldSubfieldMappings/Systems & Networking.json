@@ -1,7 +1,7 @@
-[
-  "Operating Systems",
-  "Distributed Systems & Cloud Computing",
-  "Computer Networks",
-  "Wireless & Mobile Systems",
-  "Systems for Machine Learning"
-]
+{
+  "Operating Systems": "The study of the core software that manages computer hardware, resources, and provides common services for computer programs.",
+  "Distributed Systems & Cloud Computing": "The study of systems whose components are located on different networked computers, and the delivery of computing services over the internet.",
+  "Computer Networks": "The principles and protocols that govern how data is transmitted and routed between computers, including the internet.",
+  "Wireless & Mobile Systems": "The study of wireless communication technologies and the design of systems for mobile devices like smartphones.",
+  "Systems for Machine Learning": "The design of specialized computer systems and software infrastructure to support large-scale machine learning training and inference."
+}

@@ -1,6 +1,6 @@
-[
-  "Semiconductor Devices & Physics",
-  "Micro-Electro-Mechanical Systems (MEMS)",
-  "Nanofabrication & Nanomaterials",
-  "Quantum Devices"
-]
+{
+  "Semiconductor Devices & Physics": "The study of the physics of semiconductor materials and the design of electronic devices like transistors and diodes.",
+  "Micro-Electro-Mechanical Systems (MEMS)": "The technology of microscopic devices, particularly those with moving parts, such as sensors and actuators.",
+  "Nanofabrication & Nanomaterials": "The techniques for creating structures at the nanometer scale and the study of materials with novel nanoscale properties.",
+  "Quantum Devices": "The design and fabrication of electronic devices that exploit quantum mechanical effects for new functionalities."
+}

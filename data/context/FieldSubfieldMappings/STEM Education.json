@@ -1,5 +1,5 @@
-[
-  "Mathematics Education",
-  "Science Education",
-  "Engineering & Technology Education"
-]
+{
+  "Mathematics Education": "The study of the teaching and learning of mathematics.",
+  "Science Education": "The study of the teaching and learning of science.",
+  "Engineering & Technology Education": "The study of the teaching and learning of engineering and technology."
+}

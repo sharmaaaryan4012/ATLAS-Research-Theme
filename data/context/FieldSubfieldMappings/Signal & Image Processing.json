@@ -1,6 +1,6 @@
-[
-  "Biomedical Imaging & Image Analysis",
-  "Machine Learning for Signal Processing",
-  "Audio & Speech Processing",
-  "Statistical Signal Processing"
-]
+{
+  "Biomedical Imaging & Image Analysis": "The processing of medical images (like MRI, CT scans) to enhance their quality and extract clinical information.",
+  "Machine Learning for Signal Processing": "The application of machine learning and deep learning techniques to analyze and classify signals and images.",
+  "Audio & Speech Processing": "The analysis and synthesis of audio signals, including speech recognition, speaker identification, and audio enhancement.",
+  "Statistical Signal Processing": "The use of statistical models to represent and analyze signals and to make inferences from noisy data."
+}

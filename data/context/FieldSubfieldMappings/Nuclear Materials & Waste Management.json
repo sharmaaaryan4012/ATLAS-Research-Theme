@@ -1,6 +1,6 @@
-[
-  "Radiation Effects on Materials",
-  "Nuclear Fuel Cycle",
-  "Radioactive Waste Disposal",
-  "Nuclear Safeguards & Security"
-]
+{
+  "Radiation Effects on Materials": "The study of how high-energy radiation alters the properties of materials in nuclear reactors.",
+  "Nuclear Fuel Cycle": "The entire process from mining uranium to disposing of nuclear waste.",
+  "Radioactive Waste Disposal": "The development of safe and permanent solutions for the disposal of high-level radioactive waste.",
+  "Nuclear Safeguards & Security": "The technical measures to prevent the proliferation of nuclear weapons and secure nuclear materials."
+}

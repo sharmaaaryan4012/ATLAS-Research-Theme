@@ -1,6 +1,6 @@
-[
-  "System Architecture & Modeling",
-  "Design Theory & Methodology",
-  "Complex Systems Analysis",
-  "Risk & Reliability Engineering"
-]
+{
+  "System Architecture & Modeling": "The conceptual model that defines the structure, behavior, and more views of a system.",
+  "Design Theory & Methodology": "The formal study of the principles and processes that underlie engineering design.",
+  "Complex Systems Analysis": "The study of systems with many interconnected components whose collective behavior is not easily predicted from the components alone.",
+  "Risk & Reliability Engineering": "The engineering discipline of ensuring that a system will perform its intended function without failure for a specified time."
+}

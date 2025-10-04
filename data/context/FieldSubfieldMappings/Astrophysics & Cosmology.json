@@ -1,6 +1,6 @@
-[
-  "Theoretical Astrophysics",
-  "Observational Astronomy",
-  "Cosmology & General Relativity",
-  "Gravitational Waves"
-]
+{
+  "Theoretical Astrophysics": "The use of physical models and theories to understand astronomical phenomena.",
+  "Observational Astronomy": "The practice of observing celestial objects by using telescopes and other astronomical apparatus.",
+  "Cosmology & General Relativity": "The study of the origin, evolution, and ultimate fate of the universe, based on Einstein's theory of general relativity.",
+  "Gravitational Waves": "The study of ripples in spacetime, caused by some of the most violent and energetic processes in the universe."
+}

@@ -4,9 +4,15 @@ Project: ATLAS - Research Theme
 File: createFieldSubfieldMappings.py
 Description: Splits MasterFieldSubfieldMapping.json into per-field files under:
              data/context/FieldSubfieldMappings/<FieldName>.json
-             Each file contains a list of subfields for that Field.
-             If a field name appears in multiple colleges/departments with different lists,
-             files will be disambiguated by appending a slug of the college/department.
+
+Master format (new):
+  college -> department -> field -> subfield -> subfield_description (str)
+
+Output format (per-field file):
+  subfield -> subfield_description (str)
+
+If a field name appears in multiple colleges/departments with different subfield sets/desc,
+files are disambiguated by appending a slug of the college/department.
 """
 
 from pathlib import Path
@@ -49,12 +55,15 @@ def slugify(s: str) -> str:
 
 
 def _content_hash(obj) -> str:
-    return md5(json.dumps(obj, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
+    # Sort keys for stable hashing of dicts
+    if isinstance(obj, dict):
+        obj = {k: obj[k] for k in sorted(obj.keys())}
+    return md5(json.dumps(obj, ensure_ascii=False).encode("utf-8")).hexdigest()
 
 
 def safe_write_field_json(
     field_name: str,
-    subfields,
+    subfield_map: dict,
     base_dir: str,
     context_suffix: str,
     overwrite: bool,
@@ -62,11 +71,12 @@ def safe_write_field_json(
 ):
     """
     Write <FieldName>.json if unique or same content; otherwise write <FieldName>-<context_suffix>.json.
+    Content = dict[subfield -> description].
     """
     filename = f"{sanitize_filename(field_name)}.json"
     path = os.path.join(base_dir, filename)
 
-    desired_hash = _content_hash(subfields)
+    desired_hash = _content_hash(subfield_map)
 
     # Primary target exists?
     if os.path.exists(path):
@@ -84,7 +94,7 @@ def safe_write_field_json(
                     print(f"DRY RUN: Would write (collision) {alt_path}")
                     return "skipped"
                 with open(alt_path, "w", encoding="utf-8") as f:
-                    json.dump(subfields, f, indent=2, ensure_ascii=False)
+                    json.dump(subfield_map, f, indent=2, ensure_ascii=False)
                 print(f"WROTE (collision): {alt_path}")
                 return "written"
         except Exception:
@@ -95,7 +105,7 @@ def safe_write_field_json(
                     print(f"DRY RUN: Would write (existing unreadable) {alt_path}")
                     return "skipped"
                 with open(alt_path, "w", encoding="utf-8") as f:
-                    json.dump(subfields, f, indent=2, ensure_ascii=False)
+                    json.dump(subfield_map, f, indent=2, ensure_ascii=False)
                 print(f"WROTE (existing unreadable, disambiguated): {alt_path}")
                 return "written"
 
@@ -106,13 +116,13 @@ def safe_write_field_json(
 
     if os.path.exists(path) and overwrite:
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(subfields, f, indent=2, ensure_ascii=False)
+            json.dump(subfield_map, f, indent=2, ensure_ascii=False)
         print(f"WROTE (overwrote): {path}")
         return "written"
 
     if not os.path.exists(path):
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(subfields, f, indent=2, ensure_ascii=False)
+            json.dump(subfield_map, f, indent=2, ensure_ascii=False)
         print(f"WROTE: {path}")
         return "written"
 
@@ -122,7 +132,7 @@ def safe_write_field_json(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Create per-field JSON mappings from master field-subfield mapping."
+        description="Create per-field JSON files (with subfield descriptions) from master field-subfield mapping."
     )
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files when names collide with different content.")
     parser.add_argument("--dry-run", action="store_true", help="Show actions without writing files.")
@@ -141,7 +151,7 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
     results = {"written": 0, "skipped": 0}
 
-    # Traverse: college -> department -> field -> [subfields]
+    # Traverse: college -> department -> field -> subfield -> description(str)
     for college, dept_map in master.items():
         if not isinstance(dept_map, dict):
             print(f"WARNING: Skipping college with invalid structure: {college}")
@@ -150,15 +160,27 @@ def main():
             if not isinstance(field_map, dict):
                 print(f"WARNING: Skipping dept with invalid structure: {college} / {dept}")
                 continue
-            for field, subfields in field_map.items():
-                if not isinstance(subfields, list):
-                    print(f"WARNING: Subfields not a list, skipping: {college} / {dept} / {field}")
+            for field, subfield_map in field_map.items():
+                if not isinstance(subfield_map, dict):
+                    print(f"WARNING: Subfields map not a dict, skipping: {college} / {dept} / {field}")
+                    continue
+
+                # Validate that all subfield values are strings (descriptions)
+                cleaned_map = {}
+                for subfield, desc in subfield_map.items():
+                    if isinstance(desc, str) and desc.strip():
+                        cleaned_map[subfield] = desc.strip()
+                    else:
+                        print(f"WARNING: Missing/invalid description for subfield '{subfield}' in {college} / {dept} / {field}; skipping that subfield.")
+
+                if not cleaned_map:
+                    print(f"WARNING: No valid subfields for field '{field}' in {college} / {dept}; skipping file.")
                     continue
 
                 ctx_suffix = f"{slugify(college)}_{slugify(dept)}"
                 status = safe_write_field_json(
                     field_name=field,
-                    subfields=subfields,
+                    subfield_map=cleaned_map,
                     base_dir=out_dir,
                     context_suffix=ctx_suffix,
                     overwrite=args.overwrite,

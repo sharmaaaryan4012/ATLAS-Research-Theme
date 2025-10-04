@@ -1,6 +1,6 @@
-[
-  "Democratization & Authoritarianism",
-  "Political Economy of Development",
-  "Contentious Politics & Social Movements",
-  "Area Studies"
-]
+{
+  "Democratization & Authoritarianism": "The study of why and how countries become democratic or remain authoritarian.",
+  "Political Economy of Development": "The study of the relationship between politics and economics in developing countries.",
+  "Contentious Politics & Social Movements": "The study of protests, revolutions, and other forms of political conflict.",
+  "Area Studies": "The in-depth study of the politics of a specific geographic region, such as Latin America or the Middle East."
+}

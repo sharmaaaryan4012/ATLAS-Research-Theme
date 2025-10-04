@@ -1,5 +1,5 @@
-[
-  "Molecular Breeding",
-  "Quantitative Genetics",
-  "Plant Genomics"
-]
+{
+  "Molecular Breeding": "The use of molecular biology tools in plant breeding.",
+  "Quantitative Genetics": "The study of the inheritance of continuously varying traits.",
+  "Plant Genomics": "The study of the structure, function, evolution, and mapping of plant genomes."
+}

@@ -1,5 +1,5 @@
-[
-  "Natural Resource Management",
-  "Climate Change Economics",
-  "Energy Economics & Policy"
-]
+{
+  "Natural Resource Management": "The economic analysis of the management of natural resources such as forests, fisheries, and water.",
+  "Climate Change Economics": "The economic analysis of the causes and consequences of climate change and policies to address it.",
+  "Energy Economics & Policy": "The study of the supply and demand of energy from an economic perspective."
+}

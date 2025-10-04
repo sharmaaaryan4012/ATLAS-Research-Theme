@@ -1,5 +1,5 @@
-[
-  "Transportation Systems Analysis",
-  "Public Transportation",
-  "Active Transportation (Walking/Biking)"
-]
+{
+  "Transportation Systems Analysis": "The analysis of transportation systems to improve their efficiency and effectiveness.",
+  "Public Transportation": "The planning and operation of public transportation systems.",
+  "Active Transportation (Walking/Biking)": "The planning of infrastructure to support walking and biking."
+}

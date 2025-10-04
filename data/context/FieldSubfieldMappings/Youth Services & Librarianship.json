@@ -1,5 +1,5 @@
-[
-  "Children's & Young Adult Literature",
-  "Information Literacy",
-  "Public & Academic Librarianship"
-]
+{
+  "Children's & Young Adult Literature": "The study of literature written for children and young adults.",
+  "Information Literacy": "The ability to find, evaluate, organize, use, and communicate information in all its various formats.",
+  "Public & Academic Librarianship": "The practice of librarianship in public and academic libraries."
+}

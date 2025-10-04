@@ -1,5 +1,5 @@
-[
-  "Genomic Prediction",
-  "Statistical Genetics",
-  "Computational Biology"
-]
+{
+  "Genomic Prediction": "The use of genomic data to predict the performance of crops.",
+  "Statistical Genetics": "The application of statistical methods to the study of genetics.",
+  "Computational Biology": "The use of computational methods to study biological systems."
+}

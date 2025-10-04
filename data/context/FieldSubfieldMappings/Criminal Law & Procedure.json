@@ -1,5 +1,5 @@
-[
-  "Substantive Criminal Law",
-  "Criminal Procedure",
-  "Sentencing & Corrections"
-]
+{
+  "Substantive Criminal Law": "The branch of law that defines crimes and provides for their punishment.",
+  "Criminal Procedure": "The body of law that regulates the process by which criminal laws are enforced.",
+  "Sentencing & Corrections": "The study of the punishment of convicted criminals."
+}

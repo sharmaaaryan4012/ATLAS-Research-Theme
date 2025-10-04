@@ -1,8 +1,8 @@
-[
-  "Learning Theory",
-  "Deep Learning & Neural Networks",
-  "Reinforcement Learning",
-  "Probabilistic Graphical Models",
-  "Knowledge Representation & Reasoning",
-  "Trustworthy & Ethical AI"
-]
+{
+  "Learning Theory": "The mathematical study of the principles underlying machine learning algorithms and their performance.",
+  "Deep Learning & Neural Networks": "A class of machine learning algorithms based on artificial neural networks with many layers, enabling learning from vast amounts of data.",
+  "Reinforcement Learning": "A type of machine learning where an agent learns to make decisions by taking actions in an environment to maximize cumulative reward.",
+  "Probabilistic Graphical Models": "A framework for representing and reasoning about uncertainty using probability and graph theory.",
+  "Knowledge Representation & Reasoning": "The field of AI dedicated to representing information about the world in a form that a computer system can utilize to solve complex tasks.",
+  "Trustworthy & Ethical AI": "The study of ensuring that AI systems are fair, transparent, explainable, and aligned with human values."
+}

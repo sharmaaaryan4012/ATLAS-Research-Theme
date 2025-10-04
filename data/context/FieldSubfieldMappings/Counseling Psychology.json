@@ -1,5 +1,5 @@
-[
-  "Mental Health & Well-being",
-  "Vocational Psychology",
-  "Multicultural Counseling"
-]
+{
+  "Mental Health & Well-being": "The promotion of mental health and the prevention and treatment of mental illness.",
+  "Vocational Psychology": "The study of career development and work-related issues.",
+  "Multicultural Counseling": "The practice of counseling that is sensitive to the cultural backgrounds of clients."
+}

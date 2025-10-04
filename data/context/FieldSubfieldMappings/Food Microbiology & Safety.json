@@ -1,5 +1,5 @@
-[
-  "Foodborne Pathogens",
-  "Food Fermentation",
-  "Food Preservation"
-]
+{
+  "Foodborne Pathogens": "The study of the microorganisms that can cause food poisoning.",
+  "Food Fermentation": "The use of microorganisms to produce fermented foods like cheese and yogurt.",
+  "Food Preservation": "The methods used to prevent the spoilage of food."
+}

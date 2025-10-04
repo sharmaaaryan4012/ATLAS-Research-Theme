@@ -1,7 +1,7 @@
-[
-  "Antennas & Propagation",
-  "Computational Electromagnetics",
-  "Integrated Photonics & Optoelectronics",
-  "Optical Imaging & Spectroscopy",
-  "Plasmonics & Metamaterials"
-]
+{
+  "Antennas & Propagation": "The design of antennas for transmitting and receiving radio waves and the study of how those waves travel through different media.",
+  "Computational Electromagnetics": "The development of numerical methods to simulate and solve complex electromagnetic problems.",
+  "Integrated Photonics & Optoelectronics": "The design of optical devices and systems on a chip, analogous to integrated electronic circuits.",
+  "Optical Imaging & Spectroscopy": "The use of light to form images of objects and to measure their properties by analyzing their interaction with light.",
+  "Plasmonics & Metamaterials": "The study of engineered materials with exotic optical properties and the manipulation of light at the nanoscale."
+}

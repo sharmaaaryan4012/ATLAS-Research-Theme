@@ -1,6 +1,6 @@
-[
-  "International Security & Conflict",
-  "International Political Economy",
-  "Foreign Policy Analysis",
-  "International Organizations & Law"
-]
+{
+  "International Security & Conflict": "The study of war, peace, and the use of military force in international politics.",
+  "International Political Economy": "The study of the interaction between international politics and economics, including trade and finance.",
+  "Foreign Policy Analysis": "The study of how states make foreign policy decisions.",
+  "International Organizations & Law": "The study of international institutions, such as the United Nations, and the role of international law."
+}

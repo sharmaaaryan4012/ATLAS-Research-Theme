@@ -1,10 +1,10 @@
 {
-  "Information Sciences": [
-    "Archives & Special Collections",
-    "Data Science & Analytics",
-    "Human-Centered Design & Systems",
-    "Information Organization & Access",
-    "Knowledge Management & Information Policy",
-    "Youth Services & Librarianship"
-  ]
+  "Information Sciences": {
+    "Archives & Special Collections": "The theory and practice of managing and preserving records, documents, and other materials of enduring value.",
+    "Data Science & Analytics": "The application of statistical, computational, and visualization techniques to extract knowledge from data.",
+    "Human-Centered Design & Systems": "The interdisciplinary approach to designing interactive systems that are useful, usable, and centered on human needs.",
+    "Information Organization & Access": "The study of how to describe, organize, and provide access to information resources, including digital libraries and metadata.",
+    "Knowledge Management & Information Policy": "The study of how organizations manage knowledge and the societal policies and ethics governing information.",
+    "Youth Services & Librarianship": "The study of literature, information literacy, and library services for children and young adults."
+  }
 }

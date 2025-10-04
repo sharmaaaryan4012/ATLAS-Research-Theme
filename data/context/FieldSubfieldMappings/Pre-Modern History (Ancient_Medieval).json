@@ -1,6 +1,6 @@
-[
-  "Ancient Greece & Rome",
-  "Medieval Studies",
-  "Byzantine History",
-  "Ancient Near East"
-]
+{
+  "Ancient Greece & Rome": "The study of the history and culture of the classical world.",
+  "Medieval Studies": "An interdisciplinary field of study of the European Middle Ages.",
+  "Byzantine History": "The study of the history of the Byzantine Empire.",
+  "Ancient Near East": "The study of the early civilizations of Mesopotamia, Egypt, and the Levant."
+}

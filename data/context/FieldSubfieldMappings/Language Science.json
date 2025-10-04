@@ -1,5 +1,5 @@
-[
-  "Language Development & Disorders",
-  "Psycholinguistics",
-  "Bilingualism & Second Language Acquisition"
-]
+{
+  "Language Development & Disorders": "The study of how language develops in children and the disorders that can affect language development.",
+  "Psycholinguistics": "The study of the psychological processes involved in language.",
+  "Bilingualism & Second Language Acquisition": "The study of the acquisition and use of two or more languages."
+}

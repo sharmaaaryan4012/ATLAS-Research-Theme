@@ -1,5 +1,5 @@
-[
-  "College Student Development",
-  "Higher Education Administration",
-  "Diversity & Equity in Higher Ed"
-]
+{
+  "College Student Development": "The study of the intellectual, social, and personal development of college students.",
+  "Higher Education Administration": "The management of colleges and universities.",
+  "Diversity & Equity in Higher Ed": "The study of issues of diversity and equity in higher education."
+}

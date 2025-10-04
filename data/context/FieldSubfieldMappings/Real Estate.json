@@ -1,5 +1,5 @@
-[
-  "Real Estate Finance & Investment",
-  "Urban Economics",
-  "Housing Markets"
-]
+{
+  "Real Estate Finance & Investment": "The study of the financing and investment of real estate.",
+  "Urban Economics": "The study of the economics of cities.",
+  "Housing Markets": "The study of the supply and demand for housing."
+}

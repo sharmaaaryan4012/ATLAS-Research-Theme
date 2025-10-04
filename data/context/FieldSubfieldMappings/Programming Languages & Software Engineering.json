@@ -1,7 +1,7 @@
-[
-  "Compilers & Runtimes",
-  "Formal Methods & Verification",
-  "Software Testing & Analysis",
-  "Programming Language Design",
-  "Empirical Software Engineering"
-]
+{
+  "Compilers & Runtimes": "The design of software that translates high-level programming code into machine code and manages its execution.",
+  "Formal Methods & Verification": "The use of mathematical techniques to specify, develop, and formally prove the correctness of software and hardware systems.",
+  "Software Testing & Analysis": "The development of methods for finding and fixing errors in software through automated testing and program analysis.",
+  "Programming Language Design": "The theory and practice of creating new programming languages with specific features for clarity, performance, or safety.",
+  "Empirical Software Engineering": "The study of software development processes and products through empirical data collection and analysis."
+}

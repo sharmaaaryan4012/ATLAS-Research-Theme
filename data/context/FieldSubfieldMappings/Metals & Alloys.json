@@ -1,6 +1,6 @@
-[
-  "Physical Metallurgy",
-  "Mechanical Behavior of Metals",
-  "Corrosion & Degradation",
-  "Advanced Steels & High-Entropy Alloys"
-]
+{
+  "Physical Metallurgy": "The study of the physical and mechanical properties of metals as affected by their composition, processing, and microstructure.",
+  "Mechanical Behavior of Metals": "The analysis of how metals deform and fail under applied forces.",
+  "Corrosion & Degradation": "The study of the gradual destruction of materials by chemical or electrochemical reaction with their environment.",
+  "Advanced Steels & High-Entropy Alloys": "The design of new metal alloys with superior properties by combining multiple elements in novel compositions."
+}

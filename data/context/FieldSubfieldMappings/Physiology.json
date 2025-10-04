@@ -1,5 +1,5 @@
-[
-  "Reproductive Physiology",
-  "Lactation Biology",
-  "Growth & Developmental Physiology"
-]
+{
+  "Reproductive Physiology": "The study of the physiological processes involved in reproduction.",
+  "Lactation Biology": "The study of the biology of milk production.",
+  "Growth & Developmental Physiology": "The study of the physiological processes involved in growth and development."
+}

@@ -1,5 +1,5 @@
-[
-  "Agricultural Policy",
-  "Food Law & Policy",
-  "Environmental Law"
-]
+{
+  "Agricultural Policy": "The study of government policies related to agriculture.",
+  "Food Law & Policy": "The study of the laws and regulations that govern food production and safety.",
+  "Environmental Law": "The study of the laws and regulations related to the environment."
+}

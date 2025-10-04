@@ -1,21 +1,21 @@
 {
-  "Accountancy": [
-    "Auditing & Assurance",
-    "Financial Accounting",
-    "Managerial Accounting",
-    "Taxation"
-  ],
-  "Finance": [
-    "Asset Pricing",
-    "Corporate Finance",
-    "Financial Intermediation",
-    "Real Estate"
-  ],
-  "Business Administration": [
-    "Marketing",
-    "Operations Management",
-    "Organizational Behavior & Strategy",
-    "Supply Chain Management",
-    "Information Systems & Business Analytics"
-  ]
+  "Accountancy": {
+    "Auditing & Assurance": "The examination of financial records to ensure fairness and accuracy, providing confidence to stakeholders.",
+    "Financial Accounting": "The process of recording, summarizing, and reporting a company's business transactions through financial statements.",
+    "Managerial Accounting": "The use of accounting information to help managers within an organization make decisions and manage performance.",
+    "Taxation": "The study of tax law and its application to financial planning and compliance for individuals and corporations."
+  },
+  "Business Administration": {
+    "Information Systems & Business Analytics": "The study of how organizations use information technology and data analytics to improve business processes and decision-making.",
+    "Marketing": "The process of creating, communicating, and delivering value to customers and managing customer relationships.",
+    "Operations Management": "The management of processes and systems that create goods or provide services.",
+    "Organizational Behavior & Strategy": "The study of human behavior in organizational settings and the formulation of long-term business strategy.",
+    "Supply Chain Management": "The management of the flow of goods and services from point of origin to point of consumption."
+  },
+  "Finance": {
+    "Asset Pricing": "The study of how financial assets like stocks, bonds, and derivatives are valued in the marketplace.",
+    "Corporate Finance": "The study of how corporations make financial decisions, including investment, financing, and dividend policies.",
+    "Financial Intermediation": "The study of financial institutions like banks and their role in channeling funds from savers to borrowers.",
+    "Real Estate": "The study of finance and investment related to real property, including housing and commercial markets."
+  }
 }

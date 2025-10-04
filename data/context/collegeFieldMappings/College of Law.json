@@ -1,10 +1,10 @@
 {
-  "Legal Studies": [
-    "Business & Commercial Law",
-    "Constitutional & Public Law",
-    "Criminal Law & Procedure",
-    "Intellectual Property & Technology Law",
-    "International & Comparative Law",
-    "Taxation & Employee Benefits"
-  ]
+  "Legal Studies": {
+    "Business & Commercial Law": "The body of law that governs business and commercial transactions, including corporate and bankruptcy law.",
+    "Constitutional & Public Law": "The study of the law that structures government and defines the rights of citizens, including administrative and election law.",
+    "Criminal Law & Procedure": "The study of the law defining criminal offenses and the legal procedures for adjudicating criminal cases.",
+    "Intellectual Property & Technology Law": "The law governing creations of the mind, such as patents, copyrights, and trademarks, as well as technology-related legal issues.",
+    "International & Comparative Law": "The study of the law governing relations between nations and the comparison of legal systems across different countries.",
+    "Taxation & Employee Benefits": "The body of law governing governmental levies (taxes) and the regulation of employee benefit plans."
+  }
 }

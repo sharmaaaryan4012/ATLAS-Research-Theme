@@ -1,6 +1,6 @@
-[
-  "Bioinformatics & Genomics",
-  "Systems Biology Modeling",
-  "Synthetic Biology",
-  "Computational Neuroscience"
-]
+{
+  "Bioinformatics & Genomics": "The use of computational tools to analyze large-scale biological data, especially DNA and protein sequences.",
+  "Systems Biology Modeling": "The creation of mathematical models to understand the complex interactions within biological systems.",
+  "Synthetic Biology": "The design and construction of new biological parts, devices, and systems, or the re-design of existing, natural biological systems for useful purposes.",
+  "Computational Neuroscience": "The use of mathematical models and theoretical analysis to understand the principles that govern the nervous system."
+}

@@ -1,6 +1,6 @@
-[
-  "Data Curation & Management",
-  "Applied Data Mining & Machine Learning",
-  "Information Visualization",
-  "FAIR & Open Data"
-]
+{
+  "Data Curation & Management": "The active management of data throughout its lifecycle to ensure it remains fit for contemporary purposes.",
+  "Applied Data Mining & Machine Learning": "The application of data mining and machine learning techniques to solve problems in information sciences.",
+  "Information Visualization": "The use of visual representations of data to facilitate understanding and insight.",
+  "FAIR & Open Data": "The principles of making data Findable, Accessible, Interoperable, and Reusable, and the promotion of open access to data."
+}

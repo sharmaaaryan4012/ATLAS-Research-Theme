@@ -1,6 +1,6 @@
-[
-  "Molecular Biophysics",
-  "Cellular Biophysics",
-  "Systems Biology",
-  "Neurophysics"
-]
+{
+  "Molecular Biophysics": "The study of the physical properties of biological molecules like proteins and DNA.",
+  "Cellular Biophysics": "The study of the physical principles governing the function of living cells.",
+  "Systems Biology": "The computational and mathematical modeling of complex biological systems.",
+  "Neurophysics": "The application of physics principles to understand the function of the brain and nervous system."
+}

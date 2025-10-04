@@ -1,6 +1,6 @@
-[
-  "Global Supply Chain Strategy",
-  "Procurement & Sourcing",
-  "Logistics & Transportation",
-  "Supply Chain Analytics"
-]
+{
+  "Global Supply Chain Strategy": "The design and management of supply chains that span multiple countries.",
+  "Procurement & Sourcing": "The process of acquiring goods and services from external sources.",
+  "Logistics & Transportation": "The management of the movement and storage of goods.",
+  "Supply Chain Analytics": "The use of data and analytics to improve supply chain performance."
+}

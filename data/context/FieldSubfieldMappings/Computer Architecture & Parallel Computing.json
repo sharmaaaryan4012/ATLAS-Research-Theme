@@ -1,7 +1,7 @@
-[
-  "High-Performance Computing (HPC)",
-  "Processor & System-on-Chip (SoC) Design",
-  "Memory & Storage Systems",
-  "Parallel Programming Models",
-  "Domain-Specific Architectures"
-]
+{
+  "High-Performance Computing (HPC)": "The use of supercomputers and parallel processing techniques for solving complex computational problems.",
+  "Processor & System-on-Chip (SoC) Design": "The design of central processing units (CPUs), graphics processing units (GPUs), and integrated systems on a single chip.",
+  "Memory & Storage Systems": "The study and design of hierarchical memory systems, including caches, RAM, and long-term storage like SSDs.",
+  "Parallel Programming Models": "The development of programming languages and models for effectively writing code that executes on parallel hardware.",
+  "Domain-Specific Architectures": "The design of specialized computer hardware optimized for a specific application domain, such as machine learning or networking."
+}

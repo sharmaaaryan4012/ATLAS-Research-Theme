@@ -1,5 +1,5 @@
-[
-  "Land Use & Environmental Quality",
-  "Sustainable Development",
-  "Climate Action Planning"
-]
+{
+  "Land Use & Environmental Quality": "The planning of land use to protect environmental quality.",
+  "Sustainable Development": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.",
+  "Climate Action Planning": "The development of plans to reduce greenhouse gas emissions and adapt to the impacts of climate change."
+}

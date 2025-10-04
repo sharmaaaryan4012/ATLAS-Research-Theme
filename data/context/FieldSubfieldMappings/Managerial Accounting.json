@@ -1,5 +1,5 @@
-[
-  "Performance Measurement & Incentives",
-  "Cost Management",
-  "Corporate Governance"
-]
+{
+  "Performance Measurement & Incentives": "The design of systems to measure and reward employee performance.",
+  "Cost Management": "The management of costs to improve profitability.",
+  "Corporate Governance": "The system of rules, practices, and processes by which a firm is directed and controlled."
+}

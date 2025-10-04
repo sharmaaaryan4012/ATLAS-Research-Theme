@@ -1,6 +1,6 @@
-[
-  "Machine Learning Methods",
-  "Statistical Computing & Algorithms",
-  "Bayesian Computation",
-  "High-Dimensional Data Analysis"
-]
+{
+  "Machine Learning Methods": "The development and analysis of algorithms that can learn from and make predictions on data.",
+  "Statistical Computing & Algorithms": "The design of efficient algorithms for performing statistical computations, especially for large datasets.",
+  "Bayesian Computation": "Computational methods, such as Markov Chain Monte Carlo (MCMC), for fitting Bayesian statistical models.",
+  "High-Dimensional Data Analysis": "Statistical methods for analyzing datasets where the number of variables is large relative to the number of observations."
+}

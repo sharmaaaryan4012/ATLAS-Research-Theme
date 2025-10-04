@@ -1,7 +1,7 @@
-[
-  "Turbulence & Complex Flows",
-  "Heat & Mass Transfer",
-  "Combustion & Propulsion",
-  "Multiphase Flow",
-  "Energy Conversion & Storage"
-]
+{
+  "Turbulence & Complex Flows": "The study of chaotic and unpredictable fluid motion, a key challenge in fluid dynamics.",
+  "Heat & Mass Transfer": "The study of the movement of thermal energy and chemical species within and between systems.",
+  "Combustion & Propulsion": "The science of chemical reactions that produce heat and light, and its application in engines and propulsion systems.",
+  "Multiphase Flow": "The study of the simultaneous flow of materials with different states or phases, such as gas-liquid or solid-fluid flows.",
+  "Energy Conversion & Storage": "The engineering of systems to convert energy from one form to another and to store it efficiently."
+}

@@ -1,6 +1,6 @@
-[
-  "History of Empires & Colonialism",
-  "Migration & Diaspora Studies",
-  "Global Environmental History",
-  "Maritime History"
-]
+{
+  "History of Empires & Colonialism": "The study of the rise and fall of empires and the history of colonial rule.",
+  "Migration & Diaspora Studies": "The study of the movement of peoples across borders and the formation of diasporic communities.",
+  "Global Environmental History": "The study of the historical relationship between humans and the natural world.",
+  "Maritime History": "The study of human interaction with and through the sea."
+}

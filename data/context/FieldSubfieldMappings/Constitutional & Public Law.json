@@ -1,6 +1,6 @@
-[
-  "Constitutional Law",
-  "Administrative Law",
-  "Election Law",
-  "Legislation & Statutory Interpretation"
-]
+{
+  "Constitutional Law": "The law that defines the powers of the government and the rights of citizens.",
+  "Administrative Law": "The law that governs the activities of administrative agencies of government.",
+  "Election Law": "The law that governs the process of elections.",
+  "Legislation & Statutory Interpretation": "The study of the process of creating laws and the principles of interpreting them."
+}

@@ -1,5 +1,5 @@
-[
-  "Soil & Water Management",
-  "Sustainable Agriculture",
-  "Crop Physiology"
-]
+{
+  "Soil & Water Management": "The management of soil and water resources for sustainable crop production.",
+  "Sustainable Agriculture": "The practice of farming using principles of ecology.",
+  "Crop Physiology": "The study of the functions of plants and their parts."
+}

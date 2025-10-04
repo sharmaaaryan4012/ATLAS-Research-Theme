@@ -1,5 +1,5 @@
-[
-  "Digital Preservation",
-  "Curation & Stewardship",
-  "Archival Theory & Practice"
-]
+{
+  "Digital Preservation": "The policies and practices for ensuring continued access to digital materials for as long as necessary.",
+  "Curation & Stewardship": "The management and preservation of valuable collections of information for future use.",
+  "Archival Theory & Practice": "The study of the principles and methods for managing and preserving records of enduring value."
+}

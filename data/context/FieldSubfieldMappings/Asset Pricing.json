@@ -1,5 +1,5 @@
-[
-  "Equity & Fixed Income Markets",
-  "Derivatives & Risk Management",
-  "Behavioral Finance"
-]
+{
+  "Equity & Fixed Income Markets": "The study of the valuation of stocks and bonds.",
+  "Derivatives & Risk Management": "The use of financial instruments to manage risk.",
+  "Behavioral Finance": "The study of the effects of psychology on financial decisions."
+}

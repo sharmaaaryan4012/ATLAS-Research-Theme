@@ -1,5 +1,5 @@
-[
-  "Cognitive & Social Development",
-  "Atypical Development",
-  "Lifespan Development"
-]
+{
+  "Cognitive & Social Development": "The study of the development of thinking, social skills, and personality across the lifespan.",
+  "Atypical Development": "The study of developmental disorders such as autism and ADHD.",
+  "Lifespan Development": "The study of human development from conception to death."
+}

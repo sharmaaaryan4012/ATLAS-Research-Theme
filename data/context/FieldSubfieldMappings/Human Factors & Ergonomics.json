@@ -1,6 +1,6 @@
-[
-  "Cognitive Engineering",
-  "Human-Automation Interaction",
-  "Biomechanical & Physiological Ergonomics",
-  "Safety Engineering"
-]
+{
+  "Cognitive Engineering": "The design of systems to support human cognitive processes such as attention, memory, and decision-making.",
+  "Human-Automation Interaction": "The study of how humans work with automated systems and the design of effective human-in-the-loop control.",
+  "Biomechanical & Physiological Ergonomics": "The study of the physical interaction of humans with their work environment to prevent injury and improve performance.",
+  "Safety Engineering": "The application of engineering principles to identify and eliminate hazards in systems and processes."
+}

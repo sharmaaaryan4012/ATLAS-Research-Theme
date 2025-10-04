@@ -1,5 +1,5 @@
-[
-  "Agricultural Finance",
-  "Commodity Markets & Futures",
-  "Risk Analysis"
-]
+{
+  "Agricultural Finance": "The provision of financial services to the agricultural sector.",
+  "Commodity Markets & Futures": "The study of markets for agricultural commodities and the use of financial instruments to manage price risk.",
+  "Risk Analysis": "The assessment and management of risks in agriculture, such as weather and price volatility."
+}

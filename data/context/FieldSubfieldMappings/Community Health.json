@@ -1,5 +1,5 @@
-[
-  "Epidemiology",
-  "Health Behavior & Promotion",
-  "Public Health Policy"
-]
+{
+  "Epidemiology": "The study of the distribution and determinants of health and disease in populations.",
+  "Health Behavior & Promotion": "The study of the factors that influence health behaviors and the development of interventions to promote healthy behaviors.",
+  "Public Health Policy": "The study of the laws, regulations, and policies that affect the health of populations."
+}

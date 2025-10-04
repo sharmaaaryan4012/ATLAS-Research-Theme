@@ -1,5 +1,5 @@
-[
-  "Corporate Communication",
-  "Communication Networks",
-  "Technology in Organizations"
-]
+{
+  "Corporate Communication": "The management of internal and external communications in a corporation.",
+  "Communication Networks": "The study of the patterns of communication within organizations.",
+  "Technology in Organizations": "The study of how new communication technologies are used in the workplace."
+}

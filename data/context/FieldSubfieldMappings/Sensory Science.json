@@ -1,5 +1,5 @@
-[
-  "Sensory Evaluation Methods",
-  "Consumer Product Testing",
-  "Psychophysics"
-]
+{
+  "Sensory Evaluation Methods": "The methods used to measure human responses to food products.",
+  "Consumer Product Testing": "The testing of food products with consumers to assess their acceptability.",
+  "Psychophysics": "The study of the relationship between physical stimuli and the sensory experiences they produce."
+}

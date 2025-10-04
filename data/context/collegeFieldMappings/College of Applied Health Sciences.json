@@ -1,14 +1,14 @@
 {
-  "Kinesiology & Community Health": [
-    "Biomechanics",
-    "Community Health",
-    "Exercise Physiology",
-    "Kinesiology"
-  ],
-  "Speech & Hearing Science": [
-    "Audiology",
-    "Language Science",
-    "Neuroscience of Communication",
-    "Speech-Language Pathology"
-  ]
+  "Kinesiology & Community Health": {
+    "Biomechanics": "The study of the mechanics of biological systems and human movement.",
+    "Community Health": "The science of protecting and improving the health of people and their communities.",
+    "Exercise Physiology": "The study of the body's response and adaptation to physical activity and exercise.",
+    "Kinesiology": "The comprehensive study of human movement, encompassing motor control, psychology, and adapted physical activity."
+  },
+  "Speech & Hearing Science": {
+    "Audiology": "The science of hearing, balance, and their associated disorders, including the provision of hearing aids.",
+    "Language Science": "The interdisciplinary study of language development, psycholinguistics, and bilingualism.",
+    "Neuroscience of Communication": "The study of the neural bases of speech, language, and hearing, and neurogenic communication disorders.",
+    "Speech-Language Pathology": "The assessment and treatment of communication and swallowing disorders."
+  }
 }

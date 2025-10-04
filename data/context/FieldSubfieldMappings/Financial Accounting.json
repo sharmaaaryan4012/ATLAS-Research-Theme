@@ -1,5 +1,5 @@
-[
-  "Capital Markets Research",
-  "Financial Reporting & Disclosure",
-  "Valuation"
-]
+{
+  "Capital Markets Research": "The study of the relationship between accounting information and stock prices.",
+  "Financial Reporting & Disclosure": "The study of the information that firms disclose in their financial reports.",
+  "Valuation": "The process of determining the present value of an asset."
+}

@@ -1,1178 +1,1178 @@
 {
   "The Grainger College of Engineering": {
     "Computer Science": {
-      "Algorithms & Theory of Computation": [
-        "Analysis of Algorithms",
-        "Complexity Theory",
-        "Cryptography",
-        "Algorithmic Game Theory",
-        "Randomized Algorithms"
-      ],
-      "Artificial Intelligence & Machine Learning": [
-        "Learning Theory",
-        "Deep Learning & Neural Networks",
-        "Reinforcement Learning",
-        "Probabilistic Graphical Models",
-        "Knowledge Representation & Reasoning",
-        "Trustworthy & Ethical AI"
-      ],
-      "Computer Architecture & Parallel Computing": [
-        "High-Performance Computing (HPC)",
-        "Processor & System-on-Chip (SoC) Design",
-        "Memory & Storage Systems",
-        "Parallel Programming Models",
-        "Domain-Specific Architectures"
-      ],
-      "Computer Vision & Graphics": [
-        "Image & Video Analysis",
-        "3D Reconstruction & Scene Understanding",
-        "Computational Photography",
-        "Rendering & Animation",
-        "Visual Recognition & Detection"
-      ],
-      "Databases & Information Systems": [
-        "Data Mining & Knowledge Discovery",
-        "Database System Internals",
-        "Information Retrieval",
-        "Large-Scale Data Analytics",
-        "Data Curation & Provenance"
-      ],
-      "Human-Computer Interaction (HCI)": [
-        "User Interface (UI) & User Experience (UX) Design",
-        "Ubiquitous & Mobile Computing",
-        "Social Computing",
-        "Accessibility & Assistive Technology",
-        "Visualization & Visual Analytics"
-      ],
-      "Natural Language Processing (NLP)": [
-        "Machine Translation",
-        "Information Extraction & Text Mining",
-        "Dialogue & Interactive Systems",
-        "Computational Social Science",
-        "Language Grounding & Multimodality"
-      ],
-      "Programming Languages & Software Engineering": [
-        "Compilers & Runtimes",
-        "Formal Methods & Verification",
-        "Software Testing & Analysis",
-        "Programming Language Design",
-        "Empirical Software Engineering"
-      ],
-      "Scientific Computing & Numerical Methods": [
-        "Numerical Linear Algebra",
-        "Differential Equation Solvers",
-        "High-Performance Scientific Libraries",
-        "Computational Science & Engineering",
-        "Data-Driven Scientific Discovery"
-      ],
-      "Security & Privacy": [
-        "Network & Distributed System Security",
-        "Cryptography & Cryptanalysis",
-        "Software & Systems Security",
-        "Privacy-Enhancing Technologies",
-        "Hardware Security"
-      ],
-      "Systems & Networking": [
-        "Operating Systems",
-        "Distributed Systems & Cloud Computing",
-        "Computer Networks",
-        "Wireless & Mobile Systems",
-        "Systems for Machine Learning"
-      ]
+      "Algorithms & Theory of Computation": {
+        "Analysis of Algorithms": "The determination of the computational resources (like time and memory) required by an algorithm to solve a problem.",
+        "Complexity Theory": "The classification of computational problems according to their inherent difficulty and the relationships between those classes.",
+        "Cryptography": "The study and practice of techniques for secure communication in the presence of adversaries, focusing on confidentiality and integrity.",
+        "Algorithmic Game Theory": "The study of the intersection of computer science and game theory, focusing on algorithms for strategic interactions.",
+        "Randomized Algorithms": "The use of randomness as a tool for algorithm design, often leading to simpler or more efficient solutions."
+      },
+      "Artificial Intelligence & Machine Learning": {
+        "Learning Theory": "The mathematical study of the principles underlying machine learning algorithms and their performance.",
+        "Deep Learning & Neural Networks": "A class of machine learning algorithms based on artificial neural networks with many layers, enabling learning from vast amounts of data.",
+        "Reinforcement Learning": "A type of machine learning where an agent learns to make decisions by taking actions in an environment to maximize cumulative reward.",
+        "Probabilistic Graphical Models": "A framework for representing and reasoning about uncertainty using probability and graph theory.",
+        "Knowledge Representation & Reasoning": "The field of AI dedicated to representing information about the world in a form that a computer system can utilize to solve complex tasks.",
+        "Trustworthy & Ethical AI": "The study of ensuring that AI systems are fair, transparent, explainable, and aligned with human values."
+      },
+      "Computer Architecture & Parallel Computing": {
+        "High-Performance Computing (HPC)": "The use of supercomputers and parallel processing techniques for solving complex computational problems.",
+        "Processor & System-on-Chip (SoC) Design": "The design of central processing units (CPUs), graphics processing units (GPUs), and integrated systems on a single chip.",
+        "Memory & Storage Systems": "The study and design of hierarchical memory systems, including caches, RAM, and long-term storage like SSDs.",
+        "Parallel Programming Models": "The development of programming languages and models for effectively writing code that executes on parallel hardware.",
+        "Domain-Specific Architectures": "The design of specialized computer hardware optimized for a specific application domain, such as machine learning or networking."
+      },
+      "Computer Vision & Graphics": {
+        "Image & Video Analysis": "The techniques for processing and extracting meaningful information from digital images and video streams.",
+        "3D Reconstruction & Scene Understanding": "The process of creating 3D models from images or sensor data and interpreting the geometry and semantics of a scene.",
+        "Computational Photography": "The convergence of computer graphics, computer vision, and optics to overcome the limitations of traditional photography.",
+        "Rendering & Animation": "The process of generating photorealistic or stylized images from 2D or 3D models and creating the illusion of motion.",
+        "Visual Recognition & Detection": "The task of identifying and locating objects, faces, and activities within images and videos."
+      },
+      "Databases & Information Systems": {
+        "Data Mining & Knowledge Discovery": "The process of discovering patterns, anomalies, and insights from large datasets.",
+        "Database System Internals": "The study of the underlying principles of how database management systems (DBMS) are built, including storage, indexing, and query processing.",
+        "Information Retrieval": "The science of searching for information in documents, searching for documents themselves, and searching for metadata which describe data.",
+        "Large-Scale Data Analytics": "The design of systems and algorithms for processing and analyzing massive datasets that do not fit into single-machine memory.",
+        "Data Curation & Provenance": "The active management of data throughout its lifecycle to ensure its quality, and the tracking of its origin and transformations."
+      },
+      "Human-Computer Interaction (HCI)": {
+        "User Interface (UI) & User Experience (UX) Design": "The design of the visual and interactive elements of a system and the overall experience a person has when using it.",
+        "Ubiquitous & Mobile Computing": "The paradigm of embedding computational capabilities into everyday objects and environments, accessible via mobile devices.",
+        "Social Computing": "The study of how people interact with computational systems in social contexts, including social media and collaborative tools.",
+        "Accessibility & Assistive Technology": "The design of technology and systems to be usable by people with a wide range of disabilities.",
+        "Visualization & Visual Analytics": "The creation of interactive visual representations of data to amplify human cognition and facilitate discovery."
+      },
+      "Natural Language Processing (NLP)": {
+        "Machine Translation": "The task of automatically translating text or speech from one language to another.",
+        "Information Extraction & Text Mining": "The process of automatically extracting structured information from unstructured text documents.",
+        "Dialogue & Interactive Systems": "The design of conversational agents (chatbots, voice assistants) that can interact with humans in natural language.",
+        "Computational Social Science": "The use of computational methods, especially NLP, to analyze large-scale social data and understand social phenomena.",
+        "Language Grounding & Multimodality": "The study of connecting language to other modalities, such as vision and action, to create a deeper understanding of meaning."
+      },
+      "Programming Languages & Software Engineering": {
+        "Compilers & Runtimes": "The design of software that translates high-level programming code into machine code and manages its execution.",
+        "Formal Methods & Verification": "The use of mathematical techniques to specify, develop, and formally prove the correctness of software and hardware systems.",
+        "Software Testing & Analysis": "The development of methods for finding and fixing errors in software through automated testing and program analysis.",
+        "Programming Language Design": "The theory and practice of creating new programming languages with specific features for clarity, performance, or safety.",
+        "Empirical Software Engineering": "The study of software development processes and products through empirical data collection and analysis."
+      },
+      "Scientific Computing & Numerical Methods": {
+        "Numerical Linear Algebra": "The study of algorithms for performing matrix computations, which are fundamental to scientific simulation.",
+        "Differential Equation Solvers": "The development of numerical methods for solving ordinary and partial differential equations that model physical phenomena.",
+        "High-Performance Scientific Libraries": "The creation of optimized software libraries for common numerical computations used in scientific applications.",
+        "Computational Science & Engineering": "An interdisciplinary field that uses computation and simulation to solve complex problems in various scientific and engineering domains.",
+        "Data-Driven Scientific Discovery": "The use of machine learning and data analysis techniques to extract knowledge and hypotheses from large scientific datasets."
+      },
+      "Security & Privacy": {
+        "Network & Distributed System Security": "The protection of data and services in networked environments, including defending against attacks like denial-of-service.",
+        "Cryptography & Cryptanalysis": "The design of cryptographic protocols and the analysis of their strength against adversarial attacks.",
+        "Software & Systems Security": "The identification and mitigation of vulnerabilities in software code and operating systems.",
+        "Privacy-Enhancing Technologies": "The development of technologies that enable online activities without compromising user privacy, such as anonymity systems and differential privacy.",
+        "Hardware Security": "The protection of the physical hardware components of a computing system from malicious attacks."
+      },
+      "Systems & Networking": {
+        "Operating Systems": "The study of the core software that manages computer hardware, resources, and provides common services for computer programs.",
+        "Distributed Systems & Cloud Computing": "The study of systems whose components are located on different networked computers, and the delivery of computing services over the internet.",
+        "Computer Networks": "The principles and protocols that govern how data is transmitted and routed between computers, including the internet.",
+        "Wireless & Mobile Systems": "The study of wireless communication technologies and the design of systems for mobile devices like smartphones.",
+        "Systems for Machine Learning": "The design of specialized computer systems and software infrastructure to support large-scale machine learning training and inference."
+      }
     },
     "Electrical & Computer Engineering": {
-      "Circuits & VLSI Design": [
-        "Analog & Mixed-Signal Circuits",
-        "Digital & Memory Circuits",
-        "RF & Millimeter-Wave Circuits",
-        "Power Management Circuits",
-        "CAD & Design Automation"
-      ],
-      "Communications": [
-        "Wireless Communication & Networks",
-        "Information Theory & Coding",
-        "Optical Communication",
-        "Network Science & Theory"
-      ],
-      "Control Systems": [
-        "Linear & Nonlinear Control",
-        "Optimal & Stochastic Control",
-        "Networked Control Systems",
-        "Control of Autonomous Systems"
-      ],
-      "Electromagnetics & Photonics": [
-        "Antennas & Propagation",
-        "Computational Electromagnetics",
-        "Integrated Photonics & Optoelectronics",
-        "Optical Imaging & Spectroscopy",
-        "Plasmonics & Metamaterials"
-      ],
-      "Microelectronics & Nanotechnology": [
-        "Semiconductor Devices & Physics",
-        "Micro-Electro-Mechanical Systems (MEMS)",
-        "Nanofabrication & Nanomaterials",
-        "Quantum Devices"
-      ],
-      "Power & Energy Systems": [
-        "Power Electronics & Motor Drives",
-        "Smart Grids & Grid Integration",
-        "Renewable Energy Systems",
-        "Power System Dynamics & Control"
-      ],
-      "Quantum Information Science": [
-        "Quantum Computing",
-        "Quantum Communication & Cryptography",
-        "Quantum Sensing & Metrology",
-        "Quantum Simulation"
-      ],
-      "Robotics & Autonomous Systems": [
-        "Control Theory for Robotics",
-        "Motion Planning & Kinematics",
-        "Perception & Sensor Fusion",
-        "Human-Robot Interaction",
-        "Multi-Agent & Swarm Robotics"
-      ],
-      "Signal & Image Processing": [
-        "Biomedical Imaging & Image Analysis",
-        "Machine Learning for Signal Processing",
-        "Audio & Speech Processing",
-        "Statistical Signal Processing"
-      ]
+      "Circuits & VLSI Design": {
+        "Analog & Mixed-Signal Circuits": "The design of circuits that process continuous analog signals and interface between the analog and digital domains.",
+        "Digital & Memory Circuits": "The design of circuits that perform logic operations using discrete values and the architecture of computer memory.",
+        "RF & Millimeter-Wave Circuits": "The design of high-frequency circuits for wireless communication applications, such as in 5G and radar.",
+        "Power Management Circuits": "The design of circuits that efficiently manage and convert electrical power in electronic devices.",
+        "CAD & Design Automation": "The development of computer-aided design (CAD) tools to automate the design and verification of complex integrated circuits."
+      },
+      "Communications": {
+        "Wireless Communication & Networks": "The study of technologies like Wi-Fi, 5G/6G, and satellite communications for untethered information transfer.",
+        "Information Theory & Coding": "The mathematical study of the fundamental limits of data compression and reliable communication.",
+        "Optical Communication": "The use of light, typically through fiber optics, to transmit information over long distances at high data rates.",
+        "Network Science & Theory": "The study of complex networks, such as the internet and social networks, using tools from graph theory and statistical physics."
+      },
+      "Control Systems": {
+        "Linear & Nonlinear Control": "The design of controllers for systems described by linear and nonlinear mathematical models.",
+        "Optimal & Stochastic Control": "The design of controllers that optimize a specific performance criterion, often in the presence of randomness.",
+        "Networked Control Systems": "The study of control systems where sensors, actuators, and controllers are interconnected over a communication network.",
+        "Control of Autonomous Systems": "The application of control theory to enable autonomous operation of systems like self-driving cars and drones."
+      },
+      "Electromagnetics & Photonics": {
+        "Antennas & Propagation": "The design of antennas for transmitting and receiving radio waves and the study of how those waves travel through different media.",
+        "Computational Electromagnetics": "The development of numerical methods to simulate and solve complex electromagnetic problems.",
+        "Integrated Photonics & Optoelectronics": "The design of optical devices and systems on a chip, analogous to integrated electronic circuits.",
+        "Optical Imaging & Spectroscopy": "The use of light to form images of objects and to measure their properties by analyzing their interaction with light.",
+        "Plasmonics & Metamaterials": "The study of engineered materials with exotic optical properties and the manipulation of light at the nanoscale."
+      },
+      "Microelectronics & Nanotechnology": {
+        "Semiconductor Devices & Physics": "The study of the physics of semiconductor materials and the design of electronic devices like transistors and diodes.",
+        "Micro-Electro-Mechanical Systems (MEMS)": "The technology of microscopic devices, particularly those with moving parts, such as sensors and actuators.",
+        "Nanofabrication & Nanomaterials": "The techniques for creating structures at the nanometer scale and the study of materials with novel nanoscale properties.",
+        "Quantum Devices": "The design and fabrication of electronic devices that exploit quantum mechanical effects for new functionalities."
+      },
+      "Power & Energy Systems": {
+        "Power Electronics & Motor Drives": "The use of solid-state electronics to control and convert electric power, essential for electric vehicles and renewable energy.",
+        "Smart Grids & Grid Integration": "The modernization of the electrical grid using information technology to improve reliability, efficiency, and integrate renewable sources.",
+        "Renewable Energy Systems": "The engineering of systems for harnessing energy from sources like solar, wind, and geothermal.",
+        "Power System Dynamics & Control": "The analysis and control of the stability of large-scale electrical power grids."
+      },
+      "Quantum Information Science": {
+        "Quantum Computing": "The use of quantum-mechanical phenomena such as superposition and entanglement to perform computation.",
+        "Quantum Communication & Cryptography": "The use of quantum principles to enable secure communication channels that are provably immune to eavesdropping.",
+        "Quantum Sensing & Metrology": "The use of quantum systems to make ultra-precise measurements of physical quantities.",
+        "Quantum Simulation": "The use of controllable quantum systems to simulate the behavior of other, more complex quantum systems."
+      },
+      "Robotics & Autonomous Systems": {
+        "Control Theory for Robotics": "The application of control systems theory to govern the movement and behavior of robots.",
+        "Motion Planning & Kinematics": "The study of algorithms for planning collision-free paths for robots and the mathematics of robot motion.",
+        "Perception & Sensor Fusion": "The process by which robots interpret data from sensors (like cameras and lidar) to understand their environment.",
+        "Human-Robot Interaction": "The study of how humans and robots can interact and collaborate safely and effectively.",
+        "Multi-Agent & Swarm Robotics": "The coordination of large groups of simple robots to perform complex tasks collectively."
+      },
+      "Signal & Image Processing": {
+        "Biomedical Imaging & Image Analysis": "The processing of medical images (like MRI, CT scans) to enhance their quality and extract clinical information.",
+        "Machine Learning for Signal Processing": "The application of machine learning and deep learning techniques to analyze and classify signals and images.",
+        "Audio & Speech Processing": "The analysis and synthesis of audio signals, including speech recognition, speaker identification, and audio enhancement.",
+        "Statistical Signal Processing": "The use of statistical models to represent and analyze signals and to make inferences from noisy data."
+      }
     },
     "Mechanical Science & Engineering": {
-      "Biomechanics & Mechanobiology": [
-        "Cellular & Tissue Mechanics",
-        "Musculoskeletal Biomechanics",
-        "Bio-inspired Design",
-        "Cardiovascular Biomechanics"
-      ],
-      "Controls & Dynamics": [
-        "Vibrations & Acoustics",
-        "Nonlinear Dynamics & Chaos",
-        "Mechatronics & Embedded Systems",
-        "Vehicle Dynamics & Control"
-      ],
-      "Design & Manufacturing": [
-        "Additive Manufacturing (3D Printing)",
-        "Product Design & Optimization",
-        "Advanced Manufacturing Processes",
-        "Digital Manufacturing & Automation"
-      ],
-      "Fluid Mechanics & Thermal Sciences": [
-        "Turbulence & Complex Flows",
-        "Heat & Mass Transfer",
-        "Combustion & Propulsion",
-        "Multiphase Flow",
-        "Energy Conversion & Storage"
-      ],
-      "Solid Mechanics & Materials": [
-        "Continuum Mechanics",
-        "Fracture & Fatigue",
-        "Computational Mechanics",
-        "Mechanics of Materials",
-        "Geomechanics"
-      ]
+      "Biomechanics & Mechanobiology": {
+        "Cellular & Tissue Mechanics": "The study of how mechanical forces affect the behavior and function of cells and biological tissues.",
+        "Musculoskeletal Biomechanics": "The analysis of the mechanics of bones, muscles, ligaments, and joints during human movement.",
+        "Bio-inspired Design": "The development of engineering solutions inspired by the designs and processes found in nature.",
+        "Cardiovascular Biomechanics": "The study of the mechanics of the heart, blood vessels, and blood flow."
+      },
+      "Controls & Dynamics": {
+        "Vibrations & Acoustics": "The study of mechanical oscillations and the science of sound and its control.",
+        "Nonlinear Dynamics & Chaos": "The study of systems whose behavior is not proportional to their inputs, often leading to complex and unpredictable dynamics.",
+        "Mechatronics & Embedded Systems": "The integration of mechanical engineering with electronics and computer control in the design of products and systems.",
+        "Vehicle Dynamics & Control": "The study of the motion of vehicles (ground, air, and sea) and the design of systems to control their movement."
+      },
+      "Design & Manufacturing": {
+        "Additive Manufacturing (3D Printing)": "The process of building three-dimensional objects from a digital file by adding material layer by layer.",
+        "Product Design & Optimization": "The use of engineering principles and computational tools to create and improve products and systems.",
+        "Advanced Manufacturing Processes": "The development of novel manufacturing techniques, such as laser machining and micro-fabrication.",
+        "Digital Manufacturing & Automation": "The use of computer-controlled systems and robotics to automate manufacturing processes."
+      },
+      "Fluid Mechanics & Thermal Sciences": {
+        "Turbulence & Complex Flows": "The study of chaotic and unpredictable fluid motion, a key challenge in fluid dynamics.",
+        "Heat & Mass Transfer": "The study of the movement of thermal energy and chemical species within and between systems.",
+        "Combustion & Propulsion": "The science of chemical reactions that produce heat and light, and its application in engines and propulsion systems.",
+        "Multiphase Flow": "The study of the simultaneous flow of materials with different states or phases, such as gas-liquid or solid-fluid flows.",
+        "Energy Conversion & Storage": "The engineering of systems to convert energy from one form to another and to store it efficiently."
+      },
+      "Solid Mechanics & Materials": {
+        "Continuum Mechanics": "The modeling of the behavior of materials as a continuous mass rather than as discrete particles.",
+        "Fracture & Fatigue": "The study of how and why materials break under static and cyclic loading.",
+        "Computational Mechanics": "The use of numerical methods, such as the finite element method, to simulate the behavior of materials and structures.",
+        "Mechanics of Materials": "The study of the relationship between the internal stresses and strains in a solid body under various loading conditions.",
+        "Geomechanics": "The study of the mechanical behavior of geological materials like soil and rock."
+      }
     },
     "Civil & Environmental Engineering": {
-      "Construction Engineering & Management": [
-        "Project Management & Control",
-        "Construction Informatics",
-        "Automation in Construction",
-        "Construction Safety"
-      ],
-      "Environmental Engineering & Science": [
-        "Water Quality & Treatment",
-        "Air Quality & Pollution Control",
-        "Environmental Biotechnology",
-        "Sustainable Engineering"
-      ],
-      "Geotechnical Engineering": [
-        "Soil Mechanics & Foundations",
-        "Rock Mechanics",
-        "Earthquake Engineering",
-        "Geoenvironmental Engineering"
-      ],
-      "Structural Engineering & Materials": [
-        "Structural Dynamics & Earthquake Engineering",
-        "Computational Mechanics & Simulation",
-        "Concrete & Steel Structures",
-        "Structural Health Monitoring"
-      ],
-      "Sustainable & Resilient Infrastructure": [
-        "Infrastructure Systems Analysis",
-        "Climate Change Adaptation",
-        "Risk & Reliability Analysis",
-        "Smart Cities"
-      ],
-      "Transportation Engineering": [
-        "Traffic Flow Theory & Operations",
-        "Transportation Systems & Planning",
-        "Pavement & Materials Engineering",
-        "Railroad & Public Transit Engineering"
-      ],
-      "Water Resources Engineering": [
-        "Hydrology & Hydraulic Engineering",
-        "Groundwater & Subsurface Flow",
-        "Water Resources Management & Policy",
-        "Ecohydrology"
-      ]
+      "Construction Engineering & Management": {
+        "Project Management & Control": "The methodologies for planning, scheduling, budgeting, and controlling construction projects.",
+        "Construction Informatics": "The application of information technology and data science to improve construction processes.",
+        "Automation in Construction": "The use of robotics and automated systems to perform construction tasks.",
+        "Construction Safety": "The study and implementation of practices to prevent accidents and injuries on construction sites."
+      },
+      "Environmental Engineering & Science": {
+        "Water Quality & Treatment": "The science of assessing water quality and designing systems for drinking water purification and wastewater treatment.",
+        "Air Quality & Pollution Control": "The study of air pollutants and the development of technologies to control their emission.",
+        "Environmental Biotechnology": "The use of biological systems, like microbes, for environmental remediation and waste treatment.",
+        "Sustainable Engineering": "The design of engineering systems that meet human needs while minimizing environmental impact."
+      },
+      "Geotechnical Engineering": {
+        "Soil Mechanics & Foundations": "The study of the physical properties of soil and the design of foundations for structures.",
+        "Rock Mechanics": "The study of the mechanical behavior of rock and its response to applied forces, relevant to tunneling and mining.",
+        "Earthquake Engineering": "The design of structures and systems to resist the forces generated by earthquakes.",
+        "Geoenvironmental Engineering": "The application of geotechnical principles to solve environmental problems, such as landfill design and contaminant transport."
+      },
+      "Structural Engineering & Materials": {
+        "Structural Dynamics & Earthquake Engineering": "The study of the behavior of structures subjected to dynamic loads like wind and earthquakes.",
+        "Computational Mechanics & Simulation": "The use of computer models to simulate and analyze the behavior of complex structures.",
+        "Concrete & Steel Structures": "The design and analysis of structures made from the most common construction materials.",
+        "Structural Health Monitoring": "The use of sensors and data analysis to continuously assess the condition and safety of structures."
+      },
+      "Sustainable & Resilient Infrastructure": {
+        "Infrastructure Systems Analysis": "The modeling and analysis of large-scale, interconnected infrastructure networks like power grids and transportation systems.",
+        "Climate Change Adaptation": "The design of infrastructure to be resilient to the impacts of climate change, such as sea-level rise and extreme weather.",
+        "Risk & Reliability Analysis": "The quantification of the risk of failure and the reliability of infrastructure systems under uncertainty.",
+        "Smart Cities": "The integration of information and communication technology (ICT) to manage a city's assets and improve urban services."
+      },
+      "Transportation Engineering": {
+        "Traffic Flow Theory & Operations": "The mathematical study of traffic and the development of strategies to manage and optimize traffic flow.",
+        "Transportation Systems & Planning": "The planning and design of transportation networks to meet societal needs for mobility.",
+        "Pavement & Materials Engineering": "The design and analysis of roadway pavements and the materials used in their construction.",
+        "Railroad & Public Transit Engineering": "The engineering and planning of railway systems and public transportation networks."
+      },
+      "Water Resources Engineering": {
+        "Hydrology & Hydraulic Engineering": "The study of the movement, distribution, and quality of water on Earth, and the engineering of water flow in pipes and channels.",
+        "Groundwater & Subsurface Flow": "The study of the flow of water beneath the Earth's surface in aquifers.",
+        "Water Resources Management & Policy": "The planning and management of water resources to balance competing demands from society and the environment.",
+        "Ecohydrology": "The study of the interactions between water and ecosystems."
+      }
     },
     "Materials Science & Engineering": {
-      "Biomaterials & Biomedical Devices": [
-        "Tissue Engineering Scaffolds",
-        "Drug Delivery Systems",
-        "Medical Implants & Devices",
-        "Regenerative Medicine"
-      ],
-      "Ceramics & Glasses": [
-        "Structural Ceramics",
-        "Electroceramics",
-        "Glass Science",
-        "High-Temperature Materials"
-      ],
-      "Computational Materials Science": [
-        "Molecular Dynamics Simulation",
-        "Density Functional Theory (DFT)",
-        "Phase-Field Modeling",
-        "Materials Informatics & Data Science"
-      ],
-      "Electronic Materials & Photonics": [
-        "Semiconductors",
-        "Photovoltaics & Solar Cells",
-        "Thermoelectrics",
-        "Dielectrics & Ferroelectrics"
-      ],
-      "Metals & Alloys": [
-        "Physical Metallurgy",
-        "Mechanical Behavior of Metals",
-        "Corrosion & Degradation",
-        "Advanced Steels & High-Entropy Alloys"
-      ],
-      "Polymers & Soft Materials": [
-        "Polymer Physics & Chemistry",
-        "Self-Assembling Materials",
-        "Soft Robotics",
-        "Composites & Blends"
-      ]
+      "Biomaterials & Biomedical Devices": {
+        "Tissue Engineering Scaffolds": "The design of porous materials that support cell growth and guide the formation of new biological tissue.",
+        "Drug Delivery Systems": "The engineering of materials to control the release of therapeutic agents to specific targets in the body.",
+        "Medical Implants & Devices": "The development of biocompatible materials for implants like artificial joints, stents, and dental implants.",
+        "Regenerative Medicine": "An interdisciplinary field that develops methods to regrow, repair or replace damaged or diseased cells, organs or tissues."
+      },
+      "Ceramics & Glasses": {
+        "Structural Ceramics": "The development of ceramic materials for applications requiring high strength and temperature resistance.",
+        "Electroceramics": "The study of ceramic materials with specific electrical properties, used in capacitors, sensors, and actuators.",
+        "Glass Science": "The study of the formation, structure, and properties of non-crystalline amorphous solids.",
+        "High-Temperature Materials": "The design of materials that can withstand extreme temperatures, such as in jet engines and furnaces."
+      },
+      "Computational Materials Science": {
+        "Molecular Dynamics Simulation": "A computer simulation method for analyzing the physical movements of atoms and molecules.",
+        "Density Functional Theory (DFT)": "A quantum mechanical modeling method used to investigate the electronic structure of many-body systems.",
+        "Phase-Field Modeling": "A computational method for simulating the evolution of microstructures in materials, such as crystal growth.",
+        "Materials Informatics & Data Science": "The use of data-driven approaches and machine learning to accelerate the discovery and design of new materials."
+      },
+      "Electronic Materials & Photonics": {
+        "Semiconductors": "The study of materials with electrical conductivity between that of a conductor and an insulator, forming the basis of all modern electronics.",
+        "Photovoltaics & Solar Cells": "The development of materials and devices that convert sunlight directly into electricity.",
+        "Thermoelectrics": "The study of materials that can convert heat into electricity and vice versa.",
+        "Dielectrics & Ferroelectrics": "The study of insulating materials and those with a spontaneous electric polarization, used in capacitors and memory."
+      },
+      "Metals & Alloys": {
+        "Physical Metallurgy": "The study of the physical and mechanical properties of metals as affected by their composition, processing, and microstructure.",
+        "Mechanical Behavior of Metals": "The analysis of how metals deform and fail under applied forces.",
+        "Corrosion & Degradation": "The study of the gradual destruction of materials by chemical or electrochemical reaction with their environment.",
+        "Advanced Steels & High-Entropy Alloys": "The design of new metal alloys with superior properties by combining multiple elements in novel compositions."
+      },
+      "Polymers & Soft Materials": {
+        "Polymer Physics & Chemistry": "The study of the physical principles and chemical synthesis of long-chain molecules (polymers).",
+        "Self-Assembling Materials": "The design of molecules and materials that spontaneously organize themselves into ordered structures.",
+        "Soft Robotics": "The design of robots from highly compliant materials, similar to those found in living organisms.",
+        "Composites & Blends": "The creation of new materials by combining polymers with other materials (like fibers) or by mixing different polymers."
+      }
     },
     "Bioengineering": {
-      "Biomedical Imaging & Sensing": [
-        "Magnetic Resonance Imaging (MRI)",
-        "Optical Imaging & Microscopy",
-        "Ultrasound & Photoacoustics",
-        "Biosensors & Diagnostics"
-      ],
-      "Cell & Tissue Engineering": [
-        "Stem Cell Engineering",
-        "Regenerative Biomaterials",
-        "Mechanobiology",
-        "Drug & Gene Delivery"
-      ],
-      "Computational & Systems Biology": [
-        "Bioinformatics & Genomics",
-        "Systems Biology Modeling",
-        "Synthetic Biology",
-        "Computational Neuroscience"
-      ],
-      "Neural Engineering & Neurotechnology": [
-        "Brain-Computer Interfaces",
-        "Neuroimaging",
-        "Neural Tissue Engineering",
-        "Computational Modeling of Neural Systems"
-      ]
+      "Biomedical Imaging & Sensing": {
+        "Magnetic Resonance Imaging (MRI)": "An imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body.",
+        "Optical Imaging & Microscopy": "The use of light and advanced microscopes to visualize biological structures and processes at high resolution.",
+        "Ultrasound & Photoacoustics": "The use of sound waves and laser-generated sound to create images of tissues inside the body.",
+        "Biosensors & Diagnostics": "The development of analytical devices to detect biological molecules and diagnose diseases."
+      },
+      "Cell & Tissue Engineering": {
+        "Stem Cell Engineering": "The use of engineering principles to control the growth and differentiation of stem cells into specific cell types.",
+        "Regenerative Biomaterials": "The design of materials that can stimulate the body's own repair mechanisms to regenerate tissues.",
+        "Mechanobiology": "The study of how physical forces and changes in cell or tissue mechanics contribute to development, physiology, and disease.",
+        "Drug & Gene Delivery": "The engineering of vehicles, such as nanoparticles, to deliver drugs or genetic material to specific cells or tissues."
+      },
+      "Computational & Systems Biology": {
+        "Bioinformatics & Genomics": "The use of computational tools to analyze large-scale biological data, especially DNA and protein sequences.",
+        "Systems Biology Modeling": "The creation of mathematical models to understand the complex interactions within biological systems.",
+        "Synthetic Biology": "The design and construction of new biological parts, devices, and systems, or the re-design of existing, natural biological systems for useful purposes.",
+        "Computational Neuroscience": "The use of mathematical models and theoretical analysis to understand the principles that govern the nervous system."
+      },
+      "Neural Engineering & Neurotechnology": {
+        "Brain-Computer Interfaces": "The development of direct communication pathways between the brain and an external device.",
+        "Neuroimaging": "The use of various techniques to either directly or indirectly image the structure, function, or pharmacology of the nervous system.",
+        "Neural Tissue Engineering": "The application of engineering methods to promote the repair and regeneration of nervous tissue.",
+        "Computational Modeling of Neural Systems": "The use of computer simulations to model the behavior of neurons and neural networks."
+      }
     },
     "Aerospace Engineering": {
-      "Aerodynamics & Fluid Dynamics": [
-        "Computational Fluid Dynamics (CFD)",
-        "Experimental Aerodynamics",
-        "Hypersonics & High-Temperature Flows",
-        "Aeroacoustics"
-      ],
-      "Astrodynamics & Orbital Mechanics": [
-        "Space Mission Design & Optimization",
-        "Satellite & Spacecraft Dynamics",
-        "Celestial Mechanics"
-      ],
-      "Control & Estimation": [
-        "Guidance, Navigation & Control (GNC)",
-        "Autonomous Aerospace Systems",
-        "State Estimation & Filtering"
-      ],
-      "Propulsion & Combustion": [
-        "Air-Breathing Propulsion",
-        "Rocket & Electric Propulsion",
-        "Combustion Science",
-        "Sustainable Aviation Fuels"
-      ],
-      "Structures & Materials": [
-        "Aerospace Structures & Solid Mechanics",
-        "Composite Materials",
-        "Aeroelasticity & Structural Dynamics",
-        "Fatigue & Fracture"
-      ]
+      "Aerodynamics & Fluid Dynamics": {
+        "Computational Fluid Dynamics (CFD)": "The use of numerical analysis and data structures to analyze and solve problems that involve fluid flows.",
+        "Experimental Aerodynamics": "The use of wind tunnels and other experimental facilities to study the flow of air over bodies.",
+        "Hypersonics & High-Temperature Flows": "The study of flight at speeds much greater than the speed of sound, where extreme temperatures are generated.",
+        "Aeroacoustics": "The study of noise generated by aerodynamic forces and fluid flow."
+      },
+      "Astrodynamics & Orbital Mechanics": {
+        "Space Mission Design & Optimization": "The planning of trajectories and maneuvers for spacecraft to achieve mission objectives efficiently.",
+        "Satellite & Spacecraft Dynamics": "The study of the motion and attitude of artificial satellites and spacecraft in orbit.",
+        "Celestial Mechanics": "The branch of astronomy that deals with the motions of celestial objects."
+      },
+      "Control & Estimation": {
+        "Guidance, Navigation & Control (GNC)": "The design of systems to control the movement of a vehicle from a starting point to a destination.",
+        "Autonomous Aerospace Systems": "The development of aircraft and spacecraft that can operate without direct human control.",
+        "State Estimation & Filtering": "The use of algorithms, like the Kalman filter, to estimate the state of a system from noisy sensor measurements."
+      },
+      "Propulsion & Combustion": {
+        "Air-Breathing Propulsion": "The study of engines, such as jet engines and ramjets, that use external air for combustion.",
+        "Rocket & Electric Propulsion": "The study of engines that carry their own oxidizer (rockets) or use electromagnetic fields to accelerate propellant.",
+        "Combustion Science": "The fundamental study of the chemical process of burning fuel to release energy.",
+        "Sustainable Aviation Fuels": "The development of renewable or waste-derived aviation fuels to reduce the environmental impact of flying."
+      },
+      "Structures & Materials": {
+        "Aerospace Structures & Solid Mechanics": "The application of solid mechanics principles to the design of lightweight and robust aircraft and spacecraft structures.",
+        "Composite Materials": "The study of materials made from two or more constituent materials with significantly different properties, such as carbon fiber.",
+        "Aeroelasticity & Structural Dynamics": "The study of the interaction between aerodynamic forces and the structural flexibility of aerospace vehicles.",
+        "Fatigue & Fracture": "The analysis of how aerospace structures fail over time due to cyclic loading and crack propagation."
+      }
     },
     "Industrial & Enterprise Systems Engineering": {
-      "Data Analytics & Decision Sciences": [
-        "Statistical Learning",
-        "Predictive Modeling",
-        "Prescriptive Analytics",
-        "Simulation"
-      ],
-      "Financial Engineering": [
-        "Quantitative Finance",
-        "Risk Management",
-        "Algorithmic Trading",
-        "Stochastic Modeling"
-      ],
-      "Human Factors & Ergonomics": [
-        "Cognitive Engineering",
-        "Human-Automation Interaction",
-        "Biomechanical & Physiological Ergonomics",
-        "Safety Engineering"
-      ],
-      "Operations Research & Optimization": [
-        "Linear & Nonlinear Programming",
-        "Integer & Combinatorial Optimization",
-        "Stochastic Optimization",
-        "Network Optimization"
-      ],
-      "Systems Engineering & Design": [
-        "System Architecture & Modeling",
-        "Design Theory & Methodology",
-        "Complex Systems Analysis",
-        "Risk & Reliability Engineering"
-      ]
+      "Data Analytics & Decision Sciences": {
+        "Statistical Learning": "The use of statistical methods as a foundation for machine learning and predictive modeling.",
+        "Predictive Modeling": "The process of using data and statistical models to predict future outcomes.",
+        "Prescriptive Analytics": "The area of business analytics dedicated to finding the best course of action for a given situation.",
+        "Simulation": "The imitation of the operation of a real-world process or system over time, often using computer models."
+      },
+      "Financial Engineering": {
+        "Quantitative Finance": "The use of mathematical models and large datasets to analyze financial markets and securities.",
+        "Risk Management": "The identification, evaluation, and prioritization of financial risks followed by coordinated application of resources to minimize them.",
+        "Algorithmic Trading": "The use of computer programs to execute trading strategies at high speeds.",
+        "Stochastic Modeling": "The use of probability and stochastic processes to model the random behavior of financial markets."
+      },
+      "Human Factors & Ergonomics": {
+        "Cognitive Engineering": "The design of systems to support human cognitive processes such as attention, memory, and decision-making.",
+        "Human-Automation Interaction": "The study of how humans work with automated systems and the design of effective human-in-the-loop control.",
+        "Biomechanical & Physiological Ergonomics": "The study of the physical interaction of humans with their work environment to prevent injury and improve performance.",
+        "Safety Engineering": "The application of engineering principles to identify and eliminate hazards in systems and processes."
+      },
+      "Operations Research & Optimization": {
+        "Linear & Nonlinear Programming": "Mathematical methods for finding the best outcome in a mathematical model whose requirements are represented by linear or nonlinear relationships.",
+        "Integer & Combinatorial Optimization": "The optimization of problems where some of the variables are restricted to be integers, often used in scheduling and logistics.",
+        "Stochastic Optimization": "Optimization methods that incorporate randomness and uncertainty in the problem formulation.",
+        "Network Optimization": "The study of optimization problems on networks, such as finding the shortest path or maximum flow."
+      },
+      "Systems Engineering & Design": {
+        "System Architecture & Modeling": "The conceptual model that defines the structure, behavior, and more views of a system.",
+        "Design Theory & Methodology": "The formal study of the principles and processes that underlie engineering design.",
+        "Complex Systems Analysis": "The study of systems with many interconnected components whose collective behavior is not easily predicted from the components alone.",
+        "Risk & Reliability Engineering": "The engineering discipline of ensuring that a system will perform its intended function without failure for a specified time."
+      }
     },
     "Nuclear, Plasma & Radiological Engineering": {
-      "Fusion & Plasma Science": [
-        "Plasma Physics",
-        "Fusion Technology & Engineering",
-        "Plasma-Material Interactions",
-        "Low-Temperature Plasmas"
-      ],
-      "Nuclear Materials & Waste Management": [
-        "Radiation Effects on Materials",
-        "Nuclear Fuel Cycle",
-        "Radioactive Waste Disposal",
-        "Nuclear Safeguards & Security"
-      ],
-      "Radiation, Instrumentation & Imaging": [
-        "Radiation Detection & Measurement",
-        "Medical Imaging Physics",
-        "Radiation Shielding & Dosimetry",
-        "Homeland Security Applications"
-      ],
-      "Reactor Physics & Thermal Hydraulics": [
-        "Neutronics & Reactor Analysis",
-        "Advanced Reactor Design",
-        "Nuclear Power Plant Safety",
-        "Multiphase Flow & Heat Transfer"
-      ]
+      "Fusion & Plasma Science": {
+        "Plasma Physics": "The fundamental study of the behavior of ionized gases (plasmas), the fourth state of matter.",
+        "Fusion Technology & Engineering": "The development of the technologies and materials needed to build a fusion power plant.",
+        "Plasma-Material Interactions": "The study of how hot plasmas interact with the materials that contain them, a key challenge in fusion energy.",
+        "Low-Temperature Plasmas": "The study and application of plasmas at near-room temperature, used in semiconductor manufacturing and lighting."
+      },
+      "Nuclear Materials & Waste Management": {
+        "Radiation Effects on Materials": "The study of how high-energy radiation alters the properties of materials in nuclear reactors.",
+        "Nuclear Fuel Cycle": "The entire process from mining uranium to disposing of nuclear waste.",
+        "Radioactive Waste Disposal": "The development of safe and permanent solutions for the disposal of high-level radioactive waste.",
+        "Nuclear Safeguards & Security": "The technical measures to prevent the proliferation of nuclear weapons and secure nuclear materials."
+      },
+      "Radiation, Instrumentation & Imaging": {
+        "Radiation Detection & Measurement": "The design of instruments to detect and measure ionizing radiation.",
+        "Medical Imaging Physics": "The physics principles behind medical imaging modalities like X-ray, CT, PET, and MRI.",
+        "Radiation Shielding & Dosimetry": "The design of materials to block radiation and the measurement of absorbed radiation doses.",
+        "Homeland Security Applications": "The use of radiation detection technologies to prevent nuclear terrorism and secure borders."
+      },
+      "Reactor Physics & Thermal Hydraulics": {
+        "Neutronics & Reactor Analysis": "The study of the behavior of neutrons in a nuclear reactor, which governs the chain reaction.",
+        "Advanced Reactor Design": "The development of new, safer, and more efficient nuclear reactor designs.",
+        "Nuclear Power Plant Safety": "The analysis and engineering of systems to ensure the safe operation of nuclear power plants.",
+        "Multiphase Flow & Heat Transfer": "The study of fluid flow and heat transfer in the complex conditions inside a nuclear reactor core."
+      }
     }
   },
   "College of Liberal Arts & Sciences": {
     "Mathematics": {
-      "Algebra": [
-        "Group Theory",
-        "Representation Theory",
-        "Commutative Algebra",
-        "Algebraic Geometry"
-      ],
-      "Analysis": [
-        "Real & Complex Analysis",
-        "Functional Analysis",
-        "Partial Differential Equations (PDEs)",
-        "Harmonic Analysis"
-      ],
-      "Applied & Computational Mathematics": [
-        "Numerical Analysis",
-        "Mathematical Modeling",
-        "Scientific Computation",
-        "Mathematical Biology"
-      ],
-      "Geometry & Topology": [
-        "Differential Geometry",
-        "Algebraic Topology",
-        "Geometric Topology"
-      ],
-      "Logic & Foundations": [
-        "Set Theory",
-        "Model Theory",
-        "Computability Theory"
-      ],
-      "Number Theory": [
-        "Analytic Number Theory",
-        "Algebraic Number Theory",
-        "Elliptic Curves & Modular Forms"
-      ],
-      "Probability": [
-        "Stochastic Processes",
-        "Random Matrix Theory",
-        "Measure Theory",
-        "Interacting Particle Systems"
-      ]
+      "Algebra": {
+        "Group Theory": "The study of algebraic structures known as groups, which are central to abstract algebra.",
+        "Representation Theory": "The study of abstract algebraic structures by representing their elements as linear transformations of vector spaces.",
+        "Commutative Algebra": "The study of commutative rings, their ideals, and modules over such rings.",
+        "Algebraic Geometry": "A branch of mathematics that uses techniques of abstract algebra to solve geometric problems."
+      },
+      "Analysis": {
+        "Real & Complex Analysis": "The rigorous study of the real and complex number systems, functions, and the concepts of limits and continuity.",
+        "Functional Analysis": "The study of vector spaces endowed with some kind of limit-related structure (e.g., inner product, norm, topology) and the linear functions defined on these spaces.",
+        "Partial Differential Equations (PDEs)": "The study of differential equations that contain unknown multivariable functions and their partial derivatives.",
+        "Harmonic Analysis": "The study of the representation of functions or signals as the superposition of basic waves."
+      },
+      "Applied & Computational Mathematics": {
+        "Numerical Analysis": "The study of algorithms that use numerical approximation for the problems of mathematical analysis.",
+        "Mathematical Modeling": "The process of using mathematical concepts and language to create a model of a real-world system.",
+        "Scientific Computation": "The design and analysis of computational algorithms for solving scientific and engineering problems.",
+        "Mathematical Biology": "The use of mathematical models to study biological systems and processes."
+      },
+      "Geometry & Topology": {
+        "Differential Geometry": "The study of smooth manifolds (a generalization of surfaces) using the tools of calculus.",
+        "Algebraic Topology": "The use of tools from abstract algebra to study topological spaces.",
+        "Geometric Topology": "The study of manifolds and their embeddings, primarily focusing on low-dimensional spaces."
+      },
+      "Logic & Foundations": {
+        "Set Theory": "The branch of mathematical logic that studies sets, which are informally collections of objects.",
+        "Model Theory": "The study of the relationship between formal theories (a collection of sentences in a formal language) and their models (structures in which the sentences are true).",
+        "Computability Theory": "The branch of mathematical logic that studies which problems are solvable by algorithms."
+      },
+      "Number Theory": {
+        "Analytic Number Theory": "A branch of number theory that uses methods from mathematical analysis to solve problems about integers.",
+        "Algebraic Number Theory": "A branch of number theory that uses the techniques of abstract algebra to study the integers, rational numbers, and their generalizations.",
+        "Elliptic Curves & Modular Forms": "Advanced topics in number theory that connect algebra, analysis, and geometry, famously used in the proof of Fermat's Last Theorem."
+      },
+      "Probability": {
+        "Stochastic Processes": "The study of mathematical models for random processes that evolve over time.",
+        "Random Matrix Theory": "The study of matrices whose entries are random variables.",
+        "Measure Theory": "The rigorous mathematical foundation for the concept of probability and integration.",
+        "Interacting Particle Systems": "The study of probabilistic models involving a large number of interacting components."
+      }
     },
     "Statistics": {
-      "Applied Statistics": [
-        "Biostatistics",
-        "Environmental Statistics",
-        "Statistical Consulting",
-        "Experimental Design"
-      ],
-      "Computational Statistics & Data Science": [
-        "Machine Learning Methods",
-        "Statistical Computing & Algorithms",
-        "Bayesian Computation",
-        "High-Dimensional Data Analysis"
-      ],
-      "Statistical Theory & Methods": [
-        "Asymptotic Theory",
-        "Causal Inference",
-        "Nonparametric Statistics",
-        "Time Series Analysis"
-      ]
+      "Applied Statistics": {
+        "Biostatistics": "The application of statistics to problems in biology and medicine.",
+        "Environmental Statistics": "The use of statistical methods to analyze environmental data and address problems in the environmental sciences.",
+        "Statistical Consulting": "The practice of providing statistical expertise and advice to researchers in other fields.",
+        "Experimental Design": "The design of experiments to ensure that the data collected is valid and can be used to draw meaningful conclusions."
+      },
+      "Computational Statistics & Data Science": {
+        "Machine Learning Methods": "The development and analysis of algorithms that can learn from and make predictions on data.",
+        "Statistical Computing & Algorithms": "The design of efficient algorithms for performing statistical computations, especially for large datasets.",
+        "Bayesian Computation": "Computational methods, such as Markov Chain Monte Carlo (MCMC), for fitting Bayesian statistical models.",
+        "High-Dimensional Data Analysis": "Statistical methods for analyzing datasets where the number of variables is large relative to the number of observations."
+      },
+      "Statistical Theory & Methods": {
+        "Asymptotic Theory": "The study of the behavior of statistical procedures as the sample size grows infinitely large.",
+        "Causal Inference": "The process of drawing a conclusion about a causal connection based on the conditions of the occurrence of an effect.",
+        "Nonparametric Statistics": "Statistical methods that do not rely on assumptions about the probability distributions of the analyzed variables.",
+        "Time Series Analysis": "Statistical methods for analyzing time-ordered data points."
+      }
     },
     "Physics": {
-      "Astrophysics & Cosmology": [
-        "Theoretical Astrophysics",
-        "Observational Astronomy",
-        "Cosmology & General Relativity",
-        "Gravitational Waves"
-      ],
-      "Atomic, Molecular & Optical Physics": [
-        "Quantum Optics",
-        "Cold Atoms & Molecules",
-        "Ultrafast & Precision Spectroscopy"
-      ],
-      "Biophysics & Quantitative Biology": [
-        "Molecular Biophysics",
-        "Cellular Biophysics",
-        "Systems Biology",
-        "Neurophysics"
-      ],
-      "Condensed Matter Physics": [
-        "Hard Condensed Matter (Crystals, Metals)",
-        "Soft Condensed Matter (Polymers, Colloids)",
-        "Superconductivity & Magnetism",
-        "Topological Materials"
-      ],
-      "High Energy & Particle Physics": [
-        "Experimental Particle Physics",
-        "Theoretical Particle Physics (Phenomenology)",
-        "String Theory & Quantum Gravity",
-        "Neutrino Physics"
-      ],
-      "Nuclear Physics": [
-        "Experimental Nuclear Physics",
-        "Theoretical Nuclear Physics",
-        "Quark-Gluon Plasma",
-        "Nuclear Astrophysics"
-      ],
-      "Quantum Information": [
-        "Quantum Algorithms & Computation",
-        "Quantum Error Correction",
-        "Experimental Quantum Systems"
-      ]
+      "Astrophysics & Cosmology": {
+        "Theoretical Astrophysics": "The use of physical models and theories to understand astronomical phenomena.",
+        "Observational Astronomy": "The practice of observing celestial objects by using telescopes and other astronomical apparatus.",
+        "Cosmology & General Relativity": "The study of the origin, evolution, and ultimate fate of the universe, based on Einstein's theory of general relativity.",
+        "Gravitational Waves": "The study of ripples in spacetime, caused by some of the most violent and energetic processes in the universe."
+      },
+      "Atomic, Molecular & Optical Physics": {
+        "Quantum Optics": "The study of the quantum mechanical nature of light and its interaction with matter.",
+        "Cold Atoms & Molecules": "The study of atoms and molecules cooled to temperatures near absolute zero, where quantum effects dominate.",
+        "Ultrafast & Precision Spectroscopy": "The use of lasers to study physical and chemical processes that occur on extremely short timescales."
+      },
+      "Biophysics & Quantitative Biology": {
+        "Molecular Biophysics": "The study of the physical properties of biological molecules like proteins and DNA.",
+        "Cellular Biophysics": "The study of the physical principles governing the function of living cells.",
+        "Systems Biology": "The computational and mathematical modeling of complex biological systems.",
+        "Neurophysics": "The application of physics principles to understand the function of the brain and nervous system."
+      },
+      "Condensed Matter Physics": {
+        "Hard Condensed Matter (Crystals, Metals)": "The study of materials where quantum mechanical effects and the crystalline structure are dominant.",
+        "Soft Condensed Matter (Polymers, Colloids)": "The study of materials that are easily deformed by thermal stresses or fluctuations at room temperature.",
+        "Superconductivity & Magnetism": "The study of materials with zero electrical resistance and the collective magnetic behavior of materials.",
+        "Topological Materials": "A new class of materials whose properties are protected by principles of topology, making them robust to defects."
+      },
+      "High Energy & Particle Physics": {
+        "Experimental Particle Physics": "The use of large particle accelerators and detectors to discover new fundamental particles and study their interactions.",
+        "Theoretical Particle Physics (Phenomenology)": "The connection of the fundamental theories of particle physics to experimental observations.",
+        "String Theory & Quantum Gravity": "A theoretical framework that attempts to unify general relativity and quantum mechanics.",
+        "Neutrino Physics": "The study of neutrinos, elusive fundamental particles that are extremely difficult to detect."
+      },
+      "Nuclear Physics": {
+        "Experimental Nuclear Physics": "The use of accelerators and detectors to study the structure and reactions of atomic nuclei.",
+        "Theoretical Nuclear Physics": "The development of theoretical models to explain the properties and behavior of atomic nuclei.",
+        "Quark-Gluon Plasma": "A state of matter that exists at extremely high temperatures, where protons and neutrons 'melt' into their constituent quarks and gluons.",
+        "Nuclear Astrophysics": "The study of the nuclear reactions that power stars and create the chemical elements in the universe."
+      },
+      "Quantum Information": {
+        "Quantum Algorithms & Computation": "The design of algorithms that run on a quantum computer and can solve certain problems much faster than classical computers.",
+        "Quantum Error Correction": "The development of techniques to protect quantum information from errors due to noise and decoherence.",
+        "Experimental Quantum Systems": "The physical implementation of quantum bits (qubits) and quantum computers using systems like trapped ions, superconducting circuits, and photons."
+      }
     },
     "Chemistry": {
-      "Analytical Chemistry": [
-        "Separations & Chromatography",
-        "Mass Spectrometry",
-        "Spectroscopy & Sensing",
-        "Bioanalytical Chemistry"
-      ],
-      "Chemical Biology": [
-        "Chemical Genetics",
-        "Enzymology",
-        "Nucleic Acid & Protein Chemistry",
-        "Metabolomics"
-      ],
-      "Inorganic Chemistry": [
-        "Organometallic Chemistry",
-        "Bioinorganic Chemistry",
-        "Solid-State Chemistry",
-        "Coordination Chemistry"
-      ],
-      "Materials Chemistry": [
-        "Polymer Chemistry",
-        "Nanomaterials Synthesis",
-        "Energy Materials",
-        "Supramolecular Chemistry"
-      ],
-      "Organic Chemistry": [
-        "Synthetic Organic Chemistry",
-        "Physical Organic Chemistry",
-        "Organocatalysis",
-        "Medicinal Chemistry"
-      ],
-      "Physical Chemistry": [
-        "Spectroscopy & Molecular Dynamics",
-        "Quantum Chemistry",
-        "Statistical Mechanics",
-        "Surface Science & Catalysis"
-      ],
-      "Theoretical & Computational Chemistry": [
-        "Electronic Structure Theory",
-        "Molecular Dynamics Simulations",
-        "Quantum Dynamics",
-        "Computational Materials Science"
-      ]
+      "Analytical Chemistry": {
+        "Separations & Chromatography": "Techniques for separating complex mixtures into their individual components.",
+        "Mass Spectrometry": "An analytical technique that measures the mass-to-charge ratio of ions, used to identify unknown compounds.",
+        "Spectroscopy & Sensing": "The use of the interaction of light with matter to identify and quantify chemical substances.",
+        "Bioanalytical Chemistry": "The application of analytical chemistry techniques to study biological systems."
+      },
+      "Chemical Biology": {
+        "Chemical Genetics": "The use of small molecules to perturb protein function and study biological processes.",
+        "Enzymology": "The study of enzymes, their kinetics, structure, and function.",
+        "Nucleic Acid & Protein Chemistry": "The study of the chemical properties of DNA, RNA, and proteins.",
+        "Metabolomics": "The large-scale study of small molecules, known as metabolites, within cells, biofluids, tissues, or organisms."
+      },
+      "Inorganic Chemistry": {
+        "Organometallic Chemistry": "The study of chemical compounds containing at least one chemical bond between a carbon atom of an organic compound and a metal.",
+        "Bioinorganic Chemistry": "The study of the role of metals in biology.",
+        "Solid-State Chemistry": "The study of the synthesis, structure, and properties of solid materials.",
+        "Coordination Chemistry": "The study of compounds consisting of a central metal atom or ion bonded to a surrounding group of molecules or ions."
+      },
+      "Materials Chemistry": {
+        "Polymer Chemistry": "The branch of chemistry focused on the synthesis and properties of polymers (plastics).",
+        "Nanomaterials Synthesis": "The chemical synthesis of materials with nanoscale dimensions.",
+        "Energy Materials": "The design of materials for energy generation and storage, such as in batteries and solar cells.",
+        "Supramolecular Chemistry": "The branch of chemistry concerned with chemical systems composed of a discrete number of molecules."
+      },
+      "Organic Chemistry": {
+        "Synthetic Organic Chemistry": "The art and science of constructing complex organic molecules from simpler ones.",
+        "Physical Organic Chemistry": "The study of the relationship between the structure and reactivity of organic molecules.",
+        "Organocatalysis": "The use of small organic molecules as catalysts for chemical reactions.",
+        "Medicinal Chemistry": "The design and synthesis of new pharmaceutical drugs."
+      },
+      "Physical Chemistry": {
+        "Spectroscopy & Molecular Dynamics": "The use of light to study the structure and dynamics of molecules.",
+        "Quantum Chemistry": "The application of quantum mechanics to solve problems in chemistry.",
+        "Statistical Mechanics": "The use of probability theory to connect the microscopic properties of atoms and molecules to the macroscopic properties of materials.",
+        "Surface Science & Catalysis": "The study of chemical and physical phenomena that occur at the interface of two phases, and the study of catalysts that speed up chemical reactions."
+      },
+      "Theoretical & Computational Chemistry": {
+        "Electronic Structure Theory": "The use of quantum mechanical calculations to determine the electronic structure of atoms and molecules.",
+        "Molecular Dynamics Simulations": "A computer simulation method for analyzing the physical movements of atoms and molecules over time.",
+        "Quantum Dynamics": "The study of the time-dependent evolution of quantum systems.",
+        "Computational Materials Science": "The use of computer simulations to predict the properties of materials."
+      }
     },
     "Economics": {
-      "Applied Microeconomics": [
-        "Labor Economics",
-        "Health Economics",
-        "Public Economics",
-        "Industrial Organization"
-      ],
-      "Econometrics": [
-        "Microeconometrics",
-        "Macroeconometrics",
-        "Time Series Analysis",
-        "Financial Econometrics"
-      ],
-      "Economic Theory (Micro & Macro)": [
-        "Game Theory & Strategic Behavior",
-        "Mechanism Design & Auction Theory",
-        "Macroeconomic Dynamics",
-        "Behavioral Economics"
-      ],
-      "International & Development Economics": [
-        "International Trade",
-        "International Finance",
-        "Development Economics",
-        "Political Economy"
-      ],
-      "Public & Labor Economics": [
-        "Taxation & Public Finance",
-        "Labor Market Analysis",
-        "Economics of Education",
-        "Law & Economics"
-      ]
+      "Applied Microeconomics": {
+        "Labor Economics": "The study of the labor market, including employment, wages, and unions.",
+        "Health Economics": "The study of health and healthcare systems from an economic perspective.",
+        "Public Economics": "The study of the role of the government in the economy.",
+        "Industrial Organization": "The study of how firms compete with each other in markets."
+      },
+      "Econometrics": {
+        "Microeconometrics": "The application of econometric methods to individual-level data.",
+        "Macroeconometrics": "The application of econometric methods to aggregate economic data, such as GDP and inflation.",
+        "Time Series Analysis": "The statistical analysis of time-ordered data.",
+        "Financial Econometrics": "The application of econometric methods to financial data."
+      },
+      "Economic Theory (Micro & Macro)": {
+        "Game Theory & Strategic Behavior": "The study of mathematical models of strategic interaction among rational decision-makers.",
+        "Mechanism Design & Auction Theory": "The design of rules for games or markets to achieve specific outcomes.",
+        "Macroeconomic Dynamics": "The study of the evolution of the economy over time, including economic growth and business cycles.",
+        "Behavioral Economics": "The incorporation of insights from psychology into economics to explain why people make seemingly irrational decisions."
+      },
+      "International & Development Economics": {
+        "International Trade": "The study of the exchange of goods and services between countries.",
+        "International Finance": "The study of the flow of capital between countries and the effects on exchange rates.",
+        "Development Economics": "The study of the economic aspects of the development process in low-income countries.",
+        "Political Economy": "The study of the interaction between politics and economics."
+      },
+      "Public & Labor Economics": {
+        "Taxation & Public Finance": "The study of the design of tax systems and government spending.",
+        "Labor Market Analysis": "The empirical study of labor markets, including wages, employment, and inequality.",
+        "Economics of Education": "The study of the economics of education, including the returns to schooling and school finance.",
+        "Law & Economics": "The application of economic theory to analyze law and legal institutions."
+      }
     },
     "Psychology": {
-      "Behavioral Neuroscience": [
-        "Neurobiology of Learning & Memory",
-        "Psychopharmacology",
-        "Hormones & Behavior",
-        "Animal Models of Disease"
-      ],
-      "Clinical & Community Psychology": [
-        "Psychopathology",
-        "Psychotherapy & Intervention Science",
-        "Community & Prevention Science",
-        "Health Psychology"
-      ],
-      "Cognitive Neuroscience": [
-        "Human Brain Mapping (fMRI, EEG)",
-        "Neuropsychology",
-        "Computational Neuroscience",
-        "Neurobiology of Decision Making"
-      ],
-      "Cognitive Psychology": [
-        "Memory & Attention",
-        "Language & Cognition",
-        "Judgment & Decision Making",
-        "Reasoning & Problem Solving"
-      ],
-      "Developmental Psychology": [
-        "Infant & Child Development",
-        "Adolescent Development",
-        "Cognitive Development",
-        "Social & Emotional Development"
-      ],
-      "Industrial-Organizational Psychology": [
-        "Personnel Selection & Training",
-        "Leadership & Motivation",
-        "Organizational Behavior",
-        "Occupational Health Psychology"
-      ],
-      "Social-Personality Psychology": [
-        "Attitudes & Social Influence",
-        "Intergroup Relations",
-        "Self & Identity",
-        "Emotion & Affective Science"
-      ]
+      "Behavioral Neuroscience": {
+        "Neurobiology of Learning & Memory": "The study of the neural circuits and molecular mechanisms that underlie learning and memory.",
+        "Psychopharmacology": "The study of the effects of drugs on the mind and behavior.",
+        "Hormones & Behavior": "The study of how hormones affect behavior and how behavior influences hormone levels.",
+        "Animal Models of Disease": "The use of animal models to study the biological basis of psychiatric and neurological disorders."
+      },
+      "Clinical & Community Psychology": {
+        "Psychopathology": "The scientific study of mental disorders.",
+        "Psychotherapy & Intervention Science": "The study of the effectiveness of different psychological therapies and interventions.",
+        "Community & Prevention Science": "The study of how to promote mental health and prevent mental illness at the community level.",
+        "Health Psychology": "The study of how psychological factors affect health and illness."
+      },
+      "Cognitive Neuroscience": {
+        "Human Brain Mapping (fMRI, EEG)": "The use of neuroimaging techniques to map cognitive functions onto specific brain regions.",
+        "Neuropsychology": "The study of the relationship between brain function and behavior, often through the study of brain-damaged patients.",
+        "Computational Neuroscience": "The use of mathematical models to understand the information processing functions of the brain.",
+        "Neurobiology of Decision Making": "The study of the neural circuits that underlie how we make choices."
+      },
+      "Cognitive Psychology": {
+        "Memory & Attention": "The study of how we encode, store, and retrieve memories, and how we selectively process information.",
+        "Language & Cognition": "The study of the mental processes involved in language comprehension and production.",
+        "Judgment & Decision Making": "The study of how people make judgments and decisions, often under uncertainty.",
+        "Reasoning & Problem Solving": "The study of the cognitive processes involved in logical reasoning and solving complex problems."
+      },
+      "Developmental Psychology": {
+        "Infant & Child Development": "The study of the cognitive, social, and emotional changes that occur from birth through childhood.",
+        "Adolescent Development": "The study of the psychological and social changes that occur during adolescence.",
+        "Cognitive Development": "The study of how thinking, problem-solving, and other cognitive abilities change over the lifespan.",
+        "Social & Emotional Development": "The study of how our understanding of ourselves and others, and our emotional lives, change over the lifespan."
+      },
+      "Industrial-Organizational Psychology": {
+        "Personnel Selection & Training": "The development and validation of methods for selecting, training, and evaluating employees.",
+        "Leadership & Motivation": "The study of what makes an effective leader and how to motivate employees.",
+        "Organizational Behavior": "The study of how individuals and groups behave within organizations.",
+        "Occupational Health Psychology": "The study of how to promote the health, safety, and well-being of workers."
+      },
+      "Social-Personality Psychology": {
+        "Attitudes & Social Influence": "The study of how our attitudes are formed and changed, and how we are influenced by others.",
+        "Intergroup Relations": "The study of prejudice, stereotypes, and discrimination between different social groups.",
+        "Self & Identity": "The study of how we come to understand ourselves and form our sense of identity.",
+        "Emotion & Affective Science": "The scientific study of emotion and mood."
+      }
     },
     "Political Science": {
-      "American Politics": [
-        "Political Behavior & Public Opinion",
-        "Political Institutions (Congress, Presidency)",
-        "State & Local Politics",
-        "Race, Ethnicity & Politics"
-      ],
-      "Comparative Politics": [
-        "Democratization & Authoritarianism",
-        "Political Economy of Development",
-        "Contentious Politics & Social Movements",
-        "Area Studies"
-      ],
-      "International Relations": [
-        "International Security & Conflict",
-        "International Political Economy",
-        "Foreign Policy Analysis",
-        "International Organizations & Law"
-      ],
-      "Political Methodology": [
-        "Quantitative & Statistical Methods",
-        "Formal Theory & Modeling",
-        "Qualitative & Mixed Methods",
-        "Computational Social Science"
-      ],
-      "Political Theory": [
-        "History of Political Thought",
-        "Contemporary Political Philosophy",
-        "Democratic Theory",
-        "Critical Theory"
-      ]
+      "American Politics": {
+        "Political Behavior & Public Opinion": "The study of how and why citizens think and act in politics, including voting and political participation.",
+        "Political Institutions (Congress, Presidency)": "The study of the formal and informal rules that structure American political institutions.",
+        "State & Local Politics": "The study of politics and policy at the sub-national level.",
+        "Race, Ethnicity & Politics": "The study of the role of race and ethnicity in shaping American politics."
+      },
+      "Comparative Politics": {
+        "Democratization & Authoritarianism": "The study of why and how countries become democratic or remain authoritarian.",
+        "Political Economy of Development": "The study of the relationship between politics and economics in developing countries.",
+        "Contentious Politics & Social Movements": "The study of protests, revolutions, and other forms of political conflict.",
+        "Area Studies": "The in-depth study of the politics of a specific geographic region, such as Latin America or the Middle East."
+      },
+      "International Relations": {
+        "International Security & Conflict": "The study of war, peace, and the use of military force in international politics.",
+        "International Political Economy": "The study of the interaction between international politics and economics, including trade and finance.",
+        "Foreign Policy Analysis": "The study of how states make foreign policy decisions.",
+        "International Organizations & Law": "The study of international institutions, such as the United Nations, and the role of international law."
+      },
+      "Political Methodology": {
+        "Quantitative & Statistical Methods": "The application of statistical methods to analyze political data.",
+        "Formal Theory & Modeling": "The use of mathematical models, such as game theory, to study political phenomena.",
+        "Qualitative & Mixed Methods": "The use of case studies, interviews, and other qualitative methods to study politics.",
+        "Computational Social Science": "The use of computational methods to analyze large-scale political data, such as from social media."
+      },
+      "Political Theory": {
+        "History of Political Thought": "The study of the great political thinkers of the past, from Plato to Nietzsche.",
+        "Contemporary Political Philosophy": "The study of current debates in political philosophy, such as justice, equality, and rights.",
+        "Democratic Theory": "The study of the meaning and justification of democracy.",
+        "Critical Theory": "A school of thought that critiques society and culture by applying knowledge from the social sciences and the humanities."
+      }
     },
     "History": {
-      "American History": [
-        "Colonial & Revolutionary America",
-        "19th Century US History",
-        "20th Century US History",
-        "African American History"
-      ],
-      "European History": [
-        "Medieval Europe",
-        "Early Modern Europe",
-        "Modern Europe",
-        "Russian & Eastern European History"
-      ],
-      "Global & Transnational History": [
-        "History of Empires & Colonialism",
-        "Migration & Diaspora Studies",
-        "Global Environmental History",
-        "Maritime History"
-      ],
-      "History of Science, Technology & Medicine": [
-        "History of Biology & Medicine",
-        "History of Physical Sciences",
-        "History of Technology",
-        "Science & Empire"
-      ],
-      "Pre-Modern History (Ancient/Medieval)": [
-        "Ancient Greece & Rome",
-        "Medieval Studies",
-        "Byzantine History",
-        "Ancient Near East"
-      ]
+      "American History": {
+        "Colonial & Revolutionary America": "The study of the period of European colonization and the American Revolution.",
+        "19th Century US History": "The study of major themes such as westward expansion, the Civil War, and industrialization.",
+        "20th Century US History": "The study of the United States as a global power, including the World Wars, the Cold War, and social movements.",
+        "African American History": "The study of the history of people of African descent in the United States."
+      },
+      "European History": {
+        "Medieval Europe": "The study of European history from the fall of the Roman Empire to the Renaissance.",
+        "Early Modern Europe": "The study of the period from the Renaissance to the French Revolution.",
+        "Modern Europe": "The study of European history from the French Revolution to the present.",
+        "Russian & Eastern European History": "The specialized study of the history of Russia and the nations of Eastern Europe."
+      },
+      "Global & Transnational History": {
+        "History of Empires & Colonialism": "The study of the rise and fall of empires and the history of colonial rule.",
+        "Migration & Diaspora Studies": "The study of the movement of peoples across borders and the formation of diasporic communities.",
+        "Global Environmental History": "The study of the historical relationship between humans and the natural world.",
+        "Maritime History": "The study of human interaction with and through the sea."
+      },
+      "History of Science, Technology & Medicine": {
+        "History of Biology & Medicine": "The study of the historical development of the life sciences and medical practices.",
+        "History of Physical Sciences": "The study of the historical development of fields like physics, chemistry, and astronomy.",
+        "History of Technology": "The study of the history of invention and the impact of technology on society.",
+        "Science & Empire": "The study of the role of science and technology in the history of European imperialism."
+      },
+      "Pre-Modern History (Ancient/Medieval)": {
+        "Ancient Greece & Rome": "The study of the history and culture of the classical world.",
+        "Medieval Studies": "An interdisciplinary field of study of the European Middle Ages.",
+        "Byzantine History": "The study of the history of the Byzantine Empire.",
+        "Ancient Near East": "The study of the early civilizations of Mesopotamia, Egypt, and the Levant."
+      }
     },
     "Communication": {
-      "Health Communication": [
-        "Doctor-Patient Communication",
-        "Health Campaigns & Persuasion",
-        "Health Information Technology"
-      ],
-      "Interpersonal Communication": [
-        "Relational Dynamics",
-        "Nonverbal Communication",
-        "Family Communication"
-      ],
-      "Media & Cinema Studies": [
-        "Media Effects & Psychology",
-        "Film History & Theory",
-        "Digital & New Media",
-        "Global Media"
-      ],
-      "Organizational Communication": [
-        "Corporate Communication",
-        "Communication Networks",
-        "Technology in Organizations"
-      ],
-      "Rhetoric & Public Discourse": [
-        "Rhetorical Theory & Criticism",
-        "Political Communication",
-        "Public Address & Social Movements"
-      ]
+      "Health Communication": {
+        "Doctor-Patient Communication": "The study of communication between healthcare providers and patients.",
+        "Health Campaigns & Persuasion": "The design and evaluation of public health campaigns to promote healthy behaviors.",
+        "Health Information Technology": "The study of the use of technology in healthcare communication."
+      },
+      "Interpersonal Communication": {
+        "Relational Dynamics": "The study of communication in personal relationships, such as friendships and romantic partnerships.",
+        "Nonverbal Communication": "The study of communication through body language, gestures, and facial expressions.",
+        "Family Communication": "The study of communication patterns within families."
+      },
+      "Media & Cinema Studies": {
+        "Media Effects & Psychology": "The study of the psychological effects of media on individuals and society.",
+        "Film History & Theory": "The critical study of the history of cinema and the theories of film analysis.",
+        "Digital & New Media": "The study of the internet, social media, and other digital communication technologies.",
+        "Global Media": "The study of media systems and flows across national borders."
+      },
+      "Organizational Communication": {
+        "Corporate Communication": "The management of internal and external communications in a corporation.",
+        "Communication Networks": "The study of the patterns of communication within organizations.",
+        "Technology in Organizations": "The study of how new communication technologies are used in the workplace."
+      },
+      "Rhetoric & Public Discourse": {
+        "Rhetorical Theory & Criticism": "The study of the principles of persuasive speaking and writing.",
+        "Political Communication": "The study of communication in the political sphere, including campaigns and media coverage.",
+        "Public Address & Social Movements": "The study of speeches and other forms of public communication that have shaped history."
+      }
     },
     "Linguistics": {
-      "Computational Linguistics": [
-        "Natural Language Processing (NLP)",
-        "Corpus Linguistics",
-        "Machine Learning for Language"
-      ],
-      "Phonetics & Phonology": [
-        "Articulatory & Acoustic Phonetics",
-        "Phonological Theory",
-        "Laboratory Phonology"
-      ],
-      "Psycholinguistics": [
-        "Language Acquisition",
-        "Sentence Processing",
-        "Bilingualism"
-      ],
-      "Semantics & Pragmatics": [
-        "Formal Semantics",
-        "Lexical Semantics",
-        "Discourse & Pragmatics"
-      ],
-      "Syntax": [
-        "Syntactic Theory",
-        "Comparative Syntax",
-        "Language Variation & Change"
-      ]
+      "Computational Linguistics": {
+        "Natural Language Processing (NLP)": "The application of computational techniques to the analysis and synthesis of natural language and speech.",
+        "Corpus Linguistics": "The study of language as expressed in samples (corpora) of 'real world' text.",
+        "Machine Learning for Language": "The use of machine learning algorithms to solve problems in natural language processing."
+      },
+      "Phonetics & Phonology": {
+        "Articulatory & Acoustic Phonetics": "The study of how speech sounds are produced and their acoustic properties.",
+        "Phonological Theory": "The study of the abstract, grammatical patterning of sounds in languages.",
+        "Laboratory Phonology": "The use of experimental methods to study the phonetics and phonology of language."
+      },
+      "Psycholinguistics": {
+        "Language Acquisition": "The study of how humans acquire the ability to perceive and comprehend language, as well as to produce and use words and sentences to communicate.",
+        "Sentence Processing": "The study of the cognitive processes that underlie the comprehension of sentences.",
+        "Bilingualism": "The study of the cognitive and linguistic aspects of knowing and using two or more languages."
+      },
+      "Semantics & Pragmatics": {
+        "Formal Semantics": "The use of logic and mathematics to study the literal meaning of sentences.",
+        "Lexical Semantics": "The study of word meaning.",
+        "Discourse & Pragmatics": "The study of how context contributes to meaning in language."
+      },
+      "Syntax": {
+        "Syntactic Theory": "The study of the formal rules and principles that govern the structure of sentences in human language.",
+        "Comparative Syntax": "The study of syntactic similarities and differences between languages.",
+        "Language Variation & Change": "The study of how language varies between speakers and changes over time."
+      }
     }
   },
   "College of Agricultural, Consumer & Environmental Sciences (ACES)": {
     "Agricultural & Consumer Economics": {
-      "Agribusiness Management": [
-        "Farm Management",
-        "Food & Agribusiness Marketing",
-        "Supply Chain Management"
-      ],
-      "Development Economics": [
-        "Agricultural Development",
-        "Poverty & Food Security",
-        "International Trade & Policy"
-      ],
-      "Environmental & Resource Economics": [
-        "Natural Resource Management",
-        "Climate Change Economics",
-        "Energy Economics & Policy"
-      ],
-      "Public Policy & Law": [
-        "Agricultural Policy",
-        "Food Law & Policy",
-        "Environmental Law"
-      ],
-      "Finance & Risk Management": [
-        "Agricultural Finance",
-        "Commodity Markets & Futures",
-        "Risk Analysis"
-      ]
-    },
-    "Crop Sciences": {
-      "Agronomy & Agroecology": [
-        "Soil & Water Management",
-        "Sustainable Agriculture",
-        "Crop Physiology"
-      ],
-      "Bioinformatics & Statistics": [
-        "Genomic Prediction",
-        "Statistical Genetics",
-        "Computational Biology"
-      ],
-      "Horticulture": [
-        "Specialty Crop Production",
-        "Urban Agriculture",
-        "Plant Propagation"
-      ],
-      "Plant Breeding & Genetics": [
-        "Molecular Breeding",
-        "Quantitative Genetics",
-        "Plant Genomics"
-      ],
-      "Plant Pathology & Weed Science": [
-        "Molecular Plant-Microbe Interactions",
-        "Integrated Pest Management (IPM)",
-        "Herbicide Resistance"
-      ]
+      "Agribusiness Management": {
+        "Farm Management": "The application of business principles to the operation of a farm.",
+        "Food & Agribusiness Marketing": "The marketing of agricultural products and food.",
+        "Supply Chain Management": "The management of the flow of goods and services in the food and agricultural sector."
+      },
+      "Development Economics": {
+        "Agricultural Development": "The study of economic development in the agricultural sector of developing countries.",
+        "Poverty & Food Security": "The study of the causes of poverty and food insecurity and the design of policies to address them.",
+        "International Trade & Policy": "The study of international trade in agricultural products and related government policies."
+      },
+      "Environmental & Resource Economics": {
+        "Natural Resource Management": "The economic analysis of the management of natural resources such as forests, fisheries, and water.",
+        "Climate Change Economics": "The economic analysis of the causes and consequences of climate change and policies to address it.",
+        "Energy Economics & Policy": "The study of the supply and demand of energy from an economic perspective."
+      },
+      "Finance & Risk Management": {
+        "Agricultural Finance": "The provision of financial services to the agricultural sector.",
+        "Commodity Markets & Futures": "The study of markets for agricultural commodities and the use of financial instruments to manage price risk.",
+        "Risk Analysis": "The assessment and management of risks in agriculture, such as weather and price volatility."
+      },
+      "Public Policy & Law": {
+        "Agricultural Policy": "The study of government policies related to agriculture.",
+        "Food Law & Policy": "The study of the laws and regulations that govern food production and safety.",
+        "Environmental Law": "The study of the laws and regulations related to the environment."
+      }
     },
     "Animal Sciences": {
-      "Animal Behavior & Welfare": [
-        "Applied Ethology",
-        "Stress Physiology",
-        "Animal Housing & Management"
-      ],
-      "Genetics, Genomics & Bioinformatics": [
-        "Quantitative & Population Genetics",
-        "Livestock Genomics",
-        "Computational Biology"
-      ],
-      "Microbiology": [
-        "Rumen Microbiology",
-        "Gut Health & Microbiome",
-        "Probiotics & Prebiotics"
-      ],
-      "Nutrition & Metabolism": [
-        "Ruminant Nutrition",
-        "Monogastric Nutrition",
-        "Nutritional Biochemistry"
-      ],
-      "Physiology": [
-        "Reproductive Physiology",
-        "Lactation Biology",
-        "Growth & Developmental Physiology"
-      ]
+      "Animal Behavior & Welfare": {
+        "Applied Ethology": "The study of the behavior of animals in their natural or semi-natural habitats.",
+        "Stress Physiology": "The study of the physiological responses of animals to stress.",
+        "Animal Housing & Management": "The design of housing and management systems that promote animal welfare."
+      },
+      "Genetics, Genomics & Bioinformatics": {
+        "Quantitative & Population Genetics": "The study of the genetic basis of continuously varying traits in populations.",
+        "Livestock Genomics": "The application of genomics to improve the productivity and health of livestock.",
+        "Computational Biology": "The use of computational methods to analyze biological data."
+      },
+      "Microbiology": {
+        "Rumen Microbiology": "The study of the microbes that live in the rumen of ruminant animals.",
+        "Gut Health & Microbiome": "The study of the microbes that live in the gastrointestinal tract and their role in animal health.",
+        "Probiotics & Prebiotics": "The use of beneficial microbes and their food sources to improve animal health."
+      },
+      "Nutrition & Metabolism": {
+        "Ruminant Nutrition": "The study of the nutritional requirements of ruminant animals like cattle and sheep.",
+        "Monogastric Nutrition": "The study of the nutritional requirements of animals with a single-chambered stomach, like pigs and poultry.",
+        "Nutritional Biochemistry": "The study of the biochemical processes involved in nutrition."
+      },
+      "Physiology": {
+        "Reproductive Physiology": "The study of the physiological processes involved in reproduction.",
+        "Lactation Biology": "The study of the biology of milk production.",
+        "Growth & Developmental Physiology": "The study of the physiological processes involved in growth and development."
+      }
+    },
+    "Crop Sciences": {
+      "Agronomy & Agroecology": {
+        "Soil & Water Management": "The management of soil and water resources for sustainable crop production.",
+        "Sustainable Agriculture": "The practice of farming using principles of ecology.",
+        "Crop Physiology": "The study of the functions of plants and their parts."
+      },
+      "Bioinformatics & Statistics": {
+        "Genomic Prediction": "The use of genomic data to predict the performance of crops.",
+        "Statistical Genetics": "The application of statistical methods to the study of genetics.",
+        "Computational Biology": "The use of computational methods to study biological systems."
+      },
+      "Horticulture": {
+        "Specialty Crop Production": "The cultivation of fruits, vegetables, nuts, and ornamental plants.",
+        "Urban Agriculture": "The practice of cultivating, processing, and distributing food in or around urban areas.",
+        "Plant Propagation": "The process of creating new plants from a variety of sources: seeds, cuttings, and other plant parts."
+      },
+      "Plant Breeding & Genetics": {
+        "Molecular Breeding": "The use of molecular biology tools in plant breeding.",
+        "Quantitative Genetics": "The study of the inheritance of continuously varying traits.",
+        "Plant Genomics": "The study of the structure, function, evolution, and mapping of plant genomes."
+      },
+      "Plant Pathology & Weed Science": {
+        "Molecular Plant-Microbe Interactions": "The study of the molecular basis of interactions between plants and microbes.",
+        "Integrated Pest Management (IPM)": "An ecosystem-based strategy that focuses on long-term prevention of pests.",
+        "Herbicide Resistance": "The study of how weeds evolve resistance to herbicides."
+      }
     },
     "Food Science & Human Nutrition": {
-      "Food Chemistry & Processing": [
-        "Food Engineering",
-        "Flavor Chemistry",
-        "Food Ingredient Functionality"
-      ],
-      "Food Microbiology & Safety": [
-        "Foodborne Pathogens",
-        "Food Fermentation",
-        "Food Preservation"
-      ],
-      "Human Nutrition & Metabolism": [
-        "Clinical Nutrition",
-        "Community Nutrition",
-        "Molecular Nutrition & Nutrigenomics"
-      ],
-      "Sensory Science": [
-        "Sensory Evaluation Methods",
-        "Consumer Product Testing",
-        "Psychophysics"
-      ]
+      "Food Chemistry & Processing": {
+        "Food Engineering": "The application of engineering principles to the design of food processing equipment.",
+        "Flavor Chemistry": "The study of the chemical compounds that create the flavor of food.",
+        "Food Ingredient Functionality": "The study of how different ingredients affect the properties of food."
+      },
+      "Food Microbiology & Safety": {
+        "Foodborne Pathogens": "The study of the microorganisms that can cause food poisoning.",
+        "Food Fermentation": "The use of microorganisms to produce fermented foods like cheese and yogurt.",
+        "Food Preservation": "The methods used to prevent the spoilage of food."
+      },
+      "Human Nutrition & Metabolism": {
+        "Clinical Nutrition": "The study of the relationship between diet and disease.",
+        "Community Nutrition": "The promotion of good nutrition in communities.",
+        "Molecular Nutrition & Nutrigenomics": "The study of how nutrients affect gene expression and how genetic variation affects the response to nutrients."
+      },
+      "Sensory Science": {
+        "Sensory Evaluation Methods": "The methods used to measure human responses to food products.",
+        "Consumer Product Testing": "The testing of food products with consumers to assess their acceptability.",
+        "Psychophysics": "The study of the relationship between physical stimuli and the sensory experiences they produce."
+      }
     },
     "Natural Resources & Environmental Sciences": {
-      "Conservation Biology & Ecology": [
-        "Population & Community Ecology",
-        "Conservation Genetics",
-        "Invasion Biology"
-      ],
-      "Environmental Science & Management": [
-        "Soil Science & Biogeochemistry",
-        "Water Quality & Watershed Management",
-        "Restoration Ecology"
-      ],
-      "Fisheries & Wildlife Science": [
-        "Wildlife Ecology & Management",
-        "Fisheries Biology",
-        "Human-Wildlife Interactions"
-      ]
+      "Conservation Biology & Ecology": {
+        "Population & Community Ecology": "The study of the dynamics of populations and communities of organisms.",
+        "Conservation Genetics": "The use of genetic methods to conserve biodiversity.",
+        "Invasion Biology": "The study of the ecology and management of invasive species."
+      },
+      "Environmental Science & Management": {
+        "Soil Science & Biogeochemistry": "The study of the chemical, physical, biological, and mineralogical composition of soils.",
+        "Water Quality & Watershed Management": "The management of water resources at the watershed scale to protect water quality.",
+        "Restoration Ecology": "The practice of renewing and restoring degraded, damaged, or destroyed ecosystems."
+      },
+      "Fisheries & Wildlife Science": {
+        "Wildlife Ecology & Management": "The study of the ecology of wild animals and the management of their populations.",
+        "Fisheries Biology": "The study of the biology of fish and the management of fisheries.",
+        "Human-Wildlife Interactions": "The study of the interactions between humans and wildlife, including conflict and conservation."
+      }
     }
   },
   "Gies College of Business": {
     "Accountancy": {
-      "Auditing & Assurance": [
-        "Audit Quality & Regulation",
-        "Internal Control",
-        "Data Analytics in Auditing"
-      ],
-      "Financial Accounting": [
-        "Capital Markets Research",
-        "Financial Reporting & Disclosure",
-        "Valuation"
-      ],
-      "Managerial Accounting": [
-        "Performance Measurement & Incentives",
-        "Cost Management",
-        "Corporate Governance"
-      ],
-      "Taxation": [
-        "Corporate Taxation",
-        "Tax Policy",
-        "Individual & Behavioral Taxation"
-      ]
-    },
-    "Finance": {
-      "Asset Pricing": [
-        "Equity & Fixed Income Markets",
-        "Derivatives & Risk Management",
-        "Behavioral Finance"
-      ],
-      "Corporate Finance": [
-        "Mergers & Acquisitions",
-        "Capital Structure",
-        "Corporate Governance"
-      ],
-      "Financial Intermediation": [
-        "Banking & Financial Institutions",
-        "FinTech & Financial Innovation",
-        "Household Finance"
-      ],
-      "Real Estate": [
-        "Real Estate Finance & Investment",
-        "Urban Economics",
-        "Housing Markets"
-      ]
+      "Auditing & Assurance": {
+        "Audit Quality & Regulation": "The study of the quality of financial statement audits and the regulations that govern them.",
+        "Internal Control": "The processes implemented to provide reasonable assurance about the achievement of objectives in effectiveness and efficiency of operations, reliability of financial reporting, and compliance with laws.",
+        "Data Analytics in Auditing": "The use of data analytics to improve the effectiveness and efficiency of audits."
+      },
+      "Financial Accounting": {
+        "Capital Markets Research": "The study of the relationship between accounting information and stock prices.",
+        "Financial Reporting & Disclosure": "The study of the information that firms disclose in their financial reports.",
+        "Valuation": "The process of determining the present value of an asset."
+      },
+      "Managerial Accounting": {
+        "Performance Measurement & Incentives": "The design of systems to measure and reward employee performance.",
+        "Cost Management": "The management of costs to improve profitability.",
+        "Corporate Governance": "The system of rules, practices, and processes by which a firm is directed and controlled."
+      },
+      "Taxation": {
+        "Corporate Taxation": "The study of the taxation of corporations.",
+        "Tax Policy": "The study of the design of tax systems.",
+        "Individual & Behavioral Taxation": "The study of the taxation of individuals and how taxes affect their behavior."
+      }
     },
     "Business Administration": {
-      "Marketing": [
-        "Consumer Behavior",
-        "Marketing Analytics & Quantitative Modeling",
-        "Digital Marketing & Social Media",
-        "Marketing Strategy & Branding"
-      ],
-      "Operations Management": [
-        "Inventory & Logistics Management",
-        "Service Operations",
-        "Revenue Management",
-        "Healthcare Operations"
-      ],
-      "Organizational Behavior & Strategy": [
-        "Strategic Management",
-        "Organizational Theory",
-        "Leadership & Teams",
-        "Entrepreneurship"
-      ],
-      "Supply Chain Management": [
-        "Global Supply Chain Strategy",
-        "Procurement & Sourcing",
-        "Logistics & Transportation",
-        "Supply Chain Analytics"
-      ],
-      "Information Systems & Business Analytics": [
-        "Economics of Information Systems",
-        "Business Data Analytics",
-        "IT Strategy & Management",
-        "Social Media & Digital Platforms"
-      ]
+      "Information Systems & Business Analytics": {
+        "Economics of Information Systems": "The study of the economic aspects of information systems.",
+        "Business Data Analytics": "The use of data and analytics to solve business problems.",
+        "IT Strategy & Management": "The alignment of information technology strategy with business strategy.",
+        "Social Media & Digital Platforms": "The study of the business implications of social media and digital platforms."
+      },
+      "Marketing": {
+        "Consumer Behavior": "The study of how individuals and groups select, purchase, use, and dispose of goods and services.",
+        "Marketing Analytics & Quantitative Modeling": "The use of data and quantitative models to make marketing decisions.",
+        "Digital Marketing & Social Media": "The use of digital channels and social media to market products and services.",
+        "Marketing Strategy & Branding": "The development of long-term marketing plans and the management of brand equity."
+      },
+      "Operations Management": {
+        "Inventory & Logistics Management": "The management of the flow of goods from suppliers to customers.",
+        "Service Operations": "The management of the production and delivery of services.",
+        "Revenue Management": "The use of analytics to predict consumer behavior at the micro-market level and optimize product availability and price.",
+        "Healthcare Operations": "The application of operations management principles to improve the delivery of healthcare."
+      },
+      "Organizational Behavior & Strategy": {
+        "Strategic Management": "The management of an organization's resources to achieve its goals and objectives.",
+        "Organizational Theory": "The study of the structure and design of organizations.",
+        "Leadership & Teams": "The study of leadership and teamwork in organizations.",
+        "Entrepreneurship": "The process of designing, launching, and running a new business."
+      },
+      "Supply Chain Management": {
+        "Global Supply Chain Strategy": "The design and management of supply chains that span multiple countries.",
+        "Procurement & Sourcing": "The process of acquiring goods and services from external sources.",
+        "Logistics & Transportation": "The management of the movement and storage of goods.",
+        "Supply Chain Analytics": "The use of data and analytics to improve supply chain performance."
+      }
+    },
+    "Finance": {
+      "Asset Pricing": {
+        "Equity & Fixed Income Markets": "The study of the valuation of stocks and bonds.",
+        "Derivatives & Risk Management": "The use of financial instruments to manage risk.",
+        "Behavioral Finance": "The study of the effects of psychology on financial decisions."
+      },
+      "Corporate Finance": {
+        "Mergers & Acquisitions": "The study of the process of combining two companies into one.",
+        "Capital Structure": "The study of how a firm finances its overall operations and growth by using different sources of funds.",
+        "Corporate Governance": "The study of the mechanisms by which firms are controlled and directed."
+      },
+      "Financial Intermediation": {
+        "Banking & Financial Institutions": "The study of banks and other financial institutions.",
+        "FinTech & Financial Innovation": "The study of the use of technology in finance.",
+        "Household Finance": "The study of the financial decisions of households."
+      },
+      "Real Estate": {
+        "Real Estate Finance & Investment": "The study of the financing and investment of real estate.",
+        "Urban Economics": "The study of the economics of cities.",
+        "Housing Markets": "The study of the supply and demand for housing."
+      }
     }
   },
   "School of Information Sciences (iSchool)": {
     "Information Sciences": {
-      "Archives & Special Collections": [
-        "Digital Preservation",
-        "Curation & Stewardship",
-        "Archival Theory & Practice"
-      ],
-      "Data Science & Analytics": [
-        "Data Curation & Management",
-        "Applied Data Mining & Machine Learning",
-        "Information Visualization",
-        "FAIR & Open Data"
-      ],
-      "Human-Centered Design & Systems": [
-        "Human-Computer Interaction (HCI)",
-        "User Experience (UX) Research & Design",
-        "Computer-Supported Cooperative Work (CSCW)",
-        "Social Computing"
-      ],
-      "Information Organization & Access": [
-        "Knowledge Organization Systems",
-        "Metadata & Semantics",
-        "Information Retrieval",
-        "Digital Libraries"
-      ],
-      "Knowledge Management & Information Policy": [
-        "Information Ethics & Policy",
-        "Intellectual Property",
-        "Scholarly Communication",
-        "Information & Society"
-      ],
-      "Youth Services & Librarianship": [
-        "Children's & Young Adult Literature",
-        "Information Literacy",
-        "Public & Academic Librarianship"
-      ]
+      "Archives & Special Collections": {
+        "Digital Preservation": "The policies and practices for ensuring continued access to digital materials for as long as necessary.",
+        "Curation & Stewardship": "The management and preservation of valuable collections of information for future use.",
+        "Archival Theory & Practice": "The study of the principles and methods for managing and preserving records of enduring value."
+      },
+      "Data Science & Analytics": {
+        "Data Curation & Management": "The active management of data throughout its lifecycle to ensure it remains fit for contemporary purposes.",
+        "Applied Data Mining & Machine Learning": "The application of data mining and machine learning techniques to solve problems in information sciences.",
+        "Information Visualization": "The use of visual representations of data to facilitate understanding and insight.",
+        "FAIR & Open Data": "The principles of making data Findable, Accessible, Interoperable, and Reusable, and the promotion of open access to data."
+      },
+      "Human-Centered Design & Systems": {
+        "Human-Computer Interaction (HCI)": "The design and evaluation of computer systems with a focus on human users.",
+        "User Experience (UX) Research & Design": "The process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.",
+        "Computer-Supported Cooperative Work (CSCW)": "The study of how people work together with the help of computer systems.",
+        "Social Computing": "The study of the intersection of social behavior and computational systems."
+      },
+      "Information Organization & Access": {
+        "Knowledge Organization Systems": "The design of systems, such as classifications and thesauri, for organizing information.",
+        "Metadata & Semantics": "The study of data that provides information about other data, and the study of meaning.",
+        "Information Retrieval": "The science of searching for information within documents.",
+        "Digital Libraries": "The design and management of digital collections of information."
+      },
+      "Knowledge Management & Information Policy": {
+        "Information Ethics & Policy": "The study of ethical issues and policies related to the creation, use, and dissemination of information.",
+        "Intellectual Property": "The study of the laws that protect creations of the mind, such as patents and copyrights.",
+        "Scholarly Communication": "The study of how scholars in any field use and disseminate information through formal and informal channels.",
+        "Information & Society": "The study of the social, cultural, and political impact of information."
+      },
+      "Youth Services & Librarianship": {
+        "Children's & Young Adult Literature": "The study of literature written for children and young adults.",
+        "Information Literacy": "The ability to find, evaluate, organize, use, and communicate information in all its various formats.",
+        "Public & Academic Librarianship": "The practice of librarianship in public and academic libraries."
+      }
     }
   },
   "College of Education": {
     "Curriculum & Instruction": {
-      "Bilingual & ESL Education": [
-        "Bilingualism & Biliteracy",
-        "Second Language Acquisition",
-        "Culturally Sustaining Pedagogy"
-      ],
-      "Digital Learning": [
-        "Learning Technologies",
-        "Online & Blended Learning",
-        "Computational Thinking in K-12"
-      ],
-      "Literacy Studies": [
-        "Early & Adolescent Literacy",
-        "Digital & Media Literacy",
-        "Reading & Writing Pedagogy"
-      ],
-      "STEM Education": [
-        "Mathematics Education",
-        "Science Education",
-        "Engineering & Technology Education"
-      ]
+      "Bilingual & ESL Education": {
+        "Bilingualism & Biliteracy": "The study of the acquisition and use of two or more languages.",
+        "Second Language Acquisition": "The study of how people learn a second language.",
+        "Culturally Sustaining Pedagogy": "Teaching practices that perpetuate and foster linguistic, literate, and cultural pluralism."
+      },
+      "Digital Learning": {
+        "Learning Technologies": "The design and use of technology to enhance learning.",
+        "Online & Blended Learning": "The study of learning that takes place partially or fully online.",
+        "Computational Thinking in K-12": "The integration of computational concepts into K-12 education."
+      },
+      "Literacy Studies": {
+        "Early & Adolescent Literacy": "The study of literacy development in children and adolescents.",
+        "Digital & Media Literacy": "The ability to access, analyze, evaluate, and create media in a variety of forms.",
+        "Reading & Writing Pedagogy": "The study of the methods of teaching reading and writing."
+      },
+      "STEM Education": {
+        "Mathematics Education": "The study of the teaching and learning of mathematics.",
+        "Science Education": "The study of the teaching and learning of science.",
+        "Engineering & Technology Education": "The study of the teaching and learning of engineering and technology."
+      }
     },
     "Educational Psychology": {
-      "Cognitive Science of Teaching & Learning": [
-        "Learning Sciences",
-        "Motivation & Engagement",
-        "Educational Neuroscience"
-      ],
-      "Counseling Psychology": [
-        "Mental Health & Well-being",
-        "Vocational Psychology",
-        "Multicultural Counseling"
-      ],
-      "Developmental Sciences": [
-        "Cognitive & Social Development",
-        "Atypical Development",
-        "Lifespan Development"
-      ],
-      "Quantitative & Evaluative Methods": [
-        "Psychometrics & Measurement",
-        "Educational Statistics",
-        "Program Evaluation"
-      ]
+      "Cognitive Science of Teaching & Learning": {
+        "Learning Sciences": "An interdisciplinary field that studies teaching and learning.",
+        "Motivation & Engagement": "The study of the factors that motivate students to learn and engage in school.",
+        "Educational Neuroscience": "The study of the neural basis of learning and education."
+      },
+      "Counseling Psychology": {
+        "Mental Health & Well-being": "The promotion of mental health and the prevention and treatment of mental illness.",
+        "Vocational Psychology": "The study of career development and work-related issues.",
+        "Multicultural Counseling": "The practice of counseling that is sensitive to the cultural backgrounds of clients."
+      },
+      "Developmental Sciences": {
+        "Cognitive & Social Development": "The study of the development of thinking, social skills, and personality across the lifespan.",
+        "Atypical Development": "The study of developmental disorders such as autism and ADHD.",
+        "Lifespan Development": "The study of human development from conception to death."
+      },
+      "Quantitative & Evaluative Methods": {
+        "Psychometrics & Measurement": "The theory and technique of psychological measurement.",
+        "Educational Statistics": "The application of statistical methods to educational research.",
+        "Program Evaluation": "The systematic assessment of the merit, worth, and significance of a program."
+      }
     },
     "Education Policy, Organization & Leadership": {
-      "Educational Policy Studies": [
-        "Politics of Education",
-        "Economics of Education",
-        "History & Philosophy of Education"
-      ],
-      "Higher Education": [
-        "College Student Development",
-        "Higher Education Administration",
-        "Diversity & Equity in Higher Ed"
-      ],
-      "Human Resource Development": [
-        "Workplace Learning & Training",
-        "Organizational Development",
-        "Global Human Resources"
-      ]
+      "Educational Policy Studies": {
+        "Politics of Education": "The study of the political processes that shape education policy.",
+        "Economics of Education": "The study of the economic issues related to education.",
+        "History & Philosophy of Education": "The study of the historical and philosophical foundations of education."
+      },
+      "Higher Education": {
+        "College Student Development": "The study of the intellectual, social, and personal development of college students.",
+        "Higher Education Administration": "The management of colleges and universities.",
+        "Diversity & Equity in Higher Ed": "The study of issues of diversity and equity in higher education."
+      },
+      "Human Resource Development": {
+        "Workplace Learning & Training": "The design and delivery of training programs in the workplace.",
+        "Organizational Development": "The process of improving organizational effectiveness.",
+        "Global Human Resources": "The management of human resources in a global context."
+      }
     },
     "Special Education": {
-      "Autism & Developmental Disabilities": [
-        "Intervention & Support Strategies",
-        "Communication & Social Skills",
-        "Transition to Adulthood"
-      ],
-      "Learning Disabilities": [
-        "Reading & Math Disabilities",
-        "Assistive Technology",
-        "Cognitive & Neuropsychological Bases"
-      ],
-      "Inclusive Education": [
-        "Differentiated Instruction",
-        "Positive Behavior Support",
-        "Teacher Preparation for Inclusion"
-      ]
+      "Autism & Developmental Disabilities": {
+        "Intervention & Support Strategies": "The development and evaluation of interventions for individuals with autism and other developmental disabilities.",
+        "Communication & Social Skills": "The teaching of communication and social skills to individuals with disabilities.",
+        "Transition to Adulthood": "The process of preparing students with disabilities for life after high school."
+      },
+      "Learning Disabilities": {
+        "Reading & Math Disabilities": "The study of the causes and treatment of learning disabilities in reading and math.",
+        "Assistive Technology": "The use of technology to assist individuals with disabilities.",
+        "Cognitive & Neuropsychological Bases": "The study of the cognitive and neuropsychological basis of learning disabilities."
+      },
+      "Inclusive Education": {
+        "Differentiated Instruction": "The practice of tailoring instruction to meet individual needs.",
+        "Positive Behavior Support": "A proactive approach to managing challenging behavior.",
+        "Teacher Preparation for Inclusion": "The preparation of teachers to work in inclusive classrooms."
+      }
     }
   },
   "College of Law": {
     "Legal Studies": {
-      "Business & Commercial Law": [
-        "Corporate Law",
-        "Bankruptcy",
-        "Securities Regulation",
-        "Commercial Transactions"
-      ],
-      "Constitutional & Public Law": [
-        "Constitutional Law",
-        "Administrative Law",
-        "Election Law",
-        "Legislation & Statutory Interpretation"
-      ],
-      "Criminal Law & Procedure": [
-        "Substantive Criminal Law",
-        "Criminal Procedure",
-        "Sentencing & Corrections"
-      ],
-      "Intellectual Property & Technology Law": [
-        "Patent Law",
-        "Copyright Law",
-        "Trademark Law",
-        "Cyberlaw & Information Policy"
-      ],
-      "International & Comparative Law": [
-        "Public International Law",
-        "International Human Rights",
-        "Comparative Constitutional Law",
-        "International Business Transactions"
-      ],
-      "Taxation & Employee Benefits": [
-        "Federal Income Taxation",
-        "Corporate & Partnership Taxation",
-        "Employee Benefits (ERISA)",
-        "Estate & Gift Taxation"
-      ]
+      "Business & Commercial Law": {
+        "Corporate Law": "The law governing corporations and other business entities.",
+        "Bankruptcy": "The law governing the process of resolving the debts of individuals and businesses that cannot pay their creditors.",
+        "Securities Regulation": "The law governing the issuance and trading of securities.",
+        "Commercial Transactions": "The law governing commercial transactions, such as sales and leases."
+      },
+      "Constitutional & Public Law": {
+        "Constitutional Law": "The law that defines the powers of the government and the rights of citizens.",
+        "Administrative Law": "The law that governs the activities of administrative agencies of government.",
+        "Election Law": "The law that governs the process of elections.",
+        "Legislation & Statutory Interpretation": "The study of the process of creating laws and the principles of interpreting them."
+      },
+      "Criminal Law & Procedure": {
+        "Substantive Criminal Law": "The branch of law that defines crimes and provides for their punishment.",
+        "Criminal Procedure": "The body of law that regulates the process by which criminal laws are enforced.",
+        "Sentencing & Corrections": "The study of the punishment of convicted criminals."
+      },
+      "Intellectual Property & Technology Law": {
+        "Patent Law": "The law that protects inventions.",
+        "Copyright Law": "The law that protects works of authorship, such as books and music.",
+        "Trademark Law": "The law that protects brand names and logos.",
+        "Cyberlaw & Information Policy": "The law that governs the internet and information technology."
+      },
+      "International & Comparative Law": {
+        "Public International Law": "The law that governs relations between states.",
+        "International Human Rights": "The body of law that protects the fundamental rights of all human beings.",
+        "Comparative Constitutional Law": "The study of the constitutional law of different countries.",
+        "International Business Transactions": "The law that governs business transactions that cross national borders."
+      },
+      "Taxation & Employee Benefits": {
+        "Federal Income Taxation": "The law that governs the federal income tax.",
+        "Corporate & Partnership Taxation": "The law that governs the taxation of corporations and partnerships.",
+        "Employee Benefits (ERISA)": "The law that governs employee benefit plans, such as pensions and health insurance.",
+        "Estate & Gift Taxation": "The law that governs the taxation of transfers of wealth."
+      }
     }
   },
   "College of Applied Health Sciences": {
     "Kinesiology & Community Health": {
-      "Biomechanics": [
-        "Locomotion & Gait Analysis",
-        "Injury Biomechanics",
-        "Rehabilitation Engineering"
-      ],
-      "Community Health": [
-        "Epidemiology",
-        "Health Behavior & Promotion",
-        "Public Health Policy"
-      ],
-      "Exercise Physiology": [
-        "Cardiovascular Physiology",
-        "Metabolism & Obesity",
-        "Physical Activity & Aging"
-      ],
-      "Kinesiology": [
-        "Motor Control & Learning",
-        "Exercise Psychology",
-        "Adapted Physical Activity"
-      ]
+      "Biomechanics": {
+        "Locomotion & Gait Analysis": "The study of human movement, particularly walking and running.",
+        "Injury Biomechanics": "The study of the mechanical causes of injuries.",
+        "Rehabilitation Engineering": "The application of engineering principles to the design of devices to assist individuals with disabilities."
+      },
+      "Community Health": {
+        "Epidemiology": "The study of the distribution and determinants of health and disease in populations.",
+        "Health Behavior & Promotion": "The study of the factors that influence health behaviors and the development of interventions to promote healthy behaviors.",
+        "Public Health Policy": "The study of the laws, regulations, and policies that affect the health of populations."
+      },
+      "Exercise Physiology": {
+        "Cardiovascular Physiology": "The study of the function of the heart and blood vessels.",
+        "Metabolism & Obesity": "The study of the chemical processes that occur in the body and the causes and consequences of obesity.",
+        "Physical Activity & Aging": "The study of the effects of physical activity on the aging process."
+      },
+      "Kinesiology": {
+        "Motor Control & Learning": "The study of how the nervous system controls movement and how motor skills are learned.",
+        "Exercise Psychology": "The study of the psychological factors that influence participation in physical activity.",
+        "Adapted Physical Activity": "The promotion of physical activity for individuals with disabilities."
+      }
     },
     "Speech & Hearing Science": {
-      "Audiology": [
-        "Hearing Science",
-        "Auditory Processing Disorders",
-        "Hearing Aids & Cochlear Implants"
-      ],
-      "Language Science": [
-        "Language Development & Disorders",
-        "Psycholinguistics",
-        "Bilingualism & Second Language Acquisition"
-      ],
-      "Neuroscience of Communication": [
-        "Neural Bases of Speech & Language",
-        "Neurogenic Communication Disorders (e.g., Aphasia)",
-        "Cognitive Hearing Science"
-      ],
-      "Speech-Language Pathology": [
-        "Speech Sound Disorders",
-        "Voice & Fluency Disorders",
-        "Swallowing Disorders (Dysphagia)"
-      ]
+      "Audiology": {
+        "Hearing Science": "The study of the anatomy, physiology, and psychoacoustics of the auditory system.",
+        "Auditory Processing Disorders": "The study of disorders that affect the brain's ability to process auditory information.",
+        "Hearing Aids & Cochlear Implants": "The study of the technology and use of devices to assist individuals with hearing loss."
+      },
+      "Language Science": {
+        "Language Development & Disorders": "The study of how language develops in children and the disorders that can affect language development.",
+        "Psycholinguistics": "The study of the psychological processes involved in language.",
+        "Bilingualism & Second Language Acquisition": "The study of the acquisition and use of two or more languages."
+      },
+      "Neuroscience of Communication": {
+        "Neural Bases of Speech & Language": "The study of the brain mechanisms that underlie speech and language.",
+        "Neurogenic Communication Disorders (e.g., Aphasia)": "The study of communication disorders that result from damage to the nervous system.",
+        "Cognitive Hearing Science": "The study of the cognitive processes involved in hearing."
+      },
+      "Speech-Language Pathology": {
+        "Speech Sound Disorders": "The study of disorders that affect the production of speech sounds.",
+        "Voice & Fluency Disorders": "The study of disorders that affect the voice and the fluency of speech.",
+        "Swallowing Disorders (Dysphagia)": "The study of disorders that affect the ability to swallow."
+      }
     }
   },
   "College of Fine & Applied Arts": {
     "Architecture": {
-      "Architectural History & Theory": [
-        "Modern & Contemporary Architecture",
-        "Vernacular Architecture",
-        "Preservation & Heritage"
-      ],
-      "Building Performance": [
-        "Energy Efficiency & Sustainability",
-        "Structural Technology",
-        "Building Materials & Envelopes"
-      ],
-      "Design & Urbanism": [
-        "Urban Design",
-        "Digital Fabrication",
-        "Social Impact Design"
-      ],
-      "Health & Well-being": [
-        "Healthcare Design",
-        "Environments for Aging",
-        "Lighting & Daylighting"
-      ]
+      "Architectural History & Theory": {
+        "Modern & Contemporary Architecture": "The study of architecture from the late 19th century to the present.",
+        "Vernacular Architecture": "The study of traditional, local building styles.",
+        "Preservation & Heritage": "The practice of preserving and protecting historic buildings and sites."
+      },
+      "Building Performance": {
+        "Energy Efficiency & Sustainability": "The design of buildings that use less energy and have a smaller environmental impact.",
+        "Structural Technology": "The study of the materials and methods used to build structures.",
+        "Building Materials & Envelopes": "The study of the materials used to construct the exterior of buildings."
+      },
+      "Design & Urbanism": {
+        "Urban Design": "The design of the physical features of cities.",
+        "Digital Fabrication": "The use of computer-controlled machines to build objects.",
+        "Social Impact Design": "The practice of using design to address social problems."
+      },
+      "Health & Well-being": {
+        "Healthcare Design": "The design of healthcare facilities, such as hospitals and clinics.",
+        "Environments for Aging": "The design of environments that are safe and comfortable for older adults.",
+        "Lighting & Daylighting": "The design of lighting systems that use both artificial and natural light."
+      }
     },
     "Landscape Architecture": {
-      "Cultural Heritage": [
-        "Cultural Landscape Preservation",
-        "Landscape History & Theory",
-        "Urban Heritage"
-      ],
-      "Ecological Design": [
-        "Stormwater Management & Green Infrastructure",
-        "Ecological Restoration",
-        "Sustainable Site Design"
-      ],
-      "Social & Environmental Justice": [
-        "Community-Engaged Design",
-        "Public Space & Equity",
-        "Environmental Justice"
-      ]
+      "Cultural Heritage": {
+        "Cultural Landscape Preservation": "The preservation of landscapes that have cultural or historical significance.",
+        "Landscape History & Theory": "The study of the history and theory of landscape design.",
+        "Urban Heritage": "The preservation of the historic character of cities."
+      },
+      "Ecological Design": {
+        "Stormwater Management & Green Infrastructure": "The design of systems to manage stormwater runoff and use natural systems to provide environmental benefits.",
+        "Ecological Restoration": "The practice of restoring damaged ecosystems.",
+        "Sustainable Site Design": "The design of sites that have a minimal environmental impact."
+      },
+      "Social & Environmental Justice": {
+        "Community-Engaged Design": "The practice of working with communities to design projects that meet their needs.",
+        "Public Space & Equity": "The design of public spaces that are accessible and equitable for all people.",
+        "Environmental Justice": "The fair treatment and meaningful involvement of all people regardless of race, color, national origin, or income with respect to the development, implementation, and enforcement of environmental laws, regulations, and policies."
+      }
     },
     "Urban & Regional Planning": {
-      "Community Development": [
-        "Housing & Real Estate",
-        "Economic Development",
-        "Social Planning & Policy"
-      ],
-      "Environmental Planning": [
-        "Land Use & Environmental Quality",
-        "Sustainable Development",
-        "Climate Action Planning"
-      ],
-      "Transportation Planning": [
-        "Transportation Systems Analysis",
-        "Public Transportation",
-        "Active Transportation (Walking/Biking)"
-      ]
+      "Community Development": {
+        "Housing & Real Estate": "The planning and development of housing and real estate.",
+        "Economic Development": "The creation of wealth from which community benefits are realized.",
+        "Social Planning & Policy": "The planning of social services and policies."
+      },
+      "Environmental Planning": {
+        "Land Use & Environmental Quality": "The planning of land use to protect environmental quality.",
+        "Sustainable Development": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.",
+        "Climate Action Planning": "The development of plans to reduce greenhouse gas emissions and adapt to the impacts of climate change."
+      },
+      "Transportation Planning": {
+        "Transportation Systems Analysis": "The analysis of transportation systems to improve their efficiency and effectiveness.",
+        "Public Transportation": "The planning and operation of public transportation systems.",
+        "Active Transportation (Walking/Biking)": "The planning of infrastructure to support walking and biking."
+      }
     }
   }
 }

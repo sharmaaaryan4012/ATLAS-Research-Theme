@@ -1,6 +1,6 @@
-[
-  "Stochastic Processes",
-  "Random Matrix Theory",
-  "Measure Theory",
-  "Interacting Particle Systems"
-]
+{
+  "Stochastic Processes": "The study of mathematical models for random processes that evolve over time.",
+  "Random Matrix Theory": "The study of matrices whose entries are random variables.",
+  "Measure Theory": "The rigorous mathematical foundation for the concept of probability and integration.",
+  "Interacting Particle Systems": "The study of probabilistic models involving a large number of interacting components."
+}

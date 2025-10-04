@@ -1,6 +1,6 @@
-[
-  "Consumer Behavior",
-  "Marketing Analytics & Quantitative Modeling",
-  "Digital Marketing & Social Media",
-  "Marketing Strategy & Branding"
-]
+{
+  "Consumer Behavior": "The study of how individuals and groups select, purchase, use, and dispose of goods and services.",
+  "Marketing Analytics & Quantitative Modeling": "The use of data and quantitative models to make marketing decisions.",
+  "Digital Marketing & Social Media": "The use of digital channels and social media to market products and services.",
+  "Marketing Strategy & Branding": "The development of long-term marketing plans and the management of brand equity."
+}

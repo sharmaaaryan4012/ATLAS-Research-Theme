@@ -1,7 +1,7 @@
-[
-  "Data Mining & Knowledge Discovery",
-  "Database System Internals",
-  "Information Retrieval",
-  "Large-Scale Data Analytics",
-  "Data Curation & Provenance"
-]
+{
+  "Data Mining & Knowledge Discovery": "The process of discovering patterns, anomalies, and insights from large datasets.",
+  "Database System Internals": "The study of the underlying principles of how database management systems (DBMS) are built, including storage, indexing, and query processing.",
+  "Information Retrieval": "The science of searching for information in documents, searching for documents themselves, and searching for metadata which describe data.",
+  "Large-Scale Data Analytics": "The design of systems and algorithms for processing and analyzing massive datasets that do not fit into single-machine memory.",
+  "Data Curation & Provenance": "The active management of data throughout its lifecycle to ensure its quality, and the tracking of its origin and transformations."
+}

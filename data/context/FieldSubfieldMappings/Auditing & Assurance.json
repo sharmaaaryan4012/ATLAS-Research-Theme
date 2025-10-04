@@ -1,5 +1,5 @@
-[
-  "Audit Quality & Regulation",
-  "Internal Control",
-  "Data Analytics in Auditing"
-]
+{
+  "Audit Quality & Regulation": "The study of the quality of financial statement audits and the regulations that govern them.",
+  "Internal Control": "The processes implemented to provide reasonable assurance about the achievement of objectives in effectiveness and efficiency of operations, reliability of financial reporting, and compliance with laws.",
+  "Data Analytics in Auditing": "The use of data analytics to improve the effectiveness and efficiency of audits."
+}

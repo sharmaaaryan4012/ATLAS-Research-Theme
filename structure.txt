@@ -2,9 +2,10 @@
 Folder PATH listing for volume Windows
 Volume serial number is 5E36-58DE
 C:.
+|   .gitignore
+|   README.md
 |   requirements.txt
 |   structure.txt
-|   tree.ps1
 |   
 +---config
 |   |   paths.py
@@ -18,209 +19,7 @@ C:.
 |   |   |   MasterFieldSubfieldMapping.json
 |   |   |   
 |   |   +---collegeFieldMappings
-|   |   |       College of Agricultural, Consumer & Environmental Sciences (ACES).json
-|   |   |       College of Applied Health Sciences.json
-|   |   |       College of Education.json
-|   |   |       College of Fine & Applied Arts.json
-|   |   |       College of Law.json
-|   |   |       College of Liberal Arts & Sciences.json
-|   |   |       Gies College of Business.json
-|   |   |       School of Information Sciences (iSchool).json
-|   |   |       The Grainger College of Engineering.json
-|   |   |       
 |   |   \---FieldSubfieldMappings
-|   |           Aerodynamics & Fluid Dynamics.json
-|   |           Agribusiness Management.json
-|   |           Agronomy & Agroecology.json
-|   |           Algebra.json
-|   |           Algorithms & Theory of Computation.json
-|   |           American History.json
-|   |           American Politics.json
-|   |           Analysis.json
-|   |           Analytical Chemistry.json
-|   |           Animal Behavior & Welfare.json
-|   |           Applied & Computational Mathematics.json
-|   |           Applied Microeconomics.json
-|   |           Applied Statistics.json
-|   |           Architectural History & Theory.json
-|   |           Archives & Special Collections.json
-|   |           Artificial Intelligence & Machine Learning.json
-|   |           Asset Pricing.json
-|   |           Astrodynamics & Orbital Mechanics.json
-|   |           Astrophysics & Cosmology.json
-|   |           Atomic, Molecular & Optical Physics.json
-|   |           Audiology.json
-|   |           Auditing & Assurance.json
-|   |           Autism & Developmental Disabilities.json
-|   |           Behavioral Neuroscience.json
-|   |           Bilingual & ESL Education.json
-|   |           Bioinformatics & Statistics.json
-|   |           Biomaterials & Biomedical Devices.json
-|   |           Biomechanics & Mechanobiology.json
-|   |           Biomechanics.json
-|   |           Biomedical Imaging & Sensing.json
-|   |           Biophysics & Quantitative Biology.json
-|   |           Building Performance.json
-|   |           Business & Commercial Law.json
-|   |           Cell & Tissue Engineering.json
-|   |           Ceramics & Glasses.json
-|   |           Chemical Biology.json
-|   |           Circuits & VLSI Design.json
-|   |           Clinical & Community Psychology.json
-|   |           Cognitive Neuroscience.json
-|   |           Cognitive Psychology.json
-|   |           Cognitive Science of Teaching & Learning.json
-|   |           Communications.json
-|   |           Community Development.json
-|   |           Community Health.json
-|   |           Comparative Politics.json
-|   |           Computational & Systems Biology.json
-|   |           Computational Linguistics.json
-|   |           Computational Materials Science.json
-|   |           Computational Statistics & Data Science.json
-|   |           Computer Architecture & Parallel Computing.json
-|   |           Computer Vision & Graphics.json
-|   |           Condensed Matter Physics.json
-|   |           Conservation Biology & Ecology.json
-|   |           Constitutional & Public Law.json
-|   |           Construction Engineering & Management.json
-|   |           Control & Estimation.json
-|   |           Control Systems.json
-|   |           Controls & Dynamics.json
-|   |           Corporate Finance.json
-|   |           Counseling Psychology.json
-|   |           Criminal Law & Procedure.json
-|   |           Cultural Heritage.json
-|   |           Data Analytics & Decision Sciences.json
-|   |           Data Science & Analytics.json
-|   |           Databases & Information Systems.json
-|   |           Design & Manufacturing.json
-|   |           Design & Urbanism.json
-|   |           Development Economics.json
-|   |           Developmental Psychology.json
-|   |           Developmental Sciences.json
-|   |           Digital Learning.json
-|   |           Ecological Design.json
-|   |           Econometrics.json
-|   |           Economic Theory (Micro & Macro).json
-|   |           Educational Policy Studies.json
-|   |           Electromagnetics & Photonics.json
-|   |           Electronic Materials & Photonics.json
-|   |           Environmental & Resource Economics.json
-|   |           Environmental Engineering & Science.json
-|   |           Environmental Planning.json
-|   |           Environmental Science & Management.json
-|   |           European History.json
-|   |           Exercise Physiology.json
-|   |           Finance & Risk Management.json
-|   |           Financial Accounting.json
-|   |           Financial Engineering.json
-|   |           Financial Intermediation.json
-|   |           Fisheries & Wildlife Science.json
-|   |           Fluid Mechanics & Thermal Sciences.json
-|   |           Food Chemistry & Processing.json
-|   |           Food Microbiology & Safety.json
-|   |           Fusion & Plasma Science.json
-|   |           Genetics, Genomics & Bioinformatics.json
-|   |           Geometry & Topology.json
-|   |           Geotechnical Engineering.json
-|   |           Global & Transnational History.json
-|   |           Health & Well-being.json
-|   |           Health Communication.json
-|   |           High Energy & Particle Physics.json
-|   |           Higher Education.json
-|   |           History of Science, Technology & Medicine.json
-|   |           Horticulture.json
-|   |           Human Factors & Ergonomics.json
-|   |           Human Nutrition & Metabolism.json
-|   |           Human Resource Development.json
-|   |           Human-Centered Design & Systems.json
-|   |           Human-Computer Interaction (HCI).json
-|   |           Inclusive Education.json
-|   |           Industrial-Organizational Psychology.json
-|   |           Information Organization & Access.json
-|   |           Information Systems & Business Analytics.json
-|   |           Inorganic Chemistry.json
-|   |           Intellectual Property & Technology Law.json
-|   |           International & Comparative Law.json
-|   |           International & Development Economics.json
-|   |           International Relations.json
-|   |           Interpersonal Communication.json
-|   |           Kinesiology.json
-|   |           Knowledge Management & Information Policy.json
-|   |           Language Science.json
-|   |           Learning Disabilities.json
-|   |           Literacy Studies.json
-|   |           Logic & Foundations.json
-|   |           Managerial Accounting.json
-|   |           Marketing.json
-|   |           Materials Chemistry.json
-|   |           Media & Cinema Studies.json
-|   |           Metals & Alloys.json
-|   |           Microbiology.json
-|   |           Microelectronics & Nanotechnology.json
-|   |           Natural Language Processing (NLP).json
-|   |           Neural Engineering & Neurotechnology.json
-|   |           Neuroscience of Communication.json
-|   |           Nuclear Materials & Waste Management.json
-|   |           Nuclear Physics.json
-|   |           Number Theory.json
-|   |           Nutrition & Metabolism.json
-|   |           Operations Management.json
-|   |           Operations Research & Optimization.json
-|   |           Organic Chemistry.json
-|   |           Organizational Behavior & Strategy.json
-|   |           Organizational Communication.json
-|   |           Phonetics & Phonology.json
-|   |           Physical Chemistry.json
-|   |           Physiology.json
-|   |           Plant Breeding & Genetics.json
-|   |           Plant Pathology & Weed Science.json
-|   |           Political Methodology.json
-|   |           Political Theory.json
-|   |           Polymers & Soft Materials.json
-|   |           Power & Energy Systems.json
-|   |           Pre-Modern History (Ancient_Medieval).json
-|   |           Probability.json
-|   |           Programming Languages & Software Engineering.json
-|   |           Propulsion & Combustion.json
-|   |           Psycholinguistics.json
-|   |           Public & Labor Economics.json
-|   |           Public Policy & Law.json
-|   |           Quantitative & Evaluative Methods.json
-|   |           Quantum Information Science.json
-|   |           Quantum Information.json
-|   |           Radiation, Instrumentation & Imaging.json
-|   |           Reactor Physics & Thermal Hydraulics.json
-|   |           Real Estate.json
-|   |           Rhetoric & Public Discourse.json
-|   |           Robotics & Autonomous Systems.json
-|   |           Scientific Computing & Numerical Methods.json
-|   |           Security & Privacy.json
-|   |           Semantics & Pragmatics.json
-|   |           Sensory Science.json
-|   |           Signal & Image Processing.json
-|   |           Social & Environmental Justice.json
-|   |           Social-Personality Psychology.json
-|   |           Solid Mechanics & Materials.json
-|   |           Speech-Language Pathology.json
-|   |           Statistical Theory & Methods.json
-|   |           STEM Education.json
-|   |           Structural Engineering & Materials.json
-|   |           Structures & Materials.json
-|   |           Supply Chain Management.json
-|   |           Sustainable & Resilient Infrastructure.json
-|   |           Syntax.json
-|   |           Systems & Networking.json
-|   |           Systems Engineering & Design.json
-|   |           Taxation & Employee Benefits.json
-|   |           Taxation.json
-|   |           Theoretical & Computational Chemistry.json
-|   |           Transportation Engineering.json
-|   |           Transportation Planning.json
-|   |           Water Resources Engineering.json
-|   |           Youth Services & Librarianship.json
-|   |           
 |   +---jsons
 |   |   +---parameters
 |   |   \---serialization
@@ -243,6 +42,11 @@ C:.
 |           
 +---notebooks
 +---scripts
+|       activate_venv.ps1
+|       format_code.ps1
+|       github_push.ps1
+|       update_structure.ps1
+|       
 +---src
 |   +---agents
 |   +---config
@@ -267,6 +71,463 @@ C:.
     +---Include
     +---Lib
     |   \---site-packages
+    |       |   30fcd23745efe32ce681__mypyc.cp312-win_amd64.pyd
+    |       |   mypy_extensions.py
+    |       |   _black_version.py
+    |       |   _black_version.pyi
+    |       |   
+    |       +---black
+    |       |   |   brackets.cp312-win_amd64.pyd
+    |       |   |   brackets.py
+    |       |   |   cache.cp312-win_amd64.pyd
+    |       |   |   cache.py
+    |       |   |   comments.cp312-win_amd64.pyd
+    |       |   |   comments.py
+    |       |   |   concurrency.py
+    |       |   |   const.cp312-win_amd64.pyd
+    |       |   |   const.py
+    |       |   |   debug.py
+    |       |   |   files.py
+    |       |   |   handle_ipynb_magics.cp312-win_amd64.pyd
+    |       |   |   handle_ipynb_magics.py
+    |       |   |   linegen.cp312-win_amd64.pyd
+    |       |   |   linegen.py
+    |       |   |   lines.cp312-win_amd64.pyd
+    |       |   |   lines.py
+    |       |   |   mode.cp312-win_amd64.pyd
+    |       |   |   mode.py
+    |       |   |   nodes.cp312-win_amd64.pyd
+    |       |   |   nodes.py
+    |       |   |   numerics.cp312-win_amd64.pyd
+    |       |   |   numerics.py
+    |       |   |   output.py
+    |       |   |   parsing.cp312-win_amd64.pyd
+    |       |   |   parsing.py
+    |       |   |   py.typed
+    |       |   |   ranges.cp312-win_amd64.pyd
+    |       |   |   ranges.py
+    |       |   |   report.py
+    |       |   |   rusty.cp312-win_amd64.pyd
+    |       |   |   rusty.py
+    |       |   |   schema.cp312-win_amd64.pyd
+    |       |   |   schema.py
+    |       |   |   strings.cp312-win_amd64.pyd
+    |       |   |   strings.py
+    |       |   |   trans.cp312-win_amd64.pyd
+    |       |   |   trans.py
+    |       |   |   _width_table.cp312-win_amd64.pyd
+    |       |   |   _width_table.py
+    |       |   |   __init__.cp312-win_amd64.pyd
+    |       |   |   __init__.py
+    |       |   |   __main__.py
+    |       |   |   
+    |       |   +---resources
+    |       |   |   |   black.schema.json
+    |       |   |   |   __init__.cp312-win_amd64.pyd
+    |       |   |   |   __init__.py
+    |       |   |   |   
+    |       |   |   \---__pycache__
+    |       |   |           __init__.cpython-312.pyc
+    |       |   |           
+    |       |   \---__pycache__
+    |       |           brackets.cpython-312.pyc
+    |       |           cache.cpython-312.pyc
+    |       |           comments.cpython-312.pyc
+    |       |           concurrency.cpython-312.pyc
+    |       |           const.cpython-312.pyc
+    |       |           debug.cpython-312.pyc
+    |       |           files.cpython-312.pyc
+    |       |           handle_ipynb_magics.cpython-312.pyc
+    |       |           linegen.cpython-312.pyc
+    |       |           lines.cpython-312.pyc
+    |       |           mode.cpython-312.pyc
+    |       |           nodes.cpython-312.pyc
+    |       |           numerics.cpython-312.pyc
+    |       |           output.cpython-312.pyc
+    |       |           parsing.cpython-312.pyc
+    |       |           ranges.cpython-312.pyc
+    |       |           report.cpython-312.pyc
+    |       |           rusty.cpython-312.pyc
+    |       |           schema.cpython-312.pyc
+    |       |           strings.cpython-312.pyc
+    |       |           trans.cpython-312.pyc
+    |       |           _width_table.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           __main__.cpython-312.pyc
+    |       |           
+    |       +---black-25.9.0.dist-info
+    |       |   |   entry_points.txt
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   REQUESTED
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           AUTHORS.md
+    |       |           LICENSE
+    |       |           
+    |       +---blackd
+    |       |   |   middlewares.py
+    |       |   |   __init__.py
+    |       |   |   __main__.py
+    |       |   |   
+    |       |   \---__pycache__
+    |       |           middlewares.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           __main__.cpython-312.pyc
+    |       |           
+    |       +---blib2to3
+    |       |   |   Grammar.txt
+    |       |   |   LICENSE
+    |       |   |   PatternGrammar.txt
+    |       |   |   pygram.cp312-win_amd64.pyd
+    |       |   |   pygram.py
+    |       |   |   pytree.cp312-win_amd64.pyd
+    |       |   |   pytree.py
+    |       |   |   README
+    |       |   |   __init__.py
+    |       |   |   
+    |       |   +---pgen2
+    |       |   |   |   conv.cp312-win_amd64.pyd
+    |       |   |   |   conv.py
+    |       |   |   |   driver.cp312-win_amd64.pyd
+    |       |   |   |   driver.py
+    |       |   |   |   grammar.cp312-win_amd64.pyd
+    |       |   |   |   grammar.py
+    |       |   |   |   literals.cp312-win_amd64.pyd
+    |       |   |   |   literals.py
+    |       |   |   |   parse.cp312-win_amd64.pyd
+    |       |   |   |   parse.py
+    |       |   |   |   pgen.cp312-win_amd64.pyd
+    |       |   |   |   pgen.py
+    |       |   |   |   token.cp312-win_amd64.pyd
+    |       |   |   |   token.py
+    |       |   |   |   tokenize.cp312-win_amd64.pyd
+    |       |   |   |   tokenize.py
+    |       |   |   |   __init__.py
+    |       |   |   |   
+    |       |   |   \---__pycache__
+    |       |   |           conv.cpython-312.pyc
+    |       |   |           driver.cpython-312.pyc
+    |       |   |           grammar.cpython-312.pyc
+    |       |   |           literals.cpython-312.pyc
+    |       |   |           parse.cpython-312.pyc
+    |       |   |           pgen.cpython-312.pyc
+    |       |   |           token.cpython-312.pyc
+    |       |   |           tokenize.cpython-312.pyc
+    |       |   |           __init__.cpython-312.pyc
+    |       |   |           
+    |       |   \---__pycache__
+    |       |           pygram.cpython-312.pyc
+    |       |           pytree.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           
+    |       +---click
+    |       |   |   core.py
+    |       |   |   decorators.py
+    |       |   |   exceptions.py
+    |       |   |   formatting.py
+    |       |   |   globals.py
+    |       |   |   parser.py
+    |       |   |   py.typed
+    |       |   |   shell_completion.py
+    |       |   |   termui.py
+    |       |   |   testing.py
+    |       |   |   types.py
+    |       |   |   utils.py
+    |       |   |   _compat.py
+    |       |   |   _termui_impl.py
+    |       |   |   _textwrap.py
+    |       |   |   _utils.py
+    |       |   |   _winconsole.py
+    |       |   |   __init__.py
+    |       |   |   
+    |       |   \---__pycache__
+    |       |           core.cpython-312.pyc
+    |       |           decorators.cpython-312.pyc
+    |       |           exceptions.cpython-312.pyc
+    |       |           formatting.cpython-312.pyc
+    |       |           globals.cpython-312.pyc
+    |       |           parser.cpython-312.pyc
+    |       |           shell_completion.cpython-312.pyc
+    |       |           termui.cpython-312.pyc
+    |       |           testing.cpython-312.pyc
+    |       |           types.cpython-312.pyc
+    |       |           utils.cpython-312.pyc
+    |       |           _compat.cpython-312.pyc
+    |       |           _termui_impl.cpython-312.pyc
+    |       |           _textwrap.cpython-312.pyc
+    |       |           _utils.cpython-312.pyc
+    |       |           _winconsole.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           
+    |       +---click-8.3.0.dist-info
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           LICENSE.txt
+    |       |           
+    |       +---colorama
+    |       |   |   ansi.py
+    |       |   |   ansitowin32.py
+    |       |   |   initialise.py
+    |       |   |   win32.py
+    |       |   |   winterm.py
+    |       |   |   __init__.py
+    |       |   |   
+    |       |   +---tests
+    |       |   |   |   ansitowin32_test.py
+    |       |   |   |   ansi_test.py
+    |       |   |   |   initialise_test.py
+    |       |   |   |   isatty_test.py
+    |       |   |   |   utils.py
+    |       |   |   |   winterm_test.py
+    |       |   |   |   __init__.py
+    |       |   |   |   
+    |       |   |   \---__pycache__
+    |       |   |           ansitowin32_test.cpython-312.pyc
+    |       |   |           ansi_test.cpython-312.pyc
+    |       |   |           initialise_test.cpython-312.pyc
+    |       |   |           isatty_test.cpython-312.pyc
+    |       |   |           utils.cpython-312.pyc
+    |       |   |           winterm_test.cpython-312.pyc
+    |       |   |           __init__.cpython-312.pyc
+    |       |   |           
+    |       |   \---__pycache__
+    |       |           ansi.cpython-312.pyc
+    |       |           ansitowin32.cpython-312.pyc
+    |       |           initialise.cpython-312.pyc
+    |       |           win32.cpython-312.pyc
+    |       |           winterm.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           
+    |       +---colorama-0.4.6.dist-info
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           LICENSE.txt
+    |       |           
+    |       +---isort
+    |       |   |   api.py
+    |       |   |   comments.py
+    |       |   |   core.py
+    |       |   |   exceptions.py
+    |       |   |   files.py
+    |       |   |   format.py
+    |       |   |   hooks.py
+    |       |   |   identify.py
+    |       |   |   io.py
+    |       |   |   literal.py
+    |       |   |   logo.py
+    |       |   |   main.py
+    |       |   |   output.py
+    |       |   |   parse.py
+    |       |   |   place.py
+    |       |   |   profiles.py
+    |       |   |   py.typed
+    |       |   |   pylama_isort.py
+    |       |   |   sections.py
+    |       |   |   settings.py
+    |       |   |   setuptools_commands.py
+    |       |   |   sorting.py
+    |       |   |   utils.py
+    |       |   |   wrap.py
+    |       |   |   wrap_modes.py
+    |       |   |   _version.py
+    |       |   |   __init__.py
+    |       |   |   __main__.py
+    |       |   |   
+    |       |   +---deprecated
+    |       |   |   |   finders.py
+    |       |   |   |   __init__.py
+    |       |   |   |   
+    |       |   |   \---__pycache__
+    |       |   |           finders.cpython-312.pyc
+    |       |   |           __init__.cpython-312.pyc
+    |       |   |           
+    |       |   +---stdlibs
+    |       |   |   |   all.py
+    |       |   |   |   py2.py
+    |       |   |   |   py27.py
+    |       |   |   |   py3.py
+    |       |   |   |   py310.py
+    |       |   |   |   py311.py
+    |       |   |   |   py312.py
+    |       |   |   |   py313.py
+    |       |   |   |   py36.py
+    |       |   |   |   py37.py
+    |       |   |   |   py38.py
+    |       |   |   |   py39.py
+    |       |   |   |   __init__.py
+    |       |   |   |   
+    |       |   |   \---__pycache__
+    |       |   |           all.cpython-312.pyc
+    |       |   |           py2.cpython-312.pyc
+    |       |   |           py27.cpython-312.pyc
+    |       |   |           py3.cpython-312.pyc
+    |       |   |           py310.cpython-312.pyc
+    |       |   |           py311.cpython-312.pyc
+    |       |   |           py312.cpython-312.pyc
+    |       |   |           py313.cpython-312.pyc
+    |       |   |           py36.cpython-312.pyc
+    |       |   |           py37.cpython-312.pyc
+    |       |   |           py38.cpython-312.pyc
+    |       |   |           py39.cpython-312.pyc
+    |       |   |           __init__.cpython-312.pyc
+    |       |   |           
+    |       |   +---_vendored
+    |       |   |   \---tomli
+    |       |   |       |   LICENSE
+    |       |   |       |   py.typed
+    |       |   |       |   _parser.py
+    |       |   |       |   _re.py
+    |       |   |       |   __init__.py
+    |       |   |       |   
+    |       |   |       \---__pycache__
+    |       |   |               _parser.cpython-312.pyc
+    |       |   |               _re.cpython-312.pyc
+    |       |   |               __init__.cpython-312.pyc
+    |       |   |               
+    |       |   \---__pycache__
+    |       |           api.cpython-312.pyc
+    |       |           comments.cpython-312.pyc
+    |       |           core.cpython-312.pyc
+    |       |           exceptions.cpython-312.pyc
+    |       |           files.cpython-312.pyc
+    |       |           format.cpython-312.pyc
+    |       |           hooks.cpython-312.pyc
+    |       |           identify.cpython-312.pyc
+    |       |           io.cpython-312.pyc
+    |       |           literal.cpython-312.pyc
+    |       |           logo.cpython-312.pyc
+    |       |           main.cpython-312.pyc
+    |       |           output.cpython-312.pyc
+    |       |           parse.cpython-312.pyc
+    |       |           place.cpython-312.pyc
+    |       |           profiles.cpython-312.pyc
+    |       |           pylama_isort.cpython-312.pyc
+    |       |           sections.cpython-312.pyc
+    |       |           settings.cpython-312.pyc
+    |       |           setuptools_commands.cpython-312.pyc
+    |       |           sorting.cpython-312.pyc
+    |       |           utils.cpython-312.pyc
+    |       |           wrap.cpython-312.pyc
+    |       |           wrap_modes.cpython-312.pyc
+    |       |           _version.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           __main__.cpython-312.pyc
+    |       |           
+    |       +---isort-6.1.0.dist-info
+    |       |   |   entry_points.txt
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   REQUESTED
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           LICENSE
+    |       |           
+    |       +---mypy_extensions-1.1.0.dist-info
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           LICENSE
+    |       |           
+    |       +---packaging
+    |       |   |   markers.py
+    |       |   |   metadata.py
+    |       |   |   py.typed
+    |       |   |   requirements.py
+    |       |   |   specifiers.py
+    |       |   |   tags.py
+    |       |   |   utils.py
+    |       |   |   version.py
+    |       |   |   _elffile.py
+    |       |   |   _manylinux.py
+    |       |   |   _musllinux.py
+    |       |   |   _parser.py
+    |       |   |   _structures.py
+    |       |   |   _tokenizer.py
+    |       |   |   __init__.py
+    |       |   |   
+    |       |   +---licenses
+    |       |   |   |   _spdx.py
+    |       |   |   |   __init__.py
+    |       |   |   |   
+    |       |   |   \---__pycache__
+    |       |   |           _spdx.cpython-312.pyc
+    |       |   |           __init__.cpython-312.pyc
+    |       |   |           
+    |       |   \---__pycache__
+    |       |           markers.cpython-312.pyc
+    |       |           metadata.cpython-312.pyc
+    |       |           requirements.cpython-312.pyc
+    |       |           specifiers.cpython-312.pyc
+    |       |           tags.cpython-312.pyc
+    |       |           utils.cpython-312.pyc
+    |       |           version.cpython-312.pyc
+    |       |           _elffile.cpython-312.pyc
+    |       |           _manylinux.cpython-312.pyc
+    |       |           _musllinux.cpython-312.pyc
+    |       |           _parser.cpython-312.pyc
+    |       |           _structures.cpython-312.pyc
+    |       |           _tokenizer.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           
+    |       +---packaging-25.0.dist-info
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           LICENSE
+    |       |           LICENSE.APACHE
+    |       |           LICENSE.BSD
+    |       |           
+    |       +---pathspec
+    |       |   |   gitignore.py
+    |       |   |   pathspec.py
+    |       |   |   pattern.py
+    |       |   |   py.typed
+    |       |   |   util.py
+    |       |   |   _meta.py
+    |       |   |   __init__.py
+    |       |   |   
+    |       |   +---patterns
+    |       |   |   |   gitwildmatch.py
+    |       |   |   |   __init__.py
+    |       |   |   |   
+    |       |   |   \---__pycache__
+    |       |   |           gitwildmatch.cpython-312.pyc
+    |       |   |           __init__.cpython-312.pyc
+    |       |   |           
+    |       |   \---__pycache__
+    |       |           gitignore.cpython-312.pyc
+    |       |           pathspec.cpython-312.pyc
+    |       |           pattern.cpython-312.pyc
+    |       |           util.cpython-312.pyc
+    |       |           _meta.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           
+    |       +---pathspec-0.12.1.dist-info
+    |       |       INSTALLER
+    |       |       LICENSE
+    |       |       METADATA
+    |       |       RECORD
+    |       |       WHEEL
+    |       |       
     |       +---pip
     |       |   |   py.typed
     |       |   |   __init__.py
@@ -1515,22 +1776,79 @@ C:.
     |       |           __main__.cpython-312.pyc
     |       |           __pip-runner__.cpython-312.pyc
     |       |           
-    |       \---pip-24.0.dist-info
-    |               AUTHORS.txt
-    |               entry_points.txt
-    |               INSTALLER
-    |               LICENSE.txt
-    |               METADATA
-    |               RECORD
-    |               REQUESTED
-    |               top_level.txt
-    |               WHEEL
+    |       +---pip-24.0.dist-info
+    |       |       AUTHORS.txt
+    |       |       entry_points.txt
+    |       |       INSTALLER
+    |       |       LICENSE.txt
+    |       |       METADATA
+    |       |       RECORD
+    |       |       REQUESTED
+    |       |       top_level.txt
+    |       |       WHEEL
+    |       |       
+    |       +---platformdirs
+    |       |   |   android.py
+    |       |   |   api.py
+    |       |   |   macos.py
+    |       |   |   py.typed
+    |       |   |   unix.py
+    |       |   |   version.py
+    |       |   |   windows.py
+    |       |   |   __init__.py
+    |       |   |   __main__.py
+    |       |   |   
+    |       |   \---__pycache__
+    |       |           android.cpython-312.pyc
+    |       |           api.cpython-312.pyc
+    |       |           macos.cpython-312.pyc
+    |       |           unix.cpython-312.pyc
+    |       |           version.cpython-312.pyc
+    |       |           windows.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           __main__.cpython-312.pyc
+    |       |           
+    |       +---platformdirs-4.4.0.dist-info
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           LICENSE
+    |       |           
+    |       +---pytokens
+    |       |   |   cli.py
+    |       |   |   py.typed
+    |       |   |   __init__.py
+    |       |   |   __main__.py
+    |       |   |   
+    |       |   \---__pycache__
+    |       |           cli.cpython-312.pyc
+    |       |           __init__.cpython-312.pyc
+    |       |           __main__.cpython-312.pyc
+    |       |           
+    |       +---pytokens-0.1.10.dist-info
+    |       |       INSTALLER
+    |       |       LICENSE
+    |       |       METADATA
+    |       |       RECORD
+    |       |       top_level.txt
+    |       |       WHEEL
+    |       |       
+    |       \---__pycache__
+    |               mypy_extensions.cpython-312.pyc
+    |               _black_version.cpython-312.pyc
     |               
     \---Scripts
             activate
             activate.bat
             Activate.ps1
+            black.exe
+            blackd.exe
             deactivate.bat
+            isort-identify-imports.exe
+            isort.exe
             pip.exe
             pip3.12.exe
             pip3.exe

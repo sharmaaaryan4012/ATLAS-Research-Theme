@@ -1,5 +1,5 @@
-[
-  "Learning Sciences",
-  "Motivation & Engagement",
-  "Educational Neuroscience"
-]
+{
+  "Learning Sciences": "An interdisciplinary field that studies teaching and learning.",
+  "Motivation & Engagement": "The study of the factors that motivate students to learn and engage in school.",
+  "Educational Neuroscience": "The study of the neural basis of learning and education."
+}

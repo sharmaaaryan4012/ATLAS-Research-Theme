@@ -1,6 +1,6 @@
-[
-  "Real & Complex Analysis",
-  "Functional Analysis",
-  "Partial Differential Equations (PDEs)",
-  "Harmonic Analysis"
-]
+{
+  "Real & Complex Analysis": "The rigorous study of the real and complex number systems, functions, and the concepts of limits and continuity.",
+  "Functional Analysis": "The study of vector spaces endowed with some kind of limit-related structure (e.g., inner product, norm, topology) and the linear functions defined on these spaces.",
+  "Partial Differential Equations (PDEs)": "The study of differential equations that contain unknown multivariable functions and their partial derivatives.",
+  "Harmonic Analysis": "The study of the representation of functions or signals as the superposition of basic waves."
+}

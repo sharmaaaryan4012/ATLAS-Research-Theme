@@ -1,7 +1,7 @@
-[
-  "Analog & Mixed-Signal Circuits",
-  "Digital & Memory Circuits",
-  "RF & Millimeter-Wave Circuits",
-  "Power Management Circuits",
-  "CAD & Design Automation"
-]
+{
+  "Analog & Mixed-Signal Circuits": "The design of circuits that process continuous analog signals and interface between the analog and digital domains.",
+  "Digital & Memory Circuits": "The design of circuits that perform logic operations using discrete values and the architecture of computer memory.",
+  "RF & Millimeter-Wave Circuits": "The design of high-frequency circuits for wireless communication applications, such as in 5G and radar.",
+  "Power Management Circuits": "The design of circuits that efficiently manage and convert electrical power in electronic devices.",
+  "CAD & Design Automation": "The development of computer-aided design (CAD) tools to automate the design and verification of complex integrated circuits."
+}

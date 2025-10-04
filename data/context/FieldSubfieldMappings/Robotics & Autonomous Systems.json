@@ -1,7 +1,7 @@
-[
-  "Control Theory for Robotics",
-  "Motion Planning & Kinematics",
-  "Perception & Sensor Fusion",
-  "Human-Robot Interaction",
-  "Multi-Agent & Swarm Robotics"
-]
+{
+  "Control Theory for Robotics": "The application of control systems theory to govern the movement and behavior of robots.",
+  "Motion Planning & Kinematics": "The study of algorithms for planning collision-free paths for robots and the mathematics of robot motion.",
+  "Perception & Sensor Fusion": "The process by which robots interpret data from sensors (like cameras and lidar) to understand their environment.",
+  "Human-Robot Interaction": "The study of how humans and robots can interact and collaborate safely and effectively.",
+  "Multi-Agent & Swarm Robotics": "The coordination of large groups of simple robots to perform complex tasks collectively."
+}

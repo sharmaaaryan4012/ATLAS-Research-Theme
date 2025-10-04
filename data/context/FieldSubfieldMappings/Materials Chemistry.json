@@ -1,6 +1,6 @@
-[
-  "Polymer Chemistry",
-  "Nanomaterials Synthesis",
-  "Energy Materials",
-  "Supramolecular Chemistry"
-]
+{
+  "Polymer Chemistry": "The branch of chemistry focused on the synthesis and properties of polymers (plastics).",
+  "Nanomaterials Synthesis": "The chemical synthesis of materials with nanoscale dimensions.",
+  "Energy Materials": "The design of materials for energy generation and storage, such as in batteries and solar cells.",
+  "Supramolecular Chemistry": "The branch of chemistry concerned with chemical systems composed of a discrete number of molecules."
+}

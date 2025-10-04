@@ -1,6 +1,6 @@
-[
-  "Tissue Engineering Scaffolds",
-  "Drug Delivery Systems",
-  "Medical Implants & Devices",
-  "Regenerative Medicine"
-]
+{
+  "Tissue Engineering Scaffolds": "The design of porous materials that support cell growth and guide the formation of new biological tissue.",
+  "Drug Delivery Systems": "The engineering of materials to control the release of therapeutic agents to specific targets in the body.",
+  "Medical Implants & Devices": "The development of biocompatible materials for implants like artificial joints, stents, and dental implants.",
+  "Regenerative Medicine": "An interdisciplinary field that develops methods to regrow, repair or replace damaged or diseased cells, organs or tissues."
+}

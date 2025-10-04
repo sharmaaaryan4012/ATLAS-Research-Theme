@@ -1,6 +1,6 @@
-[
-  "Radiation Detection & Measurement",
-  "Medical Imaging Physics",
-  "Radiation Shielding & Dosimetry",
-  "Homeland Security Applications"
-]
+{
+  "Radiation Detection & Measurement": "The design of instruments to detect and measure ionizing radiation.",
+  "Medical Imaging Physics": "The physics principles behind medical imaging modalities like X-ray, CT, PET, and MRI.",
+  "Radiation Shielding & Dosimetry": "The design of materials to block radiation and the measurement of absorbed radiation doses.",
+  "Homeland Security Applications": "The use of radiation detection technologies to prevent nuclear terrorism and secure borders."
+}

@@ -1,5 +1,5 @@
-[
-  "Workplace Learning & Training",
-  "Organizational Development",
-  "Global Human Resources"
-]
+{
+  "Workplace Learning & Training": "The design and delivery of training programs in the workplace.",
+  "Organizational Development": "The process of improving organizational effectiveness.",
+  "Global Human Resources": "The management of human resources in a global context."
+}

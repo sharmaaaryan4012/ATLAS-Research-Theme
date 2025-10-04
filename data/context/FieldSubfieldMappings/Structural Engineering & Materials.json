@@ -1,6 +1,6 @@
-[
-  "Structural Dynamics & Earthquake Engineering",
-  "Computational Mechanics & Simulation",
-  "Concrete & Steel Structures",
-  "Structural Health Monitoring"
-]
+{
+  "Structural Dynamics & Earthquake Engineering": "The study of the behavior of structures subjected to dynamic loads like wind and earthquakes.",
+  "Computational Mechanics & Simulation": "The use of computer models to simulate and analyze the behavior of complex structures.",
+  "Concrete & Steel Structures": "The design and analysis of structures made from the most common construction materials.",
+  "Structural Health Monitoring": "The use of sensors and data analysis to continuously assess the condition and safety of structures."
+}

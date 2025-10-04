@@ -1,6 +1,6 @@
-[
-  "History of Biology & Medicine",
-  "History of Physical Sciences",
-  "History of Technology",
-  "Science & Empire"
-]
+{
+  "History of Biology & Medicine": "The study of the historical development of the life sciences and medical practices.",
+  "History of Physical Sciences": "The study of the historical development of fields like physics, chemistry, and astronomy.",
+  "History of Technology": "The study of the history of invention and the impact of technology on society.",
+  "Science & Empire": "The study of the role of science and technology in the history of European imperialism."
+}

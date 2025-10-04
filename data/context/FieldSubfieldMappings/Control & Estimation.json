@@ -1,5 +1,5 @@
-[
-  "Guidance, Navigation & Control (GNC)",
-  "Autonomous Aerospace Systems",
-  "State Estimation & Filtering"
-]
+{
+  "Guidance, Navigation & Control (GNC)": "The design of systems to control the movement of a vehicle from a starting point to a destination.",
+  "Autonomous Aerospace Systems": "The development of aircraft and spacecraft that can operate without direct human control.",
+  "State Estimation & Filtering": "The use of algorithms, like the Kalman filter, to estimate the state of a system from noisy sensor measurements."
+}

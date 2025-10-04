@@ -1,6 +1,6 @@
-[
-  "Semiconductors",
-  "Photovoltaics & Solar Cells",
-  "Thermoelectrics",
-  "Dielectrics & Ferroelectrics"
-]
+{
+  "Semiconductors": "The study of materials with electrical conductivity between that of a conductor and an insulator, forming the basis of all modern electronics.",
+  "Photovoltaics & Solar Cells": "The development of materials and devices that convert sunlight directly into electricity.",
+  "Thermoelectrics": "The study of materials that can convert heat into electricity and vice versa.",
+  "Dielectrics & Ferroelectrics": "The study of insulating materials and those with a spontaneous electric polarization, used in capacitors and memory."
+}

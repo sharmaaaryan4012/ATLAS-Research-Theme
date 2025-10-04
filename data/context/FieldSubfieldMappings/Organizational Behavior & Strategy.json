@@ -1,6 +1,6 @@
-[
-  "Strategic Management",
-  "Organizational Theory",
-  "Leadership & Teams",
-  "Entrepreneurship"
-]
+{
+  "Strategic Management": "The management of an organization's resources to achieve its goals and objectives.",
+  "Organizational Theory": "The study of the structure and design of organizations.",
+  "Leadership & Teams": "The study of leadership and teamwork in organizations.",
+  "Entrepreneurship": "The process of designing, launching, and running a new business."
+}

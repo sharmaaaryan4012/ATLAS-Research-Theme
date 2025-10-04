@@ -1,6 +1,6 @@
-[
-  "Polymer Physics & Chemistry",
-  "Self-Assembling Materials",
-  "Soft Robotics",
-  "Composites & Blends"
-]
+{
+  "Polymer Physics & Chemistry": "The study of the physical principles and chemical synthesis of long-chain molecules (polymers).",
+  "Self-Assembling Materials": "The design of molecules and materials that spontaneously organize themselves into ordered structures.",
+  "Soft Robotics": "The design of robots from highly compliant materials, similar to those found in living organisms.",
+  "Composites & Blends": "The creation of new materials by combining polymers with other materials (like fibers) or by mixing different polymers."
+}

@@ -1,6 +1,6 @@
-[
-  "Inventory & Logistics Management",
-  "Service Operations",
-  "Revenue Management",
-  "Healthcare Operations"
-]
+{
+  "Inventory & Logistics Management": "The management of the flow of goods from suppliers to customers.",
+  "Service Operations": "The management of the production and delivery of services.",
+  "Revenue Management": "The use of analytics to predict consumer behavior at the micro-market level and optimize product availability and price.",
+  "Healthcare Operations": "The application of operations management principles to improve the delivery of healthcare."
+}

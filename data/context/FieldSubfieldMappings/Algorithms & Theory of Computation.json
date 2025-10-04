@@ -1,7 +1,7 @@
-[
-  "Analysis of Algorithms",
-  "Complexity Theory",
-  "Cryptography",
-  "Algorithmic Game Theory",
-  "Randomized Algorithms"
-]
+{
+  "Analysis of Algorithms": "The determination of the computational resources (like time and memory) required by an algorithm to solve a problem.",
+  "Complexity Theory": "The classification of computational problems according to their inherent difficulty and the relationships between those classes.",
+  "Cryptography": "The study and practice of techniques for secure communication in the presence of adversaries, focusing on confidentiality and integrity.",
+  "Algorithmic Game Theory": "The study of the intersection of computer science and game theory, focusing on algorithms for strategic interactions.",
+  "Randomized Algorithms": "The use of randomness as a tool for algorithm design, often leading to simpler or more efficient solutions."
+}

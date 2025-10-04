@@ -1,4 +1,5 @@
-Set-Location "C:\Users\sharm\OneDrive\Desktop\Projects\ATLAS - Research Theme"
+# Go to parent directory of scripts
+Set-Location (Split-Path $PSScriptRoot -Parent)
 
 # Stage all changes
 git add .
@@ -10,4 +11,4 @@ git commit -m "Auto update on $timestamp"
 # Push to GitHub
 git push origin main
 
-Write-Host "`n Project pushed to GitHub successfully!"
+Write-Host "` Project pushed to GitHub successfully!"

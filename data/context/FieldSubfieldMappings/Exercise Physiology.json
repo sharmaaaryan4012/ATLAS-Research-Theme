@@ -1,5 +1,5 @@
-[
-  "Cardiovascular Physiology",
-  "Metabolism & Obesity",
-  "Physical Activity & Aging"
-]
+{
+  "Cardiovascular Physiology": "The study of the function of the heart and blood vessels.",
+  "Metabolism & Obesity": "The study of the chemical processes that occur in the body and the causes and consequences of obesity.",
+  "Physical Activity & Aging": "The study of the effects of physical activity on the aging process."
+}

@@ -1,5 +1,5 @@
-[
-  "Space Mission Design & Optimization",
-  "Satellite & Spacecraft Dynamics",
-  "Celestial Mechanics"
-]
+{
+  "Space Mission Design & Optimization": "The planning of trajectories and maneuvers for spacecraft to achieve mission objectives efficiently.",
+  "Satellite & Spacecraft Dynamics": "The study of the motion and attitude of artificial satellites and spacecraft in orbit.",
+  "Celestial Mechanics": "The branch of astronomy that deals with the motions of celestial objects."
+}

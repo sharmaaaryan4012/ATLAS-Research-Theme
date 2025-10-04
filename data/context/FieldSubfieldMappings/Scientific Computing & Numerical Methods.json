@@ -1,7 +1,7 @@
-[
-  "Numerical Linear Algebra",
-  "Differential Equation Solvers",
-  "High-Performance Scientific Libraries",
-  "Computational Science & Engineering",
-  "Data-Driven Scientific Discovery"
-]
+{
+  "Numerical Linear Algebra": "The study of algorithms for performing matrix computations, which are fundamental to scientific simulation.",
+  "Differential Equation Solvers": "The development of numerical methods for solving ordinary and partial differential equations that model physical phenomena.",
+  "High-Performance Scientific Libraries": "The creation of optimized software libraries for common numerical computations used in scientific applications.",
+  "Computational Science & Engineering": "An interdisciplinary field that uses computation and simulation to solve complex problems in various scientific and engineering domains.",
+  "Data-Driven Scientific Discovery": "The use of machine learning and data analysis techniques to extract knowledge and hypotheses from large scientific datasets."
+}

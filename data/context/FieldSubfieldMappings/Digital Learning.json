@@ -1,5 +1,5 @@
-[
-  "Learning Technologies",
-  "Online & Blended Learning",
-  "Computational Thinking in K-12"
-]
+{
+  "Learning Technologies": "The design and use of technology to enhance learning.",
+  "Online & Blended Learning": "The study of learning that takes place partially or fully online.",
+  "Computational Thinking in K-12": "The integration of computational concepts into K-12 education."
+}

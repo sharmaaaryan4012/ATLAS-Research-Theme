@@ -1,7 +1,7 @@
-[
-  "Continuum Mechanics",
-  "Fracture & Fatigue",
-  "Computational Mechanics",
-  "Mechanics of Materials",
-  "Geomechanics"
-]
+{
+  "Continuum Mechanics": "The modeling of the behavior of materials as a continuous mass rather than as discrete particles.",
+  "Fracture & Fatigue": "The study of how and why materials break under static and cyclic loading.",
+  "Computational Mechanics": "The use of numerical methods, such as the finite element method, to simulate the behavior of materials and structures.",
+  "Mechanics of Materials": "The study of the relationship between the internal stresses and strains in a solid body under various loading conditions.",
+  "Geomechanics": "The study of the mechanical behavior of geological materials like soil and rock."
+}

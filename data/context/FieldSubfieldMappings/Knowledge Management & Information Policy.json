@@ -1,6 +1,6 @@
-[
-  "Information Ethics & Policy",
-  "Intellectual Property",
-  "Scholarly Communication",
-  "Information & Society"
-]
+{
+  "Information Ethics & Policy": "The study of ethical issues and policies related to the creation, use, and dissemination of information.",
+  "Intellectual Property": "The study of the laws that protect creations of the mind, such as patents and copyrights.",
+  "Scholarly Communication": "The study of how scholars in any field use and disseminate information through formal and informal channels.",
+  "Information & Society": "The study of the social, cultural, and political impact of information."
+}

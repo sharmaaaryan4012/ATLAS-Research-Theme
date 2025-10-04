@@ -1,5 +1,5 @@
-[
-  "Doctor-Patient Communication",
-  "Health Campaigns & Persuasion",
-  "Health Information Technology"
-]
+{
+  "Doctor-Patient Communication": "The study of communication between healthcare providers and patients.",
+  "Health Campaigns & Persuasion": "The design and evaluation of public health campaigns to promote healthy behaviors.",
+  "Health Information Technology": "The study of the use of technology in healthcare communication."
+}

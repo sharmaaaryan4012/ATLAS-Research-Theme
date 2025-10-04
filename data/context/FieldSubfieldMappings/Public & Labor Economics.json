@@ -1,6 +1,6 @@
-[
-  "Taxation & Public Finance",
-  "Labor Market Analysis",
-  "Economics of Education",
-  "Law & Economics"
-]
+{
+  "Taxation & Public Finance": "The study of the design of tax systems and government spending.",
+  "Labor Market Analysis": "The empirical study of labor markets, including wages, employment, and inequality.",
+  "Economics of Education": "The study of the economics of education, including the returns to schooling and school finance.",
+  "Law & Economics": "The application of economic theory to analyze law and legal institutions."
+}

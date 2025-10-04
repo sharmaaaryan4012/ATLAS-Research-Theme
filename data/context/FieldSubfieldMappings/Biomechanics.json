@@ -1,5 +1,5 @@
-[
-  "Locomotion & Gait Analysis",
-  "Injury Biomechanics",
-  "Rehabilitation Engineering"
-]
+{
+  "Locomotion & Gait Analysis": "The study of human movement, particularly walking and running.",
+  "Injury Biomechanics": "The study of the mechanical causes of injuries.",
+  "Rehabilitation Engineering": "The application of engineering principles to the design of devices to assist individuals with disabilities."
+}

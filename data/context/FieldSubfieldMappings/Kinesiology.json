@@ -1,5 +1,5 @@
-[
-  "Motor Control & Learning",
-  "Exercise Psychology",
-  "Adapted Physical Activity"
-]
+{
+  "Motor Control & Learning": "The study of how the nervous system controls movement and how motor skills are learned.",
+  "Exercise Psychology": "The study of the psychological factors that influence participation in physical activity.",
+  "Adapted Physical Activity": "The promotion of physical activity for individuals with disabilities."
+}

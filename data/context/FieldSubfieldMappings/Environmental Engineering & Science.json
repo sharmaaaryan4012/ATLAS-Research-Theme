@@ -1,6 +1,6 @@
-[
-  "Water Quality & Treatment",
-  "Air Quality & Pollution Control",
-  "Environmental Biotechnology",
-  "Sustainable Engineering"
-]
+{
+  "Water Quality & Treatment": "The science of assessing water quality and designing systems for drinking water purification and wastewater treatment.",
+  "Air Quality & Pollution Control": "The study of air pollutants and the development of technologies to control their emission.",
+  "Environmental Biotechnology": "The use of biological systems, like microbes, for environmental remediation and waste treatment.",
+  "Sustainable Engineering": "The design of engineering systems that meet human needs while minimizing environmental impact."
+}

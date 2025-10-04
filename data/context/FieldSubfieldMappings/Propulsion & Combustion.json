@@ -1,6 +1,6 @@
-[
-  "Air-Breathing Propulsion",
-  "Rocket & Electric Propulsion",
-  "Combustion Science",
-  "Sustainable Aviation Fuels"
-]
+{
+  "Air-Breathing Propulsion": "The study of engines, such as jet engines and ramjets, that use external air for combustion.",
+  "Rocket & Electric Propulsion": "The study of engines that carry their own oxidizer (rockets) or use electromagnetic fields to accelerate propellant.",
+  "Combustion Science": "The fundamental study of the chemical process of burning fuel to release energy.",
+  "Sustainable Aviation Fuels": "The development of renewable or waste-derived aviation fuels to reduce the environmental impact of flying."
+}

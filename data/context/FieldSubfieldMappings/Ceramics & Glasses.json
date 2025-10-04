@@ -1,6 +1,6 @@
-[
-  "Structural Ceramics",
-  "Electroceramics",
-  "Glass Science",
-  "High-Temperature Materials"
-]
+{
+  "Structural Ceramics": "The development of ceramic materials for applications requiring high strength and temperature resistance.",
+  "Electroceramics": "The study of ceramic materials with specific electrical properties, used in capacitors, sensors, and actuators.",
+  "Glass Science": "The study of the formation, structure, and properties of non-crystalline amorphous solids.",
+  "High-Temperature Materials": "The design of materials that can withstand extreme temperatures, such as in jet engines and furnaces."
+}

@@ -1,6 +1,6 @@
-[
-  "Patent Law",
-  "Copyright Law",
-  "Trademark Law",
-  "Cyberlaw & Information Policy"
-]
+{
+  "Patent Law": "The law that protects inventions.",
+  "Copyright Law": "The law that protects works of authorship, such as books and music.",
+  "Trademark Law": "The law that protects brand names and logos.",
+  "Cyberlaw & Information Policy": "The law that governs the internet and information technology."
+}

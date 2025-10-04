@@ -1,6 +1,6 @@
-[
-  "Aerospace Structures & Solid Mechanics",
-  "Composite Materials",
-  "Aeroelasticity & Structural Dynamics",
-  "Fatigue & Fracture"
-]
+{
+  "Aerospace Structures & Solid Mechanics": "The application of solid mechanics principles to the design of lightweight and robust aircraft and spacecraft structures.",
+  "Composite Materials": "The study of materials made from two or more constituent materials with significantly different properties, such as carbon fiber.",
+  "Aeroelasticity & Structural Dynamics": "The study of the interaction between aerodynamic forces and the structural flexibility of aerospace vehicles.",
+  "Fatigue & Fracture": "The analysis of how aerospace structures fail over time due to cyclic loading and crack propagation."
+}

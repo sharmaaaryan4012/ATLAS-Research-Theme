@@ -1,5 +1,5 @@
-[
-  "Hearing Science",
-  "Auditory Processing Disorders",
-  "Hearing Aids & Cochlear Implants"
-]
+{
+  "Hearing Science": "The study of the anatomy, physiology, and psychoacoustics of the auditory system.",
+  "Auditory Processing Disorders": "The study of disorders that affect the brain's ability to process auditory information.",
+  "Hearing Aids & Cochlear Implants": "The study of the technology and use of devices to assist individuals with hearing loss."
+}

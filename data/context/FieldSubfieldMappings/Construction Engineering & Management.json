@@ -1,6 +1,6 @@
-[
-  "Project Management & Control",
-  "Construction Informatics",
-  "Automation in Construction",
-  "Construction Safety"
-]
+{
+  "Project Management & Control": "The methodologies for planning, scheduling, budgeting, and controlling construction projects.",
+  "Construction Informatics": "The application of information technology and data science to improve construction processes.",
+  "Automation in Construction": "The use of robotics and automated systems to perform construction tasks.",
+  "Construction Safety": "The study and implementation of practices to prevent accidents and injuries on construction sites."
+}

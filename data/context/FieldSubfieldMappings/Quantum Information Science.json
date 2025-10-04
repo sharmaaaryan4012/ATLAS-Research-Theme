@@ -1,6 +1,6 @@
-[
-  "Quantum Computing",
-  "Quantum Communication & Cryptography",
-  "Quantum Sensing & Metrology",
-  "Quantum Simulation"
-]
+{
+  "Quantum Computing": "The use of quantum-mechanical phenomena such as superposition and entanglement to perform computation.",
+  "Quantum Communication & Cryptography": "The use of quantum principles to enable secure communication channels that are provably immune to eavesdropping.",
+  "Quantum Sensing & Metrology": "The use of quantum systems to make ultra-precise measurements of physical quantities.",
+  "Quantum Simulation": "The use of controllable quantum systems to simulate the behavior of other, more complex quantum systems."
+}

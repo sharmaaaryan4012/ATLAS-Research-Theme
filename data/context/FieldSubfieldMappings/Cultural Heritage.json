@@ -1,5 +1,5 @@
-[
-  "Cultural Landscape Preservation",
-  "Landscape History & Theory",
-  "Urban Heritage"
-]
+{
+  "Cultural Landscape Preservation": "The preservation of landscapes that have cultural or historical significance.",
+  "Landscape History & Theory": "The study of the history and theory of landscape design.",
+  "Urban Heritage": "The preservation of the historic character of cities."
+}
