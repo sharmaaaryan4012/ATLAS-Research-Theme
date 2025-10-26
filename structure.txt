@@ -7,6 +7,14 @@ C:.
 |   requirements.txt
 |   structure.txt
 |   
++---agents
+|       field_classifier.py
+|       field_enhancer.py
+|       field_validator.py
+|       subfield_classifier.py
+|       subfield_enhancer.py
+|       subfield_validator.py
+|       
 +---config
 |   |   paths.py
 |   |   
@@ -14,16 +22,214 @@ C:.
 |           paths.cpython-312.pyc
 |           
 +---data
-|   +---context
-|   |   |   MasterCollegeFieldMapping.json
-|   |   |   MasterFieldSubfieldMapping.json
-|   |   |   
-|   |   +---collegeFieldMappings
-|   |   \---FieldSubfieldMappings
-|   +---jsons
-|   |   +---parameters
-|   |   \---serialization
-|   \---knowledgebase
+|   \---context
+|       |   MasterCollegeFieldMapping.json
+|       |   MasterFieldSubfieldMapping.json
+|       |   
+|       +---collegeFieldMappings
+|       |       College of Agricultural, Consumer & Environmental Sciences (ACES).json
+|       |       College of Applied Health Sciences.json
+|       |       College of Education.json
+|       |       College of Fine & Applied Arts.json
+|       |       College of Law.json
+|       |       College of Liberal Arts & Sciences.json
+|       |       Gies College of Business.json
+|       |       School of Information Sciences (iSchool).json
+|       |       The Grainger College of Engineering.json
+|       |       
+|       \---FieldSubfieldMappings
+|               Aerodynamics & Fluid Dynamics.json
+|               Agribusiness Management.json
+|               Agronomy & Agroecology.json
+|               Algebra.json
+|               Algorithms & Theory of Computation.json
+|               American History.json
+|               American Politics.json
+|               Analysis.json
+|               Analytical Chemistry.json
+|               Animal Behavior & Welfare.json
+|               Applied & Computational Mathematics.json
+|               Applied Microeconomics.json
+|               Applied Statistics.json
+|               Architectural History & Theory.json
+|               Archives & Special Collections.json
+|               Artificial Intelligence & Machine Learning.json
+|               Asset Pricing.json
+|               Astrodynamics & Orbital Mechanics.json
+|               Astrophysics & Cosmology.json
+|               Atomic, Molecular & Optical Physics.json
+|               Audiology.json
+|               Auditing & Assurance.json
+|               Autism & Developmental Disabilities.json
+|               Behavioral Neuroscience.json
+|               Bilingual & ESL Education.json
+|               Bioinformatics & Statistics.json
+|               Biomaterials & Biomedical Devices.json
+|               Biomechanics & Mechanobiology.json
+|               Biomechanics.json
+|               Biomedical Imaging & Sensing.json
+|               Biophysics & Quantitative Biology.json
+|               Building Performance.json
+|               Business & Commercial Law.json
+|               Cell & Tissue Engineering.json
+|               Ceramics & Glasses.json
+|               Chemical Biology.json
+|               Circuits & VLSI Design.json
+|               Clinical & Community Psychology.json
+|               Cognitive Neuroscience.json
+|               Cognitive Psychology.json
+|               Cognitive Science of Teaching & Learning.json
+|               Communications.json
+|               Community Development.json
+|               Community Health.json
+|               Comparative Politics.json
+|               Computational & Systems Biology.json
+|               Computational Linguistics.json
+|               Computational Materials Science.json
+|               Computational Statistics & Data Science.json
+|               Computer Architecture & Parallel Computing.json
+|               Computer Vision & Graphics.json
+|               Condensed Matter Physics.json
+|               Conservation Biology & Ecology.json
+|               Constitutional & Public Law.json
+|               Construction Engineering & Management.json
+|               Control & Estimation.json
+|               Control Systems.json
+|               Controls & Dynamics.json
+|               Corporate Finance.json
+|               Counseling Psychology.json
+|               Criminal Law & Procedure.json
+|               Cultural Heritage.json
+|               Data Analytics & Decision Sciences.json
+|               Data Science & Analytics.json
+|               Databases & Information Systems.json
+|               Design & Manufacturing.json
+|               Design & Urbanism.json
+|               Development Economics.json
+|               Developmental Psychology.json
+|               Developmental Sciences.json
+|               Digital Learning.json
+|               Ecological Design.json
+|               Econometrics.json
+|               Economic Theory (Micro & Macro).json
+|               Educational Policy Studies.json
+|               Electromagnetics & Photonics.json
+|               Electronic Materials & Photonics.json
+|               Environmental & Resource Economics.json
+|               Environmental Engineering & Science.json
+|               Environmental Planning.json
+|               Environmental Science & Management.json
+|               European History.json
+|               Exercise Physiology.json
+|               Finance & Risk Management.json
+|               Financial Accounting.json
+|               Financial Engineering.json
+|               Financial Intermediation.json
+|               Fisheries & Wildlife Science.json
+|               Fluid Mechanics & Thermal Sciences.json
+|               Food Chemistry & Processing.json
+|               Food Microbiology & Safety.json
+|               Fusion & Plasma Science.json
+|               Genetics, Genomics & Bioinformatics.json
+|               Geometry & Topology.json
+|               Geotechnical Engineering.json
+|               Global & Transnational History.json
+|               Health & Well-being.json
+|               Health Communication.json
+|               High Energy & Particle Physics.json
+|               Higher Education.json
+|               History of Science, Technology & Medicine.json
+|               Horticulture.json
+|               Human Factors & Ergonomics.json
+|               Human Nutrition & Metabolism.json
+|               Human Resource Development.json
+|               Human-Centered Design & Systems.json
+|               Human-Computer Interaction (HCI).json
+|               Inclusive Education.json
+|               Industrial-Organizational Psychology.json
+|               Information Organization & Access.json
+|               Information Systems & Business Analytics.json
+|               Inorganic Chemistry.json
+|               Intellectual Property & Technology Law.json
+|               International & Comparative Law.json
+|               International & Development Economics.json
+|               International Relations.json
+|               Interpersonal Communication.json
+|               Kinesiology.json
+|               Knowledge Management & Information Policy.json
+|               Language Science.json
+|               Learning Disabilities.json
+|               Literacy Studies.json
+|               Logic & Foundations.json
+|               Managerial Accounting.json
+|               Marketing.json
+|               Materials Chemistry.json
+|               Media & Cinema Studies.json
+|               Metals & Alloys.json
+|               Microbiology.json
+|               Microelectronics & Nanotechnology.json
+|               Natural Language Processing (NLP).json
+|               Neural Engineering & Neurotechnology.json
+|               Neuroscience of Communication.json
+|               Nuclear Materials & Waste Management.json
+|               Nuclear Physics.json
+|               Number Theory.json
+|               Nutrition & Metabolism.json
+|               Operations Management.json
+|               Operations Research & Optimization.json
+|               Organic Chemistry.json
+|               Organizational Behavior & Strategy.json
+|               Organizational Communication.json
+|               Phonetics & Phonology.json
+|               Physical Chemistry.json
+|               Physiology.json
+|               Plant Breeding & Genetics.json
+|               Plant Pathology & Weed Science.json
+|               Political Methodology.json
+|               Political Theory.json
+|               Polymers & Soft Materials.json
+|               Power & Energy Systems.json
+|               Pre-Modern History (Ancient_Medieval).json
+|               Probability.json
+|               Programming Languages & Software Engineering.json
+|               Propulsion & Combustion.json
+|               Psycholinguistics.json
+|               Public & Labor Economics.json
+|               Public Policy & Law.json
+|               Quantitative & Evaluative Methods.json
+|               Quantum Information Science.json
+|               Quantum Information.json
+|               Radiation, Instrumentation & Imaging.json
+|               Reactor Physics & Thermal Hydraulics.json
+|               Real Estate.json
+|               Rhetoric & Public Discourse.json
+|               Robotics & Autonomous Systems.json
+|               Scientific Computing & Numerical Methods.json
+|               Security & Privacy.json
+|               Semantics & Pragmatics.json
+|               Sensory Science.json
+|               Signal & Image Processing.json
+|               Social & Environmental Justice.json
+|               Social-Personality Psychology.json
+|               Solid Mechanics & Materials.json
+|               Speech-Language Pathology.json
+|               Statistical Theory & Methods.json
+|               STEM Education.json
+|               Structural Engineering & Materials.json
+|               Structures & Materials.json
+|               Supply Chain Management.json
+|               Sustainable & Resilient Infrastructure.json
+|               Syntax.json
+|               Systems & Networking.json
+|               Systems Engineering & Design.json
+|               Taxation & Employee Benefits.json
+|               Taxation.json
+|               Theoretical & Computational Chemistry.json
+|               Transportation Engineering.json
+|               Transportation Planning.json
+|               Water Resources Engineering.json
+|               Youth Services & Librarianship.json
+|               
 +---docs
 |   \---diagrams
 |           Langgraph Structure.mmd
@@ -31,7 +237,13 @@ C:.
 |           LanggraphDescriptive.drawio.xml
 |           LanggraphStructure.drawio.xml
 |           
-+---logs
++---helpers
++---langgraph
+|       agents.py
+|       graph.py
+|       state.py
+|       tools.py
+|       
 +---misc
 |   |   checkMappingDiscrepency.py
 |   |   createCollegeFieldMappings.py
@@ -40,31 +252,23 @@ C:.
 |   \---__pycache__
 |           checkMappingDiscrepency.cpython-312.pyc
 |           
-+---notebooks
++---models
+|       classification.py
+|       request.py
+|       
 +---scripts
 |       activate_venv.ps1
 |       format_code.ps1
+|       github_pull.ps1
 |       github_push.ps1
 |       update_structure.ps1
 |       
-+---src
-|   +---agents
-|   +---config
-|   +---context
-|   |   +---condition_mappings
-|   |   \---cost_mappings
-|   +---db
-|   +---generators
-|   +---graph
-|   +---models
-|   |   +---encounter
-|   |   +---insurance
-|   |   \---knowledgebase
-|   +---providers
-|   +---serializers
-|   +---tools
-|   \---utils
-+---tests
++---tools
+|       field_updater.py
+|       final_classifier.py
+|       match_fetcher.py
+|       subfield_updater.py
+|       
 \---venv
     |   pyvenv.cfg
     |   
