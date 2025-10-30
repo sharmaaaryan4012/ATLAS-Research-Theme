@@ -6,7 +6,7 @@ from typing import Optional, Dict, Any, List
 
 
 @dataclass
-class UserRequest:
+class UserRequest():
     """Container for the inbound classification request.
 
 
@@ -15,8 +15,9 @@ class UserRequest:
     - Enforce validation/normalization (strip, lower for some fields, etc.).
     """
 
-
-    raw_text: str
+    raw_text: str = None
+    research_description: str = None, 
+    department: str = None
     request_id: Optional[str] = None
     meta: Dict[str, Any] = field(default_factory=dict)
 
