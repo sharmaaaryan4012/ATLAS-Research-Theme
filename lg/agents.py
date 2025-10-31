@@ -3,7 +3,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import json
 import re
 
-api_key = "AIzaSyDjuCPYxh2p8LfpxZz-s1ou5nd82aq3_2w"
+api_key = ""
 
 generator = llm = ChatGoogleGenerativeAI(
             model= "gemini-2.5-pro",
