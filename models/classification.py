@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 
 
 
@@ -12,12 +12,11 @@ class FieldDecision:
 
     TODO:
     - Add score_breakdown for better tracing.
-    - Support multiple candidate fields (n-best list) if needed.
     """
 
-
-    field_name: Optional[str] = None
+    field_names: Optional[List[str]] = None
     confidence: float = 0.0
+    fields_to_remove: Optional[List[str]] = None
     validator_passed: Optional[bool] = None
     need_new_field: Optional[bool] = None
     notes: str = ""
@@ -36,14 +35,13 @@ class SubfieldDecision:
     """
 
 
-    subfield_name: Optional[str] = None
+    subfield_names: Optional[List[str]] = None
+    parent_fields: Optional[str] = None
+    subfields_to_remove: Optional[List[str]] = None
     confidence: float = 0.0
     validator_passed: Optional[bool] = None
     need_new_subfield: Optional[bool] = None
     notes: str = ""
-
-
-
 
 @dataclass
 class ClassificationBundle:
@@ -57,10 +55,10 @@ class ClassificationBundle:
     """
 
 
-    request_text: str
-    field: FieldDecision = field(default_factory=FieldDecision)
-    subfield: SubfieldDecision = field(default_factory=SubfieldDecision)
-    satisfied_field: Optional[bool] = None
-    satisfied_subfield: Optional[bool] = None
+    request_text: str = None
+    fields: FieldDecision = field(default_factory=FieldDecision)
+    subfields: SubfieldDecision = field(default_factory=SubfieldDecision)
+    satisfied_fields: Optional[bool] = None
+    satisfied_subfields: Optional[bool] = None
     finalized_label: Optional[str] = None # e.g., "Field::Subfield"
     meta: Dict[str, Any] = field(default_factory=dict)
