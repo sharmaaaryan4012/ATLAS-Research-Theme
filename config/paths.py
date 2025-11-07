@@ -32,8 +32,6 @@ JSONS_DIR = os.path.join(DATA_DIR, "jsons")
 PARAMETERS_DIR = os.path.join(JSONS_DIR, "parameters")
 SERIALIZATION_DIR = os.path.join(JSONS_DIR, "serialization")
 
-KNOWLEDGEBASE_DIR = os.path.join(DATA_DIR, "knowledgebase")
-
 # === MASTER JSON FILES ===
 MASTER_COLLEGE_FIELD_MAPPING_JSON = os.path.join(
     DATA_CONTEXT_DIR, "MasterCollegeFieldMapping.json"
@@ -46,9 +44,15 @@ MASTER_FIELD_SUBFIELD_MAPPING_JSON = os.path.join(
 DIAGRAMS_DIR = os.path.join(DOCS_DIR, "diagrams")
 
 # === SRC SUBDIRS ===
-SRC_AGENTS_DIR = os.path.join(SRC_DIR, "agents")
 SRC_CONFIG_DIR = os.path.join(SRC_DIR, "config")
 SRC_CONTEXT_DIR = os.path.join(SRC_DIR, "context")
+
+# === Langgraph SUBDIRS ===
+AGENTS_DIR = os.path.join(LANGGRAPH_DIR, "agents")
+TOOlS_DIR = os.path.join(LANGGRAPH_DIR, "tools")
+
+# === LLM SUBDIRS ===
+LLM_ADAPTERS_DIR = os.path.join(SRC_DIR, "llm_adapters")
 
 # === MISC SCRIPTS ===
 CREATE_COLLEGE_FIELD_MAPPINGS_SCRIPT = os.path.join(
