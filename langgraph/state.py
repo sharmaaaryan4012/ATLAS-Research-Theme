@@ -24,13 +24,12 @@ from .models import (
 @dataclass
 class State:
     request: UserRequest
-    field_candidates: List[Candidate] = field(default_factory=list)
-    chosen_field: Optional[Candidate] = None
+
+    fields: List[Candidate] = field(default_factory=list)
     field_validation: Optional[ValidationReport] = None
     field_satisfaction: Optional[Satisfaction] = None
 
-    subfield_candidates: List[Candidate] = field(default_factory=list)
-    chosen_subfield: Optional[Candidate] = None
+    subfields: List[Candidate] = field(default_factory=list)
     subfield_validation: Optional[ValidationReport] = None
     subfield_satisfaction: Optional[Satisfaction] = None
 
@@ -38,3 +37,13 @@ class State:
 
     def record(self, event: str, **payload: Any) -> None:
         self.log.append({"event": event, **payload})
+
+    def get_fields(self):
+        if self.fields is None:
+            return []
+        return [c.name for c in self.fields]
+    
+    def get_subfields(self):
+        if self.subfields is None:
+            return []
+        return [c.name for c in self.subfields]

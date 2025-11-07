@@ -18,6 +18,7 @@ from pydantic import BaseModel
 from pydantic import Field as PydField
 
 from config.paths import FIELD_SUBFIELD_MAPPINGS_DIR
+from helpers.field_helpers import _load_subfield_mapping
 from langgraph.models import (
     Satisfaction,
     SubfieldValidatorInput,
@@ -40,57 +41,58 @@ class LLMValidationResponse(BaseModel):
     )
 
 
-def _load_subfield_mapping(field_name: str) -> Dict[str, str]:
-    filename = f"{field_name}.json"
-    path = os.path.join(FIELD_SUBFIELD_MAPPINGS_DIR, filename)
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
 class SubfieldValidatorNode:
     def __init__(self, llm: Optional[SubfieldValidatorLLM] = None):
         self.llm = llm
 
     def Run(self, data: SubfieldValidatorInput) -> SubfieldValidatorOutput:
         request = data.request
-        subfield_name = data.subfield_name
-        field_name = data.field_name
-        if not field_name:
+        subfield_names = data.subfield_names
+        field_names = data.field_names
+
+        feedback = data.feedback
+        if feedback != None:
+            removals = feedback.removals
+            additions = feedback.additions
+        else:
+            removals = None
+            additions = None
+
+        if not field_names:
             raise ValueError("SubfieldValidatorNode requires `field_name` context.")
 
-        valid_pool: Dict[str, str] = _load_subfield_mapping(field_name)
-        exists = subfield_name in valid_pool
+        valid_pool: Dict[str, str] = _load_subfield_mapping(field_names, additions, removals)
+        exists = all( s in valid_pool for s in subfield_names)
         if not exists:
             report = ValidationReport(
                 is_valid=False,
                 reason="Subfield not found in mapping for the given Field.",
-                suggestions=self._Nearest(subfield_name, list(valid_pool.keys()))[:3],
             )
             return SubfieldValidatorOutput(
                 report=report, satisfaction=Satisfaction.Unsatisfied
             )
 
         if self.llm is not None:
-            desc = valid_pool.get(subfield_name, "")
+            subfield_descriptions = {d: valid_pool[d] for d in subfield_names}
 
-            # Provide a small alternative set (subset of pool excluding chosen)
-            alt_names = [n for n in list(valid_pool.keys())[:20] if n != subfield_name]
-            alt_block = ""
-            if alt_names:
-                alt_block = "\n\nOther valid subfields (subset):\n- " + "\n- ".join(alt_names)
+            # # Provide a small alternative set (subset of pool excluding chosen)
+            # alt_names = [n for n in list(valid_pool.keys())[:20] if n != subfield_names]
+            # alt_block = ""
+            # if alt_names:
+            #     alt_block = "\n\nOther valid subfields (subset):\n- " + "\n- ".join(alt_names)
 
             prompt = (
-                "You are validating if a selected Subfields match the user's subject/request.\n"
-                "Return strictly JSON with keys: is_valid (bool), reason (string), suggestions (string array).\n\n"
-                f"User text:\n{request.text}\n\n"
-                f"Top-level Field: {field_name}\n"
-                f"Chosen Subfields: {subfield_name}\n"
-                f"Subfield description: {desc}"
-                f"{alt_block}\n\n"
-                "If not valid, suggest up to 3 better Subfields strictly from this list:\n- "
+                "You are validating if the selected Subfields match the given research description.\n"
+                "Return strictly JSON with keys: is_valid (bool), reason (string), removals (string array).\n\n"
+                f"User text:\n{request.description}\n\n"
+                f"Chosen Subfields: {subfield_names}\n"
+                f"Subfield descriptions: {subfield_descriptions}"
+                # f"{alt_block}\n\n"
+                "If not valid, suggest subfields to remove from the list:\n- "
                 + "\n- ".join(list(valid_pool.keys())[:80])
                 + "\nOutput ONLY valid JSON. No prose, no markdown.\n"
             )
+            print(prompt)
 
             raw = self.llm.generate_json(prompt)
             if raw:
@@ -99,7 +101,8 @@ class SubfieldValidatorNode:
                     report = ValidationReport(
                         is_valid=parsed.is_valid,
                         reason=parsed.reason,
-                        suggestions=[s for s in parsed.suggestions if s in valid_pool][:3],
+                        removals=[s for s in parsed.removals if s in valid_pool][:3],
+                        additions=None, # can add this later
                     )
                     satisfaction = (
                         Satisfaction.Satisfied if parsed.is_valid else Satisfaction.Unsatisfied

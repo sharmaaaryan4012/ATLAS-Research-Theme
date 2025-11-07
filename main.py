@@ -27,7 +27,7 @@ graph = BuildGraph(
 
 req = UserRequest(
     request_id="test-1",
-    text=(
+    description=(
         "US imperialism; race's relationship to gender and sexuality; climate. My research takes transimperial, interimperial, and international approaches. In my first book I examined the intersections of settler colonialism and Black removal efforts (e.g. Liberian colonization), illuminating the centrality of languages of climate, race, and gender to intellectual debates over geographies of Black freedom. My other works include peer-reviewed articles on the U.S. opening of Japan and how it generated imaginings of difference and affinity that unsettled the Black-white dichotomy and the binarized correspondence of gender and sexuality dominating popular discourse in the U.S. East. I am currently working on a book manuscript on U.S. imperialism in the Pacific up to the end of the Philippine-American War."
     ),
     college_name = "College of Liberal Arts & Sciences", 
@@ -38,7 +38,7 @@ print("Running graph...")
 state = graph.Run(req)
 print("Graph run complete. Check your LangSmith dashboard.")
 
-print("Chosen field:", state.chosen_field.name if state.chosen_field else None)
-print("Field valid? ", state.field_validation.is_valid if state.field_validation else None)
-print("Chosen subfield:", state.chosen_subfield.name if state.chosen_subfield else None)
-print("Subfield valid? ", state.subfield_validation.is_valid if state.subfield_validation else None)
+print("Chosen fields:", state.get_fields() if state.fields else None)
+print("Fields valid? ", state.field_validation.is_valid if state.field_validation else None)
+print("Chosen subfields:", state.get_subfields() if state.subfields else None)
+print("Subfields valid? ", state.subfield_validation.is_valid if state.subfield_validation else None)

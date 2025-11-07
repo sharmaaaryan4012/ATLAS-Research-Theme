@@ -18,7 +18,8 @@ from pydantic import BaseModel
 from pydantic import Field as PydField
 
 from config.paths import FIELD_SUBFIELD_MAPPINGS_DIR
-from langgraph.models import Candidate, SubfieldClassifierInput, SubfieldClassifierOutput
+from helpers.field_helpers import _load_subfield_mapping
+from langgraph.models import Candidate, SubfieldClassifierInput, SubfieldClassifierOutput, ValidationReport
 
 
 class SubfieldClassifierLLM(Protocol):
@@ -32,34 +33,35 @@ class LLMJsonResponse(BaseModel):
     )
 
 
-def _load_subfield_mapping(field_name: str) -> Dict[str, str]:
-    filename = f"{field_name}.json"
-    path = os.path.join(FIELD_SUBFIELD_MAPPINGS_DIR, filename)
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
 class SubfieldClassifierNode:
     def __init__(self, llm: Optional[SubfieldClassifierLLM] = None):
         self.llm = llm
 
     def Run(self, data: SubfieldClassifierInput) -> SubfieldClassifierOutput:
         request = data.request
-        field_name = data.field_name
-        if not field_name:
-            raise ValueError("SubfieldClassifierNode requires `field_name` context.")
+        field_names = data.field_names
+        if not field_names:
+            raise ValueError("SubfieldClassifierNode requires `field_names` context.")
 
-        candidates: Dict[str, str] = _load_subfield_mapping(field_name)
+        feedback = data.feedback
+        if feedback != None:
+            removals = feedback.removals
+            additions = feedback.additions
+        else:
+            removals = None
+            additions = None
+
+        candidates: Dict[str, str] = _load_subfield_mapping(field_names, removals, additions)
         if not candidates:
-            raise ValueError(f"No subfields found for field '{field_name}'.")
+            raise ValueError(f"No subfields found for field '{field_names}'.")
 
         candidate_names = list(candidates.keys())
-        query_text = request.text or ""
+        research_description = request.description or ""
 
         prompt = (
             "You are an academic subfield classifier.\n"
-            "Given a research description and a list of candidate Subfields for a GIVEN Field, "
-            "return up to 3 that best fit the topic.\n"
+            "Given a research description and a list of candidate Subfields, "
+            "return the subfields that best fit the topic.\n"
             "Strictly return a JSON object of the following structure:\n\n"
             "{\n"
             '  \"choices\": [\n'
@@ -68,11 +70,9 @@ class SubfieldClassifierNode:
             "}\n\n"
             "Rules:\n"
             " - The 'name' MUST be one of the provided candidate subfields (verbatim).\n"
-            " - Return at most 5 choices.\n"
             " - Output ONLY valid JSON. No prose, no markdown, no comments.\n\n"
-            f"Top-level Field: {field_name}\n\n"
-            f"Research description:\n{query_text}\n\n"
-            "Candidate Subfields:\n- " + "\n- ".join(candidate_names[:80])
+            f"Research description:\n{research_description}\n\n"
+            "Candidate Subfields:\n - " + "\n - ".join(candidate_names[:80])
         )
 
         parsed_model: Optional[LLMJsonResponse] = None
@@ -100,7 +100,6 @@ class SubfieldClassifierNode:
                 ]
                 return SubfieldClassifierOutput(candidates=candidate_objs)
 
-        # Fallback if no LLM or invalid output: choose first entry deterministically.
         fallback = Candidate(
             name=candidate_names[0],
             score=1.0,

@@ -20,6 +20,7 @@ from pydantic import Field as PydField
 
 from config.paths import COLLEGE_FIELD_MAPPINGS_DIR
 from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
+from helpers.field_helpers import _load_field_mapping
 # from helpers.field_helpers import FieldHelpers
 from langgraph.models import (
     FieldValidatorInput,
@@ -46,24 +47,6 @@ class LLMValidationResponse(BaseModel):
         default_factory=list,
         description="If invalid, suggest field names that should be removed from the provided pool.",
     )
-
-def _load_field_mapping(college: str, department: str) -> Dict[str, str]:
-    """
-    Returns
-    --------
-     Dict[str, str]: fields under college/department and their descriptions
-    """
-    filename = f"{college}.json"
-    path = os.path.join(COLLEGE_FIELD_MAPPINGS_DIR, filename)
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            college_data = json.load(f)
-            try:
-                return college_data[department]
-            except Exception as e:
-                raise ValueError("Invalid department name: \"" + department + "\" does not exist.")
-    except Exception as e:
-        raise ValueError("Invalid college name: \"" + college + "\" does not exist.")
 
 
 class FieldValidatorNode:
@@ -97,53 +80,46 @@ class FieldValidatorNode:
            valid pool to get (is_valid, reason, suggestions).
         """
         request = data.request
-        field_name = data.field_name
+        field_names = data.field_names
 
-        # Safely read optional hints if they exist; otherwise None.
-        # meta = getattr(request, "meta", {}) or {}
-        # college_name = meta.get("college_name")
-        # # subject_hint = meta.get("subject")
-        # department_name = meta.get("department_name")
         college_name = request.college_name
         department_name = request.department_name
 
+        feedback = data.feedback
+        if feedback != None:
+            removals = feedback.removals
+            additions = feedback.additions
+        else:
+            removals = None
+            additions = None
+
         # Build the valid pool (same as classifier for consistency).
         valid_pool: Dict[str, str] = _load_field_mapping(
-            college_name, department_name
+            college_name, department_name, removals, additions
         )
 
-        exists = field_name in valid_pool
+        exists = all( f in valid_pool for f in field_names)
         if not exists:
             report = ValidationReport(
                 is_valid=False,
                 reason="Field not found in MasterCollegeFieldMapping for the given scope.",
-                suggestions=self._Nearest(field_name, list(valid_pool.keys()))[:3],
             )
             return FieldValidatorOutput(
                 report=report, satisfaction=Satisfaction.Unsatisfied
             )
 
-        # Optional LLM sanity check — helpful to catch semantically wrong picks.
         if self.llm is not None:
-            desc = valid_pool.get(field_name, "")
-
-            # We no longer rely on classifier-populated candidate_fields;
-            # instead show a short list of alternative valid fields (excluding the chosen one).
-            alt_names = [n for n in list(valid_pool.keys())[:20] if n != field_name]
-            alt_block = ""
-            if alt_names:
-                alt_block = "\n\nOther valid fields (subset):\n- " + "\n- ".join(alt_names)
+            field_descriptions = {d: valid_pool[d] for d in field_names}
 
             prompt = (
-                "You are validating if a selected Field matches the user's subject/request.\n"
-                "Return strictly JSON with keys: is_valid (bool), reason (string), suggestions (string array).\n\n"
-                f"User text:\n{request.text}\n\n"
+                "You are validating if the selected Fields match the user's research description.\n"
+                "Return strictly JSON with keys: is_valid (bool), reason (string), removals (string array).\n\n"
+                f"User text:\n{request.description}\n\n"
                 # f"Subject hint: {subject_hint or 'N/A'}\n\n"
-                f"Chosen Field: {field_name}\n"
-                f"Field description: {desc}"
-                f"{alt_block}\n\n"
-                "If not valid, suggest up to 3 better Fields strictly from this list:\n- "
-                + "\n- ".join(list(valid_pool.keys())[:80])
+                f"Chosen Fields and their descriptions: {field_descriptions}\n"
+                # f"{alt_block}\n\n"
+                "If not valid, suggest Fields to remove from this list:\n- "
+                + "\n- ".join(list(valid_pool)[:80])
                 + "\nOutput ONLY valid JSON. No prose, no markdown.\n"
             )
 
@@ -156,6 +132,7 @@ class FieldValidatorNode:
                         reason=parsed.reason,
                         # Only return suggestions that actually exist in the pool (safety).
                         removals=[r for r in parsed.removals if r in valid_pool][:3],
+                        additions=None, # can add this later
                     )
                     satisfaction = (
                         Satisfaction.Satisfied

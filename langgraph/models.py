@@ -60,7 +60,7 @@ class UserRequest:
     ----------
     request_id : str
         Unique identifier for the request (for tracing in logs/DB).
-    text : str
+    description : str
         Free-form description or query text.
     college_name : str
         Name of college for identification in mappings
@@ -71,7 +71,7 @@ class UserRequest:
     """
 
     request_id: str
-    text: str
+    description: str
     college_name: str
     department_name: str
 
@@ -114,6 +114,7 @@ class ValidationReport:
     is_valid: bool
     reason: str = ""
     removals: List[str] = field(default_factory=list)
+    additions: List[str] = field(default_factory=list)
 
 
 @dataclass
@@ -161,6 +162,7 @@ class FieldClassifierInput:
     """Input to the field classifier node."""
 
     request: UserRequest
+    feedback: ValidationReport
 
 
 @dataclass
@@ -181,8 +183,9 @@ class FieldClassifierOutput:
 class FieldValidatorInput:
     """Input to the field validator node."""
 
-    field_name: str
+    field_names: str
     request: UserRequest
+    feedback: ValidationReport
 
 
 @dataclass
@@ -233,7 +236,8 @@ class SubfieldClassifierInput:
     """Input to the subfield classifier node."""
 
     request: UserRequest
-    field_name: str
+    field_names: List[str]
+    feedback: ValidationReport
 
 
 @dataclass
@@ -247,9 +251,10 @@ class SubfieldClassifierOutput:
 class SubfieldValidatorInput:
     """Input to the subfield validator node."""
 
-    subfield_name: str
-    field_name: str
+    subfield_names: str
+    field_names: str
     request: UserRequest
+    feedback: ValidationReport
 
 
 @dataclass
@@ -265,7 +270,7 @@ class SubfieldEnhancerInput:
     """Input to the subfield enhancer node."""
 
     request: UserRequest
-    field_name: str
+    field_names: str
     attempted_subfield: str
 
 
@@ -281,7 +286,7 @@ class SubfieldUpdaterInput:
     """Input to the subfield updater node."""
 
     proposal: Proposal
-    field_name: str
+    field_names: str
 
 
 @dataclass

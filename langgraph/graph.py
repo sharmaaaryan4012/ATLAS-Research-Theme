@@ -39,54 +39,16 @@ class Graph:
 
     def Run(self, request: UserRequest) -> State:
         state = State(request=request)
+        # print(state)
+        state = self.RunFieldStage(state)
 
-        self.RunFieldStage(state)
-
-        self.RunSubfieldStage(state)
-
-        state.record("end")
-
-        return
-
-        if fv_out.satisfaction == Satisfaction.Unsatisfied:
-            state.record("stop_after_field_validation", reason=fv_out.report.reason)
-            return state
-
-        # 3) SUBFIELD CLASSIFIER -----------------------------------------------
-        state.record("enter_subfield_classifier")
-        sc_out = self.subfield_classifier.Run(
-            SubfieldClassifierInput(request=request, field_name=fc_out.chosen.name)
-        )
-        state.subfield_candidates = sc_out.candidates
-        state.chosen_subfield = sc_out.chosen
-        state.record(
-            "subfield_classifier_done",
-            chosen=sc_out.chosen.name,
-            candidates=[c.name for c in sc_out.candidates],
-        )
-
-        # 4) SUBFIELD VALIDATOR -------------------------------------------------
-        state.record("enter_subfield_validator")
-        sv_out = self.subfield_validator.Run(
-            SubfieldValidatorInput(
-                subfield_name=sc_out.chosen.name,
-                field_name=fc_out.chosen.name,
-                request=request,
-            )
-        )
-        state.subfield_validation = sv_out.report
-        state.subfield_satisfaction = sv_out.satisfaction
-        state.record(
-            "subfield_validator_done",
-            is_valid=sv_out.report.is_valid,
-            reason=sv_out.report.reason,
-            suggestions=sv_out.report.suggestions,
-            satisfaction=sv_out.satisfaction,
-        )
+        state = self.RunSubfieldStage(state)
 
         state.record("end")
+
         return state
-    
+
+    # WORK FOR FIELDS 
     def RunFieldStage(self, state: State):
         max_iterations = 3
         n_iterations = 1
@@ -96,12 +58,13 @@ class Graph:
             state = self.FieldValidation(state)
             valid_fields = state.field_satisfaction == "satisfied"
             n_iterations += 1
+        print(state.get_fields())
         return state
     
     def FieldClassification(self, state: State):
         state.record("enter_field_classifier")
-        fc_out = self.field_classifier.Run(FieldClassifierInput(request=state["request"]))
-        state.field_candidates = fc_out.candidates
+        fc_out = self.field_classifier.Run(FieldClassifierInput(request=state.request, feedback = state.field_validation))
+        state.fields = fc_out.candidates
         state.record(
             "field_classifier_done",
             candidates=[c.name for c in fc_out.candidates],
@@ -112,7 +75,7 @@ class Graph:
         # 2) FIELD VALIDATOR ----------------------------------------------------
         state.record("enter_field_validator")
         fv_out = self.field_validator.Run(
-            FieldValidatorInput(fields=state.field_candidates, request=state["request"])
+            FieldValidatorInput(field_names=state.get_fields(), request=state.request, feedback = state.field_validation)
         )
         state.field_validation = fv_out.report
         state.field_satisfaction = fv_out.satisfaction
@@ -121,10 +84,13 @@ class Graph:
             is_valid=fv_out.report.is_valid,
             reason=fv_out.report.reason,
             removals=fv_out.report.removals,
+            additions=fv_out.report.removals,
             satisfaction=fv_out.satisfaction,
         )
-
         
+        return state
+
+    # WORK FOR SUBFIELDS    
     def RunSubfieldStage(self, state: State):
         max_iterations = 3
         n_iterations = 1
@@ -134,30 +100,31 @@ class Graph:
             state = self.SubfieldValidation(state)
             valid_subfields = state.subfield_satisfaction == "satisfied"
             n_iterations += 1
+        print(state.get_subfields())
         return state
     
     def SubfieldClassification(self, state: State):
-        # 3) SUBFIELD CLASSIFIER -----------------------------------------------
+        # 3) Subfield Classifier -----------------------------------------------
         state.record("enter_subfield_classifier")
         sc_out = self.subfield_classifier.Run(
-            SubfieldClassifierInput(request=state["request"], field_names = fc_out.chosen.name)
+            SubfieldClassifierInput(request=state.request, field_names = state.get_fields(), feedback = state.subfield_validation)
         )
-        state.subfield_candidates = sc_out.candidates
-        state.chosen_subfield = sc_out.chosen
+        state.subfields = sc_out.candidates
         state.record(
             "subfield_classifier_done",
-            chosen=sc_out.chosen.name,
             candidates=[c.name for c in sc_out.candidates],
         )
+        return state
 
     def SubfieldValidation(self, state: State):
-        # 4) SUBFIELD VALIDATOR -------------------------------------------------
+        # 4) Subfield Validator -------------------------------------------------
         state.record("enter_subfield_validator")
         sv_out = self.subfield_validator.Run(
             SubfieldValidatorInput(
-                subfield_name=sc_out.chosen.name,
-                field_name=fc_out.chosen.name,
-                request=state["request"],
+                subfield_names=state.get_subfields(),
+                field_names=state.get_fields(),
+                request=state.request,
+                feedback = state.subfield_validation
             )
         )
         state.subfield_validation = sv_out.report
@@ -166,7 +133,8 @@ class Graph:
             "subfield_validator_done",
             is_valid=sv_out.report.is_valid,
             reason=sv_out.report.reason,
-            suggestions=sv_out.report.suggestions,
+            removals=sv_out.report.removals,
+            additions = sv_out.report.additions,
             satisfaction=sv_out.satisfaction,
         )
         return state
