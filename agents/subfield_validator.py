@@ -92,7 +92,7 @@ class SubfieldValidatorNode:
                 + "\n- ".join(list(valid_pool.keys())[:80])
                 + "\nOutput ONLY valid JSON. No prose, no markdown.\n"
             )
-            print(prompt)
+            # print(prompt)
 
             raw = self.llm.generate_json(prompt)
             if raw:

@@ -40,9 +40,14 @@ class FieldClassifierLLM(Protocol):
 class LLMJsonResponse(BaseModel):
     """Schema for LLM output with multiple ranked fields."""
 
-    choices: List[Dict[str, str]] = PydField(
-        description="List of objects: {'name': <field_name>, 'rationale': <why it fits>}."
+    choices: List[Dict[str,str]] = PydField(
+        description="A list of fields that match the research description and their rationale."
     )
+
+def get_schema():
+    generator_response_schema = LLMJsonResponse.model_json_schema()
+    generator_response_schema_json = json.dumps(generator_response_schema, indent=2)
+    return generator_response_schema_json
             
 
 def LoadMasterMapping() -> Dict[str, Dict[str, Dict[str, str]]]:
@@ -65,7 +70,7 @@ class FieldClassifierNode:
     optionally filtered by `college_name` and `subject` if present on request.meta.
     """
 
-    def __init__(self, llm: Optional[FieldClassifierLLM] = None):
+    def __init__(self, llm: Optional[FieldClassifierLLM]):
         """
         Parameters
         ----------
@@ -123,19 +128,15 @@ class FieldClassifierNode:
             "You are an academic classifier.\n"
             "Given a research description and a list of candidate Fields, return all the fields that best fit the given research description.\n"
             "Strictly return a JSON object of the following structure:\n\n"
-            "{\n"
-            '  "choices": [\n'
-            '     {"name": "<field name>", "rationale": "<why it fits>"}\n'
-            "  ]\n"
-            "}\n\n"
+            f"{get_schema()}" 
             "Rules:\n"
             " - The 'name' MUST be one of the provided candidate fields (verbatim).\n"
             " - Output ONLY valid JSON. No prose, no markdown, no comments.\n\n"
             f"Research description:\n{research_description}\n\n"
             "Candidate Fields and their descriptions:\n- "
-            + "\n- ".join(candidates)  # cap list for token safety
+            f"{candidates}"
         )
-        print(prompt)
+        print("PROMPT", prompt[:100])
 
         parsed_model: Optional[LLMJsonResponse] = None
 
@@ -161,7 +162,7 @@ class FieldClassifierNode:
 
         # If the model gave us a structured list, filter to valid fields and return them.
         if parsed_model and parsed_model.choices:
-            print("choices", parsed_model.choices)
+            print("CHOICES", parsed_model.choices)
             valid = [c for c in parsed_model.choices if c.get("name") in candidates]
             if valid:
                 candidate_objs = [

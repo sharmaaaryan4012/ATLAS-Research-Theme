@@ -47,8 +47,7 @@ class LLMValidationResponse(BaseModel):
         default_factory=list,
         description="If invalid, suggest field names that should be removed from the provided pool.",
     )
-
-
+    
 class FieldValidatorNode:
     """
     Node that first verifies structural validity (field presence in the
