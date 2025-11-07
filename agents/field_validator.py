@@ -144,6 +144,8 @@ class FieldValidatorNode:
                 except Exception as e:
                     # If parsing fails, fall back to existence-based validity.
                     print("⚠️ Parse error in FieldValidator LLM response:", e)
+            else:
+                raise ValueError("Error using field validator llm. Check credentials.")
 
         # Fallback: existence ⇒ valid.
         report = ValidationReport(

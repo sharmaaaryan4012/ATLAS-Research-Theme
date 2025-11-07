@@ -90,9 +90,10 @@ class SubfieldValidatorNode:
                 # f"{alt_block}\n\n"
                 "If not valid, suggest subfields to remove from the list:\n- "
                 + "\n- ".join(list(valid_pool.keys())[:80])
-                + "\nOutput ONLY valid JSON. No prose, no markdown.\n"
+                + "\nRules:\n"
+                + "\n - Output ONLY valid JSON. No prose, no markdown.\n"
             )
-            # print(prompt)
+           
 
             raw = self.llm.generate_json(prompt)
             if raw:
@@ -110,6 +111,8 @@ class SubfieldValidatorNode:
                     return SubfieldValidatorOutput(report=report, satisfaction=satisfaction)
                 except Exception as e:
                     print("⚠️ Parse error in SubfieldValidator LLM response:", e)
+            else:
+                raise ValueError("Error using subfield validator llm. Check credentials.")
 
         # Fallback: existence ⇒ valid.
         report = ValidationReport(is_valid=True, reason="Subfield exists for the given Field.")

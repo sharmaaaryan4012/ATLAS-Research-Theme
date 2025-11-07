@@ -29,7 +29,7 @@ class SubfieldClassifierLLM(Protocol):
 
 class LLMJsonResponse(BaseModel):
     choices: List[Dict[str, str]] = PydField(
-        description="List of objects: {'name': <subfield_name>, 'rationale': <why it fits>}."
+        description="List of objects: {'name': <subfield_name>, 'rationale': <why it matches the research description>}."
     )
 
 
@@ -77,19 +77,22 @@ class SubfieldClassifierNode:
 
         parsed_model: Optional[LLMJsonResponse] = None
 
-        if self.llm:
-            raw = self.llm.generate_json(prompt)
-            if raw:
-                if "choice" in raw and "choices" not in raw:
-                    raw = {"choices": [{
-                        "name": raw.get("choice", ""),
-                        "rationale": raw.get("rationale", ""),
-                    }]}
-                try:
-                    parsed_model = LLMJsonResponse(**raw)
-                except Exception as e:
-                    print("⚠️ Parse error in SubfieldClassifier LLM response:", e)
-                    parsed_model = None
+
+        raw = self.llm.generate_json(prompt)
+        if raw:
+            if "choice" in raw and "choices" not in raw:
+                raw = {"choices": [{
+                    "name": raw.get("choice", ""),
+                    "rationale": raw.get("rationale", ""),
+                }]}
+            try:
+                parsed_model = LLMJsonResponse(**raw)
+            except Exception as e:
+                print("⚠️ Parse error in SubfieldClassifier LLM response:", e)
+                parsed_model = None
+        else:
+            raise ValueError("Error using subfield classifier llm. Check credentials.")
+
 
         if parsed_model and parsed_model.choices:
             valid = [c for c in parsed_model.choices if c.get("name") in candidates]

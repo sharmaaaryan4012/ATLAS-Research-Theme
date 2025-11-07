@@ -39,7 +39,7 @@ class Graph:
 
     def Run(self, request: UserRequest) -> State:
         state = State(request=request)
-        # print(state)
+
         state = self.RunFieldStage(state)
 
         state = self.RunSubfieldStage(state)
@@ -58,7 +58,6 @@ class Graph:
             state = self.FieldValidation(state)
             valid_fields = state.field_satisfaction == "satisfied"
             n_iterations += 1
-        print(state.get_fields())
         return state
     
     def FieldClassification(self, state: State):
@@ -100,7 +99,6 @@ class Graph:
             state = self.SubfieldValidation(state)
             valid_subfields = state.subfield_satisfaction == "satisfied"
             n_iterations += 1
-        print(state.get_subfields())
         return state
     
     def SubfieldClassification(self, state: State):

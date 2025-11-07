@@ -41,7 +41,7 @@ class LLMJsonResponse(BaseModel):
     """Schema for LLM output with multiple ranked fields."""
 
     choices: List[Dict[str,str]] = PydField(
-        description="A list of fields that match the research description and their rationale."
+        description="A list of objects: {'name': <field_name>, 'rationale': <why it matches the research description>}."
     )
 
 def get_schema():
@@ -113,7 +113,6 @@ class FieldClassifierNode:
         candidates: Dict[str, str] = _load_field_mapping(
          college_name, department_name, removals, additions
         )
-        print(candidates)
         if not candidates:
             raise ValueError(
                 "No fields available from master mapping. Check data/context."
@@ -121,8 +120,6 @@ class FieldClassifierNode:
 
         candidate_names = list(candidates.keys())
 
-        # Prompt instructs strictly-JSON returns (no prose), with up to 3 fields, best-first.
-        # query_text = (subject_hint or "") + "\n" + (request.text or "")
         research_description = request.description
         prompt = (
             "You are an academic classifier.\n"
@@ -136,33 +133,31 @@ class FieldClassifierNode:
             "Candidate Fields and their descriptions:\n- "
             f"{candidates}"
         )
-        print("PROMPT", prompt[:100])
 
         parsed_model: Optional[LLMJsonResponse] = None
 
-        if self.llm:
-            raw = self.llm.generate_json(prompt)
-            if raw:
-                # Back-compat: accept {choice, rationale} and normalize to choices-list.
-                if "choice" in raw and "choices" not in raw:
-                    raw = {
-                        "choices": [
-                            {
-                                "name": raw.get("choice", ""),
-                                "rationale": raw.get("rationale", ""),
-                            }
-                        ]
-                    }
-                try:
-                    parsed_model = LLMJsonResponse(**raw)
-                except Exception as e:
-                    # If the model didn’t match schema, fall back deterministically to first candidate.
-                    print("⚠️ Parse error in FieldClassifier LLM response:", e)
-                    parsed_model = None
+        raw = self.llm.generate_json(prompt)
+        if raw:
+            if "choice" in raw and "choices" not in raw:
+                raw = {
+                    "choices": [
+                        {
+                            "name": raw.get("choice", ""),
+                            "rationale": raw.get("rationale", ""),
+                        }
+                    ]
+                }
+            try:
+                parsed_model = LLMJsonResponse(**raw)
+            except Exception as e:
+                # If the model didn’t match schema, fall back deterministically to first candidate.
+                print("⚠️ Parse error in FieldClassifier LLM response:", e)
+                parsed_model = None
+        else:
+            raise ValueError("Error using field classifier llm. Check credentials.")
 
         # If the model gave us a structured list, filter to valid fields and return them.
         if parsed_model and parsed_model.choices:
-            print("CHOICES", parsed_model.choices)
             valid = [c for c in parsed_model.choices if c.get("name") in candidates]
             if valid:
                 candidate_objs = [
