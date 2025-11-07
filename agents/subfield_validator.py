@@ -34,7 +34,10 @@ class SubfieldValidatorLLM(Protocol):
 class LLMValidationResponse(BaseModel):
     is_valid: bool
     reason: str = ""
-    suggestions: List[str] = PydField(default_factory=list)
+    removals: List[str] = PydField(
+        default_factory=list,
+        description="If invalid, suggest subfield names that should be removed from the provided pool.",
+    )
 
 
 def _load_subfield_mapping(field_name: str) -> Dict[str, str]:
@@ -77,11 +80,11 @@ class SubfieldValidatorNode:
                 alt_block = "\n\nOther valid subfields (subset):\n- " + "\n- ".join(alt_names)
 
             prompt = (
-                "You are validating if a selected Subfield matches the user's subject/request.\n"
+                "You are validating if a selected Subfields match the user's subject/request.\n"
                 "Return strictly JSON with keys: is_valid (bool), reason (string), suggestions (string array).\n\n"
                 f"User text:\n{request.text}\n\n"
                 f"Top-level Field: {field_name}\n"
-                f"Chosen Subfield: {subfield_name}\n"
+                f"Chosen Subfields: {subfield_name}\n"
                 f"Subfield description: {desc}"
                 f"{alt_block}\n\n"
                 "If not valid, suggest up to 3 better Subfields strictly from this list:\n- "

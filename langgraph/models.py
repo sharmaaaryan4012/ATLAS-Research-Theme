@@ -62,12 +62,18 @@ class UserRequest:
         Unique identifier for the request (for tracing in logs/DB).
     text : str
         Free-form description or query text.
+    college_name : str
+        Name of college for identification in mappings
+    department_name : str
+        Name of department for identification in mappings.
     meta : Dict[str, Any]
         Optional context, e.g., {'college_name': ..., 'subject': ..., 'candidate_fields': [...] }.
     """
 
     request_id: str
     text: str
+    college_name: str
+    department_name: str
 
 
 @dataclass
@@ -101,13 +107,13 @@ class ValidationReport:
         Whether the proposed label passes the check.
     reason : str
         Human-readable justification for the decision.
-    suggestions : List[str]
-        If invalid, up to a few better alternatives.
+    removals : List[str]
+        If invalid, list of items to remove.
     """
 
     is_valid: bool
     reason: str = ""
-    suggestions: List[str] = field(default_factory=list)
+    removals: List[str] = field(default_factory=list)
 
 
 @dataclass
@@ -164,13 +170,10 @@ class FieldClassifierOutput:
 
     Attributes
     ----------
-    chosen : Candidate
-        The top-ranked candidate (mirrors candidates[0]).
     candidates : List[Candidate]
         Ranked list of field candidates (best-first).
     """
 
-    chosen: Candidate
     candidates: List[Candidate] = field(default_factory=list)
 
 
@@ -237,7 +240,6 @@ class SubfieldClassifierInput:
 class SubfieldClassifierOutput:
     """Output from the subfield classifier node."""
 
-    chosen: Candidate
     candidates: List[Candidate] = field(default_factory=list)
 
 

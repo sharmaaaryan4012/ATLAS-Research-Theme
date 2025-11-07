@@ -10,6 +10,7 @@ Description:
 
 from __future__ import annotations
 
+import os
 import difflib
 import json
 from typing import Dict, List, Optional, Protocol
@@ -17,8 +18,9 @@ from typing import Dict, List, Optional, Protocol
 from pydantic import BaseModel
 from pydantic import Field as PydField
 
+from config.paths import COLLEGE_FIELD_MAPPINGS_DIR
 from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
-from helpers.field_helpers import FieldHelpers
+# from helpers.field_helpers import FieldHelpers
 from langgraph.models import (
     FieldValidatorInput,
     FieldValidatorOutput,
@@ -40,10 +42,28 @@ class LLMValidationResponse(BaseModel):
 
     is_valid: bool
     reason: str = ""
-    suggestions: List[str] = PydField(
+    removals: List[str] = PydField(
         default_factory=list,
-        description="If invalid, suggest better-suited field names from the provided pool.",
+        description="If invalid, suggest field names that should be removed from the provided pool.",
     )
+
+def _load_field_mapping(college: str, department: str) -> Dict[str, str]:
+    """
+    Returns
+    --------
+     Dict[str, str]: fields under college/department and their descriptions
+    """
+    filename = f"{college}.json"
+    path = os.path.join(COLLEGE_FIELD_MAPPINGS_DIR, filename)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            college_data = json.load(f)
+            try:
+                return college_data[department]
+            except Exception as e:
+                raise ValueError("Invalid department name: \"" + department + "\" does not exist.")
+    except Exception as e:
+        raise ValueError("Invalid college name: \"" + college + "\" does not exist.")
 
 
 class FieldValidatorNode:
@@ -80,13 +100,16 @@ class FieldValidatorNode:
         field_name = data.field_name
 
         # Safely read optional hints if they exist; otherwise None.
-        meta = getattr(request, "meta", {}) or {}
-        college_name = meta.get("college_name")
-        subject_hint = meta.get("subject")
+        # meta = getattr(request, "meta", {}) or {}
+        # college_name = meta.get("college_name")
+        # # subject_hint = meta.get("subject")
+        # department_name = meta.get("department_name")
+        college_name = request.college_name
+        department_name = request.department_name
 
         # Build the valid pool (same as classifier for consistency).
-        valid_pool: Dict[str, str] = FieldHelpers.CollectCollegeFields(
-            self.master, college_name, subject_hint
+        valid_pool: Dict[str, str] = _load_field_mapping(
+            college_name, department_name
         )
 
         exists = field_name in valid_pool
@@ -115,7 +138,7 @@ class FieldValidatorNode:
                 "You are validating if a selected Field matches the user's subject/request.\n"
                 "Return strictly JSON with keys: is_valid (bool), reason (string), suggestions (string array).\n\n"
                 f"User text:\n{request.text}\n\n"
-                f"Subject hint: {subject_hint or 'N/A'}\n\n"
+                # f"Subject hint: {subject_hint or 'N/A'}\n\n"
                 f"Chosen Field: {field_name}\n"
                 f"Field description: {desc}"
                 f"{alt_block}\n\n"
@@ -132,7 +155,7 @@ class FieldValidatorNode:
                         is_valid=parsed.is_valid,
                         reason=parsed.reason,
                         # Only return suggestions that actually exist in the pool (safety).
-                        suggestions=[s for s in parsed.suggestions if s in valid_pool][:3],
+                        removals=[r for r in parsed.removals if r in valid_pool][:3],
                     )
                     satisfaction = (
                         Satisfaction.Satisfied

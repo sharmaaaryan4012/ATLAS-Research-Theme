@@ -68,7 +68,7 @@ class SubfieldClassifierNode:
             "}\n\n"
             "Rules:\n"
             " - The 'name' MUST be one of the provided candidate subfields (verbatim).\n"
-            " - Return at most 3 choices, ordered best-first.\n"
+            " - Return at most 5 choices.\n"
             " - Output ONLY valid JSON. No prose, no markdown, no comments.\n\n"
             f"Top-level Field: {field_name}\n\n"
             f"Research description:\n{query_text}\n\n"
@@ -98,8 +98,7 @@ class SubfieldClassifierNode:
                     Candidate(name=c["name"], score=1.0, rationale=c.get("rationale", ""))
                     for c in valid
                 ]
-                chosen = candidate_objs[0]
-                return SubfieldClassifierOutput(chosen=chosen, candidates=candidate_objs)
+                return SubfieldClassifierOutput(candidates=candidate_objs)
 
         # Fallback if no LLM or invalid output: choose first entry deterministically.
         fallback = Candidate(
@@ -107,7 +106,7 @@ class SubfieldClassifierNode:
             score=1.0,
             rationale="Fallback to first subfield; no LLM response or invalid JSON.",
         )
-        return SubfieldClassifierOutput(chosen=fallback, candidates=[fallback])
+        return SubfieldClassifierOutput(candidates=[fallback])
 
 
 def Build(llm: Optional[SubfieldClassifierLLM] = None) -> SubfieldClassifierNode:

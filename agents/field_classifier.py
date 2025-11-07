@@ -10,14 +10,16 @@ Description:
 
 from __future__ import annotations
 
+import os
 import json
 from typing import Dict, List, Optional, Protocol
 
 from pydantic import BaseModel
 from pydantic import Field as PydField
 
+from config.paths import COLLEGE_FIELD_MAPPINGS_DIR
 from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
-from helpers.field_helpers import FieldHelpers
+# from helpers.field_helpers import FieldHelpers
 from langgraph.models import Candidate, FieldClassifierInput, FieldClassifierOutput
 
 
@@ -42,6 +44,26 @@ class LLMJsonResponse(BaseModel):
         description="List of objects: {'name': <field_name>, 'rationale': <why it fits>}."
     )
 
+def _load_field_mapping(college: str, department: str, removals: List[str], additions: List[str]) -> Dict[str, str]:
+    """
+    Returns
+    --------
+     Dict[str, str]: fields under college/department and their descriptions
+    """
+    filename = f"{college}.json"
+    path = os.path.join(COLLEGE_FIELD_MAPPINGS_DIR, filename)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            college_data = json.load(f)
+            try:
+                department_data = college_data[department]
+                for r in removals:
+                    del department_data[r]
+            except Exception as e:
+                raise ValueError("Invalid department name: \"" + department + "\" does not exist.")
+    except Exception as e:
+        raise ValueError("Invalid college name: \"" + college + "\" does not exist.")
+            
 
 def LoadMasterMapping() -> Dict[str, Dict[str, Dict[str, str]]]:
     """
@@ -73,17 +95,17 @@ class FieldClassifierNode:
         self.llm = llm
         self.master = LoadMasterMapping()
 
-    def Run(self, data: FieldClassifierInput) -> FieldClassifierOutput:
+    def Run(self, data: FieldClassifierInput, removals: None, additions: None) -> FieldClassifierOutput:
         """
         Execute classification.
 
         Parameters
         ----------
         data : FieldClassifierInput
-            The user request containing text. Optional hints may be present on
-            request.meta (if your UserRequest still carries it), e.g.:
-              - 'college_name'
-              - 'subject'
+            The user request containing text. 
+                - 
+                - 'college_name'
+                - 'subject'
 
         Returns
         -------
@@ -92,14 +114,14 @@ class FieldClassifierNode:
         """
         request = data.request
 
-        # Safely read optional meta hints if they exist; otherwise treat as None.
-        meta = getattr(request, "meta", {}) or {}
-        college_name = meta.get("college_name")
-        subject_hint = meta.get("subject")
+        #meta = getattr(request, "meta", {}) or {}
+        college_name = request.college_name
+        department_name = request.department_name
+        # subject_hint = meta.get("subject")
 
         # Build candidate pool (flattened to {field: description}).
-        candidates: Dict[str, str] = FieldHelpers.CollectCollegeFields(
-            self.master, college_name, subject_hint
+        candidates: Dict[str, str] = _load_field_mapping(
+         college_name, department_name, removals, additions
         )
         if not candidates:
             raise ValueError(
@@ -109,7 +131,8 @@ class FieldClassifierNode:
         candidate_names = list(candidates.keys())
 
         # Prompt instructs strictly-JSON returns (no prose), with up to 3 fields, best-first.
-        query_text = (subject_hint or "") + "\n" + (request.text or "")
+        # query_text = (subject_hint or "") + "\n" + (request.text or "")
+        query_text = request.text
         prompt = (
             "You are an academic classifier.\n"
             "Given a research description and a list of candidate Fields, return up to 3 that best fit the topic.\n"
@@ -121,7 +144,7 @@ class FieldClassifierNode:
             "}\n\n"
             "Rules:\n"
             " - The 'name' MUST be one of the provided candidate fields (verbatim).\n"
-            " - Return at most 3 choices, ordered best-first.\n"
+            " - Return at most 5 choices.\n"
             " - Output ONLY valid JSON. No prose, no markdown, no comments.\n\n"
             f"Research description:\n{query_text}\n\n"
             f"College (optional): {college_name or 'N/A'}\n\n"
@@ -161,8 +184,7 @@ class FieldClassifierNode:
                     )
                     for c in valid
                 ]
-                chosen = candidate_objs[0]  # mirror top candidate for backward compat
-                return FieldClassifierOutput(chosen=chosen, candidates=candidate_objs)
+                return FieldClassifierOutput(candidates=candidate_objs)
 
         # Fallback if no LLM or invalid output: choose first entry deterministically.
         fallback = Candidate(
@@ -170,7 +192,7 @@ class FieldClassifierNode:
             score=1.0,
             rationale="Fallback to first candidate; no LLM response or invalid JSON.",
         )
-        return FieldClassifierOutput(chosen=fallback, candidates=[fallback])
+        return FieldClassifierOutput(candidates=[fallback])
 
 
 def Build(llm: Optional[FieldClassifierLLM] = None) -> FieldClassifierNode:
