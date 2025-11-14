@@ -177,6 +177,7 @@ class FieldClassifierOutput:
     """
 
     candidates: List[Candidate] = field(default_factory=list)
+    output_valid: bool = True
 
 
 @dataclass
@@ -252,6 +253,7 @@ class SubfieldClassifierInput:
     request: UserRequest
     field_names: List[str]
     feedback: ValidationReport
+    
 
 
 @dataclass
@@ -259,6 +261,7 @@ class SubfieldClassifierOutput:
     """Output from the subfield classifier node."""
 
     candidates: List[Candidate] = field(default_factory=list)
+    output_valid: bool = True
 
 
 @dataclass

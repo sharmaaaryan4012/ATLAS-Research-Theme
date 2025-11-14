@@ -101,14 +101,9 @@ class SubfieldClassifierNode:
                     Candidate(name=c["name"], score=1.0, rationale=c.get("rationale", ""))
                     for c in valid
                 ]
-                return SubfieldClassifierOutput(candidates=candidate_objs)
+                return SubfieldClassifierOutput(candidates=candidate_objs, output_valid=True)
 
-        fallback = Candidate(
-            name=candidate_names[0],
-            score=1.0,
-            rationale="Fallback to first subfield; no LLM response or invalid JSON.",
-        )
-        return SubfieldClassifierOutput(candidates=[fallback])
+        return SubfieldClassifierOutput(candidates=[], output_valid=False)
 
 
 def Build(llm: Optional[SubfieldClassifierLLM] = None) -> SubfieldClassifierNode:

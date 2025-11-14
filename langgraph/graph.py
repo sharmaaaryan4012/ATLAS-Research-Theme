@@ -72,12 +72,20 @@ class Graph:
     
     def FieldClassification(self, state: State):
         state.record("enter_field_classifier")
-        fc_out = self.field_classifier.Run(FieldClassifierInput(request=state.request, feedback = state.field_validation))
-        state.fields = fc_out.candidates
-        state.record(
-            "field_classifier_done",
-            candidates=[c.name for c in fc_out.candidates],
-        )
+        output_valid = False
+        iterations = 1
+        while(not output_valid) and iterations <= 3:
+            fc_out = self.field_classifier.Run(FieldClassifierInput(request=state.request, feedback = state.field_validation))
+            state.fields = fc_out.candidates
+            output_valid = fc_out.output_valid
+            if output_valid:
+                state.record(
+                    "field_classifier_done",
+                    candidates=[c.name for c in fc_out.candidates],
+                )
+            iterations += 1
+        if not output_valid:
+            raise ValueError("Unable to parse LLM output. No fields identified.")
         return state
     
     def FieldValidation(self, state: State):
@@ -141,14 +149,22 @@ class Graph:
     def SubfieldClassification(self, state: State):
         # 3) Subfield Classifier -----------------------------------------------
         state.record("enter_subfield_classifier")
-        sc_out = self.subfield_classifier.Run(
-            SubfieldClassifierInput(request=state.request, field_names = state.get_fields(), feedback = state.subfield_validation)
-        )
-        state.subfields = sc_out.candidates
-        state.record(
-            "subfield_classifier_done",
-            candidates=[c.name for c in sc_out.candidates],
-        )
+        output_valid = False
+        iterations = 1
+        while(not output_valid) and iterations <= 3:
+            sc_out = self.subfield_classifier.Run(
+                SubfieldClassifierInput(request=state.request, field_names = state.get_fields(), feedback = state.subfield_validation)
+            )
+            state.subfields = sc_out.candidates
+            output_valid = sc_out.output_valid
+            if output_valid:
+                state.record(
+                    "subfield_classifier_done",
+                    candidates=[c.name for c in sc_out.candidates],
+                )
+            iterations += 1
+        if not output_valid:
+            raise ValueError("Unable to parse LLM output. Identified Fields were: ", state.get_fields(), ". New field suggestions were: ", state.get_new_fields())
         return state
 
     def SubfieldValidation(self, state: State):
