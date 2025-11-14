@@ -46,12 +46,12 @@ class State:
         if self.fields is None:
             return []
         return [c.name for c in self.fields]
-    
+
     def get_new_fields(self):
         if self.new_fields is None:
             return []
         return [c.name for c in self.new_fields]
-    
+
     def get_subfields(self):
         if self.subfields is None:
             return []

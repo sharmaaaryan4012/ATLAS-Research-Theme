@@ -212,7 +212,9 @@ class FieldEnhancerInput:
 @dataclass
 class FieldEnhancerOutput:
     """Output from a (future) field enhancer node."""
+
     proposed_candidates: Optional[List[Candidate]]
+
 
 @dataclass
 class FieldEnhancementValidatorInput:
@@ -220,7 +222,7 @@ class FieldEnhancementValidatorInput:
 
     request: UserRequest
     new_field_names: List[str]
-    
+
 
 @dataclass
 class FieldEnhancementValidatorOutput:
@@ -228,6 +230,7 @@ class FieldEnhancementValidatorOutput:
 
     report: ValidationReport
     satisfaction: Satisfaction
+
 
 @dataclass
 class FieldUpdaterInput:
@@ -253,7 +256,6 @@ class SubfieldClassifierInput:
     request: UserRequest
     field_names: List[str]
     feedback: ValidationReport
-    
 
 
 @dataclass

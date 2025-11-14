@@ -28,8 +28,7 @@ from langgraph.models import (
 
 
 class SubfieldValidatorLLM(Protocol):
-    def generate_json(self, prompt: str) -> dict | None:
-        ...
+    def generate_json(self, prompt: str) -> dict | None: ...
 
 
 class LLMValidationResponse(BaseModel):
@@ -61,8 +60,10 @@ class SubfieldValidatorNode:
         if not field_names:
             raise ValueError("SubfieldValidatorNode requires `field_name` context.")
 
-        valid_pool: Dict[str, str] = _load_subfield_mapping(field_names, additions, removals)
-        exists = all( s in valid_pool for s in subfield_names)
+        valid_pool: Dict[str, str] = _load_subfield_mapping(
+            field_names, additions, removals
+        )
+        exists = all(s in valid_pool for s in subfield_names)
         if not exists:
             report = ValidationReport(
                 is_valid=False,
@@ -93,7 +94,6 @@ class SubfieldValidatorNode:
                 + "\nRules:\n"
                 + "\n - Output ONLY valid JSON. No prose, no markdown.\n"
             )
-           
 
             raw = self.llm.generate_json(prompt)
             if raw:
@@ -103,20 +103,30 @@ class SubfieldValidatorNode:
                         is_valid=parsed.is_valid,
                         reason=parsed.reason,
                         removals=[s for s in parsed.removals if s in valid_pool][:3],
-                        additions=None, # can add this later
+                        additions=None,  # can add this later
                     )
                     satisfaction = (
-                        Satisfaction.Satisfied if parsed.is_valid else Satisfaction.Unsatisfied
+                        Satisfaction.Satisfied
+                        if parsed.is_valid
+                        else Satisfaction.Unsatisfied
                     )
-                    return SubfieldValidatorOutput(report=report, satisfaction=satisfaction)
+                    return SubfieldValidatorOutput(
+                        report=report, satisfaction=satisfaction
+                    )
                 except Exception as e:
                     print("⚠️ Parse error in SubfieldValidator LLM response:", e)
             else:
-                raise ValueError("Error using subfield validator llm. Check credentials.")
+                raise ValueError(
+                    "Error using subfield validator llm. Check credentials."
+                )
 
         # Fallback: existence ⇒ valid.
-        report = ValidationReport(is_valid=True, reason="Subfield exists for the given Field.")
-        return SubfieldValidatorOutput(report=report, satisfaction=Satisfaction.Satisfied)
+        report = ValidationReport(
+            is_valid=True, reason="Subfield exists for the given Field."
+        )
+        return SubfieldValidatorOutput(
+            report=report, satisfaction=Satisfaction.Satisfied
+        )
 
     def _Nearest(self, target: str, pool: List[str]) -> List[str]:
         return difflib.get_close_matches(target, pool, n=5, cutoff=0.0)

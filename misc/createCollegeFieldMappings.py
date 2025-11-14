@@ -16,12 +16,12 @@ Output format (per-college file):
       - department_description (str)
 """
 
-from pathlib import Path
+import argparse
 import json
 import os
-import sys
-import argparse
 import re
+import sys
+from pathlib import Path
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(_PROJECT_ROOT) not in sys.path:
@@ -29,8 +29,8 @@ if str(_PROJECT_ROOT) not in sys.path:
 
 try:
     from config.paths import (
-        MASTER_COLLEGE_FIELD_MAPPING_JSON,
         COLLEGE_FIELD_MAPPINGS_DIR,
+        MASTER_COLLEGE_FIELD_MAPPING_JSON,
     )
 except Exception as e:
     print(
@@ -62,8 +62,12 @@ def main():
     parser = argparse.ArgumentParser(
         description="Create per-college JSON files (with field descriptions) from master college-field mapping."
     )
-    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files.")
-    parser.add_argument("--dry-run", action="store_true", help="Show actions without writing files.")
+    parser.add_argument(
+        "--overwrite", action="store_true", help="Overwrite existing files."
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Show actions without writing files."
+    )
     args = parser.parse_args()
 
     master_path = MASTER_COLLEGE_FIELD_MAPPING_JSON

@@ -15,13 +15,13 @@ If a field name appears in multiple colleges/departments with different subfield
 files are disambiguated by appending a slug of the college/department.
 """
 
-from pathlib import Path
+import argparse
 import json
 import os
-import sys
-import argparse
 import re
+import sys
 from hashlib import md5
+from pathlib import Path
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(_PROJECT_ROOT) not in sys.path:
@@ -29,8 +29,8 @@ if str(_PROJECT_ROOT) not in sys.path:
 
 try:
     from config.paths import (
-        MASTER_FIELD_SUBFIELD_MAPPING_JSON,
         FIELD_SUBFIELD_MAPPINGS_DIR,
+        MASTER_FIELD_SUBFIELD_MAPPING_JSON,
     )
 except Exception as e:
     print(
@@ -134,8 +134,14 @@ def main():
     parser = argparse.ArgumentParser(
         description="Create per-field JSON files (with subfield descriptions) from master field-subfield mapping."
     )
-    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files when names collide with different content.")
-    parser.add_argument("--dry-run", action="store_true", help="Show actions without writing files.")
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Overwrite existing files when names collide with different content.",
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Show actions without writing files."
+    )
     args = parser.parse_args()
 
     master_path = MASTER_FIELD_SUBFIELD_MAPPING_JSON
@@ -158,11 +164,15 @@ def main():
             continue
         for dept, field_map in dept_map.items():
             if not isinstance(field_map, dict):
-                print(f"WARNING: Skipping dept with invalid structure: {college} / {dept}")
+                print(
+                    f"WARNING: Skipping dept with invalid structure: {college} / {dept}"
+                )
                 continue
             for field, subfield_map in field_map.items():
                 if not isinstance(subfield_map, dict):
-                    print(f"WARNING: Subfields map not a dict, skipping: {college} / {dept} / {field}")
+                    print(
+                        f"WARNING: Subfields map not a dict, skipping: {college} / {dept} / {field}"
+                    )
                     continue
 
                 # Validate that all subfield values are strings (descriptions)
@@ -171,10 +181,14 @@ def main():
                     if isinstance(desc, str) and desc.strip():
                         cleaned_map[subfield] = desc.strip()
                     else:
-                        print(f"WARNING: Missing/invalid description for subfield '{subfield}' in {college} / {dept} / {field}; skipping that subfield.")
+                        print(
+                            f"WARNING: Missing/invalid description for subfield '{subfield}' in {college} / {dept} / {field}; skipping that subfield."
+                        )
 
                 if not cleaned_map:
-                    print(f"WARNING: No valid subfields for field '{field}' in {college} / {dept}; skipping file.")
+                    print(
+                        f"WARNING: No valid subfields for field '{field}' in {college} / {dept}; skipping file."
+                    )
                     continue
 
                 ctx_suffix = f"{slugify(college)}_{slugify(dept)}"

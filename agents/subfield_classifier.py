@@ -19,12 +19,16 @@ from pydantic import Field as PydField
 
 from config.paths import FIELD_SUBFIELD_MAPPINGS_DIR
 from helpers.field_helpers import _load_subfield_mapping
-from langgraph.models import Candidate, SubfieldClassifierInput, SubfieldClassifierOutput, ValidationReport
+from langgraph.models import (
+    Candidate,
+    SubfieldClassifierInput,
+    SubfieldClassifierOutput,
+    ValidationReport,
+)
 
 
 class SubfieldClassifierLLM(Protocol):
-    def generate_json(self, prompt: str) -> dict | None:
-        ...
+    def generate_json(self, prompt: str) -> dict | None: ...
 
 
 class LLMJsonResponse(BaseModel):
@@ -51,7 +55,9 @@ class SubfieldClassifierNode:
             removals = None
             additions = None
 
-        candidates: Dict[str, str] = _load_subfield_mapping(field_names, removals, additions)
+        candidates: Dict[str, str] = _load_subfield_mapping(
+            field_names, removals, additions
+        )
         if not candidates:
             raise ValueError(f"No subfields found for field '{field_names}'.")
 
@@ -64,8 +70,8 @@ class SubfieldClassifierNode:
             "return the subfields that best fit the topic.\n"
             "Strictly return a JSON object of the following structure:\n\n"
             "{\n"
-            '  \"choices\": [\n'
-            '     {\"name\": \"<subfield name>\", \"rationale\": \"<why it fits>\"}\n'
+            '  "choices": [\n'
+            '     {"name": "<subfield name>", "rationale": "<why it fits>"}\n'
             "  ]\n"
             "}\n\n"
             "Rules:\n"
@@ -77,14 +83,17 @@ class SubfieldClassifierNode:
 
         parsed_model: Optional[LLMJsonResponse] = None
 
-
         raw = self.llm.generate_json(prompt)
         if raw:
             if "choice" in raw and "choices" not in raw:
-                raw = {"choices": [{
-                    "name": raw.get("choice", ""),
-                    "rationale": raw.get("rationale", ""),
-                }]}
+                raw = {
+                    "choices": [
+                        {
+                            "name": raw.get("choice", ""),
+                            "rationale": raw.get("rationale", ""),
+                        }
+                    ]
+                }
             try:
                 parsed_model = LLMJsonResponse(**raw)
             except Exception as e:
@@ -93,15 +102,18 @@ class SubfieldClassifierNode:
         else:
             raise ValueError("Error using subfield classifier llm. Check credentials.")
 
-
         if parsed_model and parsed_model.choices:
             valid = [c for c in parsed_model.choices if c.get("name") in candidates]
             if valid:
                 candidate_objs = [
-                    Candidate(name=c["name"], score=1.0, rationale=c.get("rationale", ""))
+                    Candidate(
+                        name=c["name"], score=1.0, rationale=c.get("rationale", "")
+                    )
                     for c in valid
                 ]
-                return SubfieldClassifierOutput(candidates=candidate_objs, output_valid=True)
+                return SubfieldClassifierOutput(
+                    candidates=candidate_objs, output_valid=True
+                )
 
         return SubfieldClassifierOutput(candidates=[], output_valid=False)
 

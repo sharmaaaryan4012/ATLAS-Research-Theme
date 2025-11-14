@@ -13,8 +13,8 @@ import json
 import os
 from typing import Optional
 
-from dotenv import load_dotenv
 import google.generativeai as genai
+from dotenv import load_dotenv
 
 
 class GeminiJSONAdapter:

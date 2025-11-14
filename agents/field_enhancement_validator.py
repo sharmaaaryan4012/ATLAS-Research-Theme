@@ -10,17 +10,17 @@ Description:
 
 from __future__ import annotations
 
-import os
 import difflib
 import json
+import os
 from typing import Dict, List, Optional, Protocol
 
 from pydantic import BaseModel
 from pydantic import Field as PydField
 
-from config.paths import COLLEGE_FIELD_MAPPINGS_DIR
-from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
+from config.paths import COLLEGE_FIELD_MAPPINGS_DIR, MASTER_COLLEGE_FIELD_MAPPING_JSON
 from helpers.field_helpers import _load_field_mapping
+
 # from helpers.field_helpers import FieldHelpers
 from langgraph.models import (
     FieldEnhancementValidatorInput,
@@ -47,7 +47,8 @@ class LLMValidationResponse(BaseModel):
         default_factory=list,
         description="If invalid, suggest field names that should be removed from the chosen fields.",
     )
-    
+
+
 class FieldEnhancementValidatorNode:
     """
     Node that first verifies structural validity (field presence in the
@@ -67,7 +68,9 @@ class FieldEnhancementValidatorNode:
             # Dict[college, Dict[subject, Dict[field, desc]]]
             self.master: Dict[str, Dict[str, Dict[str, str]]] = json.load(f)
 
-    def Run(self, data: FieldEnhancementValidatorInput) -> FieldEnhancementValidatorOutput:
+    def Run(
+        self, data: FieldEnhancementValidatorInput
+    ) -> FieldEnhancementValidatorOutput:
         """
         Execute validation.
 
@@ -101,7 +104,7 @@ class FieldEnhancementValidatorNode:
                         is_valid=parsed.is_valid,
                         reason=parsed.reason,
                         removals=[r for r in parsed.removals],
-                        additions=None, # can add this later
+                        additions=None,  # can add this later
                     )
                     satisfaction = (
                         Satisfaction.Satisfied
@@ -121,7 +124,9 @@ class FieldEnhancementValidatorNode:
         report = ValidationReport(
             is_valid=True, reason="Field exists in master mapping."
         )
-        return FieldEnhancementValidatorOutput(report=report, satisfaction=Satisfaction.Satisfied)
+        return FieldEnhancementValidatorOutput(
+            report=report, satisfaction=Satisfaction.Satisfied
+        )
 
     # --------------------------
     # helpers
@@ -131,6 +136,8 @@ class FieldEnhancementValidatorNode:
         return difflib.get_close_matches(target, pool, n=5, cutoff=0.0)
 
 
-def Build(llm: Optional[FieldEnhancementValidatorLLM] = None) -> FieldEnhancementValidatorNode:
+def Build(
+    llm: Optional[FieldEnhancementValidatorLLM] = None,
+) -> FieldEnhancementValidatorNode:
     """Factory for LangGraph wiring."""
     return FieldEnhancementValidatorNode(llm)

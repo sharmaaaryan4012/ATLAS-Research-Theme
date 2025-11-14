@@ -10,17 +10,17 @@ Description:
 
 from __future__ import annotations
 
-import os
 import difflib
 import json
+import os
 from typing import Dict, List, Optional, Protocol
 
 from pydantic import BaseModel
 from pydantic import Field as PydField
 
-from config.paths import COLLEGE_FIELD_MAPPINGS_DIR
-from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
+from config.paths import COLLEGE_FIELD_MAPPINGS_DIR, MASTER_COLLEGE_FIELD_MAPPING_JSON
 from helpers.field_helpers import _load_field_mapping
+
 # from helpers.field_helpers import FieldHelpers
 from langgraph.models import (
     FieldValidatorInput,
@@ -47,7 +47,8 @@ class LLMValidationResponse(BaseModel):
         default_factory=list,
         description="If invalid, suggest field names that should be removed from the provided pool.",
     )
-    
+
+
 class FieldValidatorNode:
     """
     Node that first verifies structural validity (field presence in the
@@ -97,7 +98,7 @@ class FieldValidatorNode:
             college_name, department_name, removals, additions
         )
 
-        exists = all( f in valid_pool for f in field_names)
+        exists = all(f in valid_pool for f in field_names)
         if not exists:
             report = ValidationReport(
                 is_valid=False,
@@ -131,7 +132,7 @@ class FieldValidatorNode:
                         reason=parsed.reason,
                         # Only return suggestions that actually exist in the pool (safety).
                         removals=[r for r in parsed.removals if r in valid_pool][:3],
-                        additions=None, # can add this later
+                        additions=None,  # can add this later
                     )
                     satisfaction = (
                         Satisfaction.Satisfied

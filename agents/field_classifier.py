@@ -9,8 +9,8 @@ Description:
 
 from __future__ import annotations
 
-import os
 import json
+import os
 from typing import Dict, List, Optional, Protocol
 
 from pydantic import BaseModel
@@ -18,8 +18,14 @@ from pydantic import Field as PydField
 
 from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
 from helpers.field_helpers import _load_field_mapping
+
 # from helpers.field_helpers import FieldHelpers
-from langgraph.models import Candidate, FieldClassifierInput, FieldClassifierOutput, ValidationReport
+from langgraph.models import (
+    Candidate,
+    FieldClassifierInput,
+    FieldClassifierOutput,
+    ValidationReport,
+)
 
 
 # -----------------------------------------------------------------------------
@@ -39,15 +45,16 @@ class FieldClassifierLLM(Protocol):
 class LLMJsonResponse(BaseModel):
     """Schema for LLM output with multiple ranked fields."""
 
-    choices: List[Dict[str,str]] = PydField(
+    choices: List[Dict[str, str]] = PydField(
         description="A list of objects: {'name': <field_name>, 'rationale': <why it matches the research description>}."
     )
+
 
 def get_schema():
     generator_response_schema = LLMJsonResponse.model_json_schema()
     generator_response_schema_json = json.dumps(generator_response_schema, indent=2)
     return generator_response_schema_json
-            
+
 
 def LoadMasterMapping() -> Dict[str, Dict[str, Dict[str, str]]]:
     """
@@ -86,8 +93,8 @@ class FieldClassifierNode:
         Parameters
         ----------
         data : FieldClassifierInput
-            The user request containing text. 
-                - 
+            The user request containing text.
+                -
                 - 'college_name'
                 - 'subject'
 
@@ -110,7 +117,7 @@ class FieldClassifierNode:
 
         # Build candidate pool (flattened to {field: description}).
         candidates: Dict[str, str] = _load_field_mapping(
-         college_name, department_name, removals, additions
+            college_name, department_name, removals, additions
         )
         if not candidates:
             raise ValueError(
@@ -124,7 +131,7 @@ class FieldClassifierNode:
             "You are an academic classifier.\n"
             "Given a research description and a list of candidate Fields, return all the fields that best fit the given research description.\n"
             "Strictly return a JSON object of the following structure:\n\n"
-            f"{get_schema()}" 
+            f"{get_schema()}"
             "Rules:\n"
             " - The 'name' MUST be one of the provided candidate fields (verbatim).\n"
             " - Output ONLY valid JSON. No prose, no markdown, no comments.\n\n"
@@ -164,7 +171,9 @@ class FieldClassifierNode:
                     )
                     for c in valid
                 ]
-                return FieldClassifierOutput(candidates=candidate_objs, output_valid=True)
+                return FieldClassifierOutput(
+                    candidates=candidate_objs, output_valid=True
+                )
 
         # Fallback if no LLM or invalid output: choose first entry deterministically.
         return FieldClassifierOutput(candidates=[], output_valid=False)

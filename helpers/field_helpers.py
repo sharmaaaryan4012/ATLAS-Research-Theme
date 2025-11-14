@@ -1,11 +1,13 @@
-from typing import Dict, List, Optional, Protocol
 import json
 import os
+from typing import Dict, List, Optional, Protocol
 
-from config.paths import COLLEGE_FIELD_MAPPINGS_DIR
-from config.paths import FIELD_SUBFIELD_MAPPINGS_DIR
+from config.paths import COLLEGE_FIELD_MAPPINGS_DIR, FIELD_SUBFIELD_MAPPINGS_DIR
 
-def _load_field_mapping(college: str, department: str, removals: List[str], additions: List[str]) -> Dict[str, str]:
+
+def _load_field_mapping(
+    college: str, department: str, removals: List[str], additions: List[str]
+) -> Dict[str, str]:
     """
     Returns
     --------
@@ -25,25 +27,29 @@ def _load_field_mapping(college: str, department: str, removals: List[str], addi
                 if additions is not None:
                     for a in additions:
                         if a not in department_data:
-                        # ask llm to output a description if suggesting
+                            # ask llm to output a description if suggesting
                             department_data[a] = ""
             except Exception as e:
-                raise ValueError("Invalid department name: \"" + department + "\" does not exist.")
+                raise ValueError(
+                    'Invalid department name: "' + department + '" does not exist.'
+                )
     except Exception as e:
-        raise ValueError("Invalid college name: \"" + college + "\" does not exist.")
+        raise ValueError('Invalid college name: "' + college + '" does not exist.')
     return department_data
 
 
-def _load_subfield_mapping(field_names: List[str], removals: List[str], additions: List[str]) -> Dict[str, str]:
+def _load_subfield_mapping(
+    field_names: List[str], removals: List[str], additions: List[str]
+) -> Dict[str, str]:
     subfield_descriptions = {}
-    for f in field_names: 
+    for f in field_names:
         filename = f"{f}.json"
         try:
             path = os.path.join(FIELD_SUBFIELD_MAPPINGS_DIR, filename)
             with open(path, "r", encoding="utf-8") as f:
                 subfield_data = json.load(f)
                 subfield_descriptions = subfield_descriptions | subfield_data
-        except Exception as e: 
+        except Exception as e:
             raise ValueError("Error while loading subfields of field: " + f + ".")
     if removals is not None:
         for r in removals:
@@ -51,6 +57,6 @@ def _load_subfield_mapping(field_names: List[str], removals: List[str], addition
                 del subfield_descriptions[r]
     if additions is not None:
         for a in additions:
-            if a not in subfield_descriptions: 
+            if a not in subfield_descriptions:
                 subfield_descriptions[a] = ""
     return subfield_descriptions

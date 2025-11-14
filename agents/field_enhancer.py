@@ -9,8 +9,8 @@ Description:
 
 from __future__ import annotations
 
-import os
 import json
+import os
 from typing import Dict, List, Optional, Protocol
 
 from pydantic import BaseModel
@@ -18,8 +18,14 @@ from pydantic import Field as PydField
 
 from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
 from helpers.field_helpers import _load_field_mapping
+
 # from helpers.field_helpers import FieldHelpers
-from langgraph.models import Candidate, FieldEnhancerInput, FieldEnhancerOutput, Proposal
+from langgraph.models import (
+    Candidate,
+    FieldEnhancerInput,
+    FieldEnhancerOutput,
+    Proposal,
+)
 
 
 # -----------------------------------------------------------------------------
@@ -39,15 +45,16 @@ class FieldEnhancerLLM(Protocol):
 class LLMJsonResponse(BaseModel):
     """Schema for LLM output with multiple ranked fields."""
 
-    choices: Optional[List[Dict[str,str]]] = PydField(
+    choices: Optional[List[Dict[str, str]]] = PydField(
         description="A list of objects: {'name': <field_name>, 'rationale': <why it matches the research description>} or None if the given Fields sufficiently classify the description."
     )
+
 
 def get_schema():
     generator_response_schema = LLMJsonResponse.model_json_schema()
     generator_response_schema_json = json.dumps(generator_response_schema, indent=2)
     return generator_response_schema_json
-            
+
 
 def LoadMasterMapping() -> Dict[str, Dict[str, Dict[str, str]]]:
     """
@@ -77,7 +84,7 @@ class FieldEnhancerNode:
             An injected LLM with a `generate_json(prompt)` method that returns a raw dict.
         """
         self.llm = llm
-        #self.master = LoadMasterMapping()
+        # self.master = LoadMasterMapping()
 
     def Run(self, data: FieldEnhancerInput) -> FieldEnhancerOutput:
         """
@@ -86,7 +93,7 @@ class FieldEnhancerNode:
         Parameters
         ----------
         data : FieldEnhancerInput
-            The user request containing text. 
+            The user request containing text.
                 - 'college_name'
                 - 'subject'
 
@@ -109,7 +116,7 @@ class FieldEnhancerNode:
 
         # Build candidate pool (flattened to {field: description}).
         candidates: Dict[str, str] = _load_field_mapping(
-         college_name, department_name, removals, additions
+            college_name, department_name, removals, additions
         )
         if not candidates:
             raise ValueError(
@@ -121,7 +128,7 @@ class FieldEnhancerNode:
             "You are an academic classifier.\n"
             "Given a research description and a list of candidate Fields, generate and return fields outside of the candidate fields that fit the given research description, if any.\n"
             "Strictly return a JSON object of the following structure:\n\n"
-            f"{get_schema()}" 
+            f"{get_schema()}"
             "Rules:\n"
             " - The 'name' must NOT be one of the provided candidate fields.\n"
             " - Output ONLY valid JSON. No prose, no markdown, no comments.\n\n"
