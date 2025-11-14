@@ -149,7 +149,6 @@ class FieldClassifierNode:
             try:
                 parsed_model = LLMJsonResponse(**raw)
             except Exception as e:
-                # If the model didn’t match schema, fall back deterministically to first candidate.
                 print("⚠️ Parse error in FieldClassifier LLM response:", e)
                 parsed_model = None
         else:
@@ -165,15 +164,10 @@ class FieldClassifierNode:
                     )
                     for c in valid
                 ]
-                return FieldClassifierOutput(candidates=candidate_objs)
+                return FieldClassifierOutput(candidates=candidate_objs, output_valid=True)
 
         # Fallback if no LLM or invalid output: choose first entry deterministically.
-        fallback = Candidate(
-            name=candidate_names[0],
-            score=1.0,
-            rationale="Fallback to first candidate; no LLM response or invalid JSON.",
-        )
-        return FieldClassifierOutput(candidates=[fallback])
+        return FieldClassifierOutput(candidates=[], output_valid=False)
 
 
 def Build(llm: Optional[FieldClassifierLLM] = None) -> FieldClassifierNode:
