@@ -21,6 +21,8 @@ llm = GeminiJSONAdapter.from_env(model_name="gemini-2.5-flash")
 graph = BuildGraph(
     field_classifier_llm=llm,
     field_validator_llm=llm,
+    field_enhancer_llm=llm,
+    field_enhancement_validator_llm=llm,
     subfield_classifier_llm=llm,
     subfield_validator_llm=llm,
 )
@@ -38,7 +40,8 @@ print("Running graph...")
 state = graph.Run(req)
 print("Graph run complete. Check your LangSmith dashboard.")
 
-print("Chosen fields:", state.get_fields() if state.fields else None)
+print("Chosen fields:", state.get_fields())
 print("Fields valid? ", state.field_validation.is_valid if state.field_validation else None)
-print("Chosen subfields:", state.get_subfields() if state.subfields else None)
+print("Chosen subfields:", state.get_subfields())
 print("Subfields valid? ", state.subfield_validation.is_valid if state.subfield_validation else None)
+print("New Suggested Fields?:", state.get_new_fields())

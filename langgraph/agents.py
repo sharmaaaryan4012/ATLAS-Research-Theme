@@ -10,6 +10,8 @@ from typing import Optional
 
 from agents.field_classifier import Build as BuildFieldClassifier
 from agents.field_validator import Build as BuildFieldValidator
+from agents.field_enhancer import Build as BuildFieldEnhancer
+from agents.field_enhancement_validator import Build as BuildFieldEnhancementValidator
 from agents.subfield_classifier import Build as BuildSubfieldClassifier
 from agents.subfield_validator import Build as BuildSubfieldValidator
 
@@ -21,6 +23,11 @@ def BuildFieldClassifierAgent(llm=None):
 def BuildFieldValidatorAgent(llm=None):
     return BuildFieldValidator(llm)
 
+def BuildFieldEnhancerAgent(llm=None):
+    return BuildFieldEnhancer(llm)
+
+def BuildFieldEnhancementValidatorAgent(llm=None):
+    return BuildFieldEnhancementValidator(llm)
 
 def BuildSubfieldClassifierAgent(llm=None):
     return BuildSubfieldClassifier(llm)

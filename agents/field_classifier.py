@@ -4,8 +4,7 @@ Project: ATLAS Research Theme
 File: field_classifier.py
 Description:
     LangGraph node that classifies a user request into one or more academic
-    fields using an injected LLM. Produces a ranked list in `candidates`
-    (best-first). `chosen` mirrors the first candidate for backward-compat.
+    fields using an injected LLM. Produces a list in `candidates`.
 """
 
 from __future__ import annotations
