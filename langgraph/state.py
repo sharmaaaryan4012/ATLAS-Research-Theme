@@ -26,22 +26,31 @@ class State:
     request: UserRequest
 
     fields: List[Candidate] = field(default_factory=list)
+    new_fields: Optional[List[Candidate]] = field(default_factory=list)
     field_validation: Optional[ValidationReport] = None
     field_satisfaction: Optional[Satisfaction] = None
+    new_field_satisfaction: Optional[Satisfaction] = None
 
     subfields: List[Candidate] = field(default_factory=list)
     subfield_validation: Optional[ValidationReport] = None
     subfield_satisfaction: Optional[Satisfaction] = None
+    new_subfield_satisfaction: Optional[Satisfaction] = None
 
     log: List[Dict[str, Any]] = field(default_factory=list)
 
     def record(self, event: str, **payload: Any) -> None:
         self.log.append({"event": event, **payload})
+        print(event)
 
     def get_fields(self):
         if self.fields is None:
             return []
         return [c.name for c in self.fields]
+    
+    def get_new_fields(self):
+        if self.new_fields is None:
+            return []
+        return [c.name for c in self.new_fields]
     
     def get_subfields(self):
         if self.subfields is None:

@@ -123,9 +123,9 @@ class Proposal:
     Proposal for adding a new field/subfield to the canonical mapping.
     """
 
-    proposed_name: str
-    rationale: str = ""
-    evidence: List[str] = field(default_factory=list)
+    proposed_candidates: Optional[List[Candidate]]
+    # rationale: str = ""
+    # evidence: List[str] = field(default_factory=list)
 
 
 @dataclass
@@ -183,7 +183,7 @@ class FieldClassifierOutput:
 class FieldValidatorInput:
     """Input to the field validator node."""
 
-    field_names: str
+    field_names: List[str]
     request: UserRequest
     feedback: ValidationReport
 
@@ -204,15 +204,29 @@ class FieldEnhancerInput:
     """Input to a (future) field enhancer node."""
 
     request: UserRequest
-    attempted_field: str
+    # attempted_fields: List[Candidate]
+    feedback: ValidationReport
 
 
 @dataclass
 class FieldEnhancerOutput:
     """Output from a (future) field enhancer node."""
+    proposed_candidates: Optional[List[Candidate]]
 
-    proposal: Proposal
+@dataclass
+class FieldEnhancementValidatorInput:
+    """Input to the field enhancement validator node."""
 
+    request: UserRequest
+    new_field_names: List[str]
+    
+
+@dataclass
+class FieldEnhancementValidatorOutput:
+    """Input to the field validator node."""
+
+    report: ValidationReport
+    satisfaction: Satisfaction
 
 @dataclass
 class FieldUpdaterInput:

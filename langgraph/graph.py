@@ -4,7 +4,7 @@ Project: ATLAS Research Theme
 File: graph.py
 Description:
     Minimal executable LangGraph that wires:
-        Request → field_classifier → field_validator
+        Request → field_classifier → field_validator → field_enhancer → field_enhancement_validator
                → subfield_classifier → subfield_validator → END
 
     Enhancer/Updater branches are intentionally left disconnected.
@@ -16,6 +16,8 @@ from .models import (
     FieldClassifierInput,
     FieldValidatorInput,
     Satisfaction,
+    FieldEnhancerInput,
+    FieldEnhancementValidatorInput,
     SubfieldClassifierInput,
     SubfieldValidatorInput,
     UserRequest,
@@ -29,10 +31,14 @@ class Graph:
         self,
         field_classifier_llm=None,
         field_validator_llm=None,
+        field_enhancer_llm=None,
+        field_enhancement_validator_llm=None,
         subfield_classifier_llm=None,
         subfield_validator_llm=None,
     ):
         self.field_classifier = agent_factories.BuildFieldClassifierAgent(field_classifier_llm)
+        self.field_enhancer = agent_factories.BuildFieldEnhancerAgent(field_enhancer_llm)
+        self.field_enhancement_validator = agent_factories.BuildFieldEnhancementValidatorAgent(field_enhancement_validator_llm)
         self.field_validator = agent_factories.BuildFieldValidatorAgent(field_validator_llm)
         self.subfield_classifier = agent_factories.BuildSubfieldClassifierAgent(subfield_classifier_llm)
         self.subfield_validator = agent_factories.BuildSubfieldValidatorAgent(subfield_validator_llm)
@@ -58,6 +64,10 @@ class Graph:
             state = self.FieldValidation(state)
             valid_fields = state.field_satisfaction == "satisfied"
             n_iterations += 1
+        
+        state = self.FieldEnhancement(state)
+        state = self.FieldEnhancementValidation(state)
+
         return state
     
     def FieldClassification(self, state: State):
@@ -87,6 +97,33 @@ class Graph:
             satisfaction=fv_out.satisfaction,
         )
         
+        return state
+    
+    def FieldEnhancement(self, state: State):
+        state.record("enter_field_enhancer")
+        fe_out = self.field_enhancer.Run(FieldEnhancerInput(request=state.request, feedback = state.field_validation))
+        state.new_fields = fe_out.proposed_candidates
+        state.record(
+            "field_enhancer_done",
+            candidates=state.get_new_fields(),
+        )
+        return state
+    
+    def FieldEnhancementValidation(self, state: State):
+        state.record("enter_field_enhancement_validator")
+        fev_out = self.field_enhancement_validator.Run(FieldEnhancementValidatorInput(request=state.request, new_field_names=state.get_new_fields()))
+        suggested_fields = state.get_new_fields()
+        # update the new fields
+        if not fev_out.satisfaction:
+            removals = fev_out.report.removals
+            for r in removals:
+                if r in suggested_fields:
+                    suggested_fields.remove(r)
+        state.new_fields = suggested_fields
+        state.record(
+            "field_enhancement_validator_done",
+            candidates=state.get_new_fields(),
+        )
         return state
 
     # WORK FOR SUBFIELDS    
@@ -141,12 +178,16 @@ class Graph:
 def BuildGraph(
     field_classifier_llm=None,
     field_validator_llm=None,
+    field_enhancer_llm=None,
+    field_enhancement_validator_llm=None,
     subfield_classifier_llm=None,
     subfield_validator_llm=None,
 ) -> Graph:
     return Graph(
         field_classifier_llm=field_classifier_llm,
         field_validator_llm=field_validator_llm,
+        field_enhancer_llm=field_enhancer_llm,
+        field_enhancement_validator_llm=field_enhancement_validator_llm,
         subfield_classifier_llm=subfield_classifier_llm,
         subfield_validator_llm=subfield_validator_llm,
     )
