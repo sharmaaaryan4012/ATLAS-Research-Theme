@@ -1,27 +1,23 @@
 """
 Name: Aaryan Sharma, Kirthi Shankar
 Project: ATLAS Research Theme
-File: fieldenhancer.py
+File: field_enhancer.py
 Description:
-    LangGraph node that classifies a user request into one or more new academic
-    fields using an injected LLM. Produces a list in `candidates`.
+    LangGraph node that proposes additional academic fields (beyond an existing
+    candidate set) using an injected LLM. New fields are returned in
+    `proposed_candidates`.
 """
 
 from __future__ import annotations
 
 import json
-import os
 from typing import Dict, List, Optional, Protocol
 
 from pydantic import BaseModel
 from pydantic import Field as PydField
 
-from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
 from helpers.field_helpers import _load_field_mapping
-
-# from helpers.field_helpers import FieldHelpers
 from langgraph.models import (
-    Candidate,
     FieldEnhancerInput,
     FieldEnhancerOutput,
     Proposal,
@@ -43,37 +39,40 @@ class FieldEnhancerLLM(Protocol):
 # Schema for LLM JSON output (multi-field format)
 # -----------------------------------------------------------------------------
 class LLMJsonResponse(BaseModel):
-    """Schema for LLM output with multiple ranked fields."""
+    """
+    Schema for LLM output with optionally multiple proposed fields.
+
+    If the existing Fields already sufficiently classify the description, the
+    model should return `choices = null` (i.e., JSON `null`).
+    """
 
     choices: Optional[List[Dict[str, str]]] = PydField(
-        description="A list of objects: {'name': <field_name>, 'rationale': <why it matches the research description>} or None if the given Fields sufficiently classify the description."
+        description=(
+            "A list of objects: "
+            "{'name': <field_name>, 'rationale': <why it matches the research description>} "
+            "or null if the given Fields sufficiently classify the description."
+        )
     )
 
 
-def get_schema():
+def get_schema() -> str:
+    """
+    Return the JSON schema (as a pretty-printed string) that the LLM
+    should follow in its response.
+    """
     generator_response_schema = LLMJsonResponse.model_json_schema()
     generator_response_schema_json = json.dumps(generator_response_schema, indent=2)
     return generator_response_schema_json
 
 
-def LoadMasterMapping() -> Dict[str, Dict[str, Dict[str, str]]]:
-    """
-    Load the master college → subject → {field → description} mapping.
-
-    Returns
-    -------
-    Dict[str, Dict[str, Dict[str, str]]]
-        Nested mapping [college][subject][field] = description.
-    """
-    with open(MASTER_COLLEGE_FIELD_MAPPING_JSON, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
 class FieldEnhancerNode:
     """
-    Node that calls an injected LLM to select up to 3 fields (ranked) that best
-    match the request. The candidate set is derived from the master mapping,
-    optionally filtered by `college_name` and `subject` if present on request.meta.
+    Node that calls an injected LLM to propose additional fields that might better
+    capture the user's research description.
+
+    The candidate set is derived from the field mapping via `_load_field_mapping`,
+    optionally filtered by `college_name` and `department_name`. The enhancer
+    asks the LLM for fields that are *not* in this candidate set.
     """
 
     def __init__(self, llm: Optional[FieldEnhancerLLM]):
@@ -84,37 +83,43 @@ class FieldEnhancerNode:
             An injected LLM with a `generate_json(prompt)` method that returns a raw dict.
         """
         self.llm = llm
-        # self.master = LoadMasterMapping()
 
     def Run(self, data: FieldEnhancerInput) -> FieldEnhancerOutput:
         """
-        Execute classification.
+        Execute enhancement.
 
         Parameters
         ----------
         data : FieldEnhancerInput
-            The user request containing text.
-                - 'college_name'
-                - 'subject'
+            The user request containing:
+              - description
+              - college_name (optional)
+              - department_name (optional)
+              - optional feedback (removals/additions for the candidate pool)
 
         Returns
         -------
-        FieldClassifierOutput
-            Ranked `candidates`
+        FieldEnhancerOutput
+            `proposed_candidates` is either:
+              - a list of Proposal(name, rationale) for newly suggested fields, or
+              - None, if no additional fields are needed or parsing failed.
         """
+        if self.llm is None:
+            raise ValueError("FieldEnhancerNode requires an LLM instance.")
+
         request = data.request
         college_name = request.college_name
         department_name = request.department_name
 
-        feedback = data.feedback
-        if feedback != None:
+        feedback = getattr(data, "feedback", None)
+        if feedback is not None:
             removals = feedback.removals
             additions = feedback.additions
         else:
             removals = None
             additions = None
 
-        # Build candidate pool (flattened to {field: description}).
+        # Build candidate pool (flattened to {field: description}) for context.
         candidates: Dict[str, str] = _load_field_mapping(
             college_name, department_name, removals, additions
         )
@@ -126,21 +131,26 @@ class FieldEnhancerNode:
         research_description = request.description
         prompt = (
             "You are an academic classifier.\n"
-            "Given a research description and a list of candidate Fields, generate and return fields outside of the candidate fields that fit the given research description, if any.\n"
+            "Given a research description and a list of candidate Fields, "
+            "generate and return any additional Fields that are NOT in the "
+            "candidate set but that help better classify the description.\n"
+            "If the existing candidate Fields already sufficiently classify the "
+            "description, return `choices: null`.\n\n"
             "Strictly return a JSON object of the following structure:\n\n"
-            f"{get_schema()}"
+            f"{get_schema()}\n"
             "Rules:\n"
-            " - The 'name' must NOT be one of the provided candidate fields.\n"
+            " - Each proposed 'name' MUST NOT be one of the provided candidate fields.\n"
             " - Output ONLY valid JSON. No prose, no markdown, no comments.\n\n"
             f"Research description:\n{research_description}\n\n"
-            "Candidate Fields and their descriptions:\n- "
-            f"{candidates}"
+            "Candidate Fields and their descriptions:\n"
+            f"{candidates}\n"
         )
 
         parsed_model: Optional[LLMJsonResponse] = None
 
         raw = self.llm.generate_json(prompt)
         if raw:
+            # Backwards-compat: if a single 'choice' is returned, wrap it.
             if "choice" in raw and "choices" not in raw:
                 raw = {
                     "choices": [
@@ -153,26 +163,36 @@ class FieldEnhancerNode:
             try:
                 parsed_model = LLMJsonResponse(**raw)
             except Exception as e:
-                # If the model didn’t match schema, fall back deterministically to first candidate.
-                print("⚠️ Parse error in FieldClassifier LLM response:", e)
+                print("⚠️ Parse error in FieldEnhancer LLM response:", e)
                 parsed_model = None
         else:
-            raise ValueError("Error using field classifier llm. Check credentials.")
+            raise ValueError("Error using field enhancer LLM. Check credentials.")
 
-        # If the model gave us a structured list, filter to valid fields and return them.
+        # If the model gave us a structured list, keep only genuinely new fields.
         if parsed_model:
             if parsed_model.choices:
-                valid = [c for c in parsed_model.choices if c.get("name") in candidates]
-                if valid:
-                    candidate_objs = [
-                        Candidate(
-                            name=c["name"], score=1.0, rationale=c.get("rationale", "")
+                # Filter to names not already in the candidate mapping.
+                valid_new = [
+                    c
+                    for c in parsed_model.choices
+                    if c.get("name") and c["name"] not in candidates
+                ]
+                if valid_new:
+                    proposals = [
+                        Proposal(
+                            name=c["name"],
+                            rationale=c.get("rationale", ""),
                         )
-                        for c in valid
+                        for c in valid_new
                     ]
-                    return FieldEnhancerOutput(proposed_candidates=candidate_objs)
-            else:
+                    return FieldEnhancerOutput(proposed_candidates=proposals)
+                # If everything was in `candidates` (LLM ignored the rule), treat as no proposals.
                 return FieldEnhancerOutput(proposed_candidates=None)
+            else:
+                # choices is None ⇒ no additional fields needed.
+                return FieldEnhancerOutput(proposed_candidates=None)
+
+        # Fallback if parsing failed.
         return FieldEnhancerOutput(proposed_candidates=None)
 
 

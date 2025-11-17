@@ -3,25 +3,19 @@ Name: Aaryan Sharma, Kirthi Shankar
 Project: ATLAS Research Theme
 File: field_enhancement_validator.py
 Description:
-    LangGraph node that validates a chosen Field against the Master mapping
-    (existence check) and optionally performs an LLM sanity check. Does not
-    depend on classifier-populated request.meta.
+    LangGraph node that validates user-selected Fields against the master mapping
+    (existence check) and optionally performs an LLM sanity check.
 """
 
 from __future__ import annotations
 
-import difflib
 import json
-import os
 from typing import Dict, List, Optional, Protocol
 
 from pydantic import BaseModel
 from pydantic import Field as PydField
 
-from config.paths import COLLEGE_FIELD_MAPPINGS_DIR, MASTER_COLLEGE_FIELD_MAPPING_JSON
-from helpers.field_helpers import _load_field_mapping
-
-# from helpers.field_helpers import FieldHelpers
+from config.paths import MASTER_COLLEGE_FIELD_MAPPING_JSON
 from langgraph.models import (
     FieldEnhancementValidatorInput,
     FieldEnhancementValidatorOutput,
@@ -45,28 +39,42 @@ class LLMValidationResponse(BaseModel):
     reason: str = ""
     removals: List[str] = PydField(
         default_factory=list,
-        description="If invalid, suggest field names that should be removed from the chosen fields.",
+        description=(
+            "If invalid, suggest field names that should be removed from "
+            "the chosen fields."
+        ),
     )
 
 
 class FieldEnhancementValidatorNode:
     """
-    Node that first verifies structural validity (field presence in the
-    master mapping for the given scope). Optionally asks an LLM to confirm
-    semantic fit and suggest alternatives. Does not require any meta on the request.
+    Node that first verifies structural validity (that each chosen field exists
+    in the master mapping). Optionally asks an LLM to confirm semantic fit and
+    suggest additional removals.
+
+    Structural validation is independent of any classifier-populated metadata;
+    it only checks that the field names appear somewhere in the master mapping.
     """
 
     def __init__(self, llm: Optional[FieldEnhancementValidatorLLM] = None):
         """
         Parameters
         ----------
-        llm : FieldValidatorLLM | None
+        llm : FieldEnhancementValidatorLLM | None
             An injected LLM with a `generate_json(prompt)` method that returns a raw dict.
         """
         self.llm = llm
         with open(MASTER_COLLEGE_FIELD_MAPPING_JSON, "r", encoding="utf-8") as f:
             # Dict[college, Dict[subject, Dict[field, desc]]]
             self.master: Dict[str, Dict[str, Dict[str, str]]] = json.load(f)
+
+        # Pre-flatten the set of all known field names for fast existence checks.
+        self._all_fields = {
+            field_name
+            for college_data in self.master.values()
+            for subject_data in college_data.values()
+            for field_name in subject_data.keys()
+        }
 
     def Run(
         self, data: FieldEnhancementValidatorInput
@@ -76,35 +84,58 @@ class FieldEnhancementValidatorNode:
 
         Strategy
         --------
-        1) Structural validation: ensure `field_name` exists in the flattened pool,
-           optionally filtered by college/subject hints if present on request.meta.
-        2) Optional LLM sanity check: pass the request text, chosen field, and the
-           valid pool to get (is_valid, reason, suggestions).
+        1) Structural validation: ensure each field in `new_field_names` exists
+           somewhere in the master mapping.
+        2) Optional LLM sanity check: pass the request text and chosen fields
+           to get (is_valid, reason, additional removals).
         """
         request = data.request
-        field_names = data.new_field_names
+        field_names: List[str] = data.new_field_names or []
+
+        # 1) Structural validation against master mapping.
+        structurally_invalid = [
+            name for name in field_names if name not in self._all_fields
+        ]
+
+        if structurally_invalid:
+            report = ValidationReport(
+                is_valid=False,
+                reason=(
+                    "Some fields are not present in the master mapping: "
+                    + ", ".join(structurally_invalid)
+                ),
+                removals=structurally_invalid,
+                additions=None,
+            )
+            return FieldEnhancementValidatorOutput(
+                report=report, satisfaction=Satisfaction.Unsatisfied
+            )
+
+        # At this point, all fields exist in the master mapping structurally.
 
         if self.llm is not None:
             prompt = (
                 "You are validating if the selected Fields match the user's research description.\n"
-                "Return strictly JSON with keys: is_valid (bool), reason (string), removals (string array).\n\n"
+                "Return strictly JSON with keys: is_valid (bool), reason (string), "
+                "removals (string array).\n\n"
                 f"User text:\n{request.description}\n\n"
-                # f"Subject hint: {subject_hint or 'N/A'}\n\n"
-                f"Chosen Fields: {field_names}\n"
-                # f"{alt_block}\n\n"
-                "If not valid, suggest Fields to remove from the Chosen Fields. "
-                + "\nOutput ONLY valid JSON. No prose, no markdown.\n"
+                f"Chosen Fields: {field_names}\n\n"
+                "If some fields are not good semantic matches, list them in 'removals'. "
+                "If all fields are fine, 'removals' should be an empty list.\n"
+                "Output ONLY valid JSON. No prose, no markdown.\n"
             )
 
             raw = self.llm.generate_json(prompt)
             if raw:
                 try:
                     parsed = LLMValidationResponse(**raw)
+                    # Merge structural and LLM-based removals (structural is already empty here).
+                    removals = list(parsed.removals)
                     report = ValidationReport(
                         is_valid=parsed.is_valid,
                         reason=parsed.reason,
-                        removals=[r for r in parsed.removals],
-                        additions=None,  # can add this later
+                        removals=removals,
+                        additions=None,  # can add this later if needed
                     )
                     satisfaction = (
                         Satisfaction.Satisfied
@@ -116,24 +147,24 @@ class FieldEnhancementValidatorNode:
                     )
                 except Exception as e:
                     # If parsing fails, fall back to existence-based validity.
-                    print("⚠️ Parse error in FieldValidator LLM response:", e)
+                    print(
+                        "⚠️ Parse error in FieldEnhancementValidator LLM response:", e
+                    )
             else:
-                raise ValueError("Error using field validator llm. Check credentials.")
+                raise ValueError(
+                    "Error using field enhancement validator LLM. Check credentials."
+                )
 
-        # Fallback: existence ⇒ valid.
+        # Fallback: structurally valid ⇒ accepted.
         report = ValidationReport(
-            is_valid=True, reason="Field exists in master mapping."
+            is_valid=True,
+            reason="All fields exist in the master mapping and no LLM validation was applied.",
+            removals=[],
+            additions=None,
         )
         return FieldEnhancementValidatorOutput(
             report=report, satisfaction=Satisfaction.Satisfied
         )
-
-    # --------------------------
-    # helpers
-    # --------------------------
-    def _Nearest(self, target: str, pool: List[str]) -> List[str]:
-        """Return pool entries closest to target using difflib.get_close_matches."""
-        return difflib.get_close_matches(target, pool, n=5, cutoff=0.0)
 
 
 def Build(

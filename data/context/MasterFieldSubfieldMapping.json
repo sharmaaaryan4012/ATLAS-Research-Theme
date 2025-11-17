@@ -370,347 +370,680 @@
       }
     }
   },
-  "College of Liberal Arts & Sciences": {
-    "Mathematics": {
-      "Algebra": {
-        "Group Theory": "The study of algebraic structures known as groups, which are central to abstract algebra.",
-        "Representation Theory": "The study of abstract algebraic structures by representing their elements as linear transformations of vector spaces.",
-        "Commutative Algebra": "The study of commutative rings, their ideals, and modules over such rings.",
-        "Algebraic Geometry": "A branch of mathematics that uses techniques of abstract algebra to solve geometric problems."
+"College of Liberal Arts & Sciences": {
+    "Biological sciences": {
+      "Anthropology": {
+        "Archaeology": "The study of human history and prehistory through the excavation of sites and the analysis of physical remains.",
+        "Biological Anthropology": "The study of the biological and behavioral aspects of human beings, their related non-human primates, and their extinct hominin ancestors.",
+        "Sociocultural Anthropology": "The study of cultural variation among humans, often through ethnographic fieldwork and participant observation.",
+        "Linguistic Anthropology": "The study of how language influences social life, cultural identity, and systems of belief."
       },
-      "Analysis": {
-        "Real & Complex Analysis": "The rigorous study of the real and complex number systems, functions, and the concepts of limits and continuity.",
-        "Functional Analysis": "The study of vector spaces endowed with some kind of limit-related structure (e.g., inner product, norm, topology) and the linear functions defined on these spaces.",
-        "Partial Differential Equations (PDEs)": "The study of differential equations that contain unknown multivariable functions and their partial derivatives.",
-        "Harmonic Analysis": "The study of the representation of functions or signals as the superposition of basic waves."
-      },
-      "Applied & Computational Mathematics": {
-        "Numerical Analysis": "The study of algorithms that use numerical approximation for the problems of mathematical analysis.",
-        "Mathematical Modeling": "The process of using mathematical concepts and language to create a model of a real-world system.",
-        "Scientific Computation": "The design and analysis of computational algorithms for solving scientific and engineering problems.",
-        "Mathematical Biology": "The use of mathematical models to study biological systems and processes."
-      },
-      "Geometry & Topology": {
-        "Differential Geometry": "The study of smooth manifolds (a generalization of surfaces) using the tools of calculus.",
-        "Algebraic Topology": "The use of tools from abstract algebra to study topological spaces.",
-        "Geometric Topology": "The study of manifolds and their embeddings, primarily focusing on low-dimensional spaces."
-      },
-      "Logic & Foundations": {
-        "Set Theory": "The branch of mathematical logic that studies sets, which are informally collections of objects.",
-        "Model Theory": "The study of the relationship between formal theories (a collection of sentences in a formal language) and their models (structures in which the sentences are true).",
-        "Computability Theory": "The branch of mathematical logic that studies which problems are solvable by algorithms."
-      },
-      "Number Theory": {
-        "Analytic Number Theory": "A branch of number theory that uses methods from mathematical analysis to solve problems about integers.",
-        "Algebraic Number Theory": "A branch of number theory that uses the techniques of abstract algebra to study the integers, rational numbers, and their generalizations.",
-        "Elliptic Curves & Modular Forms": "Advanced topics in number theory that connect algebra, analysis, and geometry, famously used in the proof of Fermat's Last Theorem."
-      },
-      "Probability": {
-        "Stochastic Processes": "The study of mathematical models for random processes that evolve over time.",
-        "Random Matrix Theory": "The study of matrices whose entries are random variables.",
-        "Measure Theory": "The rigorous mathematical foundation for the concept of probability and integration.",
-        "Interacting Particle Systems": "The study of probabilistic models involving a large number of interacting components."
-      }
-    },
-    "Statistics": {
-      "Applied Statistics": {
-        "Biostatistics": "The application of statistics to problems in biology and medicine.",
-        "Environmental Statistics": "The use of statistical methods to analyze environmental data and address problems in the environmental sciences.",
-        "Statistical Consulting": "The practice of providing statistical expertise and advice to researchers in other fields.",
-        "Experimental Design": "The design of experiments to ensure that the data collected is valid and can be used to draw meaningful conclusions."
-      },
-      "Computational Statistics & Data Science": {
-        "Machine Learning Methods": "The development and analysis of algorithms that can learn from and make predictions on data.",
-        "Statistical Computing & Algorithms": "The design of efficient algorithms for performing statistical computations, especially for large datasets.",
-        "Bayesian Computation": "Computational methods, such as Markov Chain Monte Carlo (MCMC), for fitting Bayesian statistical models.",
-        "High-Dimensional Data Analysis": "Statistical methods for analyzing datasets where the number of variables is large relative to the number of observations."
-      },
-      "Statistical Theory & Methods": {
-        "Asymptotic Theory": "The study of the behavior of statistical procedures as the sample size grows infinitely large.",
-        "Causal Inference": "The process of drawing a conclusion about a causal connection based on the conditions of the occurrence of an effect.",
-        "Nonparametric Statistics": "Statistical methods that do not rely on assumptions about the probability distributions of the analyzed variables.",
-        "Time Series Analysis": "Statistical methods for analyzing time-ordered data points."
-      }
-    },
-    "Physics": {
-      "Astrophysics & Cosmology": {
-        "Theoretical Astrophysics": "The use of physical models and theories to understand astronomical phenomena.",
-        "Observational Astronomy": "The practice of observing celestial objects by using telescopes and other astronomical apparatus.",
-        "Cosmology & General Relativity": "The study of the origin, evolution, and ultimate fate of the universe, based on Einstein's theory of general relativity.",
-        "Gravitational Waves": "The study of ripples in spacetime, caused by some of the most violent and energetic processes in the universe."
-      },
-      "Atomic, Molecular & Optical Physics": {
-        "Quantum Optics": "The study of the quantum mechanical nature of light and its interaction with matter.",
-        "Cold Atoms & Molecules": "The study of atoms and molecules cooled to temperatures near absolute zero, where quantum effects dominate.",
-        "Ultrafast & Precision Spectroscopy": "The use of lasers to study physical and chemical processes that occur on extremely short timescales."
+      "Biochemistry": {
+        "Enzymology & Protein Structure": "The study of enzyme mechanisms, protein folding, and the relationship between protein structure and function.",
+        "Metabolic Regulation": "The study of the biochemical pathways that govern energy production and consumption in living cells.",
+        "Molecular Genetics": "The study of the molecular structure and function of genes, including DNA replication, transcription, and translation."
       },
       "Biophysics & Quantitative Biology": {
-        "Molecular Biophysics": "The study of the physical properties of biological molecules like proteins and DNA.",
-        "Cellular Biophysics": "The study of the physical principles governing the function of living cells.",
-        "Systems Biology": "The computational and mathematical modeling of complex biological systems.",
-        "Neurophysics": "The application of physics principles to understand the function of the brain and nervous system."
+        "Molecular Biophysics": "Using physical principles and computational methods to study the structure, dynamics, and function of biological molecules.",
+        "Cellular Biophysics": "Applying physical and quantitative approaches to understand the mechanical, electrical, and structural properties of living cells.",
+        "Systems & Computational Biology": "The use of quantitative models and computation to understand the behavior and interactions of complex biological systems."
       },
-      "Condensed Matter Physics": {
-        "Hard Condensed Matter (Crystals, Metals)": "The study of materials where quantum mechanical effects and the crystalline structure are dominant.",
-        "Soft Condensed Matter (Polymers, Colloids)": "The study of materials that are easily deformed by thermal stresses or fluctuations at room temperature.",
-        "Superconductivity & Magnetism": "The study of materials with zero electrical resistance and the collective magnetic behavior of materials.",
-        "Topological Materials": "A new class of materials whose properties are protected by principles of topology, making them robust to defects."
+      "Cell & Developmental Biology": {
+        "Developmental Biology & Genetics": "The study of the processes by which organisms grow and develop, and the genetic mechanisms that control them.",
+        "Cell Biology & Signaling": "The study of cell structure, function, and the communication pathways that regulate cell behavior and fate.",
+        "Neurobiology": "The study of the cellular and molecular basis of nervous system function, development, and disease."
       },
-      "High Energy & Particle Physics": {
-        "Experimental Particle Physics": "The use of large particle accelerators and detectors to discover new fundamental particles and study their interactions.",
-        "Theoretical Particle Physics (Phenomenology)": "The connection of the fundamental theories of particle physics to experimental observations.",
-        "String Theory & Quantum Gravity": "A theoretical framework that attempts to unify general relativity and quantum mechanics.",
-        "Neutrino Physics": "The study of neutrinos, elusive fundamental particles that are extremely difficult to detect."
+      "Entomology": {
+        "Insect Systematics & Evolution": "The study of the classification, biodiversity, and evolutionary history of insects.",
+        "Pest Management & Applied Ecology": "The development of sustainable strategies for managing insect pests in agricultural, urban, and public health contexts.",
+        "Molecular & Genomic Entomology": "The use of genomic and molecular tools to study insect physiology, behavior, genetics, and toxicology."
       },
-      "Nuclear Physics": {
-        "Experimental Nuclear Physics": "The use of accelerators and detectors to study the structure and reactions of atomic nuclei.",
-        "Theoretical Nuclear Physics": "The development of theoretical models to explain the properties and behavior of atomic nuclei.",
-        "Quark-Gluon Plasma": "A state of matter that exists at extremely high temperatures, where protons and neutrons 'melt' into their constituent quarks and gluons.",
-        "Nuclear Astrophysics": "The study of the nuclear reactions that power stars and create the chemical elements in the universe."
+      "Evolution, Ecology, and Behavior": {
+        "Evolutionary Biology": "The study of the evolutionary processes, such as natural selection and genetic drift, that have given rise to the diversity of life.",
+        "Ecology": "The study of the interactions between organisms and their environment, from the level of individuals to entire ecosystems.",
+        "Animal Behavior": "The study of the mechanisms, development, function, and evolution of animal behavior, including its neural and hormonal bases."
       },
-      "Quantum Information": {
-        "Quantum Algorithms & Computation": "The design of algorithms that run on a quantum computer and can solve certain problems much faster than classical computers.",
-        "Quantum Error Correction": "The development of techniques to protect quantum information from errors due to noise and decoherence.",
-        "Experimental Quantum Systems": "The physical implementation of quantum bits (qubits) and quantum computers using systems like trapped ions, superconducting circuits, and photons."
+      "Integrative Biology": {
+        "Entomology": "The study of insects and their relationship with humans, the environment, and other organisms.",
+        "Evolution, Ecology, and Behavior": "The study of the principles of ecology, evolutionary biology, and animal behavior.",
+        "Plant Biology": "The study of plant life, from molecular and cellular processes to ecosystem dynamics."
+      },
+      "Microbiology": {
+        "Microbial Physiology & Metabolism": "The study of the life processes, growth, and metabolic pathways of microorganisms.",
+        "Virology": "The study of viruses, their structure, replication, and interaction with host cells.",
+        "Immunology & Pathogenesis": "The study of the immune system's response to pathogens and the mechanisms by which microbes cause disease."
+      },
+      "Molecular & Cellular Biology": {
+        "Biochemistry": "The study of the chemical processes within and related to living organisms.",
+        "Cell & Developmental Biology": "The study of the structure, function, and development of cells, tissues, and organisms.",
+        "Microbiology": "The study of microorganisms, including bacteria, viruses, fungi, and protists.",
+        "Molecular & Integrative Physiology": "The study of the functions of living organisms, from molecules to whole-body systems."
+      },
+      "Molecular & Integrative Physiology": {
+        "Cardiovascular & Respiratory Physiology": "The study of the heart, blood vessels, and respiratory system in health and disease.",
+        "Endocrinology & Metabolism": "The study of hormones and the metabolic processes that govern energy and nutrient balance.",
+        "Neurophysiology": "The study of the function of the nervous system, including neural signaling, plasticity, and sensory processing."
+      },
+      "Neuroscience Program": {
+        "Behavioral & Cognitive Neuroscience": "The study of the neural mechanisms underlying behavior, cognition, learning, and memory.",
+        "Cellular & Molecular Neuroscience": "The study of the nervous system at the level of individual cells, synapses, and molecules.",
+        "Systems & Computational Neuroscience": "The study of neural circuits and the use of computational models to understand brain function."
+      },
+      "Plant Biology": {
+        "Plant Physiology & Molecular Biology": "The study of plant functions, from photosynthesis and metabolism to gene expression and development.",
+        "Plant Ecology & Environmental Biology": "The study of how plants interact with their environment and respond to global change.",
+        "Plant Systematics & Evolution": "The study of the diversification, classification, and evolutionary relationships of plants."
+      },
+      "Psychology": {
+        "Behavioral Neuroscience": "The study of the biological bases of psychological processes and behavior.",
+        "Clinical & Community Psychology": "The assessment, treatment, and prevention of mental illness at individual and community levels.",
+        "Cognitive Neuroscience": "The study of the neural mechanisms underlying cognition, often using brain imaging techniques.",
+        "Cognitive Psychology": "The study of mental processes such as attention, language use, memory, and problem-solving.",
+        "Developmental Psychology": "The scientific study of how and why human beings change over the course of their life.",
+        "Industrial-Organizational Psychology": "The application of psychological principles to the workplace to improve productivity and well-being.",
+        "Social-Personality Psychology": "The study of how individuals' thoughts, feelings, and behaviors are influenced by others and individual differences."
       }
     },
-    "Chemistry": {
-      "Analytical Chemistry": {
-        "Separations & Chromatography": "Techniques for separating complex mixtures into their individual components.",
-        "Mass Spectrometry": "An analytical technique that measures the mass-to-charge ratio of ions, used to identify unknown compounds.",
-        "Spectroscopy & Sensing": "The use of the interaction of light with matter to identify and quantify chemical substances.",
-        "Bioanalytical Chemistry": "The application of analytical chemistry techniques to study biological systems."
+    "Language and culture": {
+      "Classics": {
+        "Greek & Latin Philology": "The study of Greek and Latin languages and literatures, including textual criticism and interpretation.",
+        "Ancient History": "The study of the political, social, and economic history of ancient Greece and Rome.",
+        "Classical Archaeology & Art": "The study of the material culture, art, and architecture of the ancient Mediterranean world.",
+        "Classical Philosophy": "The study of the philosophical traditions originating in ancient Greece and Rome."
       },
-      "Chemical Biology": {
-        "Chemical Genetics": "The use of small molecules to perturb protein function and study biological processes.",
-        "Enzymology": "The study of enzymes, their kinetics, structure, and function.",
-        "Nucleic Acid & Protein Chemistry": "The study of the chemical properties of DNA, RNA, and proteins.",
-        "Metabolomics": "The large-scale study of small molecules, known as metabolites, within cells, biofluids, tissues, or organisms."
+      "Comparative & World Literature": {
+        "Literary Theory & Criticism": "The study of the principles and methods for interpreting and evaluating literature across cultures.",
+        "Transnational & Postcolonial Studies": "The study of literature that transcends national borders and engages with legacies of colonialism and global movements.",
+        "Interdisciplinary & Thematic Studies": "The comparative study of literature through central themes, genres, or in relation to other arts like film and media."
       },
-      "Inorganic Chemistry": {
-        "Organometallic Chemistry": "The study of chemical compounds containing at least one chemical bond between a carbon atom of an organic compound and a metal.",
-        "Bioinorganic Chemistry": "The study of the role of metals in biology.",
-        "Solid-State Chemistry": "The study of the synthesis, structure, and properties of solid materials.",
-        "Coordination Chemistry": "The study of compounds consisting of a central metal atom or ion bonded to a surrounding group of molecules or ions."
+      "East Asian Languages & Cultures": {
+        "Chinese Studies": "The study of the language, literature, history, and culture of China.",
+        "Japanese Studies": "The study of the language, literature, history, and culture of Japan.",
+        "Korean Studies": "The study of the language, literature, history, and culture of Korea."
       },
-      "Materials Chemistry": {
-        "Polymer Chemistry": "The branch of chemistry focused on the synthesis and properties of polymers (plastics).",
-        "Nanomaterials Synthesis": "The chemical synthesis of materials with nanoscale dimensions.",
-        "Energy Materials": "The design of materials for energy generation and storage, such as in batteries and solar cells.",
-        "Supramolecular Chemistry": "The branch of chemistry concerned with chemical systems composed of a discrete number of molecules."
+      "Foreign Language Teacher Education Program": {
+        "Second Language Acquisition (SLA)": "The study of the cognitive and social processes by which people learn a second language.",
+        "Language Pedagogy & Assessment": "The theory and practice of language teaching methods, curriculum design, and student evaluation.",
+        "Technology-Enhanced Language Learning": "The integration and study of digital tools and media to support language education."
       },
-      "Organic Chemistry": {
-        "Synthetic Organic Chemistry": "The art and science of constructing complex organic molecules from simpler ones.",
-        "Physical Organic Chemistry": "The study of the relationship between the structure and reactivity of organic molecules.",
-        "Organocatalysis": "The use of small organic molecules as catalysts for chemical reactions.",
-        "Medicinal Chemistry": "The design and synthesis of new pharmaceutical drugs."
+      "French & Italian": {
+        "French & Francophone Studies": "The study of the language, literature, and cultures of France and the French-speaking world.",
+        "Italian Studies": "The study of the language, literature, and culture of Italy, from medieval to contemporary."
       },
-      "Physical Chemistry": {
-        "Spectroscopy & Molecular Dynamics": "The use of light to study the structure and dynamics of molecules.",
-        "Quantum Chemistry": "The application of quantum mechanics to solve problems in chemistry.",
-        "Statistical Mechanics": "The use of probability theory to connect the microscopic properties of atoms and molecules to the macroscopic properties of materials.",
-        "Surface Science & Catalysis": "The study of chemical and physical phenomena that occur at the interface of two phases, and the study of catalysts that speed up chemical reactions."
+      "Germanic Languages & Literatures": {
+        "German Studies": "The study of the language, literature, film, and culture of the German-speaking countries.",
+        "Scandinavian Studies": "The study of the languages, literatures, and cultures of Denmark, Norway, Sweden, Finland, and Iceland.",
+        "Yiddish Studies": "The study of Yiddish language, literature, and culture, particularly in European and American contexts."
       },
-      "Theoretical & Computational Chemistry": {
-        "Electronic Structure Theory": "The use of quantum mechanical calculations to determine the electronic structure of atoms and molecules.",
-        "Molecular Dynamics Simulations": "A computer simulation method for analyzing the physical movements of atoms and molecules over time.",
-        "Quantum Dynamics": "The study of the time-dependent evolution of quantum systems.",
-        "Computational Materials Science": "The use of computer simulations to predict the properties of materials."
+      "Global Studies, LAS": {
+        "Global Cultures & Societies": "The study of cultural globalization, transnational identities, global media flows, and human rights.",
+        "Global Health & Environment": "The study of global health challenges, environmental sustainability, development, and their policy implications.",
+        "Global Politics & Economies": "The study of international relations, global political economy, governance, and security."
+      },
+      "Illinois Global Institute": {
+        "Center for African Studies (CAS)": "Interdisciplinary research and teaching on the diverse cultures, societies, and languages of Africa.",
+        "Center for East Asian & Pacific Studies (CEAPS)": "Promoting the study of East Asia and the Pacific, including its languages, cultures, and societies.",
+        "Center for Global Studies (CGS)": "Fostering research and education on global issues, themes, and processes that transcend national borders.",
+        "Center for Latin American & Caribbean Studies (CLACS)": "Supporting research and training on the histories, cultures, and contemporary issues of Latin America and the Caribbean.",
+        "Center for South Asian & Middle Eastern Studies (CSAMES)": "Promoting scholarship, teaching, and public engagement on South Asia and the Middle East.",
+        "European Union Center (EUC)": "An interdisciplinary center focused on the study of the European Union, its institutions, and transatlantic relations.",
+        "Russian, East European, and Eurasian Center (REEEC)": "Supporting the interdisciplinary study of Russia, Eastern Europe, and the Eurasian region."
+      },
+      "Jewish Culture & Society": {
+        "Hebrew Language & Literature": "The study of classical, rabbinic, and modern Hebrew language, literature, and textual traditions.",
+        "History of the Jewish People": "The study of Jewish history from antiquity through the modern era, including diaspora, the Holocaust, and Jewish-gentile relations.",
+        "Israel Studies": "The interdisciplinary study of the modern state of Israel, its politics, society, and culture."
+      },
+      "Linguistics": {
+        "Computational Linguistics": "The interdisciplinary field modeling natural language from a computational perspective, including NLP.",
+        "Phonetics & Phonology": "The study of the sounds of human speech (phonetics) and their systematic organization in language (phonology).",
+        "Psycholinguistics": "The study of the psychological and neurobiological factors enabling humans to acquire, use, and understand language.",
+        "Semantics & Pragmatics": "The study of meaning in language, both in its literal sense (semantics) and its contextual, inferred sense (pragmatics).",
+        "Syntax": "The study of the rules and principles that govern the sentence structure of languages."
+      },
+      "Literatures, Cultures & Linguistics": {
+        "Classics": "The study of the languages, literatures, and cultures of ancient Greece and Rome.",
+        "Comparative & World Literature": "The study of literature across national, linguistic, and cultural boundaries.",
+        "East Asian Languages & Cultures": "The study of the languages and cultures of China, Japan, and Korea.",
+        "French & Italian": "The study of the languages, literatures, and cultures of the French- and Italian-speaking worlds.",
+        "Germanic Languages & Literatures": "The study of the languages and cultures of the Germanic, Scandinavian, and Yiddish-speaking worlds.",
+        "Linguistics": "The scientific study of human language, its structure, use, and cognitive basis.",
+        "Religion": "The academic and interdisciplinary study of religious traditions and phenomena.",
+        "Slavic Languages & Literatures": "The study of the languages, literatures, and cultures of Russia and Eastern Europe.",
+        "Spanish & Portuguese": "The study of the languages, literatures, and cultures of the Spanish- and Portuguese-speaking worlds."
+      },
+      "Slavic Languages & Literatures": {
+        "Russian Language & Literature": "The study of Russian language, and its literary tradition from the 19th century to the present.",
+        "East European & Eurasian Studies": "The study of the languages and cultures of Poland, the Czech Republic, Ukraine, and other post-Soviet states.",
+        "Slavic Linguistics": "The comparative and historical study of the Slavic language family."
+      },
+      "Spanish & Portuguese": {
+        "Spanish Linguistics": "The study of the structure, history, acquisition, and variation of the Spanish language.",
+        "Latin American Literatures & Cultures": "The study of the diverse literary and cultural traditions of Spanish-speaking America, from the colonial period to the present.",
+        "Iberian (Spanish) Literatures & Cultures": "The study of the literary and cultural traditions of Spain, from medieval to contemporary.",
+        "Portuguese (Luso-Brazilian) Studies": "The study of the languages, literatures, and cultures of Portugal and Brazil."
+      },
+      "Spurlock Museum": {
+        "Cultural Heritage & Museum Studies": "The theory and practice of museum curation, collection management, preservation, and public engagement.",
+        "Global Material Culture": "The study of human history and culture through tangible objects and artifacts from diverse world cultures."
+      },
+      "Translation and Interpreting Studies": {
+        "Translation Theory & Practice": "The study of the principles and history of translation and its application across various genres.",
+        "Interpreting Studies": "The study of the theory and practice of simultaneous and consecutive interpreting in various contexts (e.g., medical, legal).",
+        "Localization & Translation Technology": "The adaptation of products and content for specific locales and the use of computer-aided translation tools."
+      },
+      "Writing Studies": {
+        "Rhetoric & Composition": "The study of the theory, history, and practice of writing, persuasion, and argumentation.",
+        "Writing Across the Curriculum (WAC)": "The support and study of writing and pedagogy in disciplines across the university.",
+        "Writing Center & Tutoring Pedagogy": "The theory and practice of one-on-one writing instruction and support in a writing center context."
       }
     },
-    "Economics": {
-      "Applied Microeconomics": {
-        "Labor Economics": "The study of the labor market, including employment, wages, and unions.",
-        "Health Economics": "The study of health and healthcare systems from an economic perspective.",
-        "Public Economics": "The study of the role of the government in the economy.",
-        "Industrial Organization": "The study of how firms compete with each other in markets."
+    "Chemical sciences": {
+      "Biochemistry": {
+        "Enzymology & Protein Structure": "The study of enzyme mechanisms, protein folding, and the relationship between protein structure and function.",
+        "Metabolic Regulation": "The study of the biochemical pathways that govern energy production and consumption in living cells.",
+        "Molecular Genetics": "The study of the molecular structure and function of genes, including DNA replication, transcription, and translation."
       },
-      "Econometrics": {
-        "Microeconometrics": "The application of econometric methods to individual-level data.",
-        "Macroeconometrics": "The application of econometric methods to aggregate economic data, such as GDP and inflation.",
-        "Time Series Analysis": "The statistical analysis of time-ordered data.",
-        "Financial Econometrics": "The application of econometric methods to financial data."
+      "Chemical & Biomolecular Engineering": {
+        "Biomolecular & Cellular Engineering": "The application of engineering principles to biological systems, including synthetic biology, metabolic engineering, and drug delivery.",
+        "Energy & Sustainability": "The development of chemical processes for renewable energy, sustainable fuels, and environmental remediation.",
+        "Materials & Nanotechnology": "The design and synthesis of advanced polymers, nanomaterials, and soft matter for various applications.",
+        "Process Systems & Computational Modeling": "The use of simulation, data science, and optimization to design and control chemical processes."
       },
-      "Economic Theory (Micro & Macro)": {
-        "Game Theory & Strategic Behavior": "The study of mathematical models of strategic interaction among rational decision-makers.",
-        "Mechanism Design & Auction Theory": "The design of rules for games or markets to achieve specific outcomes.",
-        "Macroeconomic Dynamics": "The study of the evolution of the economy over time, including economic growth and business cycles.",
-        "Behavioral Economics": "The incorporation of insights from psychology into economics to explain why people make seemingly irrational decisions."
+      "Chemical Sciences": {
+        "Chemical & Biomolecular Engineering": "The application of engineering principles to molecular-level problems in energy, health, and materials.",
+        "Chemistry": "The fundamental study of matter, its properties, composition, and the changes it undergoes."
       },
-      "International & Development Economics": {
-        "International Trade": "The study of the exchange of goods and services between countries.",
-        "International Finance": "The study of the flow of capital between countries and the effects on exchange rates.",
-        "Development Economics": "The study of the economic aspects of the development process in low-income countries.",
-        "Political Economy": "The study of the interaction between politics and economics."
-      },
-      "Public & Labor Economics": {
-        "Taxation & Public Finance": "The study of the design of tax systems and government spending.",
-        "Labor Market Analysis": "The empirical study of labor markets, including wages, employment, and inequality.",
-        "Economics of Education": "The study of the economics of education, including the returns to schooling and school finance.",
-        "Law & Economics": "The application of economic theory to analyze law and legal institutions."
+      "Chemistry": {
+        "Analytical Chemistry": "The science of chemical measurement, separation, instrumentation, and data analysis.",
+        "Chemical Biology": "The application of chemical techniques, tools, and molecules to study and manipulate biological systems.",
+        "Inorganic Chemistry": "The study of the synthesis, structure, and properties of inorganic and organometallic compounds, including catalysis and materials.",
+        "Materials Chemistry": "The design, synthesis, and characterization of new functional materials, including polymers and nanomaterials.",
+        "Organic Chemistry": "The study of the structure, properties, reactions, and synthesis of carbon-containing compounds.",
+        "Physical Chemistry": "The study of chemical phenomena using the principles of physics, including spectroscopy, dynamics, and quantum mechanics.",
+        "Theoretical & Computational Chemistry": "The use of computer simulation and mathematical models to understand and predict chemical behavior."
       }
     },
-    "Psychology": {
-      "Behavioral Neuroscience": {
-        "Neurobiology of Learning & Memory": "The study of the neural circuits and molecular mechanisms that underlie learning and memory.",
-        "Psychopharmacology": "The study of the effects of drugs on the mind and behavior.",
-        "Hormones & Behavior": "The study of how hormones affect behavior and how behavior influences hormone levels.",
-        "Animal Models of Disease": "The use of animal models to study the biological basis of psychiatric and neurological disorders."
+    "Humanities": {
+      "African American Studies": {
+        "African American History & Politics": "The study of the historical and political experiences of the African diaspora in the Americas.",
+        "African American Literature & Culture": "The critical study of literature, music, film, and other cultural expressions of the Black experience.",
+        "Race, Gender & Social Justice": "The interdisciplinary analysis of the intersection of race, gender, and class in relation to power and social structures."
       },
-      "Clinical & Community Psychology": {
-        "Psychopathology": "The scientific study of mental disorders.",
-        "Psychotherapy & Intervention Science": "The study of the effectiveness of different psychological therapies and interventions.",
-        "Community & Prevention Science": "The study of how to promote mental health and prevent mental illness at the community level.",
-        "Health Psychology": "The study of how psychological factors affect health and illness."
+      "American Indian Studies": {
+        "Indigenous Knowledges & Sovereignty": "The study of Indigenous intellectual traditions, governance, decolonization, and rights.",
+        "American Indian Histories & Cultures": "The study of the diverse histories, languages, and cultural practices of Native American peoples.",
+        "Indigenous Media & Representation": "The critical analysis of the representation of Indigenous peoples and the study of media created by them."
       },
-      "Cognitive Neuroscience": {
-        "Human Brain Mapping (fMRI, EEG)": "The use of neuroimaging techniques to map cognitive functions onto specific brain regions.",
-        "Neuropsychology": "The study of the relationship between brain function and behavior, often through the study of brain-damaged patients.",
-        "Computational Neuroscience": "The use of mathematical models to understand the information processing functions of the brain.",
-        "Neurobiology of Decision Making": "The study of the neural circuits that underlie how we make choices."
+      "Anthropology": {
+        "Archaeology": "The study of human history and prehistory through the excavation of sites and the analysis of physical remains.",
+        "Biological Anthropology": "The study of the biological and behavioral aspects of human beings, their related non-human primates, and their extinct hominin ancestors.",
+        "Sociocultural Anthropology": "The study of cultural variation among humans, often through ethnographic fieldwork and participant observation.",
+        "Linguistic Anthropology": "The study of how language influences social life, cultural identity, and systems of belief."
       },
-      "Cognitive Psychology": {
-        "Memory & Attention": "The study of how we encode, store, and retrieve memories, and how we selectively process information.",
-        "Language & Cognition": "The study of the mental processes involved in language comprehension and production.",
-        "Judgment & Decision Making": "The study of how people make judgments and decisions, often under uncertainty.",
-        "Reasoning & Problem Solving": "The study of the cognitive processes involved in logical reasoning and solving complex problems."
+      "Asian American Studies": {
+        "Asian American History & Communities": "The study of the history of Asian migration, community formation, and racialization in the U.S.",
+        "Asian American Literature & Cultural Studies": "The critical study of literary and cultural production by and about Asian Americans.",
+        "Race, Politics & Social Justice": "The analysis of Asian American experiences within broader U.S. racial dynamics, law, and social movements."
       },
-      "Developmental Psychology": {
-        "Infant & Child Development": "The study of the cognitive, social, and emotional changes that occur from birth through childhood.",
-        "Adolescent Development": "The study of the psychological and social changes that occur during adolescence.",
-        "Cognitive Development": "The study of how thinking, problem-solving, and other cognitive abilities change over the lifespan.",
-        "Social & Emotional Development": "The study of how our understanding of ourselves and others, and our emotional lives, change over the lifespan."
+      "Classics": {
+        "Greek & Latin Philology": "The study of Greek and Latin languages and literatures, including textual criticism and interpretation.",
+        "Ancient History": "The study of the political, social, and economic history of ancient Greece and Rome.",
+        "Classical Archaeology & Art": "The study of the material culture, art, and architecture of the ancient Mediterranean world.",
+        "Classical Philosophy": "The study of the philosophical traditions originating in ancient Greece and Rome."
       },
-      "Industrial-Organizational Psychology": {
-        "Personnel Selection & Training": "The development and validation of methods for selecting, training, and evaluating employees.",
-        "Leadership & Motivation": "The study of what makes an effective leader and how to motivate employees.",
-        "Organizational Behavior": "The study of how individuals and groups behave within organizations.",
-        "Occupational Health Psychology": "The study of how to promote the health, safety, and well-being of workers."
+      "Communication": {
+        "Health Communication": "The study and use of communication strategies to inform and influence individual and community health decisions.",
+        "Interpersonal & Organizational Communication": "The study of communication processes in personal relationships, groups, and complex organizations.",
+        "Media & Cinema Studies": "The critical analysis of film, television, and digital media, their history, and their effects on society and culture.",
+        "Rhetoric & Public Discourse": "The study of the art of persuasion and argumentation in public life, from political speeches to social movements."
       },
-      "Social-Personality Psychology": {
-        "Attitudes & Social Influence": "The study of how our attitudes are formed and changed, and how we are influenced by others.",
-        "Intergroup Relations": "The study of prejudice, stereotypes, and discrimination between different social groups.",
-        "Self & Identity": "The study of how we come to understand ourselves and form our sense of identity.",
-        "Emotion & Affective Science": "The scientific study of emotion and mood."
+      "Comparative & World Literature": {
+        "Literary Theory & Criticism": "The study of the principles and methods for interpreting and evaluating literature across cultures.",
+        "Transnational & Postcolonial Studies": "The study of literature that transcends national borders and engages with legacies of colonialism and global movements.",
+        "Interdisciplinary & Thematic Studies": "The comparative study of literature through central themes, genres, or in relation to other arts like film and media."
+      },
+      "Criticism & Interpretive Theory": {
+        "Critical Theory": "The interdisciplinary study of post-structuralist, post-colonial, and Frankfurt School theories and their application.",
+        "Psychoanalysis & Social Theory": "The application of psychoanalytic concepts to the study of culture, society, and politics.",
+        "Aesthetics & Media Theory": "The philosophical and theoretical study of art, media, and sensory experience."
+      },
+      "East Asian Languages & Cultures": {
+        "Chinese Studies": "The study of the language, literature, history, and culture of China.",
+        "Japanese Studies": "The study of the language, literature, history, and culture of Japan.",
+        "Korean Studies": "The study of the language, literature, history, and culture of Korea."
+      },
+      "English": {
+        "American Literature": "The study of the literary traditions of the United States, from colonization to the present.",
+        "British & Anglophone Literature": "The study of literature in English from the British Isles and the global Anglophone world.",
+        "Creative Writing": "The practice, pedagogy, and craft of writing poetry, fiction, and creative non-fiction.",
+        "Media & Cinema Studies": "The critical analysis of film, digital media, television, and their cultural impact.",
+        "Writing Studies & Rhetoric": "The study of the theory, history, and practice of writing, persuasion, and composition."
+      },
+      "Foreign Language Teacher Education Program": {
+        "Second Language Acquisition (SLA)": "The study of the cognitive and social processes by which people learn a second language.",
+        "Language Pedagogy & Assessment": "The theory and practice of language teaching methods, curriculum design, and student evaluation.",
+        "Technology-Enhanced Language Learning": "The integration and study of digital tools and media to support language education."
+      },
+      "French & Italian": {
+        "French & Francophone Studies": "The study of the language, literature, and cultures of France and the French-speaking world.",
+        "Italian Studies": "The study of the language, literature, and culture of Italy, from medieval to contemporary."
+      },
+      "Gender & Women's Studies": {
+        "Transnational & Postcolonial Feminisms": "The study of gender and feminist movements in global, colonial, and post-colonial contexts.",
+        "Queer Studies & Sexuality": "The interdisciplinary study of sexuality and gender identity, focusing on LGBTQ+ experiences and critical theory.",
+        "Gender, Race & Intersectionality": "The analysis of the overlapping and interdependent systems of discrimination related to gender, race, class, and other social categories."
+      },
+      "Germanic Languages & Literatures": {
+        "German Studies": "The study of the language, literature, film, and culture of the German-speaking countries.",
+        "Scandinavian Studies": "The study of the languages, literatures, and cultures of Denmark, Norway, Sweden, Finland, and Iceland.",
+        "Yiddish Studies": "The study of Yiddish language, literature, and culture, particularly in European and American contexts."
+      },
+      "History": {
+        "American History": "The study of the political, social, and cultural development of the United States.",
+        "European History": "The study of the past in the European continent, from antiquity to the present.",
+        "Global & Transnational History": "The study of historical connections and interactions that transcend national borders, including empire and migration.",
+        "History of Science, Technology & Medicine": "The study of how scientific knowledge, technological systems, and medical practices have developed and shaped society.",
+        "Pre-Modern History (Ancient/Medieval)": "The study of human history from antiquity through the early modern period."
+      },
+      "Jewish Culture & Society": {
+        "Hebrew Language & Literature": "The study of classical, rabbinic, and modern Hebrew language, literature, and textual traditions.",
+        "History of the Jewish People": "The study of Jewish history from antiquity through the modern era, including diaspora, the Holocaust, and Jewish-gentile relations.",
+        "Israel Studies": "The interdisciplinary study of the modern state of Israel, its politics, society, and culture."
+      },
+      "Latina/Latino Studies": {
+        "Latina/o History & Social Movements": "The study of the history of Latinx peoples in the U.S., including their political and social activism.",
+        "Latina/o Literature & Cultural Studies": "The critical study of literary, cinematic, and cultural productions by and about Latinx communities.",
+        "Transnationalism, Migration & Borders": "The study of the social, political, and cultural aspects of migration and border experiences."
+      },
+      "Linguistics": {
+        "Computational Linguistics": "The interdisciplinary field modeling natural language from a computational perspective, including NLP.",
+        "Phonetics & Phonology": "The study of the sounds of human speech (phonetics) and their systematic organization in language (phonology).",
+        "Psycholinguistics": "The study of the psychological and neurobiological factors enabling humans to acquire, use, and understand language.",
+        "Semantics & Pragmatics": "The study of meaning in language, both in its literal sense (semantics) and its contextual, inferred sense (pragmatics).",
+        "Syntax": "The study of the rules and principles that govern the sentence structure of languages."
+      },
+      "Literatures, Cultures & Linguistics": {
+        "Classics": "The study of the languages, literatures, and cultures of ancient Greece and Rome.",
+        "Comparative & World Literature": "The study of literature across national, linguistic, and cultural boundaries.",
+        "East Asian Languages & Cultures": "The study of the languages and cultures of China, Japan, and Korea.",
+        "French & Italian": "The study of the languages, literatures, and cultures of the French- and Italian-speaking worlds.",
+        "Germanic Languages & Literatures": "The study of the languages and cultures of the Germanic, Scandinavian, and Yiddish-speaking worlds.",
+        "Linguistics": "The scientific study of human language, its structure, use, and cognitive basis.",
+        "Religion": "The academic and interdisciplinary study of religious traditions and phenomena.",
+        "Slavic Languages & Literatures": "The study of the languages, literatures, and cultures of Russia and Eastern Europe.",
+        "Spanish & Portuguese": "The study of the languages, literatures, and cultures of the Spanish- and Portuguese-speaking worlds."
+      },
+      "Medieval Studies": {
+        "Medieval History & Society": "The study of the social, political, and religious history of the Middle Ages.",
+        "Medieval Literature & Philology": "The study of the languages and literatures of medieval Europe, including textual analysis.",
+        "Medieval Art & Archaeology": "The study of the art, architecture, and material culture of the medieval period."
+      },
+      "Philosophy": {
+        "Ethics & Political Philosophy": "The study of morality, justice, rights, and the nature of good government.",
+        "Metaphysics & Epistemology": "The study of the fundamental nature of reality, existence, knowledge, and belief.",
+        "Philosophy of Science": "The philosophical examination of the foundations, methods, and implications of various sciences.",
+        "History of Philosophy": "The study of the major philosophical thinkers and traditions from antiquity to the present."
+      },
+      "Religion": {
+        "Global Religions & Traditions": "The comparative study of major world religions, including Christianity, Islam, Judaism, Buddhism, and Hinduism.",
+        "Religion & Society": "The study of the intersection of religion with politics, law, culture, and social issues.",
+        "Text, History & Interpretation": "The critical and historical study of religious texts and traditions (e.g., Biblical studies)."
+      },
+      "Slavic Languages & Literatures": {
+        "Russian Language & Literature": "The study of Russian language, and its literary tradition from the 19th century to the present.",
+        "East European & Eurasian Studies": "The study of the languages and cultures of Poland, the Czech Republic, Ukraine, and other post-Soviet states.",
+        "Slavic Linguistics": "The comparative and historical study of the Slavic language family."
+      },
+      "Sociology": {
+        "Social Stratification & Inequality": "The study of the unequal distribution of resources, power, and privilege based on class, race, and gender.",
+        "Political Sociology & Global Dynamics": "The study of power, social movements, and the state in a global context.",
+        "Criminology & Law": "The study of crime, criminal behavior, and the legal system's response to it.",
+        "Culture & Social Psychology": "The study of how culture shapes individual beliefs and social interactions."
+      },
+      "Spanish & Portuguese": {
+        "Spanish Linguistics": "The study of the structure, history, acquisition, and variation of the Spanish language.",
+        "Latin American Literatures & Cultures": "The study of the diverse literary and cultural traditions of Spanish-speaking America, from the colonial period to the present.",
+        "Iberian (Spanish) Literatures & Cultures": "The study of the literary and cultural traditions of Spain, from medieval to contemporary.",
+        "Portuguese (Luso-Brazilian) Studies": "The study of the languages, literatures, and cultures of Portugal and Brazil."
+      },
+      "Writing Studies": {
+        "Rhetoric & Composition": "The study of the theory, history, and practice of writing, persuasion, and argumentation.",
+        "Writing Across the Curriculum (WAC)": "The support and study of writing and pedagogy in disciplines across the university.",
+        "Writing Center & Tutoring Pedagogy": "The theory and practice of one-on-one writing instruction and support in a writing center context."
       }
     },
-    "Political Science": {
-      "American Politics": {
-        "Political Behavior & Public Opinion": "The study of how and why citizens think and act in politics, including voting and political participation.",
-        "Political Institutions (Congress, Presidency)": "The study of the formal and informal rules that structure American political institutions.",
-        "State & Local Politics": "The study of politics and policy at the sub-national level.",
-        "Race, Ethnicity & Politics": "The study of the role of race and ethnicity in shaping American politics."
+    "Interdisciplinary research": {
+      "African Studies": {
+        "African Languages & Linguistics": "The study and teaching of major African languages and language families (e.g., Swahili, Wolof).",
+        "Politics, History & Development": "The interdisciplinary study of political systems, historical trajectories, and economic development in Africa.",
+        "African Arts, Culture & Society": "The study of the diverse literatures, arts, social structures, and health systems of the African continent."
       },
-      "Comparative Politics": {
-        "Democratization & Authoritarianism": "The study of why and how countries become democratic or remain authoritarian.",
-        "Political Economy of Development": "The study of the relationship between politics and economics in developing countries.",
-        "Contentious Politics & Social Movements": "The study of protests, revolutions, and other forms of political conflict.",
-        "Area Studies": "The in-depth study of the politics of a specific geographic region, such as Latin America or the Middle East."
+      "Advanced Social Research": {
+        "Global Conflict & Violence": "The collection and analysis of data on global conflict, instability, and human rights violations.",
+        "Data-Driven Social Research": "The development and application of computational methods to analyze large-scale text and social data.",
+        "Media & Information Dynamics": "The study of how information and narratives shape public opinion and societal events."
       },
-      "International Relations": {
-        "International Security & Conflict": "The study of war, peace, and the use of military force in international politics.",
-        "International Political Economy": "The study of the interaction between international politics and economics, including trade and finance.",
-        "Foreign Policy Analysis": "The study of how states make foreign policy decisions.",
-        "International Organizations & Law": "The study of international institutions, such as the United Nations, and the role of international law."
+      "Criticism & Interpretive Theory": {
+        "Critical Theory": "The interdisciplinary study of post-structuralist, post-colonial, and Frankfurt School theories and their application.",
+        "Psychoanalysis & Social Theory": "The application of psychoanalytic concepts to the study of culture, society, and politics.",
+        "Aesthetics & Media Theory": "The philosophical and theoretical study of art, media, and sensory experience."
       },
-      "Political Methodology": {
-        "Quantitative & Statistical Methods": "The application of statistical methods to analyze political data.",
-        "Formal Theory & Modeling": "The use of mathematical models, such as game theory, to study political phenomena.",
-        "Qualitative & Mixed Methods": "The use of case studies, interviews, and other qualitative methods to study politics.",
-        "Computational Social Science": "The use of computational methods to analyze large-scale political data, such as from social media."
+      "East Asian & Pacific Studies": {
+        "East Asian Languages & Cultures": "Promoting the study of Chinese, Japanese, and Korean languages and cultural traditions.",
+        "East Asian Politics & Society": "Interdisciplinary research on the contemporary politics, economies, and societies of East Asia.",
+        "Transnational East Asia": "The study of connections and flows between East Asian countries and the rest of the world."
       },
-      "Political Theory": {
-        "History of Political Thought": "The study of the great political thinkers of the past, from Plato to Nietzsche.",
-        "Contemporary Political Philosophy": "The study of current debates in political philosophy, such as justice, equality, and rights.",
-        "Democratic Theory": "The study of the meaning and justification of democracy.",
-        "Critical Theory": "A school of thought that critiques society and culture by applying knowledge from the social sciences and the humanities."
+      "European Union Studies": {
+        "Transatlantic Relations & Security": "The study of the political, economic, and security relationship between Europe and North America.",
+        "EU Governance & Public Policy": "Research on the institutions, decision-making processes, and policies of the European Union.",
+        "European Society & Culture": "The study of contemporary European societies, migration, identity, and cultural politics."
+      },
+      "Global Studies": {
+        "Global Health": "Interdisciplinary research on global health disparities, infectious diseases, and healthcare systems.",
+        "Global Governance & Security": "The study of international organizations, human rights, and global security challenges.",
+        "Global Environment & Sustainability": "The study of global environmental change, resource management, and sustainable development."
+      },
+      "Illinois Global Institute": {
+        "Center for African Studies (CAS)": "Interdisciplinary research and teaching on the diverse cultures, societies, and languages of Africa.",
+        "Center for East Asian & Pacific Studies (CEAPS)": "Promoting the study of East Asia and the Pacific, including its languages, cultures, and societies.",
+        "Center for Global Studies (CGS)": "Fostering research and education on global issues, themes, and processes that transcend national borders.",
+        "Center for Latin American & Caribbean Studies (CLACS)": "Supporting research and training on the histories, cultures, and contemporary issues of Latin America and the Caribbean.",
+        "Center for South Asian & Middle Eastern Studies (CSAMES)": "Promoting scholarship, teaching, and public engagement on South Asia and the Middle East.",
+        "European Union Center (EUC)": "An interdisciplinary center focused on the study of the European Union, its institutions, and transatlantic relations.",
+        "Russian, East European, and Eurasian Center (REEEC)": "Supporting the interdisciplinary study of Russia, Eastern Europe, and the Eurasian region."
+      },
+      "Latin American & Caribbean Studies": {
+        "Latin American History & Politics": "The study of the historical and contemporary political and social dynamics of Latin America.",
+        "Latin American & Caribbean Cultures": "The study of the diverse literatures, arts, and cultural expressions of the region.",
+        "Indigenous & Diasporic Studies": "Research on Indigenous peoples and diasporic communities within Latin America and the Caribbean."
+      },
+      "Brazilian Studies": {
+        "Brazilian Society & Culture": "Research on the diverse cultural, social, and artistic expressions of Brazil.",
+        "Brazilian Politics & Development": "The study of Brazil's political institutions, economic development, and social inequality.",
+        "Education & Public Policy in Brazil": "The study of educational systems and social policies within Brazil."
+      },
+      "Russian, East European, and Eurasian Studies": {
+        "Russian Studies": "The interdisciplinary study of the history, politics, language, and culture of Russia.",
+        "East European Studies": "The study of the politics, societies, and cultures of the Baltic states, Poland, Czechia, and the Balkans.",
+        "Eurasian Studies": "Research on the languages, cultures, and politics of the Caucasus and Central Asia."
+      },
+      "South Asian & Middle Eastern Studies": {
+        "South Asian Studies": "The study of the languages, cultures, religions, and politics of the Indian subcontinent.",
+        "Middle Eastern Studies": "The study of the languages, cultures, religions, and politics of the Middle East and North Africa."
+      },
+      "Spurlock Museum": {
+        "Cultural Heritage & Museum Studies": "The theory and practice of museum curation, collection management, preservation, and public engagement.",
+        "Global Material Culture": "The study of human history and culture through tangible objects and artifacts from diverse world cultures."
+      },
+      "Study of Global Gender Equity": {
+        "Gender & Development": "Research on the role of gender in economic development, poverty reduction, and resource access.",
+        "Gender-Based Violence & Health": "The study of gender-based violence and its impact on public health and human rights.",
+        "Transnational Feminisms": "The study of feminist movements and theories in a global and cross-cultural context."
+      },
+      "Writing Studies": {
+        "Rhetoric & Composition": "The study of the theory, history, and practice of writing, persuasion, and argumentation.",
+        "Writing Across the Curriculum (WAC)": "The support and study of writing and pedagogy in disciplines across the university.",
+        "Writing Center & Tutoring Pedagogy": "The theory and practice of one-on-one writing instruction and support in a writing center context."
       }
     },
-    "History": {
-      "American History": {
-        "Colonial & Revolutionary America": "The study of the period of European colonization and the American Revolution.",
-        "19th Century US History": "The study of major themes such as westward expansion, the Civil War, and industrialization.",
-        "20th Century US History": "The study of the United States as a global power, including the World Wars, the Cold War, and social movements.",
-        "African American History": "The study of the history of people of African descent in the United States."
+    "International and area studies": {
+      "Arms Control & Domestic and International Security": {
+        "Arms Control & Nonproliferation": "Research on treaties, technologies, and policies to limit the spread of nuclear, chemical, and biological weapons.",
+        "International Security": "The study of conflict, defense policy, and emerging security threats between nations.",
+        "Domestic Security & Counterterrorism": "The study of domestic extremism, homeland security, and counterterrorism strategies."
       },
-      "European History": {
-        "Medieval Europe": "The study of European history from the fall of the Roman Empire to the Renaissance.",
-        "Early Modern Europe": "The study of the period from the Renaissance to the French Revolution.",
-        "Modern Europe": "The study of European history from the French Revolution to the present.",
-        "Russian & Eastern European History": "The specialized study of the history of Russia and the nations of Eastern Europe."
+      "African Studies": {
+        "African Languages & Linguistics": "The study and teaching of major African languages and language families (e.g., Swahili, Wolof).",
+        "Politics, History & Development": "The interdisciplinary study of political systems, historical trajectories, and economic development in Africa.",
+        "African Arts, Culture & Society": "The study of the diverse literatures, arts, social structures, and health systems of the African continent."
       },
-      "Global & Transnational History": {
-        "History of Empires & Colonialism": "The study of the rise and fall of empires and the history of colonial rule.",
-        "Migration & Diaspora Studies": "The study of the movement of peoples across borders and the formation of diasporic communities.",
-        "Global Environmental History": "The study of the historical relationship between humans and the natural world.",
-        "Maritime History": "The study of human interaction with and through the sea."
+      "East Asian & Pacific Studies": {
+        "East Asian Languages & Cultures": "Promoting the study of Chinese, Japanese, and Korean languages and cultural traditions.",
+        "East Asian Politics & Society": "Interdisciplinary research on the contemporary politics, economies, and societies of East Asia.",
+        "Transnational East Asia": "The study of connections and flows between East Asian countries and the rest of the world."
       },
-      "History of Science, Technology & Medicine": {
-        "History of Biology & Medicine": "The study of the historical development of the life sciences and medical practices.",
-        "History of Physical Sciences": "The study of the historical development of fields like physics, chemistry, and astronomy.",
-        "History of Technology": "The study of the history of invention and the impact of technology on society.",
-        "Science & Empire": "The study of the role of science and technology in the history of European imperialism."
+      "European Union Studies": {
+        "Transatlantic Relations & Security": "The study of the political, economic, and security relationship between Europe and North America.",
+        "EU Governance & Public Policy": "Research on the institutions, decision-making processes, and policies of the European Union.",
+        "European Society & Culture": "The study of contemporary European societies, migration, identity, and cultural politics."
       },
-      "Pre-Modern History (Ancient/Medieval)": {
-        "Ancient Greece & Rome": "The study of the history and culture of the classical world.",
-        "Medieval Studies": "An interdisciplinary field of study of the European Middle Ages.",
-        "Byzantine History": "The study of the history of the Byzantine Empire.",
-        "Ancient Near East": "The study of the early civilizations of Mesopotamia, Egypt, and the Levant."
+      "Global Studies": {
+        "Global Health": "Interdisciplinary research on global health disparities, infectious diseases, and healthcare systems.",
+        "Global Governance & Security": "The study of international organizations, human rights, and global security challenges.",
+        "Global Environment & Sustainability": "The study of global environmental change, resource management, and sustainable development."
+      },
+      "Global Studies, LAS": {
+        "Global Cultures & Societies": "The study of cultural globalization, transnational identities, global media flows, and human rights.",
+        "Global Health & Environment": "The study of global health challenges, environmental sustainability, development, and their policy implications.",
+        "Global Politics & Economies": "The study of international relations, global political economy, governance, and security."
+      },
+      "Illinois Global Institute": {
+        "Center for African Studies (CAS)": "Interdisciplinary research and teaching on the diverse cultures, societies, and languages of Africa.",
+        "Center for East Asian & Pacific Studies (CEAPS)": "Promoting the study of East Asia and the Pacific, including its languages, cultures, and societies.",
+        "Center for Global Studies (CGS)": "Fostering research and education on global issues, themes, and processes that transcend national borders.",
+        "Center for Latin American & Caribbean Studies (CLACS)": "Supporting research and training on the histories, cultures, and contemporary issues of Latin America and the Caribbean.",
+        "Center for South Asian & Middle Eastern Studies (CSAMES)": "Promoting scholarship, teaching, and public engagement on South Asia and the Middle East.",
+        "European Union Center (EUC)": "An interdisciplinary center focused on the study of the European Union, its institutions, and transatlantic relations.",
+        "Russian, East European, and Eurasian Center (REEEC)": "Supporting the interdisciplinary study of Russia, Eastern Europe, and the Eurasian region."
+      },
+      "Latin American & Caribbean Studies": {
+        "Latin American History & Politics": "The study of the historical and contemporary political and social dynamics of Latin America.",
+        "Latin American & Caribbean Cultures": "The study of the diverse literatures, arts, and cultural expressions of the region.",
+        "Indigenous & Diasporic Studies": "Research on Indigenous peoples and diasporic communities within Latin America and the Caribbean."
+      },
+      "Brazilian Studies": {
+        "Brazilian Society & Culture": "Research on the diverse cultural, social, and artistic expressions of Brazil.",
+        "Brazilian Politics & Development": "The study of Brazil's political institutions, economic development, and social inequality.",
+        "Education & Public Policy in Brazil": "The study of educational systems and social policies within Brazil."
+      },
+      "Russian, East European, and Eurasian Studies": {
+        "Russian Studies": "The interdisciplinary study of the history, politics, language, and culture of Russia.",
+        "East European Studies": "The study of the politics, societies, and cultures of the Baltic states, Poland, Czechia, and the Balkans.",
+        "Eurasian Studies": "Research on the languages, cultures, and politics of the Caucasus and Central Asia."
+      },
+      "South Asian & Middle Eastern Studies": {
+        "South Asian Studies": "The study of the languages, cultures, religions, and politics of the Indian subcontinent.",
+        "Middle Eastern Studies": "The study of the languages, cultures, religions, and politics of the Middle East and North Africa."
+      },
+      "Study of Global Gender Equity": {
+        "Gender & Development": "Research on the role of gender in economic development, poverty reduction, and resource access.",
+        "Gender-Based Violence & Health": "The study of gender-based violence and its impact on public health and human rights.",
+        "Transnational Feminisms": "The study of feminist movements and theories in a global and cross-cultural context."
       }
     },
-    "Communication": {
-      "Health Communication": {
-        "Doctor-Patient Communication": "The study of communication between healthcare providers and patients.",
-        "Health Campaigns & Persuasion": "The design and evaluation of public health campaigns to promote healthy behaviors.",
-        "Health Information Technology": "The study of the use of technology in healthcare communication."
+    "Mathematical sciences": {
+      "Mathematics": {
+        "Algebra": "The study of mathematical structures like groups, rings, and fields, including algebraic geometry and representation theory.",
+        "Analysis": "The study of limits, continuity, and integration, including real, complex, and functional analysis and PDEs.",
+        "Applied & Computational Mathematics": "The development of mathematical and computational methods for problems in science and engineering.",
+        "Geometry & Topology": "The study of the properties of space, shape, and dimension, including differential geometry and algebraic topology.",
+        "Logic & Foundations": "The study of the principles of valid reasoning and the foundational axioms of mathematics.",
+        "Number Theory": "The study of integers and their properties, including analytic and algebraic number theory.",
+        "Probability": "The branch of mathematics concerning the analysis of random phenomena and stochastic processes."
       },
-      "Interpersonal Communication": {
-        "Relational Dynamics": "The study of communication in personal relationships, such as friendships and romantic partnerships.",
-        "Nonverbal Communication": "The study of communication through body language, gestures, and facial expressions.",
-        "Family Communication": "The study of communication patterns within families."
-      },
-      "Media & Cinema Studies": {
-        "Media Effects & Psychology": "The study of the psychological effects of media on individuals and society.",
-        "Film History & Theory": "The critical study of the history of cinema and the theories of film analysis.",
-        "Digital & New Media": "The study of the internet, social media, and other digital communication technologies.",
-        "Global Media": "The study of media systems and flows across national borders."
-      },
-      "Organizational Communication": {
-        "Corporate Communication": "The management of internal and external communications in a corporation.",
-        "Communication Networks": "The study of the patterns of communication within organizations.",
-        "Technology in Organizations": "The study of how new communication technologies are used in the workplace."
-      },
-      "Rhetoric & Public Discourse": {
-        "Rhetorical Theory & Criticism": "The study of the principles of persuasive speaking and writing.",
-        "Political Communication": "The study of communication in the political sphere, including campaigns and media coverage.",
-        "Public Address & Social Movements": "The study of speeches and other forms of public communication that have shaped history."
+      "Statistics": {
+        "Applied Statistics & Biostatistics": "The application of statistical methods to solve real-world problems in medicine, biology, finance, and other domains.",
+        "Computational Statistics & Data Science": "The intersection of computer science and statistics, focusing on algorithms, machine learning, and analysis of large, complex datasets.",
+        "Statistical Theory & Methods": "The development of the fundamental mathematical principles of statistical inference, modeling, and probability."
       }
     },
-    "Linguistics": {
-      "Computational Linguistics": {
-        "Natural Language Processing (NLP)": "The application of computational techniques to the analysis and synthesis of natural language and speech.",
-        "Corpus Linguistics": "The study of language as expressed in samples (corpora) of 'real world' text.",
-        "Machine Learning for Language": "The use of machine learning algorithms to solve problems in natural language processing."
+    "Physical sciences": {
+      "Astronomy": {
+        "Observational Astronomy": "The study of celestial objects by observing them with telescopes across the electromagnetic spectrum (e.g., optical, radio, x-ray).",
+        "Theoretical & Computational Astrophysics": "The use of physical models and computer simulations to understand celestial phenomena, from stars to galaxies.",
+        "Cosmology & General Relativity": "The study of the origin, evolution, and large-scale structure of the universe, including dark matter and dark energy."
       },
-      "Phonetics & Phonology": {
-        "Articulatory & Acoustic Phonetics": "The study of how speech sounds are produced and their acoustic properties.",
-        "Phonological Theory": "The study of the abstract, grammatical patterning of sounds in languages.",
-        "Laboratory Phonology": "The use of experimental methods to study the phonetics and phonology of language."
+      "Atmospheric Sciences": {
+        "Climate & Climate Change": "The study of long-term weather patterns and the impact of human activity on the global climate system.",
+        "Atmospheric Chemistry & Physics": "The study of the chemical composition and physical processes of the atmosphere, including air quality and aerosol science.",
+        "Weather & Dynamic Meteorology": "The study of short-term atmospheric phenomena, weather forecasting, and the fluid dynamics of the atmosphere."
       },
-      "Psycholinguistics": {
-        "Language Acquisition": "The study of how humans acquire the ability to perceive and comprehend language, as well as to produce and use words and sentences to communicate.",
-        "Sentence Processing": "The study of the cognitive processes that underlie the comprehension of sentences.",
-        "Bilingualism": "The study of the cognitive and linguistic aspects of knowing and using two or more languages."
+      "Biophysics & Quantitative Biology": {
+        "Molecular Biophysics": "Using physical principles and computational methods to study the structure, dynamics, and function of biological molecules.",
+        "Cellular Biophysics": "Applying physical and quantitative approaches to understand the mechanical, electrical, and structural properties of living cells.",
+        "Systems & Computational Biology": "The use of quantitative models and computation to understand the behavior and interactions of complex biological systems."
       },
-      "Semantics & Pragmatics": {
-        "Formal Semantics": "The use of logic and mathematics to study the literal meaning of sentences.",
-        "Lexical Semantics": "The study of word meaning.",
-        "Discourse & Pragmatics": "The study of how context contributes to meaning in language."
+      "Earth, Society & Environment": {
+        "Atmospheric Sciences": "The study of weather, climate, and the chemical and physical properties of the atmosphere.",
+        "Earth Science & Environmental Change": "The study of the solid Earth, its history, materials, and processes, including environmental change.",
+        "Geography & Geographic Information Science": "The study of the Earth's landscapes, peoples, and the spatial technologies used to analyze them."
       },
-      "Syntax": {
-        "Syntactic Theory": "The study of the formal rules and principles that govern the structure of sentences in human language.",
-        "Comparative Syntax": "The study of syntactic similarities and differences between languages.",
-        "Language Variation & Change": "The study of how language varies between speakers and changes over time."
+      "Ecology, Evolution & Conservation Biology": {
+        "Conservation Biology & Restoration Ecology": "The applied science of protecting biodiversity, managing natural resources, and restoring degraded ecosystems.",
+        "Ecosystem Science": "The study of the interactions between living organisms and their physical environment as an integrated system.",
+        "Evolutionary Biology": "The study of the evolutionary processes (like natural selection and genetic drift) that shape the diversity of life."
+      },
+      "Geography & Geographic Information Science": {
+        "Geographic Information Science (GIS)": "The development and application of technologies for capturing, analyzing, visualizing, and interpreting spatial data.",
+        "Human Geography": "The study of the spatial organization of human society, including urban, economic, political, and cultural geography.",
+        "Physical Geography & Environmental Systems": "The study of the Earth's natural systems, including climatology, geomorphology, and biogeography."
+      },
+      "Earth Science & Environmental Change": {
+        "Geology & Geophysics": "The study of the solid Earth, its materials, and the physical processes that shape it, including plate tectonics and seismology.",
+        "Hydrogeology & Environmental Geoscience": "The study of groundwater, water resources, and the interaction of geology with environmental contaminants.",
+        "Paleoclimatology & Earth System History": "The study of Earth's past climates and environmental history as recorded in rocks, sediments, and ice cores."
+      }
+    },
+    "Race, ethnicity, indigeneity, and gender": {
+      "African American Studies": {
+        "African American History & Politics": "The study of the historical and political experiences of the African diaspora in the Americas.",
+        "African American Literature & Culture": "The critical study of literature, music, film, and other cultural expressions of the Black experience.",
+        "Race, Gender & Social Justice": "The interdisciplinary analysis of the intersection of race, gender, and class in relation to power and social structures."
+      },
+      "American Indian Studies": {
+        "Indigenous Knowledges & Sovereignty": "The study of Indigenous intellectual traditions, governance, decolonization, and rights.",
+        "American Indian Histories & Cultures": "The study of the diverse histories, languages, and cultural practices of Native American peoples.",
+        "Indigenous Media & Representation": "The critical analysis of the representation of Indigenous peoples and the study of media created by them."
+      },
+      "Asian American Studies": {
+        "Asian American History & Communities": "The study of the history of Asian migration, community formation, and racialization in the U.S.",
+        "Asian American Literature & Cultural Studies": "The critical study of literary and cultural production by and about Asian Americans.",
+        "Race, Politics & Social Justice": "The analysis of Asian American experiences within broader U.S. racial dynamics, law, and social movements."
+      },
+      "Gender & Women's Studies": {
+        "Transnational & Postcolonial Feminisms": "The study of gender and feminist movements in global, colonial, and post-colonial contexts.",
+        "Queer Studies & Sexuality": "The interdisciplinary study of sexuality and gender identity, focusing on LGBTQ+ experiences and critical theory.",
+        "Gender, Race & Intersectionality": "The analysis of the overlapping and interdependent systems of discrimination related to gender, race, class, and other social categories."
+      },
+      "Illinois Global Institute": {
+        "Center for African Studies (CAS)": "Interdisciplinary research and teaching on the diverse cultures, societies, and languages of Africa.",
+        "Center for East Asian & Pacific Studies (CEAPS)": "Promoting the study of East Asia and the Pacific, including its languages, cultures, and societies.",
+        "Center for Global Studies (CGS)": "Fostering research and education on global issues, themes, and processes that transcend national borders.",
+        "Center for Latin American & Caribbean Studies (CLACS)": "Supporting research and training on the histories, cultures, and contemporary issues of Latin America and the Caribbean.",
+        "Center for South Asian & Middle Eastern Studies (CSAMES)": "Promoting scholarship, teaching, and public engagement on South Asia and the Middle East.",
+        "European Union Center (EUC)": "An interdisciplinary center focused on the study of the European Union, its institutions, and transatlantic relations.",
+        "Russian, East European, and Eurasian Center (REEEC)": "Supporting the interdisciplinary study of Russia, Eastern Europe, and the Eurasian region."
+      },
+      "Latina/Latino Studies": {
+        "Latina/o History & Social Movements": "The study of the history of Latinx peoples in the U.S., including their political and social activism.",
+        "Latina/o Literature & Cultural Studies": "The critical study of literary, cinematic, and cultural productions by and about Latinx communities.",
+        "Transnationalism, Migration & Borders": "The study of the social, political, and cultural aspects of migration and border experiences."
+      },
+      "Study of Global Gender Equity": {
+        "Gender & Development": "Research on the role of gender in economic development, poverty reduction, and resource access.",
+        "Gender-Based Violence & Health": "The study of gender-based violence and its impact on public health and human rights.",
+        "Transnational Feminisms": "The study of feminist movements and theories in a global and cross-cultural context."
+      }
+    },
+    "Social and behavioral sciences": {
+      "African American Studies": {
+        "African American History & Politics": "The study of the historical and political experiences of the African diaspora in the Americas.",
+        "African American Literature & Culture": "The critical study of literature, music, film, and other cultural expressions of the Black experience.",
+        "Race, Gender & Social Justice": "The interdisciplinary analysis of the intersection of race, gender, and class in relation to power and social structures."
+      },
+      "American Indian Studies": {
+        "Indigenous Knowledges & Sovereignty": "The study of Indigenous intellectual traditions, governance, decolonization, and rights.",
+        "American Indian Histories & Cultures": "The study of the diverse histories, languages, and cultural practices of Native American peoples.",
+        "Indigenous Media & Representation": "The critical analysis of the representation of Indigenous peoples and the study of media created by them."
+      },
+      "Anthropology": {
+        "Archaeology": "The study of human history and prehistory through the excavation of sites and the analysis of physical remains.",
+        "Biological Anthropology": "The study of the biological and behavioral aspects of human beings, their related non-human primates, and their extinct hominin ancestors.",
+        "Sociocultural Anthropology": "The study of cultural variation among humans, often through ethnographic fieldwork and participant observation.",
+        "Linguistic Anthropology": "The study of how language influences social life, cultural identity, and systems of belief."
+      },
+      "Asian American Studies": {
+        "Asian American History & Communities": "The study of the history of Asian migration, community formation, and racialization in the U.S.",
+        "Asian American Literature & Cultural Studies": "The critical study of literary and cultural production by and about Asian Americans.",
+        "Race, Politics & Social Justice": "The analysis of Asian American experiences within broader U.S. racial dynamics, law, and social movements."
+      },
+      "Advanced Social Research": {
+        "Global Conflict & Violence": "The collection and analysis of data on global conflict, instability, and human rights violations.",
+        "Data-Driven Social Research": "The development and application of computational methods to analyze large-scale text and social data.",
+        "Media & Information Dynamics": "The study of how information and narratives shape public opinion and societal events."
+      },
+      "Communication": {
+        "Health Communication": "The study and use of communication strategies to inform and influence individual and community health decisions.",
+        "Interpersonal & Organizational Communication": "The study of communication processes in personal relationships, groups, and complex organizations.",
+        "Media & Cinema Studies": "The critical analysis of film, television, and digital media, their history, and their effects on society and culture.",
+        "Rhetoric & Public Discourse": "The study of the art of persuasion and argumentation in public life, from political speeches to social movements."
+      },
+      "Economics": {
+        "Applied Microeconomics": "The application of microeconomic principles to study specific markets and behaviors, such as labor, health, and industrial organization.",
+        "Econometrics": "The application of statistical methods to economic data to give empirical content to economic relationships.",
+        "Economic Theory (Micro & Macro)": "The development of fundamental models of economic behavior at the individual (micro) and aggregate (macro) levels.",
+        "International & Development Economics": "The study of economic interactions between countries and the economic challenges facing developing nations.",
+        "Public & Labor Economics": "The study of government policy's role in the economy and the dynamics of labor markets and employment."
+      },
+      "Gender & Women's Studies": {
+        "Transnational & Postcolonial Feminisms": "The study of gender and feminist movements in global, colonial, and post-colonial contexts.",
+        "Queer Studies & Sexuality": "The interdisciplinary study of sexuality and gender identity, focusing on LGBTQ+ experiences and critical theory.",
+        "Gender, Race & Intersectionality": "The analysis of the overlapping and interdependent systems of discrimination related to gender, race, class, and other social categories."
+      },
+      "Geography & Geographic Information Science": {
+        "Geographic Information Science (GIS)": "The development and application of technologies for capturing, analyzing, visualizing, and interpreting spatial data.",
+        "Human Geography": "The study of the spatial organization of human society, including urban, economic, political, and cultural geography.",
+        "Physical Geography & Environmental Systems": "The study of the Earth's natural systems, including climatology, geomorphology, and biogeography."
+      },
+      "Global Studies, LAS": {
+        "Global Cultures & Societies": "The study of cultural globalization, transnational identities, global media flows, and human rights.",
+        "Global Health & Environment": "The study of global health challenges, environmental sustainability, development, and their policy implications.",
+        "Global Politics & Economies": "The study of international relations, global political economy, governance, and security."
+      },
+      "Illinois in Washington Program": {
+        "Public Policy & Governance": "The study and practice of policy-making within federal agencies, Congress, and think tanks.",
+        "Civic Engagement & Advocacy": "Experiential learning in non-profit organizations, advocacy groups, and media.",
+        "International Affairs & Law": "The practical application of international relations and legal studies in a professional setting."
+      },
+      "Latina/Latino Studies": {
+        "Latina/o History & Social Movements": "The study of the history of Latinx peoples in the U.S., including their political and social activism.",
+        "Latina/o Literature & Cultural Studies": "The critical study of literary, cinematic, and cultural productions by and about Latinx communities.",
+        "Transnationalism, Migration & Borders": "The study of the social, political, and cultural aspects of migration and border experiences."
+      },
+      "Linguistics": {
+        "Computational Linguistics": "The interdisciplinary field modeling natural language from a computational perspective, including NLP.",
+        "Phonetics & Phonology": "The study of the sounds of human speech (phonetics) and their systematic organization in language (phonology).",
+        "Psycholinguistics": "The study of the psychological and neurobiological factors enabling humans to acquire, use, and understand language.",
+        "Semantics & Pragmatics": "The study of meaning in language, both in its literal sense (semantics) and its contextual, inferred sense (pragmatics).",
+        "Syntax": "The study of the rules and principles that govern the sentence structure of languages."
+      },
+      "Neuroscience Program": {
+        "Behavioral & Cognitive Neuroscience": "The study of the neural mechanisms underlying behavior, cognition, learning, and memory.",
+        "Cellular & Molecular Neuroscience": "The study of the nervous system at the level of individual cells, synapses, and molecules.",
+        "Systems & Computational Neuroscience": "The study of neural circuits and the use of computational models to understand brain function."
+      },
+      "Political Science": {
+        "American Politics": "The study of political institutions, behavior, and policy in the United States.",
+        "Comparative Politics": "The comparative study of different countries' political systems to understand their similarities and differences.",
+        "International Relations": "The study of the interactions between nation-states, international organizations, and non-state actors in the global arena.",
+        "Political Methodology": "The development and application of quantitative and qualitative methods for the scientific study of politics.",
+        "Political Theory": "The study of fundamental questions about justice, power, rights, and the nature of the state."
+      },
+      "Psychology": {
+        "Behavioral Neuroscience": "The study of the biological bases of psychological processes and behavior.",
+        "Clinical & Community Psychology": "The assessment, treatment, and prevention of mental illness at individual and community levels.",
+        "Cognitive Neuroscience": "The study of the neural mechanisms underlying cognition, often using brain imaging techniques.",
+        "Cognitive Psychology": "The study of mental processes such as attention, language use, memory, and problem-solving.",
+        "Developmental Psychology": "The scientific study of how and why human beings change over the course of their life.",
+        "Industrial-Organizational Psychology": "The application of psychological principles to the workplace to improve productivity and well-being.",
+        "Social-Personality Psychology": "The study of how individuals' thoughts, feelings, and behaviors are influenced by others and individual differences."
+      },
+      "Sociology": {
+        "Social Stratification & Inequality": "The study of the unequal distribution of resources, power, and privilege based on class, race, and gender.",
+        "Political Sociology & Global Dynamics": "The study of power, social movements, and the state in a global context.",
+        "Criminology & Law": "The study of crime, criminal behavior, and the legal system's response to it.",
+        "Culture & Social Psychology": "The study of how culture shapes individual beliefs and social interactions."
       }
     }
   },
