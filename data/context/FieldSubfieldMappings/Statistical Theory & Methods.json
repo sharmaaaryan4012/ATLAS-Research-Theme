@@ -1,6 +1,0 @@
-{
-  "Asymptotic Theory": "The study of the behavior of statistical procedures as the sample size grows infinitely large.",
-  "Causal Inference": "The process of drawing a conclusion about a causal connection based on the conditions of the occurrence of an effect.",
-  "Nonparametric Statistics": "Statistical methods that do not rely on assumptions about the probability distributions of the analyzed variables.",
-  "Time Series Analysis": "Statistical methods for analyzing time-ordered data points."
-}

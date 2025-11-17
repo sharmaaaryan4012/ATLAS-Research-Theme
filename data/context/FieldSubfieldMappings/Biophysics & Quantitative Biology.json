@@ -1,6 +1,5 @@
 {
-  "Molecular Biophysics": "The study of the physical properties of biological molecules like proteins and DNA.",
-  "Cellular Biophysics": "The study of the physical principles governing the function of living cells.",
-  "Systems Biology": "The computational and mathematical modeling of complex biological systems.",
-  "Neurophysics": "The application of physics principles to understand the function of the brain and nervous system."
+  "Molecular Biophysics": "Using physical principles and computational methods to study the structure, dynamics, and function of biological molecules.",
+  "Cellular Biophysics": "Applying physical and quantitative approaches to understand the mechanical, electrical, and structural properties of living cells.",
+  "Systems & Computational Biology": "The use of quantitative models and computation to understand the behavior and interactions of complex biological systems."
 }

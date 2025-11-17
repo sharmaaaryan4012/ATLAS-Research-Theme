@@ -1,78 +1,140 @@
 {
-  "Mathematics": {
-    "Algebra": "The study of mathematical symbols and the rules for manipulating those symbols, including structures like groups, rings, and fields.",
-    "Analysis": "The branch of mathematics dealing with limits, continuity, derivatives, and integrals, providing the rigorous foundation for calculus.",
-    "Applied & Computational Mathematics": "The development and application of mathematical and computational methods to solve problems in science, engineering, and other fields.",
-    "Geometry & Topology": "The study of the properties of space, shape, and dimension, and the properties of objects that are preserved under continuous deformations.",
-    "Logic & Foundations": "The study of the principles of valid reasoning and the foundational axioms upon which all of mathematics is built.",
-    "Number Theory": "The study of integers and integer-valued functions, often called the 'Queen of Mathematics' for its deep and elegant properties.",
-    "Probability": "The branch of mathematics concerning the analysis of random phenomena and the likelihood of events occurring."
+  "Biological sciences": {
+    "Anthropology": "The interdisciplinary study of humanity, fusing archaeological evidence, historical texts, and ethnographic methods to understand peoples and cultures from the past to the present.",
+    "Biochemistry": "A department within the School of MCB focused on discovering the fundamental principles supporting life.",
+    "Biophysics & Quantitative Biology": "An interdisciplinary center to train students and foster research at the interface between the physical, computational, and life sciences to elucidate the physical basis of biological phenomena.",
+    "Cell & Developmental Biology": "A department within the School of MCB focused on discovering the fundamental principles supporting life, from cells to organisms.",
+    "Entomology": "A department within SIB exploring the biology of insects to address challenges in agriculture, human health, and biodiversity.",
+    "Evolution, Ecology, and Behavior": "A department within SIB exploring the biological principles of how organisms interact with their environment and evolve over time.",
+    "Integrative Biology": "An academic unit that tackles scientific challenges by exploring life at every scale—from molecules to ecosystems—across disciplines like Entomology, Plant Biology, and Evolution, Ecology & Behavior.",
+    "Microbiology": "A department within the School of MCB focused on discovering the fundamental principles of life, with an emphasis on microorganisms.",
+    "Molecular & Cellular Biology": "An academic unit that educates students and conducts research to discover the fundamental principles supporting life at all scales, from microbes to humans, across four departments.",
+    "Molecular & Integrative Physiology": "A department within the School of MCB that strives to understand gene products and biological organization at multiple levels, from molecules and cells to tissues and whole organisms.",
+    "Neuroscience Program": "An interdisciplinary program that fosters research and education at the intersection of multiple colleges to understand the brain and nervous system.",
+    "Plant Biology": "A department within SIB that conducts research and training in plant biology, integrating across temporal scales and levels of biological organization, from biochemistry to ecology.",
+    "Psychology": "The scientific study of the mind and behavior, from its biological basis to its social and cognitive processes."
   },
-  "Statistics": {
-    "Applied Statistics": "The application of statistical methods to solve real-world problems and make data-driven decisions in various domains.",
-    "Computational Statistics & Data Science": "The intersection of computer science and statistics, focusing on algorithms for analyzing and modeling large, complex datasets.",
-    "Statistical Theory & Methods": "The development of the fundamental principles and mathematical foundations of statistical inference and modeling."
+  "Language and culture": {
+    "Classics": "An academic department that fosters inquiry into the languages, literatures, art, archaeology, histories, and philosophical traditions of ancient Greece and Rome and neighboring Mediterranean areas.",
+    "Comparative & World Literature": "An academic program dedicated to the study of literature across national, linguistic, and cultural boundaries.",
+    "East Asian Languages & Cultures": "An academic department focused on the languages, literatures, histories, and cultures of China, Japan, and Korea.",
+    "Foreign Language Teacher Education Program": "An academic program dedicated to preparing students to become licensed teachers of foreign languages.",
+    "French & Italian": "An academic department dedicated to enhancing undergraduate and graduate education in the languages, literatures, and cultures of the French- and Italian-speaking worlds.",
+    "Germanic Languages & Literatures": "An academic department focused on the languages, literatures, and cultures of the Germanic-speaking world.",
+    "Global Studies, LAS": "An academic program offering interdisciplinary study of global issues, cultures, and languages.",
+    "Illinois Global Institute": "An institute that fosters collaboration on global and regional questions, bringing together various area studies centers with a shared commitment to international research.",
+    "Jewish Culture & Society": "An academic program that provides insights into Judaism, Israel, and the Jewish experience by fusing archaeological evidence, historical texts, and Semitic inscriptions.",
+    "Linguistics": "The scientific study of human language, including its structure, use, and cognitive basis.",
+    "Literatures, Cultures & Linguistics": "An academic unit with a mission of 'transforming lives and serving society by educating, creating knowledge, and putting knowledge to work' across diverse languages and cultures.",
+    "Slavic Languages & Literatures": "An academic department focused on the languages, literatures, and cultures of the Slavic world.",
+    "Spanish & Portuguese": "An academic department committed to excellence in scholarship, innovation, diversity, and transformative learning in the languages and cultures of the Spanish- and Portuguese-speaking worlds.",
+    "Spurlock Museum": "A museum of world cultures whose mission is to create space for people to learn, collaborate, and build connections by caring for and sharing cultural collections from across the globe.",
+    "Translation and Interpreting Studies": "An academic program focused on the theory and practice of translation and interpretation across languages.",
+    "Writing Studies": "An interdisciplinary academic unit with a linked mission to support a Writing Across the Curriculum (WAC) program, provide support to all campus writers via the Writers Workshop, and sustain a community of writing studies scholars."
   },
-  "Physics": {
-    "Astrophysics & Cosmology": "The study of the physical properties and evolution of celestial objects and the universe as a whole.",
-    "Atomic, Molecular & Optical Physics": "The study of matter-matter and light-matter interactions at the scale of single atoms or molecules.",
-    "Biophysics & Quantitative Biology": "The application of the principles and methods of physics to understand biological systems and phenomena.",
-    "Condensed Matter Physics": "The study of the macroscopic and microscopic physical properties of matter, especially in the solid and liquid phases.",
-    "High Energy & Particle Physics": "The study of the fundamental constituents of matter and energy and their interactions at the highest energies.",
-    "Nuclear Physics": "The study of the constituents, structure, and behavior of atomic nuclei.",
-    "Quantum Information": "The study of information processing tasks that can be accomplished using the principles of quantum mechanics."
+  "Chemical sciences": {
+    "Biochemistry": "A department within the School of MCB focused on discovering the fundamental principles supporting life.",
+    "Chemical & Biomolecular Engineering": "The study and application of chemical engineering principles to molecular-level problems, including biotechnology and materials.",
+    "Chemical Sciences": "An administrative unit comprising the departments of Chemistry and Chemical & Biomolecular Engineering.",
+    "Chemistry": "A department dedicated to advancing the instructional mission of chemistry, connecting instructors and students with technology, and advocating for women and younger chemists in the chemical sciences."
   },
-  "Chemistry": {
-    "Analytical Chemistry": "The science of obtaining, processing, and communicating information about the composition and structure of matter.",
-    "Chemical Biology": "The application of chemical techniques and tools to study and manipulate biological systems.",
-    "Inorganic Chemistry": "The study of the synthesis, structure, and properties of inorganic and organometallic compounds.",
-    "Materials Chemistry": "The design, synthesis, and characterization of new materials with useful physical and chemical properties.",
-    "Organic Chemistry": "The study of the structure, properties, composition, reactions, and synthesis of carbon-containing compounds.",
-    "Physical Chemistry": "The study of macroscopic and particulate phenomena in chemical systems in terms of the principles and concepts of physics.",
-    "Theoretical & Computational Chemistry": "The use of computer simulation and mathematical models to understand and predict chemical behavior."
+  "Humanities": {
+    "African American Studies": "An academic department with a central mission to enrich lives and transform society by creating new knowledge and exploring the interconnections among African Americans and other racialized communities.",
+    "American Indian Studies": "An academic program dedicated to the study of the histories, cultures, languages, and contemporary experiences of Indigenous peoples of the Americas.",
+    "Anthropology": "The interdisciplinary study of humanity, fusing archaeological evidence, historical texts, and ethnographic methods to understand peoples and cultures from the past to the present.",
+    "Asian American Studies": "An interdisciplinary department that stimulates and promotes research and challenging courses to explore the history, culture, and experiences of Asian Americans.",
+    "Classics": "An academic department that fosters inquiry into the languages, literatures, art, archaeology, histories, and philosophical traditions of ancient Greece and Rome and neighboring Mediterranean areas.",
+    "Communication": "An academic department exploring human communication in various contexts, including mass media, race, and interpersonal relations.",
+    "Comparative & World Literature": "An academic program dedicated to the study of literature across national, linguistic, and cultural boundaries.",
+    "Criticism & Interpretive Theory": "An interdisciplinary unit that fosters the study of critical theory and its application in the humanities and social sciences.",
+    "East Asian Languages & Cultures": "An academic department focused on the languages, literatures, histories, and cultures of China, Japan, and Korea.",
+    "English": "An academic department focused on the study of literature, writing, and environmental and scientific history.",
+    "Foreign Language Teacher Education Program": "An academic program dedicated to preparing students to become licensed teachers of foreign languages.",
+    "French & Italian": "An academic department dedicated to enhancing undergraduate and graduate education in the languages, literatures, and cultures of the French- and Italian-speaking worlds.",
+    "Gender & Women's Studies": "An interdisciplinary department that studies the politics of dress, labor, and self-representation, focusing on gender, race, nation, and sexuality as critical factors.",
+    "Germanic Languages & Literatures": "An academic department focused on the languages, literatures, and cultures of the Germanic-speaking world.",
+    "History": "An academic department with a mission to support students in meeting their academic and professional goals through the study of the past.",
+    "Jewish Culture & Society": "An academic program that provides insights into Judaism, Israel, and the Jewish experience by fusing archaeological evidence, historical texts, and Semitic inscriptions.",
+    "Latina/Latino Studies": "An interdisciplinary department exploring the U.S. Latina/Latino experience from a sociological, historical, and cultural perspective, focusing on class, gender, sexuality, and race.",
+    "Linguistics": "The scientific study of human language, including its structure, use, and cognitive basis.",
+    "Literatures, Cultures & Linguistics": "An academic unit with a mission of 'transforming lives and serving society by educating, creating knowledge, and putting knowledge to work' across diverse languages and cultures.",
+    "Medieval Studies": "An academic program with a mission to foster the interdisciplinary and collaborative study of the histories, literatures, languages, beliefs, ideas, arts, and archaeologies of the medieval globe.",
+    "Philosophy": "The academic discipline that studies fundamental questions about existence, knowledge, values, reason, mind, and language.",
+    "Religion": "An academic department for the study of religion, providing various fields of concentration and exploring its historical and constitutional role.",
+    "Slavic Languages & Literatures": "An academic department focused on the languages, literatures, and cultures of the Slavic world.",
+    "Sociology": "An academic department with a mission to enhance undergraduate and graduate education by granting scholarships, recruiting scholars, and hosting conferences.",
+    "Spanish & Portuguese": "An academic department committed to excellence in scholarship, innovation, diversity, and transformative learning in the languages and cultures of the Spanish- and Portuguese-speaking worlds.",
+    "Writing Studies": "An interdisciplinary academic unit with a linked mission to support a Writing Across the Curriculum (WAC) program, provide support to all campus writers via the Writers Workshop, and sustain a community of writing studies scholars."
   },
-  "Economics": {
-    "Applied Microeconomics": "The application of microeconomic principles to study specific markets and behaviors, such as labor, health, and industrial organization.",
-    "Econometrics": "The application of statistical methods to economic data to give empirical content to economic relationships.",
-    "Economic Theory (Micro & Macro)": "The development of fundamental models of economic behavior at the individual (micro) and aggregate (macro) levels.",
-    "International & Development Economics": "The study of economic interactions between countries and the economic challenges facing developing nations.",
-    "Public & Labor Economics": "The study of government policy's role in the economy and the dynamics of labor markets and employment."
+  "Interdisciplinary research": {
+    "African Studies": "An academic center with an educational mission to bring together faculty and students with a common interest in Africa, providing a rich environment for research and training.",
+    "Advanced Social Research": "A research center with a mission of transforming information into knowledge that advances human flourishing through research, education, collaboration, and outreach.",
+    "Criticism & Interpretive Theory": "An interdisciplinary unit that fosters the study of critical theory and its application in the humanities and social sciences.",
+    "East Asian & Pacific Studies": "An academic center promoting the study of East Asia and the Pacific, including its languages, cultures, and societies.",
+    "European Union Studies": "An academic center focused on the study of the European Union, its institutions, and its role in global issues like energy and policy.",
+    "Global Studies": "An academic center with a mission to promote and support innovative research to better understand global issues, emphasizing advanced language skills and developing expertise in areas like Global Health and Governance.",
+    "Illinois Global Institute": "An institute that fosters collaboration on global and regional questions, bringing together various area studies centers with a shared commitment to international research.",
+    "Latin American & Caribbean Studies": "An academic center with a mission to increase knowledge and awareness of Latin America and the Caribbean by promoting innovative research, specialist teaching, and public engagement.",
+    "Brazilian Studies": "An academic center that fosters research and understanding of Brazilian society, politics, and culture, supporting graduate fellows in their research.",
+    "Russian, East European, and Eurasian Studies": "An academic center dedicated to the interdisciplinary study of the languages, cultures, and societies of Russia, Eastern Europe, and Eurasia.",
+    "South Asian & Middle Eastern Studies": "An academic center that promotes scholarship, teaching, and public engagement on two regions of global significance, with a mission to 'demystify' the regions and deconstruct stereotypes.",
+    "Spurlock Museum": "A museum of world cultures whose mission is to create space for people to learn, collaborate, and build connections by caring for and sharing cultural collections from across the globe.",
+    "Study of Global Gender Equity": "An academic center with a mission to promote gender equity and human development by addressing resource inequalities through a multi-disciplinary approach, with a historic focus on the Global South.",
+    "Writing Studies": "An interdisciplinary academic unit with a linked mission to support a Writing Across the Curriculum (WAC) program, provide support to all campus writers via the Writers Workshop, and sustain a community of writing studies scholars."
   },
-  "Psychology": {
-    "Behavioral Neuroscience": "The study of the biological bases of psychological processes and behavior.",
-    "Clinical & Community Psychology": "The assessment and treatment of mental illness and the promotion of psychological well-being at individual and community levels.",
-    "Cognitive Neuroscience": "The study of the neural mechanisms underlying cognition, often using brain imaging techniques.",
-    "Cognitive Psychology": "The study of mental processes such as attention, language use, memory, perception, and problem-solving.",
-    "Developmental Psychology": "The scientific study of how and why human beings change over the course of their life.",
-    "Industrial-Organizational Psychology": "The application of psychological principles to the workplace to improve productivity, health, and quality of work life.",
-    "Social-Personality Psychology": "The study of how individuals' thoughts, feelings, and behaviors are influenced by others, and the study of individual differences in personality."
+  "International and area studies": {
+    "Arms Control & Domestic and International Security": "An interdisciplinary venture that facilitates objective research, academics, and outreach about international security issues within the academic and policymaking communities.",
+    "African Studies": "An academic center with an educational mission to bring together faculty and students with a common interest in Africa, providing a rich environment for research and training.",
+    "East Asian & Pacific Studies": "An academic center promoting the study of East Asia and the Pacific, including its languages, cultures, and societies.",
+    "European Union Studies": "An academic center focused on the study of the European Union, its institutions, and its role in global issues like energy and policy.",
+    "Global Studies": "An academic center with a mission to promote and support innovative research to better understand global issues, emphasizing advanced language skills and developing expertise in areas like Global Health and Governance.",
+    "Global Studies, LAS": "An academic program offering interdisciplinary study of global issues, cultures, and languages.",
+    "Illinois Global Institute": "An institute that fosters collaboration on global and regional questions, bringing together various area studies centers with a shared commitment to international research.",
+    "Latin American & Caribbean Studies": "An academic center with a mission to increase knowledge and awareness of Latin America and the Caribbean by promoting innovative research, specialist teaching, and public engagement.",
+    "Brazilian Studies": "An academic center that fosters research and understanding of Brazilian society, politics, and culture, supporting graduate fellows in their research.",
+    "Russian, East European, and Eurasian Studies": "An academic center dedicated to the interdisciplinary study of the languages, cultures, and societies of Russia, Eastern Europe, and Eurasia.",
+    "South Asian & Middle Eastern Studies": "An academic center that promotes scholarship, teaching, and public engagement on two regions of global significance, with a mission to 'demystify' the regions and deconstruct stereotypes.",
+    "Study of Global Gender Equity": "An academic center with a mission to promote gender equity and human development by addressing resource inequalities through a multi-disciplinary approach, with a historic focus on the Global South."
   },
-  "Political Science": {
-    "American Politics": "The study of political institutions, behavior, and policy in the United States.",
-    "Comparative Politics": "The comparative study of different countries' political systems in order to understand their similarities and differences.",
-    "International Relations": "The study of the interactions between nation-states, international organizations, and non-state actors in the global arena.",
-    "Political Methodology": "The development and application of quantitative and qualitative methods for the scientific study of politics.",
-    "Political Theory": "The study of fundamental questions about justice, power, rights, and the nature of the state, from ancient to contemporary thought."
+  "Mathematical sciences": {
+    "Mathematics": "An academic department with a mission to expand access to top-tier mathematics education and stand on the frontier of groundbreaking mathematical research.",
+    "Statistics": "An academic department that applies rigorous mathematics and statistics to urgent, complex scientific and societal problems."
   },
-  "History": {
-    "American History": "The study of the political, social, economic, and cultural development of the United States.",
-    "European History": "The study of the past in the European continent, from antiquity to the present.",
-    "Global & Transnational History": "The study of historical connections and interactions that transcend national borders.",
-    "History of Science, Technology & Medicine": "The study of how scientific knowledge, technological systems, and medical practices have developed and changed over time.",
-    "Pre-Modern History (Ancient/Medieval)": "The study of human history from the beginning of recorded history until the early modern period."
+  "Physical sciences": {
+    "Astronomy": "An academic department that provides a 'roadmap' for astronomical research, marrying astronomy and AI to investigate the cosmos, from the Far IR to dark matter.",
+    "Atmospheric Sciences": "An academic department focused on research and teaching to communicate the issues of climate change and understand atmospheric phenomena like precipitation.",
+    "Biophysics & Quantitative Biology": "An interdisciplinary center to train students and foster research at the interface between the physical, computational, and life sciences to elucidate the physical basis of biological phenomena.",
+    "Earth, Society & Environment": "A premier academic school with a mission to provide a world-class education and bridge core disciplines to tackle the greatest earth science and environmental/social problems facing humankind.",
+    "Ecology, Evolution & Conservation Biology": "An interdisciplinary program exploring life at every scale, from molecules to ecosystems, to address global change and biodiversity.",
+    "Geography & Geographic Information Science": "An academic department whose central mission is to enhance global well-being through the geospatial, natural, and social sciences in an environment free from prejudice.",
+    "Earth Science & Environmental Change": "An academic department whose mission centers on the apprenticeship-style graduate education and research in applied geoscience, including hydrogeology, geophysics, and volcanology."
   },
-  "Communication": {
-    "Health Communication": "The study and use of communication strategies to inform and influence individual and community decisions that enhance health.",
-    "Interpersonal Communication": "The study of how people communicate in relationships, including verbal and nonverbal messages.",
-    "Media & Cinema Studies": "The critical analysis of film, television, and digital media, and their effects on society and culture.",
-    "Organizational Communication": "The study of communication processes and dynamics within and between organizations.",
-    "Rhetoric & Public Discourse": "The study of the art of persuasion and argumentation in public life, from political speeches to social movements."
+  "Race, ethnicity, indigeneity, and gender": {
+    "African American Studies": "An academic department with a central mission to enrich lives and transform society by creating new knowledge and exploring the interconnections among African Americans and other racialized communities.",
+    "American Indian Studies": "An academic program dedicated to the study of the histories, cultures, languages, and contemporary experiences of Indigenous peoples of the Americas.",
+    "Asian American Studies": "An interdisciplinary department that stimulates and promotes research and challenging courses to explore the history, culture, and experiences of Asian Americans.",
+    "Gender & Women's Studies": "An interdisciplinary department that studies the politics of dress, labor, and self-representation, focusing on gender, race, nation, and sexuality as critical factors.",
+    "Illinois Global Institute": "An institute that fosters collaboration on global and regional questions, bringing together various area studies centers with a shared commitment to international research.",
+    "Latina/Latino Studies": "An interdisciplinary department exploring the U.S. Latina/Latino experience from a sociological, historical, and cultural perspective, focusing on class, gender, sexuality, and race.",
+    "Study of Global Gender Equity": "An academic center with a mission to promote gender equity and human development by addressing resource inequalities through a multi-disciplinary approach, with a historic focus on the Global South."
   },
-  "Linguistics": {
-    "Computational Linguistics": "The interdisciplinary field dealing with the statistical or rule-based modeling of natural language from a computational perspective.",
-    "Phonetics & Phonology": "The study of the sounds of human speech and the systematic organization of sounds in languages.",
-    "Psycholinguistics": "The study of the psychological and neurobiological factors that enable humans to acquire, use, and understand language.",
-    "Semantics & Pragmatics": "The study of meaning in language, both in its literal sense (semantics) and its contextual, inferred sense (pragmatics).",
-    "Syntax": "The study of the rules and principles that govern the sentence structure of languages."
+  "Social and behavioral sciences": {
+    "African American Studies": "An academic department with a central mission to enrich lives and transform society by creating new knowledge and exploring the interconnections among African Americans and other racialized communities.",
+    "American Indian Studies": "An academic program dedicated to the study of the histories, cultures, languages, and contemporary experiences of Indigenous peoples of the Americas.",
+    "Anthropology": "The interdisciplinary study of humanity, fusing archaeological evidence, historical texts, and ethnographic methods to understand peoples and cultures from the past to the present.",
+    "Asian American Studies": "An interdisciplinary department that stimulates and promotes research and challenging courses to explore the history, culture, and experiences of Asian Americans.",
+    "Advanced Social Research": "A research center with a mission of transforming information into knowledge that advances human flourishing through research, education, collaboration, and outreach.",
+    "Communication": "An academic department exploring human communication in various contexts, including mass media, race, and interpersonal relations.",
+    "Economics": "The academic discipline that studies the production, distribution, and consumption of goods and services, and the models of economic behavior at individual and aggregate levels.",
+    "Gender & Women's Studies": "An interdisciplinary department that studies the politics of dress, labor, and self-representation, focusing on gender, race, nation, and sexuality as critical factors.",
+    "Geography & Geographic Information Science": "An academic department whose central mission is to enhance global well-being through the geospatial, natural, and social sciences in an environment free from prejudice.",
+    "Global Studies, LAS": "An academic program offering interdisciplinary study of global issues, cultures, and languages.",
+    "Illinois in Washington Program": "An academic program that provides students with valuable internship experiences in Washington D.C., helping them grow personally and professionally in public policy and civic affairs.",
+    "Latina/Latino Studies": "An interdisciplinary department exploring the U.S. Latina/Latino experience from a sociological, historical, and cultural perspective, focusing on class, gender, sexuality, and race.",
+    "Linguistics": "The scientific study of human language, including its structure, use, and cognitive basis.",
+    "Neuroscience Program": "An interdisciplinary program that fosters research and education at the intersection of multiple colleges to understand the brain and nervous system.",
+    "Political Science": "An academic department that prepares students for leadership positions in civic affairs through coursework in American politics, public policy, and civic engagement.",
+    "Psychology": "The scientific study of the mind and behavior, from its biological basis to its social and cognitive processes.",
+    "Sociology": "An academic department with a mission to enhance undergraduate and graduate education by granting scholarships, recruiting scholars, and hosting conferences."
   }
 }
