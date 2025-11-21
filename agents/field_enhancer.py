@@ -20,7 +20,7 @@ from helpers.field_helpers import _load_field_mapping
 from langgraph.models import (
     FieldEnhancerInput,
     FieldEnhancerOutput,
-    Proposal,
+    Candidate,
 )
 
 
@@ -93,8 +93,8 @@ class FieldEnhancerNode:
         data : FieldEnhancerInput
             The user request containing:
               - description
-              - college_name (optional)
-              - department_name (optional)
+              - college_name 
+              - unit_names
               - optional feedback (removals/additions for the candidate pool)
 
         Returns
@@ -109,7 +109,7 @@ class FieldEnhancerNode:
 
         request = data.request
         college_name = request.college_name
-        department_name = request.department_name
+        unit_names = data.unit_names
 
         feedback = getattr(data, "feedback", None)
         if feedback is not None:
@@ -121,7 +121,7 @@ class FieldEnhancerNode:
 
         # Build candidate pool (flattened to {field: description}) for context.
         candidates: Dict[str, str] = _load_field_mapping(
-            college_name, department_name, removals, additions
+            college_name, unit_names, removals, additions
         )
         if not candidates:
             raise ValueError(
@@ -179,8 +179,9 @@ class FieldEnhancerNode:
                 ]
                 if valid_new:
                     proposals = [
-                        Proposal(
+                        Candidate(
                             name=c["name"],
+                            score=1.0,
                             rationale=c.get("rationale", ""),
                         )
                         for c in valid_new
