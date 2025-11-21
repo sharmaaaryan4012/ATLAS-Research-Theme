@@ -73,7 +73,6 @@ class UserRequest:
     request_id: str
     description: str
     college_name: str
-    department_name: str
 
 
 @dataclass
@@ -113,8 +112,8 @@ class ValidationReport:
 
     is_valid: bool
     reason: str = ""
-    removals: List[str] = field(default_factory=list)
-    additions: List[str] = field(default_factory=list)
+    removals: Optional[List[str]] = field(default_factory=list)
+    additions: Optional[List[str]] = field(default_factory=list)
 
 
 @dataclass
@@ -153,7 +152,47 @@ class MappingUpdate:
     created_by: NodeName = NodeName.FieldUpdater
     created_at: str = field(default_factory=now_iso)
 
+# --------------------------
+# Unit pipeline
+# --------------------------
+@dataclass
+class UnitClassifierInput:
+    """Input to the field classifier node."""
 
+    request: UserRequest
+    feedback: ValidationReport
+
+
+@dataclass
+class UnitClassifierOutput:
+    """
+    Output from the field classifier.
+
+    Attributes
+    ----------
+    candidates : List[Candidate]
+        Ranked list of field candidates (best-first).
+    """
+
+    candidates: List[Candidate] = field(default_factory=list)
+    output_valid: bool = True
+
+
+@dataclass
+class UnitValidatorInput:
+    """Input to the field validator node."""
+
+    unit_names: List[str]
+    request: UserRequest
+    feedback: ValidationReport
+
+
+@dataclass
+class UnitValidatorOutput:
+    """Output from the field validator node."""
+
+    report: ValidationReport
+    satisfaction: Satisfaction 
 # --------------------------
 # Field pipeline
 # --------------------------
@@ -162,6 +201,7 @@ class FieldClassifierInput:
     """Input to the field classifier node."""
 
     request: UserRequest
+    unit_names: List[str]
     feedback: ValidationReport
 
 
@@ -185,6 +225,7 @@ class FieldValidatorInput:
     """Input to the field validator node."""
 
     field_names: List[str]
+    unit_names: List[str]
     request: UserRequest
     feedback: ValidationReport
 
@@ -205,6 +246,7 @@ class FieldEnhancerInput:
     """Input to a (future) field enhancer node."""
 
     request: UserRequest
+    unit_names: List[str]
     # attempted_fields: List[Candidate]
     feedback: ValidationReport
 
@@ -222,6 +264,7 @@ class FieldEnhancementValidatorInput:
 
     request: UserRequest
     new_field_names: List[str]
+    unit_names: List[str]
 
 
 @dataclass

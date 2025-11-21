@@ -25,6 +25,10 @@ from .models import (
 class State:
     request: UserRequest
 
+    units: List[Candidate] = field(default_factory=list)
+    unit_validation: Optional[ValidationReport] = None
+    unit_satisfaction: Optional[Satisfaction] = None
+
     fields: List[Candidate] = field(default_factory=list)
     new_fields: Optional[List[Candidate]] = field(default_factory=list)
     field_validation: Optional[ValidationReport] = None
@@ -41,6 +45,11 @@ class State:
     def record(self, event: str, **payload: Any) -> None:
         self.log.append({"event": event, **payload})
         print(event)
+
+    def get_units(self):
+        if self.units is None:
+            return []
+        return [c.name for c in self.units]
 
     def get_fields(self):
         if self.fields is None:
