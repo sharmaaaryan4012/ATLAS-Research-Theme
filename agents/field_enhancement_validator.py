@@ -84,34 +84,11 @@ class FieldEnhancementValidatorNode:
 
         Strategy
         --------
-        1) Structural validation: ensure each field in `new_field_names` exists
-           somewhere in the master mapping.
-        2) Optional LLM sanity check: pass the request text and chosen fields
+        1) LLM sanity check: pass the request text and chosen fields
            to get (is_valid, reason, additional removals).
         """
         request = data.request
-        field_names: List[str] = data.new_field_names or []
-
-        # 1) Structural validation against master mapping.
-        structurally_invalid = [
-            name for name in field_names if name not in self._all_fields
-        ]
-
-        if structurally_invalid:
-            report = ValidationReport(
-                is_valid=False,
-                reason=(
-                    "Some fields are not present in the master mapping: "
-                    + ", ".join(structurally_invalid)
-                ),
-                removals=structurally_invalid,
-                additions=None,
-            )
-            return FieldEnhancementValidatorOutput(
-                report=report, satisfaction=Satisfaction.Unsatisfied
-            )
-
-        # At this point, all fields exist in the master mapping structurally.
+        subfield_names: List[str] = data.new_field_names or []
 
         if self.llm is not None:
             prompt = (
@@ -119,7 +96,7 @@ class FieldEnhancementValidatorNode:
                 "Return strictly JSON with keys: is_valid (bool), reason (string), "
                 "removals (string array).\n\n"
                 f"User text:\n{request.description}\n\n"
-                f"Chosen Fields: {field_names}\n\n"
+                f"Chosen Fields: {subfield_names}\n\n"
                 "If some fields are not good semantic matches, list them in 'removals'. "
                 "If all fields are fine, 'removals' should be an empty list.\n"
                 "Output ONLY valid JSON. No prose, no markdown.\n"
@@ -155,10 +132,10 @@ class FieldEnhancementValidatorNode:
                     "Error using field enhancement validator LLM. Check credentials."
                 )
 
-        # Fallback: structurally valid ⇒ accepted.
+        # Fallback: accept
         report = ValidationReport(
             is_valid=True,
-            reason="All fields exist in the master mapping and no LLM validation was applied.",
+            reason="No LLM validation was applied.",
             removals=[],
             additions=None,
         )
