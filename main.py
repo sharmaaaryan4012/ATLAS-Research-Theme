@@ -14,7 +14,7 @@ if api_key:
 else:
     print("Warning: LANGSMITH_KEY not found in config/api.env")
 
-os.environ["LAeNGSMITH_TRACING_V2"] = "true"
+os.environ["LANGSMITH_TRACING_V2"] = "true"
 os.environ["LANGSMITH_PROJECT"] = "Research-Theme-Project"
 
 llm = GeminiJSONAdapter.from_env(model_name="gemini-2.5-flash")
