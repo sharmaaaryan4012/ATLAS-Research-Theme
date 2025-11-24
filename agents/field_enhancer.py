@@ -16,7 +16,7 @@ from typing import Dict, List, Optional, Protocol
 from pydantic import BaseModel
 from pydantic import Field as PydField
 
-from helpers.field_helpers import _load_field_mapping
+from helpers.field_helpers import _load_subfield_mapping
 from langgraph.models import (
     FieldEnhancerInput,
     FieldEnhancerOutput,
@@ -108,25 +108,7 @@ class FieldEnhancerNode:
             raise ValueError("FieldEnhancerNode requires an LLM instance.")
 
         request = data.request
-        college_name = request.college_name
-        unit_names = data.unit_names
-
-        feedback = getattr(data, "feedback", None)
-        if feedback is not None:
-            removals = feedback.removals
-            additions = feedback.additions
-        else:
-            removals = None
-            additions = None
-
-        # Build candidate pool (flattened to {field: description}) for context.
-        candidates: Dict[str, str] = _load_field_mapping(
-            college_name, unit_names, removals, additions
-        )
-        if not candidates:
-            raise ValueError(
-                "No fields available from master mapping. Check data/context."
-            )
+        candidates = data.subfield_names
 
         research_description = request.description
         prompt = (

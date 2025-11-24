@@ -33,7 +33,14 @@ graph = BuildGraph(
 req = UserRequest(
     request_id="test-1",
     description=(
-        "US imperialism; race's relationship to gender and sexuality; climate. My research takes transimperial, interimperial, and international approaches. In my first book I examined the intersections of settler colonialism and Black removal efforts (e.g. Liberian colonization), illuminating the centrality of languages of climate, race, and gender to intellectual debates over geographies of Black freedom. My other works include peer-reviewed articles on the U.S. opening of Japan and how it generated imaginings of difference and affinity that unsettled the Black-white dichotomy and the binarized correspondence of gender and sexuality dominating popular discourse in the U.S. East. I am currently working on a book manuscript on U.S. imperialism in the Pacific up to the end of the Philippine-American War."
+        """
+Monte Carlo theory and methodology, and their applications to scientific problems
+Statistical inference on network data
+State space models and dynamic systems
+Bioinformatics and population genetics
+
+
+        """
     ),
     college_name="College of Liberal Arts & Sciences"
 )

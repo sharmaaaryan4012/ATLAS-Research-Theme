@@ -246,8 +246,7 @@ class FieldEnhancerInput:
     """Input to a (future) field enhancer node."""
 
     request: UserRequest
-    unit_names: List[str]
-    # attempted_fields: List[Candidate]
+    subfield_names: List[str]
     feedback: ValidationReport
 
 
@@ -264,7 +263,6 @@ class FieldEnhancementValidatorInput:
 
     request: UserRequest
     new_field_names: List[str]
-    unit_names: List[str]
 
 
 @dataclass

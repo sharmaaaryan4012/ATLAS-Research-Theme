@@ -149,9 +149,6 @@ class Graph:
             valid_fields = state.field_satisfaction == "satisfied"
             n_iterations += 1
 
-        state = self.FieldEnhancement(state)
-        state = self.FieldEnhancementValidation(state)
-
         return state
 
     def FieldClassification(self, state: State):
@@ -200,38 +197,6 @@ class Graph:
 
         return state
 
-    def FieldEnhancement(self, state: State):
-        state.record("enter_field_enhancer")
-        fe_out = self.field_enhancer.Run(
-            FieldEnhancerInput(request=state.request, unit_names = state.get_units(), feedback=state.field_validation)
-        )
-        state.new_fields = fe_out.proposed_candidates
-        state.record(
-            "field_enhancer_done",
-            candidates=state.get_new_fields(),
-        )
-        return state
-
-    def FieldEnhancementValidation(self, state: State):
-        state.record("enter_field_enhancement_validator")
-        fev_out = self.field_enhancement_validator.Run(
-            FieldEnhancementValidatorInput(
-                request=state.request, unit_names = state.get_units(), new_field_names=state.get_new_fields()
-            )
-        )
-        suggested_fields = state.get_new_fields()
-        # update the new fields
-        if not fev_out.satisfaction:
-            removals = fev_out.report.removals
-            for r in removals:
-                    suggested_fields.remove(r)
-        state.new_fields = [f for f in state.new_fields if f.name in  suggested_fields]
-        state.record(
-            "field_enhancement_validator_done",
-            candidates=state.get_new_fields(),
-        )
-        return state
-
     # WORK FOR SUBFIELDS
     def RunSubfieldStage(self, state: State):
         max_iterations = 3
@@ -242,6 +207,10 @@ class Graph:
             state = self.SubfieldValidation(state)
             valid_subfields = state.subfield_satisfaction == "satisfied"
             n_iterations += 1
+
+        state = self.FieldEnhancement(state)
+        state = self.FieldEnhancementValidation(state)
+
         return state
 
     def SubfieldClassification(self, state: State):
@@ -294,6 +263,40 @@ class Graph:
             removals=sv_out.report.removals,
             additions=sv_out.report.additions,
             satisfaction=sv_out.satisfaction,
+        )
+        return state
+    
+    def FieldEnhancement(self, state: State):
+        state.record("enter_field_enhancer")
+        fe_out = self.field_enhancer.Run(
+            FieldEnhancerInput(request=state.request, subfield_names= state.get_subfields(), feedback=state.field_validation)
+        )
+        state.new_fields = fe_out.proposed_candidates
+        state.record(
+            "field_enhancer_done",
+            candidates=state.get_new_fields(),
+        )
+        return state
+
+    def FieldEnhancementValidation(self, state: State):
+        state.record("enter_field_enhancement_validator")
+        if state.get_new_fields() == []:
+            return state
+        fev_out = self.field_enhancement_validator.Run(
+            FieldEnhancementValidatorInput(
+                request=state.request, new_field_names=state.get_new_fields()
+            )
+        )
+        suggested_fields = state.get_new_fields()
+        # update the new fields
+        if not fev_out.satisfaction:
+            removals = fev_out.report.removals
+            for r in removals:
+                    suggested_fields.remove(r)
+        state.new_fields = [f for f in state.new_fields if f.name in suggested_fields] if suggested_fields is not None else None
+        state.record(
+            "field_enhancement_validator_done",
+            candidates=state.get_new_fields(),
         )
         return state
 
